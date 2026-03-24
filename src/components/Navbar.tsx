@@ -1,13 +1,32 @@
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 
-const navLinks = [
+interface NavLink {
+  label: string
+  href: string
+}
+
+interface NavbarProps {
+  links?: NavLink[]
+  ctaText?: string
+  ctaHref?: string
+  signInHref?: string
+  logoHref?: string
+}
+
+const defaultLinks: NavLink[] = [
   { label: 'Product', href: '#product' },
   { label: 'Community', href: '#community' },
   { label: 'Pricing', href: '#pricing' },
 ]
 
-export default function Navbar() {
+export default function Navbar({
+  links = defaultLinks,
+  ctaText = 'Join Beta →',
+  ctaHref = 'https://app.funnelstudio.forrestry.ai',
+  signInHref = 'https://app.funnelstudio.forrestry.ai',
+  logoHref = '/',
+}: NavbarProps) {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
 
@@ -29,7 +48,7 @@ export default function Navbar() {
     >
       <div className="max-w-[1400px] mx-auto flex items-center justify-between">
         {/* Logo */}
-        <a href="#hero" className="flex items-center gap-2 no-underline">
+        <a href={logoHref} className="flex items-center gap-2 no-underline">
           <img
             src="/logo.png"
             alt="Forrestry.ai"
@@ -40,7 +59,7 @@ export default function Navbar() {
 
         {/* Desktop nav links */}
         <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
+          {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
@@ -54,16 +73,16 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="https://app.forrestry.ai/login"
+            href={signInHref}
             className="text-text no-underline text-[0.95rem] hover:text-green transition-colors"
           >
             Sign In
           </a>
           <a
-            href="https://app.forrestry.ai/register"
+            href={ctaHref}
             className="bg-green text-black px-6 py-2.5 rounded-full font-semibold text-[0.95rem] no-underline hover:bg-green/90 hover:scale-105 transition-all"
           >
-            Join Beta →
+            {ctaText}
           </a>
         </div>
 
@@ -80,7 +99,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden flex flex-col gap-4 pt-4 pb-6">
-          {navLinks.map((link) => (
+          {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
@@ -91,18 +110,18 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="https://app.forrestry.ai/login"
+            href={signInHref}
             onClick={closeMobile}
             className="text-text no-underline py-2 text-base hover:text-green transition-colors"
           >
             Sign In
           </a>
           <a
-            href="https://app.forrestry.ai/register"
+            href={ctaHref}
             onClick={closeMobile}
             className="bg-green text-black px-6 py-2.5 rounded-full font-semibold text-base no-underline text-center hover:bg-green/90 transition-all"
           >
-            Join Beta →
+            {ctaText}
           </a>
         </div>
       )}
