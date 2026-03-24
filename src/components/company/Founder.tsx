@@ -6,13 +6,13 @@ export default function Founder() {
       <div className="max-w-[1100px] mx-auto">
         <FadeUp>
           <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
-            The Guide
+            Why We Built This
           </p>
         </FadeUp>
 
         <FadeUp delay={0.1}>
           <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-14">
-            Built by a founder, for founders.
+            You've been doing this alone long enough.
           </h2>
         </FadeUp>
 
@@ -32,15 +32,15 @@ export default function Founder() {
               <h3 className="text-xl font-bold text-white mb-1">Andrew Gutierrez</h3>
               <p className="text-green text-sm font-medium mb-5">Founder, Forrestry.ai</p>
               <p className="text-white/70 leading-relaxed mb-4">
-                I spent years watching entrepreneurs with great ideas get buried under tech
-                stacks, blank pages, and tools that promised everything and delivered friction.
-                I built Forrestry.ai because I believe the best founders shouldn't have to
-                become developers, designers, or copywriters just to launch. You have the
-                vision. We build the rest.
+                I was you. Great idea, real drive, and a graveyard of half-built funnels to
+                show for it. Not because I lacked the strategy. Because every tool I tried
+                made me do more work, not less. I built Forrestry.ai for the founder who is
+                ready to launch but keeps getting buried before they get there. You don't need
+                another tool that hands you a blank page. You need a system that builds with you.
               </p>
               <p className="text-white/50 text-sm italic">
-                We're not just building tools. We're building the Forresters — a community
-                of founders who launch.
+                We're not just building tools. We're building the Forresters. A community
+                of founders who actually launch.
               </p>
             </div>
           </div>

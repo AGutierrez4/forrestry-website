@@ -11,7 +11,7 @@ export default function CompanyHero() {
         {/* Eyebrow */}
         <FadeUp>
           <p className="text-green text-sm font-semibold tracking-wide uppercase mb-6">
-            AI-Powered Launch Tools for Entrepreneurs
+            For Entrepreneurs Who Are Done Waiting
           </p>
         </FadeUp>
 
@@ -29,8 +29,8 @@ export default function CompanyHero() {
         {/* Subheadline */}
         <FadeUp delay={0.2}>
           <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-white/70 mb-10 max-w-[700px] mx-auto leading-relaxed">
-            Forrestry.ai builds the tools that turn your idea into a live, revenue-generating
-            funnel — without the tech overwhelm, the blank page, or the burnout.
+            You have the idea. You have the drive. The only thing standing between you and a
+            live, revenue-generating funnel is the friction. We remove it.
           </p>
         </FadeUp>
 
@@ -41,10 +41,10 @@ export default function CompanyHero() {
               href="https://app.funnelstudio.forrestry.ai"
               className="inline-block px-10 py-4 rounded-xl bg-green text-[#0A0A0A] font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all"
             >
-              Start Building Free →
+              Claim Founding Member Access
             </a>
             <a
-              href="#products"
+              href="#solution"
               className="inline-block px-8 py-4 rounded-xl border border-green text-green font-semibold text-lg no-underline hover:bg-green/10 transition-all"
             >
               See How It Works
@@ -55,7 +55,7 @@ export default function CompanyHero() {
         {/* Social proof line */}
         <FadeUp delay={0.4}>
           <p className="text-white/50 text-sm">
-            Built for founders who are done waiting.
+            Founding member spots are limited. No credit card required to apply.
           </p>
         </FadeUp>
       </div>

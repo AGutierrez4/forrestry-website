@@ -5,13 +5,13 @@ const steps = [
     num: 1,
     title: 'Brain Dump',
     description:
-      'Tell Funnel Studio your idea, your audience, and your offer. No prompts. No frameworks. Just talk.',
+      'Tell Funnel Studio your idea, your audience, and your offer. No prompts to engineer. No frameworks to learn. Just talk.',
   },
   {
     num: 2,
     title: 'Build',
     description:
-      'Watch your funnel come to life — webinar script, registration page, email sequence, ad copy. Stage by stage.',
+      'Watch your funnel take shape, stage by stage. Webinar script. Registration page. Email sequence. Ad copy. In order, every time.',
   },
   {
     num: 3,

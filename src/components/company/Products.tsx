@@ -5,10 +5,10 @@ const products = [
     name: 'Funnel Studio',
     badge: 'Available Now',
     badgeColor: 'bg-green/20 text-green',
-    tagline: 'Your entire funnel. Built in the right order.',
+    tagline: 'Your entire funnel. Built stage by stage.',
     description:
-      'Brain Dump your idea. Funnel Studio builds your webinar, registration page, email sequence, and ad copy — stage by stage, nothing falls through the cracks.',
-    cta: 'Start Free →',
+      'Brain Dump your idea once. Funnel Studio builds your webinar script, registration page, email sequence, and ad copy in order. No blank pages. No guessing what comes next.',
+    cta: 'Claim Founding Member Access',
     ctaHref: 'https://app.funnelstudio.forrestry.ai',
     borderClass: 'border-green/30 hover:border-green/50',
   },
@@ -16,10 +16,10 @@ const products = [
     name: 'Answer Your Audience',
     badge: 'Coming Soon',
     badgeColor: 'bg-white/10 text-white/60',
-    tagline: 'Know exactly what your audience needs to hear.',
+    tagline: 'Know what your audience needs to hear before you write a word.',
     description:
-      'AI-powered audience research that surfaces the real objections, desires, and language your buyers use — so your copy converts before you write a word.',
-    cta: 'Join Waitlist',
+      'AI-powered research that surfaces the real objections, desires, and language your buyers use. Your copy converts because it starts with truth.',
+    cta: 'Join the Waitlist',
     ctaHref: '#',
     borderClass: 'border-card-border hover:border-white/20',
   },
@@ -27,10 +27,10 @@ const products = [
     name: 'Website Builder',
     badge: 'Coming Soon',
     badgeColor: 'bg-white/10 text-white/60',
-    tagline: 'Your brand online. In minutes, not months.',
+    tagline: 'Your brand online. Fast.',
     description:
-      "Launch a high-converting website without a designer, developer, or deadline anxiety. Built for founders who need to move fast.",
-    cta: 'Join Waitlist',
+      'A high-converting website without a designer, a developer, or a deadline you keep pushing. Built for founders who need to move.',
+    cta: 'Join the Waitlist',
     ctaHref: '#',
     borderClass: 'border-card-border hover:border-white/20',
   },
@@ -38,7 +38,7 @@ const products = [
 
 export default function Products() {
   return (
-    <section id="products" className="py-24 px-6">
+    <section id="solution" className="py-24 px-6">
       <div className="max-w-[1100px] mx-auto">
         <FadeUp>
           <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
@@ -47,9 +47,16 @@ export default function Products() {
         </FadeUp>
 
         <FadeUp delay={0.1}>
-          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-14">
-            One ecosystem. Every tool you need to launch.
+          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-4">
+            Your funnel. Built in the right order.
           </h2>
+        </FadeUp>
+
+        <FadeUp delay={0.15}>
+          <p className="text-white/70 text-center max-w-[700px] mx-auto mb-14 text-lg leading-relaxed">
+            Funnel Studio doesn't hand you a blank page. It walks you through every stage of
+            your launch, in sequence, so nothing falls through the cracks.
+          </p>
         </FadeUp>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

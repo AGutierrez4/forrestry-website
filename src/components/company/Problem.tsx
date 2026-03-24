@@ -1,10 +1,10 @@
 import FadeUp from '../FadeUp'
 
 const painPoints = [
-  { emoji: '🕐', text: 'Hours lost to prompts that go nowhere' },
-  { emoji: '🧩', text: "Tools that don't talk to each other" },
-  { emoji: '💸', text: 'Paying for 6 platforms to do one job' },
-  { emoji: '🔥', text: 'Burnout before your funnel ever launches' },
+  { emoji: '⏳', text: 'You spend hours on AI prompts that produce nothing usable' },
+  { emoji: '🧩', text: "Your tools don't talk to each other, so you become the glue" },
+  { emoji: '💸', text: "You're paying for 6 platforms to do what one should" },
+  { emoji: '🔥', text: 'You burn out before your funnel ever goes live' },
 ]
 
 export default function Problem() {
@@ -28,9 +28,9 @@ export default function Problem() {
 
         <FadeUp delay={0.2}>
           <p className="text-white/70 text-center max-w-[700px] mx-auto mb-14 text-lg leading-relaxed">
-            Legacy tools like ClickFunnels hand you the bricks and tell you to build a house.
-            You're forced to be the copywriter, the designer, the strategist, and the tech
-            person — all at once. That's not a tool. That's a second job.
+            Tools like ClickFunnels hand you the bricks and tell you to build a house.
+            You end up being the copywriter, the designer, the strategist, and the tech
+            person all at once. That's not a tool. That's a second job.
           </p>
         </FadeUp>
 

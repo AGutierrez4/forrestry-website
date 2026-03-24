@@ -19,7 +19,8 @@ export default function CompanyCTA() {
 
         <FadeUp delay={0.1}>
           <p className="text-white/70 text-lg max-w-[600px] mx-auto mb-10 leading-relaxed">
-            Join the founding members building their first funnel with Forrestry.ai.
+            Founding member spots are limited. Lock in lifetime access at beta pricing
+            before we open to the public.
           </p>
         </FadeUp>
 
@@ -28,8 +29,11 @@ export default function CompanyCTA() {
             href="https://app.funnelstudio.forrestry.ai"
             className="inline-block px-10 py-4 rounded-xl bg-green text-[#0A0A0A] font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all"
           >
-            Claim Your Founding Member Access →
+            Claim Your Founding Member Access
           </a>
+          <p className="text-white/40 text-sm mt-4">
+            No credit card required. Apply in 60 seconds.
+          </p>
         </FadeUp>
       </div>
     </section>
