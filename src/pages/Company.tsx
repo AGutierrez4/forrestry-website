@@ -1,20 +1,21 @@
 import Navbar from '../components/Navbar'
 import CompanyHero from '../components/company/CompanyHero'
 import Problem from '../components/company/Problem'
+import RealCost from '../components/company/RealCost'
+import Solution from '../components/company/Solution'
 import Products from '../components/company/Products'
-import HowItWorksCompany from '../components/company/HowItWorksCompany'
 import Founder from '../components/company/Founder'
 import CompanyCTA from '../components/company/CompanyCTA'
 import Footer from '../components/Footer'
 
 const companyNavLinks = [
-  { label: 'Products', href: '#solution' },
   { label: 'About', href: '#founder' },
+  { label: 'Products', href: '#products' },
   { label: 'Blog', href: '#' },
 ]
 
 const companyFooterLinks = [
-  { label: 'Products', href: '#solution' },
+  { label: 'Products', href: '#products' },
   { label: 'About', href: '#founder' },
   { label: 'Blog', href: '#' },
   { label: 'Privacy', href: '#' },
@@ -26,20 +27,21 @@ export default function Company() {
     <>
       <Navbar
         links={companyNavLinks}
-        ctaText="Reserve My Seat"
+        ctaText="Reserve My Free Seat"
         ctaHref="#"
-        signInHref="https://app.funnelstudio.forrestry.ai"
+        signInHref=""
         logoHref="/"
       />
       <CompanyHero />
       <Problem />
+      <RealCost />
+      <Solution />
       <Products />
-      <HowItWorksCompany />
       <Founder />
       <CompanyCTA />
       <Footer
         links={companyFooterLinks}
-        tagline="Stop building. Start launching."
+        tagline="Do more. Build less. Launch faster."
       />
     </>
   )

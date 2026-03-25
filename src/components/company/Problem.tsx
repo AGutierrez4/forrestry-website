@@ -1,10 +1,26 @@
 import FadeUp from '../FadeUp'
 
 const painPoints = [
-  { emoji: '⏳', text: 'You open the AI tool, hit generate, and the output reads like it was written for nobody' },
-  { emoji: '📝', text: 'You have 6 tabs open, 3 subscriptions running, and still no launch date' },
-  { emoji: '😶', text: "You know what a high-converting funnel looks like. You just can't get yours to look like that." },
-  { emoji: '🔥', text: 'You start to wonder if maybe this just is not for you.\n(It is.)' },
+  {
+    emoji: '⏳',
+    title: 'The Blank Page',
+    body: 'You open the AI tool, hit generate, and the output reads like it was written for nobody. Thin. Generic. Not even close to what you needed.',
+  },
+  {
+    emoji: '📝',
+    title: 'The Tab Graveyard',
+    body: 'Six tabs open. Three subscriptions running. A Notion doc full of half-finished copy. Still no launch date.',
+  },
+  {
+    emoji: '😶',
+    title: 'The Comparison Trap',
+    body: 'You know what a high-converting funnel looks like. You have studied them. You just cannot get yours to look like that.',
+  },
+  {
+    emoji: '🔥',
+    title: 'The Quiet Quit',
+    body: 'You start to wonder if maybe this just is not for you.\nIt is.',
+  },
 ]
 
 export default function Problem() {
@@ -27,13 +43,15 @@ export default function Problem() {
         </FadeUp>
 
         <FadeUp delay={0.2}>
-          <p className="text-white/70 text-center max-w-[700px] mx-auto mb-14 text-lg leading-relaxed">
-            You have the offer. You know your audience. You could probably sketch the funnel
-            on a napkin right now. But then you sit down to actually build it, and the real
-            work starts. The long-form squeeze page. The 60-minute webinar script. The slide
-            deck. The email sequences. The social ads. Every single asset has to be written,
-            designed, and tested before you ever see a dollar. That is not a strategy problem.
-            That is a system problem.
+          <p className="text-white/70 text-center max-w-[640px] mx-auto mb-6 text-lg leading-relaxed">
+            You have the offer. You know your audience. You could sketch the funnel on a
+            napkin right now. But then you sit down to actually build it, and the real work starts.
+          </p>
+          <p className="text-white/70 text-center max-w-[640px] mx-auto mb-14 text-lg leading-relaxed">
+            The long-form squeeze page. The 60-minute webinar script. The 50-slide deck.
+            The email sequences. The social ads that go stale every two weeks. Every single
+            asset has to be written, designed, and tested before you ever see a dollar.
+            That is not a strategy problem. That is a system problem.
           </p>
         </FadeUp>
 
@@ -42,7 +60,8 @@ export default function Problem() {
             <FadeUp key={i} delay={0.15 * i}>
               <div className="bg-card-bg border border-card-border rounded-2xl p-6 text-center hover:border-green/30 transition-colors">
                 <span className="text-3xl mb-3 block">{point.emoji}</span>
-                <p className="text-white/80 font-medium whitespace-pre-line">{point.text}</p>
+                <h3 className="text-white font-bold mb-2">{point.title}</h3>
+                <p className="text-white/60 text-sm leading-relaxed whitespace-pre-line">{point.body}</p>
               </div>
             </FadeUp>
           ))}

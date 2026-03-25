@@ -72,12 +72,14 @@ export default function Navbar({
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-4">
-          <a
-            href={signInHref}
-            className="text-text no-underline text-[0.95rem] hover:text-green transition-colors"
-          >
-            Sign In
-          </a>
+          {signInHref && (
+            <a
+              href={signInHref}
+              className="text-text no-underline text-[0.95rem] hover:text-green transition-colors"
+            >
+              Sign In
+            </a>
+          )}
           <a
             href={ctaHref}
             className="bg-green text-black px-6 py-2.5 rounded-full font-semibold text-[0.95rem] no-underline hover:bg-green/90 hover:scale-105 transition-all"
@@ -109,13 +111,15 @@ export default function Navbar({
               {link.label}
             </a>
           ))}
-          <a
-            href={signInHref}
-            onClick={closeMobile}
-            className="text-text no-underline py-2 text-base hover:text-green transition-colors"
-          >
-            Sign In
-          </a>
+          {signInHref && (
+            <a
+              href={signInHref}
+              onClick={closeMobile}
+              className="text-text no-underline py-2 text-base hover:text-green transition-colors"
+            >
+              Sign In
+            </a>
+          )}
           <a
             href={ctaHref}
             onClick={closeMobile}
