@@ -3,15 +3,15 @@ import FadeUp from '../FadeUp'
 const steps = [
   {
     num: 1,
-    title: 'Brain Dump\u2122',
+    title: 'Brain Dump™',
     description:
-      'Tell Funnel Studio\u2122 your story, your offer, and who you serve. No prompts to engineer. No templates to fill out. Just a conversation.',
+      'Tell Funnel Studio™ your story, your offer, and who you serve. No prompts to engineer. No templates to fill out. Just a conversation.',
   },
   {
     num: 2,
     title: 'Build',
     description:
-      'Funnel Studio\u2122 builds your entire launch stack. Stage by stage, in the right order. So nothing gets missed and nothing gets skipped.',
+      'Funnel Studio™ builds your entire launch stack. Stage by stage, in the right order. So nothing gets missed and nothing gets skipped.',
   },
   {
     num: 3,
@@ -27,7 +27,7 @@ export default function Solution() {
       <div className="max-w-[1100px] mx-auto">
         <FadeUp>
           <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
-            Meet Funnel Studio\u2122
+            Meet Funnel Studio™
           </p>
         </FadeUp>
 
@@ -39,7 +39,7 @@ export default function Solution() {
 
         <FadeUp delay={0.15}>
           <p className="text-white/70 text-center max-w-[640px] mx-auto mb-16 text-lg leading-relaxed">
-            You talk. Funnel Studio\u2122 builds. Your squeeze page, webinar script, slide deck,
+            You talk. Funnel Studio™ builds. Your squeeze page, webinar script, slide deck,
             email sequences, ad copy, and promo scripts. Built in order, from your story,
             your offer, and your audience. No blank pages. No prompt engineering. No
             second-guessing what comes next.

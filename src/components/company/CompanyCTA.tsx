@@ -35,8 +35,18 @@ export default function CompanyCTA() {
           </p>
         </FadeUp>
 
-        {/* Webinar details card */}
+        {/* Founding member counter */}
         <FadeUp delay={0.2}>
+          <div className="flex items-center justify-center gap-2 mb-8">
+            <div className="w-2 h-2 rounded-full bg-green animate-pulse" />
+            <p className="text-white/70 text-sm font-medium">
+              14 of 50 founding member spots claimed
+            </p>
+          </div>
+        </FadeUp>
+
+        {/* Webinar details card */}
+        <FadeUp delay={0.25}>
           <div className="bg-card-bg border border-green/30 rounded-2xl p-8 max-w-[480px] mx-auto mb-10">
             <p className="text-white font-bold text-lg mb-4">Not One Funnel Away. One Funnel Today.</p>
             <div className="space-y-2 text-sm text-white/70 mb-6">
@@ -54,7 +64,7 @@ export default function CompanyCTA() {
           </div>
         </FadeUp>
 
-        <FadeUp delay={0.3}>
+        <FadeUp delay={0.35}>
           <p className="text-white/40 text-sm max-w-[500px] mx-auto">
             This is a free live webinar. Founding member pricing is available exclusively
             to live attendees. No purchase necessary to attend.
