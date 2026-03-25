@@ -9,18 +9,24 @@ export default function CompanyCTA() {
 
       <div className="relative z-10 max-w-[1100px] mx-auto text-center">
         <FadeUp>
-          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold mb-2">
-            You have the offer. You have the audience.
-          </h2>
-          <p className="text-[clamp(1.25rem,3vw,1.75rem)] font-semibold bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent mb-6">
-            Now finish the funnel.
+          <p className="text-green text-sm font-semibold tracking-wide uppercase mb-6">
+            Free Live Training
           </p>
+          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold mb-8">
+            Stop building funnels. Start launching them.
+          </h2>
         </FadeUp>
 
         <FadeUp delay={0.1}>
-          <p className="text-white/70 text-lg max-w-[600px] mx-auto mb-10 leading-relaxed">
-            Founding member beta is open. Limited spots. Lifetime access at founding
-            pricing for the people who show up first.
+          <p className="text-white/70 text-lg max-w-[650px] mx-auto mb-4 leading-relaxed">
+            On this free live training, I will show you exactly how I went from staring
+            at a blank page to launching a complete funnel ecosystem from a single
+            15-minute conversation. You will see the Brain Dump™. You will see the output.
+            And you will leave with a clear path to launching yours.
+          </p>
+          <p className="text-white/40 text-sm max-w-[550px] mx-auto mb-10">
+            This is for entrepreneurs with an offer the world needs. Not tire-kickers.
+            Not spectators. Founders who are ready to move.
           </p>
         </FadeUp>
 
