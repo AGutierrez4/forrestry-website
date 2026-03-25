@@ -31,9 +31,6 @@ export default function CompanyCTA() {
           >
             Reserve My Free Seat
           </a>
-          <p className="text-white/40 text-sm mt-4">
-            No credit card required. Apply in 60 seconds.
-          </p>
         </FadeUp>
       </div>
     </section>

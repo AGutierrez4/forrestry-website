@@ -4,7 +4,7 @@ const painPoints = [
   { emoji: '⏳', text: 'You open the AI tool, hit generate, and the output reads like it was written for nobody' },
   { emoji: '📝', text: 'You have 6 tabs open, 3 subscriptions running, and still no launch date' },
   { emoji: '😶', text: "You know what a high-converting funnel looks like. You just can't get yours to look like that." },
-  { emoji: '🔥', text: 'You start to wonder if maybe this just is not for you. (It is.)' },
+  { emoji: '🔥', text: 'You start to wonder if maybe this just is not for you.\n(It is.)' },
 ]
 
 export default function Problem() {
@@ -13,7 +13,7 @@ export default function Problem() {
       <div className="max-w-[1100px] mx-auto">
         <FadeUp>
           <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
-            The Problem
+            Sound Familiar?
           </p>
         </FadeUp>
 
@@ -42,7 +42,7 @@ export default function Problem() {
             <FadeUp key={i} delay={0.15 * i}>
               <div className="bg-card-bg border border-card-border rounded-2xl p-6 text-center hover:border-green/30 transition-colors">
                 <span className="text-3xl mb-3 block">{point.emoji}</span>
-                <p className="text-white/80 font-medium">{point.text}</p>
+                <p className="text-white/80 font-medium whitespace-pre-line">{point.text}</p>
               </div>
             </FadeUp>
           ))}

@@ -5,12 +5,13 @@ const products = [
     name: 'Funnel Studio™',
     badge: 'Available Now',
     badgeColor: 'bg-green/20 text-green',
-    tagline: 'Talk for 15 minutes. Launch with everything.',
+    tagline: 'One 15-minute Brain Dump™. Everything you need to launch.',
     description:
       'Your webinar script, registration page, email sequences, and ad copy. Built in order, from your story, your offer, and your audience. No blank pages. No guessing what comes next.',
     cta: 'Reserve My Free Seat',
     ctaHref: '#',
     borderClass: 'border-green/30 hover:border-green/50',
+    primary: true,
   },
   {
     name: 'Answer Your Audience',
@@ -22,6 +23,7 @@ const products = [
     cta: 'Join the Waitlist',
     ctaHref: '#',
     borderClass: 'border-card-border hover:border-white/20',
+    primary: false,
   },
   {
     name: 'Website Builder',
@@ -33,6 +35,7 @@ const products = [
     cta: 'Join the Waitlist',
     ctaHref: '#',
     borderClass: 'border-card-border hover:border-white/20',
+    primary: false,
   },
 ]
 
@@ -42,7 +45,7 @@ export default function Products() {
       <div className="max-w-[1100px] mx-auto">
         <FadeUp>
           <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
-            The Solution
+            Meet Funnel Studio™
           </p>
         </FadeUp>
 
@@ -79,7 +82,7 @@ export default function Products() {
                 <a
                   href={product.ctaHref}
                   className={`inline-block text-center px-6 py-3 rounded-xl font-semibold text-sm no-underline transition-all ${
-                    product.ctaHref !== '#'
+                    product.primary
                       ? 'bg-green text-black hover:bg-green/90'
                       : 'border border-white/20 text-white/70 hover:border-white/40 hover:text-white'
                   }`}

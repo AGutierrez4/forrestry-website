@@ -6,7 +6,7 @@ export default function Founder() {
       <div className="max-w-[1100px] mx-auto">
         <FadeUp>
           <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
-            The Founder
+            The Story Behind the Tool
           </p>
         </FadeUp>
 

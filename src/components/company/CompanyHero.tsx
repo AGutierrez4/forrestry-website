@@ -35,8 +35,11 @@ export default function CompanyHero() {
           </p>
         </FadeUp>
 
-        {/* CTAs */}
+        {/* Webinar teaser + CTAs */}
         <FadeUp delay={0.3}>
+          <p className="text-white/50 text-sm mb-4">
+            Free live training. Limited seats.
+          </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <a
               href="#"
@@ -51,13 +54,6 @@ export default function CompanyHero() {
               See How It Works
             </a>
           </div>
-        </FadeUp>
-
-        {/* Social proof line */}
-        <FadeUp delay={0.4}>
-          <p className="text-white/50 text-sm">
-            Founding member beta. Limited spots. No credit card required.
-          </p>
         </FadeUp>
       </div>
     </section>
