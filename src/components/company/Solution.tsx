@@ -1,20 +1,22 @@
 import FadeUp from '../FadeUp'
+import { Brain, Hammer, Rocket } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 
-const steps = [
+const steps: { icon: LucideIcon; title: string; description: string }[] = [
   {
-    num: 1,
+    icon: Brain,
     title: 'Brain Dump™',
     description:
       'Tell Funnel Studio™ your story, your offer, and who you serve. No prompts to engineer. No templates to fill out. Just a conversation.',
   },
   {
-    num: 2,
+    icon: Hammer,
     title: 'Build',
     description:
       'Funnel Studio™ builds your entire launch stack. Stage by stage, in the right order. So nothing gets missed and nothing gets skipped.',
   },
   {
-    num: 3,
+    icon: Rocket,
     title: 'Launch',
     description:
       'Go live with a complete funnel ecosystem. Not a template. Not a starting point. A launch-ready system built from your words.',
@@ -49,10 +51,10 @@ export default function Solution() {
         {/* Desktop: horizontal stepper */}
         <div className="hidden md:grid grid-cols-3 gap-8">
           {steps.map((step, i) => (
-            <FadeUp key={step.num} delay={0.15 * i}>
+            <FadeUp key={step.title} delay={0.15 * i}>
               <div className="text-center">
-                <div className="w-14 h-14 rounded-full bg-green text-black font-bold text-xl flex items-center justify-center mx-auto mb-5">
-                  {step.num}
+                <div className="w-14 h-14 rounded-full bg-green text-black flex items-center justify-center mx-auto mb-5">
+                  <step.icon size={28} strokeWidth={2} />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
                 <p className="text-white/60 text-sm leading-relaxed">{step.description}</p>
@@ -64,11 +66,11 @@ export default function Solution() {
         {/* Mobile: vertical stepper */}
         <div className="md:hidden flex flex-col gap-10">
           {steps.map((step, i) => (
-            <FadeUp key={step.num} delay={0.15 * i}>
+            <FadeUp key={step.title} delay={0.15 * i}>
               <div className="flex gap-5">
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full bg-green text-black font-bold text-lg flex items-center justify-center shrink-0">
-                    {step.num}
+                  <div className="w-12 h-12 rounded-full bg-green text-black flex items-center justify-center shrink-0">
+                    <step.icon size={24} strokeWidth={2} />
                   </div>
                   {i < steps.length - 1 && (
                     <div className="w-px flex-1 bg-green/30 mt-3" />
