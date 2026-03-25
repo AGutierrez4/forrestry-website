@@ -6,13 +6,13 @@ export default function Founder() {
       <div className="max-w-[1100px] mx-auto">
         <FadeUp>
           <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
-            Why We Built This
+            The Founder
           </p>
         </FadeUp>
 
         <FadeUp delay={0.1}>
           <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-14">
-            You've been doing this alone long enough.
+            I built the tool I wish existed when I walked away.
           </h2>
         </FadeUp>
 
@@ -32,15 +32,18 @@ export default function Founder() {
               <h3 className="text-xl font-bold text-white mb-1">Andrew Gutierrez</h3>
               <p className="text-green text-sm font-medium mb-5">Founder, Forrestry.ai</p>
               <p className="text-white/70 leading-relaxed mb-4">
-                I was you. Great idea, real drive, and a graveyard of half-built funnels to
-                show for it. Not because I lacked the strategy. Because every tool I tried
-                made me do more work, not less. I built Forrestry.ai for the founder who is
-                ready to launch but keeps getting buried before they get there. You don't need
-                another tool that hands you a blank page. You need a system that builds with you.
+                I found the funnel world in 2019 and the learning curve stopped me cold.
+                The copy, the design, the tech, the strategy. All of it, at once. I walked
+                away and spent the next several years earning my stripes in marketing with
+                global brands, local businesses, and everyone in between. When I came back
+                in 2025, ready to launch my own offer, I sat down with the best AI tools
+                available and felt my heart sink. The output was thin. Generic. And I was
+                still staring down weeks of real work. So I stopped building my funnel and
+                started building the tool that should have existed already.
               </p>
               <p className="text-white/50 text-sm italic">
-                We're not just building tools. We're building the Forresters. A community
-                of founders who actually launch.
+                This is not a magic button. It takes real work from you. But the 80 hours
+                of writing, designing, and second-guessing? That part is over.
               </p>
             </div>
           </div>

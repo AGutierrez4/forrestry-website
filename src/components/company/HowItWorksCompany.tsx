@@ -3,21 +3,21 @@ import FadeUp from '../FadeUp'
 const steps = [
   {
     num: 1,
-    title: 'Brain Dump',
+    title: 'Brain Dump™',
     description:
-      'Tell Funnel Studio your idea, your audience, and your offer. No prompts to engineer. No frameworks to learn. Just talk.',
+      'Tell Funnel Studio™ your story, your offer, and who you serve. No prompts to engineer. No templates to fill out. Just a conversation.',
   },
   {
     num: 2,
     title: 'Build',
     description:
-      'Watch your funnel take shape, stage by stage. Webinar script. Registration page. Email sequence. Ad copy. In order, every time.',
+      'Funnel Studio™ builds your entire launch stack. Squeeze page. Webinar script. Slide deck. Email sequences. Social ads. Promo scripts. Stage by stage, in the right order.',
   },
   {
     num: 3,
     title: 'Launch',
     description:
-      'Go live with a complete, conversion-ready funnel. In hours, not months.',
+      'Go live with a complete funnel ecosystem. Not a template. Not a starting point. A launch-ready system built from your words.',
   },
 ]
 

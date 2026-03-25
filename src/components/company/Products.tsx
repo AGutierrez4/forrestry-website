@@ -2,14 +2,14 @@ import FadeUp from '../FadeUp'
 
 const products = [
   {
-    name: 'Funnel Studio',
+    name: 'Funnel Studio™',
     badge: 'Available Now',
     badgeColor: 'bg-green/20 text-green',
-    tagline: 'Your entire funnel. Built stage by stage.',
+    tagline: 'Talk for 15 minutes. Launch with everything.',
     description:
-      'Brain Dump your idea once. Funnel Studio builds your webinar script, registration page, email sequence, and ad copy in order. No blank pages. No guessing what comes next.',
-    cta: 'Claim Founding Member Access',
-    ctaHref: 'https://app.funnelstudio.forrestry.ai',
+      'Your webinar script, registration page, email sequences, and ad copy. Built in order, from your story, your offer, and your audience. No blank pages. No guessing what comes next.',
+    cta: 'Reserve My Free Seat',
+    ctaHref: '#',
     borderClass: 'border-green/30 hover:border-green/50',
   },
   {
@@ -48,14 +48,15 @@ export default function Products() {
 
         <FadeUp delay={0.1}>
           <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-4">
-            Your funnel. Built in the right order.
+            One conversation. Every asset you need to launch.
           </h2>
         </FadeUp>
 
         <FadeUp delay={0.15}>
           <p className="text-white/70 text-center max-w-[700px] mx-auto mb-14 text-lg leading-relaxed">
-            Funnel Studio doesn't hand you a blank page. It walks you through every stage of
-            your launch, in sequence, so nothing falls through the cracks.
+            You talk. Funnel Studio™ builds. Squeeze page, webinar script, email sequences,
+            ad copy, promo scripts. Stage by stage, in the right order, so nothing gets
+            missed and nothing gets skipped.
           </p>
         </FadeUp>
 

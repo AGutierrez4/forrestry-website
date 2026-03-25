@@ -11,17 +11,17 @@ export default function CompanyHero() {
         {/* Eyebrow */}
         <FadeUp>
           <p className="text-green text-sm font-semibold tracking-wide uppercase mb-6">
-            For Entrepreneurs Who Are Done Waiting
+            You have the offer. You have the audience. Now finish the funnel.
           </p>
         </FadeUp>
 
         {/* Headline */}
         <FadeUp delay={0.1}>
           <h1 className="text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-[1.1] mb-6">
-            <span className="text-white">Do more. Build less.</span>
+            <span className="text-white">Your entire funnel.</span>
             <br />
             <span className="bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent">
-              Launch faster.
+              Built from one conversation.
             </span>
           </h1>
         </FadeUp>
@@ -29,8 +29,9 @@ export default function CompanyHero() {
         {/* Subheadline */}
         <FadeUp delay={0.2}>
           <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-white/70 mb-10 max-w-[700px] mx-auto leading-relaxed">
-            You have the idea. You have the drive. The only thing standing between you and a
-            live, revenue-generating funnel is the friction. We remove it.
+            The squeeze page. The webinar script. The email sequences. The ad copy.
+            The entire launch stack that used to take weeks of writing, designing, and
+            second-guessing. Built for you, in order, from a single Brain Dump™ conversation.
           </p>
         </FadeUp>
 
@@ -38,10 +39,10 @@ export default function CompanyHero() {
         <FadeUp delay={0.3}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <a
-              href="https://app.funnelstudio.forrestry.ai"
+              href="#"
               className="inline-block px-10 py-4 rounded-xl bg-green text-[#0A0A0A] font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all"
             >
-              Claim Founding Member Access
+              Reserve My Free Seat
             </a>
             <a
               href="#solution"
@@ -55,7 +56,7 @@ export default function CompanyHero() {
         {/* Social proof line */}
         <FadeUp delay={0.4}>
           <p className="text-white/50 text-sm">
-            Founding member spots are limited. No credit card required to apply.
+            Founding member beta. Limited spots. No credit card required.
           </p>
         </FadeUp>
       </div>

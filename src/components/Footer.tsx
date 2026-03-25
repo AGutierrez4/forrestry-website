@@ -45,7 +45,7 @@ export default function Footer({
             </a>
           ))}
         </div>
-        <p className="text-muted text-sm">© 2025 Forrestry.ai. All rights reserved.</p>
+        <p className="text-muted text-sm">© 2026 Forrestry.ai. All rights reserved.</p>
       </div>
     </footer>
   )

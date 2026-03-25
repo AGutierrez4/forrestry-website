@@ -1,10 +1,10 @@
 import FadeUp from '../FadeUp'
 
 const painPoints = [
-  { emoji: '⏳', text: 'You spend hours on AI prompts that produce nothing usable' },
-  { emoji: '🧩', text: "Your tools don't talk to each other, so you become the glue" },
-  { emoji: '💸', text: "You're paying for 6 platforms to do what one should" },
-  { emoji: '🔥', text: 'You burn out before your funnel ever goes live' },
+  { emoji: '⏳', text: 'You open the AI tool, hit generate, and the output reads like it was written for nobody' },
+  { emoji: '📝', text: 'You have 6 tabs open, 3 subscriptions running, and still no launch date' },
+  { emoji: '😶', text: "You know what a high-converting funnel looks like. You just can't get yours to look like that." },
+  { emoji: '🔥', text: 'You start to wonder if maybe this just is not for you. (It is.)' },
 ]
 
 export default function Problem() {
@@ -19,18 +19,21 @@ export default function Problem() {
 
         <FadeUp delay={0.1}>
           <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-2">
-            You don't have a funnel problem.
+            You know exactly what you need to build.
           </h2>
           <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-8 bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent">
-            You have a friction problem.
+            That was never the problem.
           </h2>
         </FadeUp>
 
         <FadeUp delay={0.2}>
           <p className="text-white/70 text-center max-w-[700px] mx-auto mb-14 text-lg leading-relaxed">
-            Tools like ClickFunnels hand you the bricks and tell you to build a house.
-            You end up being the copywriter, the designer, the strategist, and the tech
-            person all at once. That's not a tool. That's a second job.
+            You have the offer. You know your audience. You could probably sketch the funnel
+            on a napkin right now. But then you sit down to actually build it, and the real
+            work starts. The long-form squeeze page. The 60-minute webinar script. The slide
+            deck. The email sequences. The social ads. Every single asset has to be written,
+            designed, and tested before you ever see a dollar. That is not a strategy problem.
+            That is a system problem.
           </p>
         </FadeUp>
 

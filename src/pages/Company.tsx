@@ -26,8 +26,8 @@ export default function Company() {
     <>
       <Navbar
         links={companyNavLinks}
-        ctaText="Claim Founding Access"
-        ctaHref="https://app.funnelstudio.forrestry.ai"
+        ctaText="Reserve My Seat"
+        ctaHref="#"
         signInHref="https://app.funnelstudio.forrestry.ai"
         logoHref="/"
       />
@@ -39,7 +39,7 @@ export default function Company() {
       <CompanyCTA />
       <Footer
         links={companyFooterLinks}
-        tagline="Do more. Build less. Launch faster."
+        tagline="Stop building. Start launching."
       />
     </>
   )
