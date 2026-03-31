@@ -49,8 +49,11 @@ const cards: BentoCard[] = [
 
 export default function StudioBento() {
   return (
-    <section id="studio" className="py-24 px-6">
-      <div className="max-w-[1100px] mx-auto">
+    <section id="studio" className="py-24 px-6 relative overflow-hidden">
+      {/* Forest haze glow behind bento */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-[#16261C]/40 rounded-full blur-[150px] pointer-events-none" />
+
+      <div className="relative z-10 max-w-[1100px] mx-auto">
         <FadeUp>
           <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
             The Product

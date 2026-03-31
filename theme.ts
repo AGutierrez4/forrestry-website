@@ -25,14 +25,14 @@ export const theme = {
       textSecondary: '#78716C', // Warm gray
     },
 
-    // Dark mode colors - Nature-Distilled deep forest
+    // Dark mode colors - Elite SaaS: Deep Slate & Electric Mint
     dark: {
-      bg: '#0B1C10',         // Deep forest green
-      surface: '#0F2416',    // Elevated forest
-      card: '#132E1A',       // Card surface
-      border: '#1A3D22',     // Forest border
-      textPrimary: '#F0EDE6', // Alabaster text
-      textSecondary: '#8A9A8E', // Slate gray
+      bg: '#09090B',         // Rich black
+      surface: '#111111',    // Deep charcoal
+      card: '#111111',       // Card surface
+      border: '#1F1F1F',     // Subtle neutral border
+      textPrimary: '#FFFFFF', // Pure white
+      textSecondary: '#A1A1AA', // Cool gray
     }
   },
 

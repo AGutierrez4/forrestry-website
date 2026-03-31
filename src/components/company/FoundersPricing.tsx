@@ -19,7 +19,7 @@ export default function FoundersPricing() {
         <FadeUp delay={0.2}>
           <div className="relative rounded-2xl border border-green/40 bg-card-bg p-8 shadow-[0_0_60px_rgba(74,222,128,0.1)]">
             {/* Founders badge */}
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-green text-[#0B1C10] px-5 py-1.5 rounded-full text-xs font-bold whitespace-nowrap">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-green text-black px-5 py-1.5 rounded-full text-xs font-bold whitespace-nowrap">
               Founding Member — Limited to 100 Spots
             </div>
 
@@ -55,7 +55,7 @@ export default function FoundersPricing() {
 
             <a
               href="https://buy.stripe.com/founders"
-              className="block w-full py-4 rounded-xl bg-green text-[#0B1C10] font-bold text-lg text-center no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all"
+              className="block w-full py-4 rounded-xl bg-green text-black font-bold text-lg text-center no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all"
             >
               Claim Your Founders Spot
             </a>

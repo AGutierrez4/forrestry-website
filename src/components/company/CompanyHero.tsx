@@ -16,7 +16,7 @@ export default function CompanyHero() {
 
         <FadeUp delay={0.1}>
           <h1 className="text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-[1.1] mb-6">
-            <span className="text-text">Build your entire funnel from</span>
+            <span className="text-white">Build your entire funnel from</span>
             <br />
             <span className="bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent">
               a 15-minute conversation.
@@ -34,7 +34,7 @@ export default function CompanyHero() {
         <FadeUp delay={0.3}>
           <a
             href="#pricing"
-            className="inline-block px-10 py-4 rounded-xl bg-green text-[#0B1C10] font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all mb-4"
+            className="inline-block px-10 py-4 rounded-xl bg-green text-black font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all mb-4"
           >
             Claim Your Founders Spot — $49/mo
           </a>

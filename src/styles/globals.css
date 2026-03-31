@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  /* Nature-Distilled palette */
-  --color-bg: #0B1C10;
-  --color-bg-elevated: #0F2416;
-  --color-bg-footer: #081A0D;
+  /* Elite SaaS: Deep Slate & Electric Mint */
+  --color-bg: #09090B;
+  --color-bg-elevated: #111111;
+  --color-bg-footer: #050505;
   --color-green: #4ADE80;
-  --color-green-bright: #00FF88;
+  --color-green-bright: #00FF85;
   --color-purple: #7C3AED;
-  --color-text: #F0EDE6;
-  --color-muted: #8A9A8E;
-  --color-card-bg: rgba(255, 255, 255, 0.04);
-  --color-card-border: rgba(255, 255, 255, 0.08);
-  --color-slate: #6B7C72;
+  --color-text: #FFFFFF;
+  --color-muted: #A1A1AA;
+  --color-card-bg: #111111;
+  --color-card-border: #1F1F1F;
+  --color-forest-haze: #16261C;
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
 }
 

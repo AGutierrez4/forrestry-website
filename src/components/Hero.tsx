@@ -48,7 +48,7 @@ export default function Hero() {
           <div className="mb-4">
             <a
               href="https://app.forrestry.ai/register"
-              className="inline-block px-10 py-4 rounded-xl bg-green text-[#0B1C10] font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all"
+              className="inline-block px-10 py-4 rounded-xl bg-green text-black font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all"
             >
               Claim Your Founding Member Access →
             </a>
