@@ -32,7 +32,7 @@ export default function CompanyCTA() {
             Claim Your Founders Spot — $49/mo
           </a>
           <p className="text-muted/60 text-sm">
-            No credit card required to explore. Apply in 60 seconds.
+            Cancel anytime. Your founding rate stays locked forever.
           </p>
         </FadeUp>
       </div>
