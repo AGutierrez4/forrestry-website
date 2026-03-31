@@ -44,12 +44,16 @@ export default function Founder() {
                 building my funnel and started building the tool that should have existed
                 already.
               </p>
-              <blockquote className="border-l-4 border-green pl-4">
+              <blockquote className="border-l-4 border-green pl-4 mb-5">
                 <p className="text-green italic text-lg leading-relaxed">
                   "This is not a magic button. It takes real work from you. But the 80
                   hours of writing, designing, and second-guessing? That part is over."
                 </p>
               </blockquote>
+              <p className="text-muted text-sm leading-relaxed">
+                I used Funnel Studio to build this exact page. All 100 founding spots
+                are available until they are gone.
+              </p>
             </div>
           </div>
         </FadeUp>

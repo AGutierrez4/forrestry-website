@@ -25,14 +25,14 @@ export const theme = {
       textSecondary: '#78716C', // Warm gray
     },
 
-    // Dark mode colors - Deep charcoal with navy undertones
+    // Dark mode colors - Nature-Distilled deep forest
     dark: {
-      bg: '#07070F',         // Deep charcoal (not pure black)
-      surface: '#0D0D15',    // Lighter charcoal
-      card: '#12121A',       // Card surface
-      border: '#1F1F1F',     // Subtle border
-      textPrimary: '#FFFFFF',
-      textSecondary: '#9CA3AF',
+      bg: '#0B1C10',         // Deep forest green
+      surface: '#0F2416',    // Elevated forest
+      card: '#132E1A',       // Card surface
+      border: '#1A3D22',     // Forest border
+      textPrimary: '#F0EDE6', // Alabaster text
+      textSecondary: '#8A9A8E', // Slate gray
     }
   },
 

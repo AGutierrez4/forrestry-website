@@ -10,38 +10,48 @@ export default function CompanyHero() {
       <div className="relative z-10 max-w-[1100px] mx-auto px-6 text-center">
         <FadeUp>
           <p className="text-green text-sm font-semibold tracking-wide uppercase mb-6">
-            Free Live Webinar — Founding Member Beta — Limited Seats
+            Founding Member Beta — Limited to First 100
           </p>
         </FadeUp>
 
         <FadeUp delay={0.1}>
           <h1 className="text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-[1.1] mb-6">
-            <span className="text-white">Not One Funnel Away.</span>
+            <span className="text-text">Build your entire funnel from</span>
             <br />
             <span className="bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent">
-              One Funnel Today.
+              a 15-minute conversation.
             </span>
           </h1>
         </FadeUp>
 
         <FadeUp delay={0.2}>
-          <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-white/70 mb-10 max-w-[600px] mx-auto leading-relaxed">
-            You have the offer. You have the audience. The only thing standing between
-            you and launch day is the 80-hour funnel stack nobody warned you about.
-            This free live webinar changes that.
+          <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-muted mb-10 max-w-[640px] mx-auto leading-relaxed">
+            Forrestry.ai turns your story into a launch-ready ecosystem of ads, emails,
+            and the Perfect Webinar. No more 80-hour grinds.
           </p>
         </FadeUp>
 
         <FadeUp delay={0.3}>
           <a
-            href="#"
-            className="inline-block px-10 py-4 rounded-xl bg-green text-[#0A0A0A] font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all mb-4"
+            href="#pricing"
+            className="inline-block px-10 py-4 rounded-xl bg-green text-[#0B1C10] font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all mb-4"
           >
-            Reserve My Free Seat — It's Free
+            Claim Your Founders Spot — $49/mo
           </a>
-          <p className="text-white/40 text-sm">
-            Live. Free. No replay guarantee. Founding member pricing available to live attendees only.
+          <p className="text-muted/60 text-sm">
+            $149/mo after founding spots fill. No credit card required to explore.
           </p>
+        </FadeUp>
+
+        {/* GIF placeholder — Brain Dump demo */}
+        <FadeUp delay={0.4}>
+          <div className="mt-14 max-w-[720px] mx-auto rounded-2xl border border-card-border bg-card-bg overflow-hidden aspect-video flex items-center justify-center">
+            {/* Replace with: <img src="/gifs/brain-dump.gif" alt="Brain Dump demo" className="w-full h-full object-cover" /> */}
+            <div className="text-center px-6">
+              <p className="text-muted text-sm mb-1">GIF_1: Brain Dump Demo</p>
+              <p className="text-muted/50 text-xs">8s loop — messy input → Strategic Blueprint</p>
+            </div>
+          </div>
         </FadeUp>
       </div>
     </section>

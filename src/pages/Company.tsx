@@ -1,20 +1,23 @@
 import Navbar from '../components/Navbar'
 import CompanyHero from '../components/company/CompanyHero'
+import StudioBento from '../components/company/StudioBento'
+import EfficiencyTable from '../components/company/EfficiencyTable'
 import Problem from '../components/company/Problem'
-import RealCost from '../components/company/RealCost'
-import Solution from '../components/company/Solution'
 import Founder from '../components/company/Founder'
+import FoundersPricing from '../components/company/FoundersPricing'
 import CompanyCTA from '../components/company/CompanyCTA'
 import Footer from '../components/Footer'
 
 const companyNavLinks = [
+  { label: 'Product', href: '#studio' },
+  { label: 'Pricing', href: '#pricing' },
   { label: 'About', href: '#founder' },
-  { label: 'Blog', href: '#' },
 ]
 
 const companyFooterLinks = [
+  { label: 'Product', href: '#studio' },
+  { label: 'Pricing', href: '#pricing' },
   { label: 'About', href: '#founder' },
-  { label: 'Blog', href: '#' },
   { label: 'Privacy', href: '#' },
   { label: 'Terms', href: '#' },
 ]
@@ -24,20 +27,21 @@ export default function Company() {
     <>
       <Navbar
         links={companyNavLinks}
-        ctaText="Reserve My Free Seat"
-        ctaHref="#"
-        signInHref=""
+        ctaText="Claim Founders Spot"
+        ctaHref="#pricing"
+        signInHref="https://app.funnelstudio.forrestry.ai"
         logoHref="/"
       />
       <CompanyHero />
+      <StudioBento />
+      <EfficiencyTable />
       <Problem />
-      <RealCost />
-      <Solution />
       <Founder />
+      <FoundersPricing />
       <CompanyCTA />
       <Footer
         links={companyFooterLinks}
-        tagline="Do more. Build less. Launch faster."
+        tagline="Your funnel. Finally finished."
       />
     </>
   )

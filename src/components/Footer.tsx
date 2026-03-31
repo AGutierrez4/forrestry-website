@@ -19,7 +19,7 @@ export default function Footer({
   tagline,
 }: FooterProps) {
   return (
-    <footer className="bg-[#080808] border-t border-white/[0.06] py-12 px-6">
+    <footer className="bg-[#081A0D] border-t border-white/[0.06] py-12 px-6">
       <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex flex-col items-center md:items-start gap-1">
           <div className="flex items-center gap-2">
