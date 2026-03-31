@@ -6,7 +6,7 @@ const steps = [
     time: '⏱ 10 min → Clarity',
     icon: '🧠',
     iconBg: 'bg-white/[0.08]',
-    title: 'Brain Dump',
+    title: 'Brain Dump™',
     subtitle: 'Turn a messy idea into a strategic offer',
     desc: 'Dump everything you know about your offer, your audience, and your story. The AI organizes it into a strategic foundation — your Big Domino, your hook, your transformation.',
     highlighted: false,
@@ -79,7 +79,7 @@ export default function HowItWorks() {
               Built in the right order.
             </h3>
             <p className="text-muted text-lg max-w-[700px] mx-auto leading-relaxed">
-              Every tool in Funnel Studio maps to a stage in your launch journey — so nothing
+              Every tool in Funnel Studio™ maps to a stage in your launch journey — so nothing
               falls through the cracks and nothing slows you down.
             </p>
           </div>

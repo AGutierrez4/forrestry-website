@@ -1,7 +1,7 @@
 import FadeUp from '../FadeUp'
 
 const rows = [
-  { label: 'Time to launch', manual: '80+ hours', forrestry: '15-minute Brain Dump' },
+  { label: 'Time to launch', manual: '80+ hours', forrestry: '15-minute Brain Dump™' },
   { label: 'Cost', manual: '$10k+ agency fees', forrestry: '$49/mo Founders Rate' },
   { label: 'Tool stack', manual: '6 tabs, 3 subscriptions', forrestry: 'One platform' },
   { label: 'AI output quality', manual: 'Thin, generic, written for nobody', forrestry: 'Built from your story, your voice' },
@@ -33,7 +33,7 @@ export default function EfficiencyTable() {
                 <tr>
                   <th className="text-left text-muted text-xs uppercase tracking-wider pb-4 pr-4 font-medium"></th>
                   <th className="text-left text-muted/60 text-xs uppercase tracking-wider pb-4 px-4 font-medium">The Manual Way</th>
-                  <th className="text-left text-green text-xs uppercase tracking-wider pb-4 pl-4 font-medium">The Forrestry Way</th>
+                  <th className="text-left text-green text-xs uppercase tracking-wider pb-4 pl-4 font-medium">The Funnel Studio™ Way</th>
                 </tr>
               </thead>
               <tbody>

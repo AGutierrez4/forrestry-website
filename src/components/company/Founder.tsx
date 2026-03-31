@@ -51,7 +51,7 @@ export default function Founder() {
                 </p>
               </blockquote>
               <p className="text-muted text-sm leading-relaxed">
-                I used Funnel Studio to build this exact page. All 100 founding spots
+                I used Funnel Studio™ to build this exact page. All 100 founding spots
                 are available until they are gone.
               </p>
             </div>

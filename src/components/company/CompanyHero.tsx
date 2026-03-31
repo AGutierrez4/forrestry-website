@@ -25,8 +25,11 @@ export default function CompanyHero() {
         </FadeUp>
 
         <FadeUp delay={0.2}>
+          <p className="text-green text-base font-semibold mb-2">
+            forrestry.ai introduces Funnel Studio™
+          </p>
           <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-muted mb-10 max-w-[640px] mx-auto leading-relaxed">
-            Forrestry.ai turns your story into a launch-ready ecosystem of ads, emails,
+            Funnel Studio™ turns your story into a launch-ready ecosystem of ads, emails,
             and the Perfect Webinar. No more 80-hour grinds.
           </p>
         </FadeUp>
@@ -43,12 +46,12 @@ export default function CompanyHero() {
           </p>
         </FadeUp>
 
-        {/* GIF placeholder — Brain Dump demo */}
+        {/* GIF placeholder — Brain Dump™ demo */}
         <FadeUp delay={0.4}>
           <div className="mt-14 max-w-[720px] mx-auto rounded-2xl border border-card-border bg-card-bg overflow-hidden aspect-video flex items-center justify-center">
-            {/* Replace with: <img src="/gifs/brain-dump.gif" alt="Brain Dump demo" className="w-full h-full object-cover" /> */}
+            {/* Replace with: <img src="/gifs/brain-dump.gif" alt="Brain Dump™ demo" className="w-full h-full object-cover" /> */}
             <div className="text-center px-6">
-              <p className="text-muted text-sm mb-1">GIF_1: Brain Dump Demo</p>
+              <p className="text-muted text-sm mb-1">GIF_1: Brain Dump™ Demo</p>
               <p className="text-muted/50 text-xs">8s loop — messy input → Strategic Blueprint</p>
             </div>
           </div>

@@ -30,21 +30,21 @@ export default function FoundersPricing() {
                 <span className="text-muted text-lg">/mo</span>
               </div>
               <p className="text-green text-sm font-semibold mt-1">
-                67% off — Founders only
+                67% off — Founding Members Only
               </p>
             </div>
 
             <ul className="flex flex-col gap-3 mb-8">
               {[
                 'Unlimited funnels',
-                'AI copywriting from your Brain Dump',
+                'AI copywriting from your Brain Dump™',
                 'Perfect Webinar script builder',
                 'Email sequence generator',
                 'Social ad copy (Cold, Warm, Hot)',
                 '60-Second Hook scripts',
                 'Strategic Blueprint',
                 'Priority support',
-                'Lifetime founding rate',
+                '2 year founding rate',
               ].map((feature) => (
                 <li key={feature} className="flex items-start gap-3 text-sm text-text">
                   <span className="text-green shrink-0 mt-0.5">✓</span>
@@ -61,7 +61,7 @@ export default function FoundersPricing() {
             </a>
 
             <p className="text-muted/50 text-xs text-center mt-4">
-              Cancel anytime. No long-term commitment. Your rate stays locked forever.
+              Cancel anytime. 2 year price lock guarantee.
             </p>
           </div>
         </FadeUp>
@@ -72,15 +72,6 @@ export default function FoundersPricing() {
             <p className="text-muted text-sm leading-relaxed">
               <span className="text-text font-semibold">30-Day "Launch or Don't Pay" Guarantee.</span>{' '}
               Build your funnel. Launch it. If you are not live in 30 days, full refund. No questions.
-            </p>
-          </div>
-        </FadeUp>
-
-        {/* Upsell teaser */}
-        <FadeUp delay={0.35}>
-          <div className="mt-6 text-center">
-            <p className="text-muted/50 text-sm">
-              Need hands-on help? Done-With-You (20 spots/mo) and Done-For-You (5 spots/mo) coming soon.
             </p>
           </div>
         </FadeUp>

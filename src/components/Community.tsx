@@ -3,7 +3,7 @@ import FadeUp from './FadeUp'
 const activities = [
   { initials: 'MR', name: 'Marcus R.', action: 'Launched his coaching funnel 🚀', time: '2m ago' },
   { initials: 'JL', name: 'Jamie L.', action: 'Generated first webinar script ✍️', time: '14m ago' },
-  { initials: 'TK', name: 'Tanya K.', action: 'Completed Brain Dump → Offer 🧠', time: '31m ago' },
+  { initials: 'TK', name: 'Tanya K.', action: 'Completed Brain Dump™ → Offer 🧠', time: '31m ago' },
   { initials: 'DS', name: 'Derek S.', action: 'First registration page live 🎉', time: '1h ago' },
 ]
 

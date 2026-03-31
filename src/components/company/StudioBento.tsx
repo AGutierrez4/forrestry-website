@@ -65,7 +65,7 @@ export default function StudioBento() {
             One Strategic Blueprint. Six High-Conversion Engines.
           </h2>
           <p className="text-muted text-center max-w-[600px] mx-auto mb-14 text-lg leading-relaxed">
-            Every asset your launch needs, built from a single Brain Dump conversation.
+            Every asset your launch needs, built from a single Brain Dump™ conversation.
           </p>
         </FadeUp>
 
