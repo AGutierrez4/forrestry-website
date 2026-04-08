@@ -6,7 +6,7 @@ export default function Founder() {
       <div className="max-w-[1100px] mx-auto">
         <FadeUp>
           <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
-            The Story Behind the Tool
+            We Have Been Where You Are
           </p>
         </FadeUp>
 
@@ -31,6 +31,11 @@ export default function Founder() {
             <div className="text-center md:text-left flex-1">
               <h3 className="text-xl font-bold text-white mb-1">Andrew Gutierrez</h3>
               <p className="text-green text-sm font-medium mb-5">Founder, Forrestry.ai</p>
+              <p className="text-white/70 leading-relaxed mb-4">
+                If you have ever stared at a blank page knowing exactly what your funnel
+                should look like but not being able to get it out of your head and onto
+                the screen, this tool was built for that moment.
+              </p>
               <p className="text-white/70 leading-relaxed mb-4">
                 I found the funnel world in 2019 and the learning curve stopped me cold.
                 The copy, the design, the tech, the strategy. All of it, at once. I walked
