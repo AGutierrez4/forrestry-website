@@ -9,17 +9,17 @@ import CompanyCTA from '../components/company/CompanyCTA'
 import Footer from '../components/Footer'
 
 const companyNavLinks = [
-  { label: 'Product', href: '#studio' },
-  { label: 'Pricing', href: '#pricing' },
-  { label: 'About', href: '#founder' },
+  { label: 'Product', href: '/#studio' },
+  { label: 'Pricing', href: '/pricing' },
+  { label: 'About', href: '/about' },
 ]
 
 const companyFooterLinks = [
-  { label: 'Product', href: '#studio' },
-  { label: 'Pricing', href: '#pricing' },
-  { label: 'About', href: '#founder' },
-  { label: 'Privacy', href: '#' },
-  { label: 'Terms', href: '#' },
+  { label: 'Product', href: '/#studio' },
+  { label: 'Pricing', href: '/pricing' },
+  { label: 'About', href: '/about' },
+  { label: 'Privacy', href: '/privacy' },
+  { label: 'Terms', href: '/terms' },
 ]
 
 export default function Company() {
@@ -28,7 +28,7 @@ export default function Company() {
       <Navbar
         links={companyNavLinks}
         ctaText="Claim Founders Spot"
-        ctaHref="#pricing"
+        ctaHref="/pricing#pricing"
         signInHref="https://app.funnelstudio.forrestry.ai"
         logoHref="/"
       />

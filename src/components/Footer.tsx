@@ -9,9 +9,9 @@ interface FooterProps {
 }
 
 const defaultLinks: FooterLink[] = [
-  { label: 'Privacy', href: '#' },
-  { label: 'Terms', href: '#' },
-  { label: 'Contact', href: '#' },
+  { label: 'Privacy', href: '/privacy' },
+  { label: 'Terms', href: '/terms' },
+  { label: 'Contact', href: 'mailto:support@forrestry.ai' },
 ]
 
 export default function Footer({
