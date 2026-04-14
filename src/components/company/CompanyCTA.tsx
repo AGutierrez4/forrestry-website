@@ -19,7 +19,7 @@ export default function CompanyCTA() {
 
         <FadeUp delay={0.1}>
           <p className="text-muted text-lg max-w-[560px] mx-auto mb-10 leading-relaxed">
-            Founding member spots are open. Limited to the first 100. 2 year price lock
+            Founding member spots are open. Limited to the first 100. 2-year price lock
             at founding pricing for the people who show up first.
           </p>
         </FadeUp>

@@ -44,7 +44,7 @@ export default function FoundersPricing() {
                 '60-Second Hook scripts',
                 'Strategic Blueprint',
                 'Priority support',
-                '2 year founding rate',
+                '2-year founding rate',
               ].map((feature) => (
                 <li key={feature} className="flex items-start gap-3 text-sm text-text">
                   <span className="text-green shrink-0 mt-0.5">✓</span>
@@ -61,7 +61,7 @@ export default function FoundersPricing() {
             </a>
 
             <p className="text-muted/50 text-xs text-center mt-4">
-              Cancel anytime. 2 year price lock guarantee.
+              Cancel anytime. 2-year price lock guarantee.
             </p>
           </div>
         </FadeUp>

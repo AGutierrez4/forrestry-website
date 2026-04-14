@@ -26,7 +26,7 @@ const features: FeatureRow[] = [
     step: 2,
     title: 'Strategic Blueprint',
     description:
-      'You talk. It organizes. The Blueprint captures your story, your offer, and your audience into a structured strategy that steers every asset Funnel Studio™ builds.',
+      'Your Brain Dump™, organized. The Strategic Blueprint is automatically generated from your conversation. It captures your story, your offer, and your audience into a structured strategy that steers every asset Funnel Studio™ builds.',
     details: [
       'Brand story messaging framework',
       'Audience avatar and pain point mapping',
@@ -111,7 +111,7 @@ export default function StudioBento() {
 
         <FadeUp delay={0.1}>
           <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-4">
-            One Strategic Blueprint. Six High-Conversion Engines.
+            One conversation. Seven launch-ready engines.
           </h2>
           <p className="text-muted text-center max-w-[600px] mx-auto mb-20 text-lg leading-relaxed">
             Every asset your launch needs, built from a single Brain Dump™ conversation.
