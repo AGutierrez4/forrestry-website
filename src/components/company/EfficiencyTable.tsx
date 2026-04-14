@@ -1,7 +1,7 @@
 import FadeUp from '../FadeUp'
 
 const rows = [
-  { label: 'Time to launch', manual: '80+ hours', forrestry: '15-minute Brain Dump™' },
+  { label: 'Time to launch', manual: '80+ hours', forrestry: 'Launch in as little as 1 day' },
   { label: 'Cost', manual: '$10k+ agency fees', forrestry: '$49/mo Founders Rate' },
   { label: 'Tool stack', manual: '6 tabs, 3 subscriptions', forrestry: 'One platform' },
   { label: 'AI output quality', manual: 'Thin, generic, written for nobody', forrestry: 'Built from your story, your voice' },

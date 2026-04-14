@@ -14,11 +14,11 @@ const features: FeatureRow[] = [
     step: 1,
     title: 'Brain Dump™',
     description:
-      'It starts with a conversation. Tell Funnel Studio™ your story, your offer, and who you serve. No prompts. No templates. Just talk. The Brain Dump™ captures everything and organizes it into the Strategic Blueprint that steers every asset.',
+      'It starts with a conversation. The Brain Dump™ is a guided chat that captures your story, your offer, and who you serve. No prompts to engineer. No templates to fill out. Just talk, and watch it organize everything into your Strategic Blueprint.',
     details: [
       'Guided conversation, not a form',
       'Works with voice or text',
-      'Feeds every tool that follows',
+      'Maps your input into the Strategic Blueprint',
     ],
     videoSrc: '/Brain-Dump-Demo.webm',
   },
@@ -28,9 +28,9 @@ const features: FeatureRow[] = [
     description:
       'You talk. It organizes. The Blueprint captures your story, your offer, and your audience into a structured strategy that steers every asset Funnel Studio™ builds.',
     details: [
-      'StoryBrand-aligned messaging framework',
+      'Brand story messaging framework',
       'Audience avatar and pain point mapping',
-      'Offer positioning and hook development',
+      'Feeds every tool that follows',
     ],
     videoSrc: '/Strategic Blueprint.webm',
   },
