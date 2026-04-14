@@ -5,6 +5,7 @@ interface BentoCard {
   description: string
   gifId: string
   gifNote: string
+  videoSrc?: string
   span?: string
 }
 
@@ -14,6 +15,7 @@ const cards: BentoCard[] = [
     description: 'The Perfect Webinar script, hard-coded into every build.',
     gifId: 'GIF_2',
     gifNote: '6s — scroll through Three Secrets + The Stack',
+    videoSrc: '/webinar-builder.webm',
   },
   {
     title: '60-Second Hook',
@@ -74,8 +76,19 @@ export default function StudioBento() {
           {cards.map((card, i) => (
             <FadeUp key={card.title} delay={0.1 * i}>
               <div className="bg-card-bg border border-card-border rounded-2xl p-6 hover:border-green/30 transition-colors flex flex-col h-full">
-                {/* GIF slot */}
-                {card.gifId ? (
+                {/* Media slot */}
+                {card.videoSrc ? (
+                  <div className="rounded-xl overflow-hidden mb-4 aspect-video">
+                    <video
+                      src={card.videoSrc}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ) : card.gifId ? (
                   <div className="rounded-xl bg-bg-elevated border border-card-border aspect-video flex items-center justify-center mb-4 overflow-hidden">
                     {/* Replace with: <img src={`/gifs/${card.gifId.toLowerCase().replace('_','-')}.gif`} alt={card.title} className="w-full h-full object-cover" /> */}
                     <div className="text-center px-4">
