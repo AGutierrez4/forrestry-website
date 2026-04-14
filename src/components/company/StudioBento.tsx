@@ -22,6 +22,7 @@ const cards: BentoCard[] = [
     description: 'Stop the scroll on TikTok and Instagram.',
     gifId: 'GIF_3',
     gifNote: '5s — 3 hook variations generating in real-time',
+    videoSrc: '/60-Second-Hook.webm',
   },
   {
     title: 'Funnel Stack',
