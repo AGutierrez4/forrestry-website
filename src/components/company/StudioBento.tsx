@@ -128,11 +128,13 @@ export default function StudioBento() {
                     >
                       {/* Video */}
                       <div className="w-full lg:w-1/2">
-                        <div className="rounded-2xl border border-card-border bg-card-bg overflow-hidden">
-                          <LazyVideo
-                            src={feature.videoSrc}
-                            className="w-full aspect-video object-cover"
-                          />
+                        <div className="rounded-2xl bg-[#1A1A1A] border border-[rgba(74,222,128,0.08)] p-3 shadow-[0_8px_32px_rgba(0,0,0,0.4)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.4),0_0_40px_rgba(74,222,128,0.06)] transition-shadow">
+                          <div className="rounded-xl overflow-hidden">
+                            <LazyVideo
+                              src={feature.videoSrc}
+                              className="w-full aspect-video object-cover"
+                            />
+                          </div>
                         </div>
                       </div>
 
