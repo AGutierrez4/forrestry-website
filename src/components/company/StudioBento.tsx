@@ -42,6 +42,7 @@ const cards: BentoCard[] = [
     description: 'The full 10-15 email nurture sequence, written in your voice.',
     gifId: '',
     gifNote: '',
+    videoSrc: '/Email-Writer.webm',
   },
   {
     title: 'Strategic Blueprint',
