@@ -1,10 +1,10 @@
 import FadeUp from '../FadeUp'
 
-const badges = [
-  { text: 'First funnel launched in 8 hours', delay: 0 },
-  { text: 'Full email sequence generated', delay: 0.15 },
-  { text: 'Webinar script complete', delay: 0.3 },
-  { text: 'Launch-ready in one conversation', delay: 0.45 },
+const steps = [
+  { num: 1, text: 'Squeeze page, upsell, and thank you pages generated' },
+  { num: 2, text: 'Full 60-minute webinar script written from your story' },
+  { num: 3, text: 'Email sequences and social ad copy completed for you' },
+  { num: 4, text: 'Fully functional funnel stack launched in 8 hours' },
 ]
 
 export default function CompanyHero() {
@@ -23,10 +23,10 @@ export default function CompanyHero() {
 
         <FadeUp delay={0.1}>
           <h1 className="text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-[1.1] mb-6">
-            <span className="text-white">Your first satisfying launch</span>
+            <span className="text-white">Your next launch changes everything.</span>
             <br />
             <span className="bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent">
-              starts with one conversation.
+              It starts with one conversation.
             </span>
           </h1>
         </FadeUp>
@@ -51,16 +51,18 @@ export default function CompanyHero() {
           </p>
         </FadeUp>
 
-        {/* Floating social proof badges */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[900px] mx-auto">
-          {badges.map((badge) => (
-            <FadeUp key={badge.text} delay={0.4 + badge.delay}>
+        {/* Sequential outcome steps */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[960px] mx-auto">
+          {steps.map((step, i) => (
+            <FadeUp key={step.num} delay={0.4 + i * 0.1}>
               <div
-                className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/[0.03] border border-white/[0.06] text-left"
-                style={{ animation: `float 3s ease-in-out infinite ${badge.delay}s` }}
+                className="flex items-start gap-3 px-4 py-3.5 rounded-xl bg-white/[0.03] border border-white/[0.06] text-left h-full"
+                style={{ animation: `float 3s ease-in-out infinite ${i * 0.15}s` }}
               >
-                <span className="w-1.5 h-1.5 rounded-full bg-green shrink-0" />
-                <span className="text-[0.8rem] text-white/80 leading-snug">{badge.text}</span>
+                <span className="w-6 h-6 rounded-full bg-green/20 text-green text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
+                  {step.num}
+                </span>
+                <span className="text-[0.8rem] text-white/80 leading-snug">{step.text}</span>
               </div>
             </FadeUp>
           ))}
