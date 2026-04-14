@@ -35,6 +35,7 @@ const cards: BentoCard[] = [
     description: 'Cold, Warm, and Hot copy variations from one conversation.',
     gifId: '',
     gifNote: '',
+    videoSrc: '/Social-Ads-Writer.webm',
   },
   {
     title: 'Email Writer',
