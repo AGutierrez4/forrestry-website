@@ -49,6 +49,7 @@ const cards: BentoCard[] = [
     description: 'The central brain steering your entire GTM stack.',
     gifId: '',
     gifNote: '',
+    videoSrc: '/Strategic Blueprint.webm',
   },
 ]
 
