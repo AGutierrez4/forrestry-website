@@ -12,6 +12,18 @@ interface FeatureRow {
 const features: FeatureRow[] = [
   {
     step: 1,
+    title: 'Brain Dump™',
+    description:
+      'It starts with a conversation. Tell Funnel Studio™ your story, your offer, and who you serve. No prompts. No templates. Just talk. The Brain Dump™ captures everything and organizes it into the Strategic Blueprint that steers every asset.',
+    details: [
+      'Guided conversation, not a form',
+      'Works with voice or text',
+      'Feeds every tool that follows',
+    ],
+    videoSrc: '/Brain-Dump-Demo.webm',
+  },
+  {
+    step: 2,
     title: 'Strategic Blueprint',
     description:
       'You talk. It organizes. The Blueprint captures your story, your offer, and your audience into a structured strategy that steers every asset Funnel Studio™ builds.',
@@ -23,7 +35,7 @@ const features: FeatureRow[] = [
     videoSrc: '/Strategic Blueprint.webm',
   },
   {
-    step: 2,
+    step: 3,
     title: 'Webinar Builder',
     description:
       'The Perfect Webinar script, generated from your Blueprint. Hook, origin story, three secrets, the stack, the close. Every section written in order so the narrative builds the way it should.',
@@ -35,7 +47,7 @@ const features: FeatureRow[] = [
     videoSrc: '/webinar-builder.webm',
   },
   {
-    step: 3,
+    step: 4,
     title: 'Funnel Stack',
     description:
       'Squeeze page, upsell, and VIP pages synced to your Blueprint so the messaging stays consistent from the first ad click to the final checkout. No more Frankenstein funnels.',
@@ -47,7 +59,7 @@ const features: FeatureRow[] = [
     videoSrc: '/Funnel-Stack.webm',
   },
   {
-    step: 4,
+    step: 5,
     title: 'Email Writer',
     description:
       'The full nurture sequence. Pre-show indoctrination, show-day reminders, post-show objection handling, cart close. 10-15 emails written in your voice, not a robot\'s.',
@@ -59,7 +71,7 @@ const features: FeatureRow[] = [
     videoSrc: '/Email-Writer.webm',
   },
   {
-    step: 5,
+    step: 6,
     title: '60-Second Hook',
     description:
       'The scroll-stopper. Short-form video scripts for TikTok and Instagram that actually sound like you. Your organic path to getting eyeballs on your funnel without spending a dollar on ads.',
@@ -71,7 +83,7 @@ const features: FeatureRow[] = [
     videoSrc: '/60-Second-Hook.webm',
   },
   {
-    step: 6,
+    step: 7,
     title: 'Social Ads Writer',
     description:
       'Cold, warm, and hot audiences each get different copy because they are at different stages. Funnel Studio™ knows the difference and writes accordingly.',

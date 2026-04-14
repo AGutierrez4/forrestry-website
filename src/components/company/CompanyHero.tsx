@@ -1,5 +1,11 @@
 import FadeUp from '../FadeUp'
-import LazyVideo from '../LazyVideo'
+
+const badges = [
+  { text: 'First funnel launched in 8 hours', delay: 0 },
+  { text: 'Full email sequence generated', delay: 0.15 },
+  { text: 'Webinar script complete', delay: 0.3 },
+  { text: 'Launch-ready in one conversation', delay: 0.45 },
+]
 
 export default function CompanyHero() {
   return (
@@ -11,27 +17,25 @@ export default function CompanyHero() {
       <div className="relative z-10 max-w-[1100px] mx-auto px-6 text-center">
         <FadeUp>
           <p className="text-green text-sm font-semibold tracking-wide uppercase mb-6">
-            Founding Member Beta — Limited to First 100
+            For Founders Who Are Ready to Launch
           </p>
         </FadeUp>
 
         <FadeUp delay={0.1}>
           <h1 className="text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-[1.1] mb-6">
-            <span className="text-white">Build your entire funnel from</span>
+            <span className="text-white">Your first satisfying launch</span>
             <br />
             <span className="bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent">
-              a 15-minute conversation.
+              starts with one conversation.
             </span>
           </h1>
         </FadeUp>
 
         <FadeUp delay={0.2}>
-          <p className="text-green text-base font-semibold mb-2">
-            forrestry.ai introduces Funnel Studio™
-          </p>
           <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-muted mb-10 max-w-[640px] mx-auto leading-relaxed">
-            Funnel Studio™ turns your story into a launch-ready ecosystem of ads, emails,
-            and the Perfect Webinar. No more 80-hour grinds.
+            You have the offer. You have the audience. The only thing between you and
+            your first real launch is the 80-hour funnel stack nobody warned you about.
+            That ends here.
           </p>
         </FadeUp>
 
@@ -42,22 +46,25 @@ export default function CompanyHero() {
           >
             Claim Your Founders Spot — $49/mo
           </a>
-          <p className="text-muted/60 text-sm">
+          <p className="text-muted/60 text-sm mb-14">
             $149/mo after founding spots fill. Lock in your rate today.
           </p>
         </FadeUp>
 
-        {/* Brain Dump™ demo */}
-        <FadeUp delay={0.4}>
-          <div className="mt-14 max-w-[720px] mx-auto rounded-2xl bg-[#1A1A1A] border border-[rgba(74,222,128,0.08)] p-3 shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
-            <div className="rounded-xl overflow-hidden">
-              <LazyVideo
-                src="/Brain-Dump-Demo.webm"
-                className="w-full aspect-video object-cover"
-              />
-            </div>
-          </div>
-        </FadeUp>
+        {/* Floating social proof badges */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[900px] mx-auto">
+          {badges.map((badge) => (
+            <FadeUp key={badge.text} delay={0.4 + badge.delay}>
+              <div
+                className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/[0.03] border border-white/[0.06] text-left"
+                style={{ animation: `float 3s ease-in-out infinite ${badge.delay}s` }}
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-green shrink-0" />
+                <span className="text-[0.8rem] text-white/80 leading-snug">{badge.text}</span>
+              </div>
+            </FadeUp>
+          ))}
+        </div>
       </div>
     </section>
   )
