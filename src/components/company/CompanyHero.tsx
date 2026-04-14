@@ -1,4 +1,5 @@
 import FadeUp from '../FadeUp'
+import LazyVideo from '../LazyVideo'
 
 export default function CompanyHero() {
   return (
@@ -46,13 +47,14 @@ export default function CompanyHero() {
           </p>
         </FadeUp>
 
-        {/* GIF placeholder — Brain Dump™ demo */}
+        {/* Brain Dump™ demo */}
         <FadeUp delay={0.4}>
-          <div className="mt-14 max-w-[720px] mx-auto rounded-2xl border border-card-border bg-card-bg overflow-hidden aspect-video flex items-center justify-center">
-            {/* Replace with: <img src="/gifs/brain-dump.gif" alt="Brain Dump™ demo" className="w-full h-full object-cover" /> */}
-            <div className="text-center px-6">
-              <p className="text-muted text-sm mb-1">GIF_1: Brain Dump™ Demo</p>
-              <p className="text-muted/50 text-xs">8s loop — messy input → Strategic Blueprint</p>
+          <div className="mt-14 max-w-[720px] mx-auto rounded-2xl bg-[#1A1A1A] border border-[rgba(74,222,128,0.08)] p-3 shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+            <div className="rounded-xl overflow-hidden">
+              <LazyVideo
+                src="/Brain-Dump-Demo.webm"
+                className="w-full aspect-video object-cover"
+              />
             </div>
           </div>
         </FadeUp>
