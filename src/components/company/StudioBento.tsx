@@ -29,6 +29,7 @@ const cards: BentoCard[] = [
     description: 'Squeeze, Upsell, and VIP pages synced to your story.',
     gifId: 'GIF_4',
     gifNote: '6s — click from Blueprint to Email Writer',
+    videoSrc: '/Funnel-Stack.webm',
   },
   {
     title: 'Social Ads Writer',
