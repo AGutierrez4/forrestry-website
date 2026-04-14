@@ -1,4 +1,5 @@
 import FadeUp from '../FadeUp'
+import LazyVideo from '../LazyVideo'
 
 interface FeatureRow {
   step: number
@@ -128,12 +129,8 @@ export default function StudioBento() {
                       {/* Video */}
                       <div className="w-full lg:w-1/2">
                         <div className="rounded-2xl border border-card-border bg-card-bg overflow-hidden">
-                          <video
+                          <LazyVideo
                             src={feature.videoSrc}
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
                             className="w-full aspect-video object-cover"
                           />
                         </div>
