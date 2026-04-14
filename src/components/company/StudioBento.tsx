@@ -1,64 +1,93 @@
 import FadeUp from '../FadeUp'
 
-interface BentoCard {
+interface FeatureRow {
+  step: number
   title: string
   description: string
-  gifId: string
-  gifNote: string
-  videoSrc?: string
-  span?: string
+  details: string[]
+  videoSrc: string
 }
 
-const cards: BentoCard[] = [
+const features: FeatureRow[] = [
   {
+    step: 1,
+    title: 'Strategic Blueprint',
+    description:
+      'You talk. It organizes. The Blueprint captures your story, your offer, and your audience into a structured strategy that steers every asset Funnel Studio™ builds.',
+    details: [
+      'StoryBrand-aligned messaging framework',
+      'Audience avatar and pain point mapping',
+      'Offer positioning and hook development',
+    ],
+    videoSrc: '/Strategic Blueprint.webm',
+  },
+  {
+    step: 2,
     title: 'Webinar Builder',
-    description: 'The Perfect Webinar script, hard-coded into every build.',
-    gifId: 'GIF_2',
-    gifNote: '6s — scroll through Three Secrets + The Stack',
+    description:
+      'The Perfect Webinar script, generated from your Blueprint. Hook, origin story, three secrets, the stack, the close. Every section written in order so the narrative builds the way it should.',
+    details: [
+      'Full 60-minute webinar script',
+      '50-slide deck structure',
+      'Stack and close sequence',
+    ],
     videoSrc: '/webinar-builder.webm',
   },
   {
-    title: '60-Second Hook',
-    description: 'Stop the scroll on TikTok and Instagram.',
-    gifId: 'GIF_3',
-    gifNote: '5s — 3 hook variations generating in real-time',
-    videoSrc: '/60-Second-Hook.webm',
-  },
-  {
+    step: 3,
     title: 'Funnel Stack',
-    description: 'Squeeze, Upsell, and VIP pages synced to your story.',
-    gifId: 'GIF_4',
-    gifNote: '6s — click from Blueprint to Email Writer',
+    description:
+      'Squeeze page, upsell, and VIP pages synced to your Blueprint so the messaging stays consistent from the first ad click to the final checkout. No more Frankenstein funnels.',
+    details: [
+      'Registration and squeeze pages',
+      'Upsell and downsell copy',
+      'Thank you and confirmation pages',
+    ],
     videoSrc: '/Funnel-Stack.webm',
   },
   {
-    title: 'Social Ads Writer',
-    description: 'Cold, Warm, and Hot copy variations from one conversation.',
-    gifId: '',
-    gifNote: '',
-    videoSrc: '/Social-Ads-Writer.webm',
-  },
-  {
+    step: 4,
     title: 'Email Writer',
-    description: 'The full 10-15 email nurture sequence, written in your voice.',
-    gifId: '',
-    gifNote: '',
+    description:
+      'The full nurture sequence. Pre-show indoctrination, show-day reminders, post-show objection handling, cart close. 10-15 emails written in your voice, not a robot\'s.',
+    details: [
+      'Pre-show indoctrination series',
+      'Show-day reminder sequence',
+      'Post-show follow-up and cart close',
+    ],
     videoSrc: '/Email-Writer.webm',
   },
   {
-    title: 'Strategic Blueprint',
-    description: 'The central brain steering your entire GTM stack.',
-    gifId: '',
-    gifNote: '',
-    videoSrc: '/Strategic Blueprint.webm',
+    step: 5,
+    title: '60-Second Hook',
+    description:
+      'The scroll-stopper. Short-form video scripts for TikTok and Instagram that actually sound like you. Your organic path to getting eyeballs on your funnel without spending a dollar on ads.',
+    details: [
+      'Platform-native hook scripts',
+      'Multiple variations per concept',
+      'Optimized for organic reach',
+    ],
+    videoSrc: '/60-Second-Hook.webm',
+  },
+  {
+    step: 6,
+    title: 'Social Ads Writer',
+    description:
+      'Cold, warm, and hot audiences each get different copy because they are at different stages. Funnel Studio™ knows the difference and writes accordingly.',
+    details: [
+      'Cold traffic awareness ads',
+      'Warm retargeting sequences',
+      'Hot audience conversion copy',
+    ],
+    videoSrc: '/Social-Ads-Writer.webm',
   },
 ]
 
 export default function StudioBento() {
   return (
     <section id="studio" className="py-24 px-6 relative overflow-hidden">
-      {/* Forest haze glow behind bento */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-[#16261C]/40 rounded-full blur-[150px] pointer-events-none" />
+      {/* Forest haze glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[1200px] bg-[#16261C]/30 rounded-full blur-[200px] pointer-events-none" />
 
       <div className="relative z-10 max-w-[1100px] mx-auto">
         <FadeUp>
@@ -71,45 +100,79 @@ export default function StudioBento() {
           <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-4">
             One Strategic Blueprint. Six High-Conversion Engines.
           </h2>
-          <p className="text-muted text-center max-w-[600px] mx-auto mb-14 text-lg leading-relaxed">
+          <p className="text-muted text-center max-w-[600px] mx-auto mb-20 text-lg leading-relaxed">
             Every asset your launch needs, built from a single Brain Dump™ conversation.
           </p>
         </FadeUp>
 
-        {/* Bento Grid: 3x2 on desktop, 1-col on mobile */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {cards.map((card, i) => (
-            <FadeUp key={card.title} delay={0.1 * i}>
-              <div className="bg-card-bg border border-card-border rounded-2xl p-6 hover:border-green/30 transition-colors flex flex-col h-full">
-                {/* Media slot */}
-                {card.videoSrc ? (
-                  <div className="rounded-xl overflow-hidden mb-4 aspect-video">
-                    <video
-                      src={card.videoSrc}
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                ) : card.gifId ? (
-                  <div className="rounded-xl bg-bg-elevated border border-card-border aspect-video flex items-center justify-center mb-4 overflow-hidden">
-                    {/* Replace with: <img src={`/gifs/${card.gifId.toLowerCase().replace('_','-')}.gif`} alt={card.title} className="w-full h-full object-cover" /> */}
-                    <div className="text-center px-4">
-                      <p className="text-muted/60 text-xs">{card.gifId}: {card.gifNote}</p>
+        <div className="relative">
+          {/* Vertical connector line — desktop only */}
+          <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-green/20 to-transparent -translate-x-1/2" />
+
+          <div className="flex flex-col gap-24 lg:gap-32">
+            {features.map((feature, i) => {
+              const isEven = i % 2 === 0
+              return (
+                <FadeUp key={feature.step} delay={0.1}>
+                  <div className="relative">
+                    {/* Step number on connector — desktop only */}
+                    <div className="hidden lg:flex absolute left-1/2 -translate-x-1/2 -top-5 w-10 h-10 rounded-full bg-green text-black font-bold text-sm items-center justify-center z-10">
+                      {feature.step}
+                    </div>
+
+                    <div
+                      className={`flex flex-col lg:flex-row items-center gap-10 lg:gap-16 ${
+                        isEven ? '' : 'lg:flex-row-reverse'
+                      }`}
+                    >
+                      {/* Video */}
+                      <div className="w-full lg:w-1/2">
+                        <div className="rounded-2xl border border-card-border bg-card-bg overflow-hidden">
+                          <video
+                            src={feature.videoSrc}
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full aspect-video object-cover"
+                          />
+                        </div>
+                      </div>
+
+                      {/* Content */}
+                      <div className="w-full lg:w-1/2">
+                        {/* Step number — mobile only */}
+                        <div className="lg:hidden flex items-center gap-3 mb-4">
+                          <div className="w-8 h-8 rounded-full bg-green text-black font-bold text-xs flex items-center justify-center">
+                            {feature.step}
+                          </div>
+                          <div className="flex-1 h-px bg-green/20" />
+                        </div>
+
+                        <h3 className="text-2xl font-bold text-white mb-4">
+                          {feature.title}
+                        </h3>
+                        <p className="text-muted text-base leading-relaxed mb-5">
+                          {feature.description}
+                        </p>
+                        <ul className="flex flex-col gap-2">
+                          {feature.details.map((detail) => (
+                            <li
+                              key={detail}
+                              className="flex items-start gap-2.5 text-sm text-muted"
+                            >
+                              <span className="text-green shrink-0 mt-0.5">✓</span>
+                              {detail}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                ) : (
-                  <div className="rounded-xl bg-bg-elevated border border-card-border aspect-video flex items-center justify-center mb-4">
-                    <span className="text-muted/40 text-xs">Static preview</span>
-                  </div>
-                )}
-                <h3 className="text-text font-bold mb-2">{card.title}</h3>
-                <p className="text-muted text-sm leading-relaxed">{card.description}</p>
-              </div>
-            </FadeUp>
-          ))}
+                </FadeUp>
+              )
+            })}
+          </div>
         </div>
       </div>
     </section>
