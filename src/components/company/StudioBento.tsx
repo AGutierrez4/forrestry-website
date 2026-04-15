@@ -32,7 +32,7 @@ const features: FeatureRow[] = [
       'Audience avatar and pain point mapping',
       'Feeds every tool that follows',
     ],
-    videoSrc: '/Strategic Blueprint.webm',
+    videoSrc: '/Strategic Blueprint.mp4',
   },
   {
     step: 3,
@@ -44,7 +44,7 @@ const features: FeatureRow[] = [
       '50-slide deck structure',
       'Stack and close sequence',
     ],
-    videoSrc: '/webinar-builder.webm',
+    videoSrc: '/webinar-builder.mp4',
   },
   {
     step: 4,
@@ -56,7 +56,7 @@ const features: FeatureRow[] = [
       'Upsell and downsell copy',
       'Thank you and confirmation pages',
     ],
-    videoSrc: '/Funnel-Stack.webm',
+    videoSrc: '/Funnel Stack.mp4',
   },
   {
     step: 5,
