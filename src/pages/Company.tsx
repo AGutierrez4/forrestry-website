@@ -9,6 +9,7 @@ import Objections from '../components/company/Objections'
 import FoundersPricing from '../components/company/FoundersPricing'
 import CompanyCTA from '../components/company/CompanyCTA'
 import Footer from '../components/Footer'
+import LazySection from '../components/LazySection'
 
 const companyNavLinks = [
   { label: 'Product', href: '/#studio' },
@@ -38,10 +39,18 @@ export default function Company() {
         <CompanyHero />
         <StudioBento />
         <EfficiencyTable />
-        <Benefits />
-        <Problem />
-        <Founder />
-        <Objections />
+        <LazySection minHeight={500}>
+          <Benefits />
+        </LazySection>
+        <LazySection minHeight={600}>
+          <Problem />
+        </LazySection>
+        <LazySection minHeight={500}>
+          <Founder />
+        </LazySection>
+        <LazySection minHeight={400}>
+          <Objections />
+        </LazySection>
         <FoundersPricing />
         <CompanyCTA />
       </main>

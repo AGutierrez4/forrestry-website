@@ -3,9 +3,10 @@ import type { ReactNode } from 'react'
 
 interface LazySectionProps {
   children: ReactNode
+  minHeight?: number
 }
 
-export default function LazySection({ children }: LazySectionProps) {
+export default function LazySection({ children, minHeight = 400 }: LazySectionProps) {
   const ref = useRef<HTMLDivElement>(null)
   const [isVisible, setIsVisible] = useState(false)
 
@@ -20,16 +21,16 @@ export default function LazySection({ children }: LazySectionProps) {
           observer.disconnect()
         }
       },
-      { rootMargin: '400px' }
+      { rootMargin: '800px' }
     )
 
     observer.observe(el)
     return () => observer.disconnect()
   }, [])
 
-  return (
-    <div ref={ref} style={{ minHeight: isVisible ? undefined : '100px' }}>
-      {isVisible ? children : null}
-    </div>
-  )
+  if (isVisible) {
+    return <>{children}</>
+  }
+
+  return <div ref={ref} style={{ minHeight }} />
 }
