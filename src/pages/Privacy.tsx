@@ -94,8 +94,8 @@ export default function Privacy() {
                 <h2 className="text-lg font-semibold text-white mb-3">7. Contact</h2>
                 <p>
                   If you have questions about this privacy policy, contact us at{' '}
-                  <a href="mailto:privacy@forrestry.ai" className="text-green hover:underline">
-                    privacy@forrestry.ai
+                  <a href="mailto:support@forrestry.ai" className="text-green hover:underline">
+                    support@forrestry.ai
                   </a>.
                 </p>
               </div>
