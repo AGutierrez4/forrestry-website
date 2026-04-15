@@ -30,7 +30,7 @@ export default function Terms() {
         <div className="max-w-[700px] mx-auto">
           <FadeUp>
             <h1 className="text-3xl font-bold mb-2">Terms of Service</h1>
-            <p className="text-muted text-sm mb-12">Last updated: April 8, 2026</p>
+            <p className="text-muted text-sm mb-12">Last updated: April 15, 2026</p>
           </FadeUp>
 
           <FadeUp delay={0.1}>
@@ -90,7 +90,41 @@ export default function Terms() {
               </div>
 
               <div>
-                <h2 className="text-lg font-semibold text-white mb-3">7. Limitation of Liability</h2>
+                <h2 className="text-lg font-semibold text-white mb-3">7. Intellectual Property & Proprietary Rights</h2>
+                <p className="mb-4">
+                  All intellectual property associated with forrestry.ai and its products — including
+                  but not limited to the Funnel Studio™ and Brain Dump™ names, logos, product designs,
+                  user interface layouts, software architecture, AI methodologies, prompt engineering
+                  techniques, content generation workflows, marketing frameworks, and all related
+                  documentation — is the exclusive property of forrestry.ai.
+                </p>
+                <p className="mb-4">
+                  The names "Funnel Studio," "Brain Dump," and "forrestry.ai" are trademarks of
+                  forrestry.ai. Use of the ™ symbol indicates a claim of common-law trademark rights.
+                  You may not use these marks without prior written permission.
+                </p>
+                <p className="mb-4">
+                  You may not copy, reproduce, reverse engineer, decompile, disassemble, or create
+                  derivative works based on any part of the forrestry.ai platform, its underlying
+                  technology, proprietary processes, or product methodology. This includes but is
+                  not limited to the stage-based funnel generation system, the Brain Dump™ conversation
+                  framework, the Strategic Blueprint architecture, and any AI-driven content
+                  generation pipelines used within the service.
+                </p>
+                <p className="mb-4">
+                  All website content — including text, graphics, videos, page layouts, and marketing
+                  copy — is protected by copyright and may not be reproduced, distributed, or
+                  repurposed without express written consent from forrestry.ai.
+                </p>
+                <p>
+                  forrestry.ai reserves the right to pursue all available legal remedies against any
+                  individual or entity that infringes upon its intellectual property rights, including
+                  but not limited to injunctive relief, actual damages, and recovery of legal fees.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-lg font-semibold text-white mb-3">8. Limitation of Liability</h2>
                 <p>
                   forrestry.ai provides the service "as is" without warranties of any kind.
                   We are not liable for any indirect, incidental, or consequential damages
@@ -100,7 +134,7 @@ export default function Terms() {
               </div>
 
               <div>
-                <h2 className="text-lg font-semibold text-white mb-3">8. Changes to Terms</h2>
+                <h2 className="text-lg font-semibold text-white mb-3">9. Changes to Terms</h2>
                 <p>
                   We may update these terms from time to time. We will notify you of
                   material changes via email. Continued use of the service after changes
@@ -109,7 +143,7 @@ export default function Terms() {
               </div>
 
               <div>
-                <h2 className="text-lg font-semibold text-white mb-3">9. Contact</h2>
+                <h2 className="text-lg font-semibold text-white mb-3">10. Contact</h2>
                 <p>
                   Questions about these terms? Contact us at{' '}
                   <a href="mailto:support@forrestry.ai" className="text-green hover:underline">

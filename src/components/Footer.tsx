@@ -47,7 +47,13 @@ export default function Footer({
             </a>
           ))}
         </div>
-        <p className="text-muted text-sm">© 2026 forrestry.ai. All rights reserved.</p>
+        <div className="flex flex-col items-center md:items-end gap-1">
+          <p className="text-muted text-sm">© 2026 forrestry.ai. All rights reserved.</p>
+          <p className="text-muted/60 text-xs text-center md:text-right max-w-[360px]">
+            Funnel Studio™, Brain Dump™, and the forrestry.ai name, logo, and product
+            methodology are proprietary to forrestry.ai. Unauthorized use is prohibited.
+          </p>
+        </div>
       </div>
     </footer>
   )
