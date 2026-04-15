@@ -38,7 +38,7 @@ export default function Terms() {
               <div>
                 <h2 className="text-lg font-semibold text-white mb-3">1. Acceptance of Terms</h2>
                 <p>
-                  By accessing or using Forrestry.ai and Funnel Studio™, you agree to be
+                  By accessing or using forrestry.ai and Funnel Studio™, you agree to be
                   bound by these Terms of Service. If you do not agree, do not use the service.
                 </p>
               </div>
@@ -75,7 +75,7 @@ export default function Terms() {
                 <h2 className="text-lg font-semibold text-white mb-3">5. Your Content</h2>
                 <p>
                   You retain full ownership of all content generated using Funnel Studio™.
-                  You grant Forrestry.ai no rights to your generated content beyond what
+                  You grant forrestry.ai no rights to your generated content beyond what
                   is necessary to provide the service.
                 </p>
               </div>
@@ -92,7 +92,7 @@ export default function Terms() {
               <div>
                 <h2 className="text-lg font-semibold text-white mb-3">7. Limitation of Liability</h2>
                 <p>
-                  Forrestry.ai provides the service "as is" without warranties of any kind.
+                  forrestry.ai provides the service "as is" without warranties of any kind.
                   We are not liable for any indirect, incidental, or consequential damages
                   arising from your use of the service. Our total liability is limited to
                   the amount you paid in the 12 months preceding the claim.

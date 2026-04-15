@@ -38,7 +38,7 @@ export default function Privacy() {
               <div>
                 <h2 className="text-lg font-semibold text-white mb-3">1. Information We Collect</h2>
                 <p>
-                  When you use Forrestry.ai, we collect information you provide directly:
+                  When you use forrestry.ai, we collect information you provide directly:
                   your name, email address, and payment information when you subscribe.
                   We also collect usage data such as pages visited, features used, and
                   session duration to improve the product.

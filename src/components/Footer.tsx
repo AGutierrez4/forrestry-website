@@ -24,8 +24,8 @@ export default function Footer({
         <div className="flex flex-col items-center md:items-start gap-1">
           <div className="flex items-center gap-2">
             <img
-              src="/logo.png"
-              alt="Forrestry.ai"
+              src="/logo.webp"
+              alt="forrestry.ai"
               className="w-9 h-9 rounded-full object-cover"
             />
             <span className="text-green font-bold text-lg">forrestry.ai</span>
@@ -45,7 +45,7 @@ export default function Footer({
             </a>
           ))}
         </div>
-        <p className="text-muted text-sm">© 2026 Forrestry.ai. All rights reserved.</p>
+        <p className="text-muted text-sm">© 2026 forrestry.ai. All rights reserved.</p>
       </div>
     </footer>
   )

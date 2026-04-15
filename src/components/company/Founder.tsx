@@ -21,8 +21,8 @@ export default function Founder() {
             {/* Photo — left on desktop, top on mobile */}
             <div className="shrink-0">
               <img
-                src="/founder.png"
-                alt="Andrew Gutierrez, Founder of Forrestry.ai"
+                src="/founder.webp"
+                alt="Andrew Gutierrez, Founder of forrestry.ai"
                 className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-2 border-green/30"
               />
             </div>
@@ -30,7 +30,7 @@ export default function Founder() {
             {/* Bio */}
             <div className="text-center md:text-left flex-1">
               <h3 className="text-xl font-bold text-white mb-1">Andrew Gutierrez</h3>
-              <p className="text-green text-sm font-medium mb-5">Founder, Forrestry.ai</p>
+              <p className="text-green text-sm font-medium mb-5">Founder, forrestry.ai</p>
               <p className="text-white/70 leading-relaxed mb-4">
                 If you have ever stared at a blank page knowing exactly what your funnel
                 should look like but not being able to get it out of your head and onto

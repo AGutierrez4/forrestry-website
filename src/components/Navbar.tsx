@@ -50,8 +50,8 @@ export default function Navbar({
         {/* Logo */}
         <a href={logoHref} className="flex items-center gap-2 no-underline">
           <img
-            src="/logo.png"
-            alt="Forrestry.ai"
+            src="/logo.webp"
+            alt="forrestry.ai"
             className="w-10 h-10 rounded-full object-cover"
           />
           <span className="text-green font-bold text-lg">forrestry.ai</span>

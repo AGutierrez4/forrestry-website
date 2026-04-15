@@ -38,7 +38,7 @@ export default function Hero() {
         {/* Subheadline */}
         <FadeUp delay={0.2}>
           <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-white/70 mb-12 max-w-[700px] mx-auto leading-relaxed">
-            Forrestry.ai is the AI-powered launch ecosystem for entrepreneurs who are done
+            forrestry.ai is the AI-powered launch ecosystem for entrepreneurs who are done
             waiting. Go from raw idea to live, revenue-generating funnel — in hours, not months.
           </p>
         </FadeUp>
