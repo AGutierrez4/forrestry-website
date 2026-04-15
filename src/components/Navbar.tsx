@@ -52,6 +52,8 @@ export default function Navbar({
           <img
             src="/logo.webp"
             alt="forrestry.ai"
+            width={40}
+            height={40}
             className="w-10 h-10 rounded-full object-cover"
           />
           <span className="text-green font-bold text-lg">forrestry.ai</span>

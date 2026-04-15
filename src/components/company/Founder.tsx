@@ -23,6 +23,9 @@ export default function Founder() {
               <img
                 src="/founder.webp"
                 alt="Andrew Gutierrez, Founder of forrestry.ai"
+                width={224}
+                height={224}
+                loading="lazy"
                 className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-2 border-green/30"
               />
             </div>

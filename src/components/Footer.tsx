@@ -26,6 +26,8 @@ export default function Footer({
             <img
               src="/logo.webp"
               alt="forrestry.ai"
+              width={36}
+              height={36}
               className="w-9 h-9 rounded-full object-cover"
             />
             <span className="text-green font-bold text-lg">forrestry.ai</span>
