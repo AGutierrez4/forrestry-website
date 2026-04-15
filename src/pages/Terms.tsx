@@ -56,7 +56,7 @@ export default function Terms() {
                 <h2 className="text-lg font-semibold text-white mb-3">3. Subscription & Billing</h2>
                 <p>
                   Subscriptions are billed monthly through Stripe. Founding member pricing
-                  ($49/mo) is locked for 2 years from the date of initial subscription.
+                  ($79/mo) is locked for 2 years from the date of initial subscription.
                   After the 2-year lock period, pricing may be adjusted with 30 days notice.
                   You may cancel your subscription at any time.
                 </p>

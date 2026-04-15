@@ -26,11 +26,11 @@ export default function FoundersPricing() {
             <div className="text-center mt-4 mb-6">
               <p className="text-muted text-sm line-through mb-1">$149/mo</p>
               <div className="flex items-baseline justify-center gap-2">
-                <span className="text-[3rem] font-extrabold text-text">$49</span>
+                <span className="text-[3rem] font-extrabold text-text">$79</span>
                 <span className="text-muted text-lg">/mo</span>
               </div>
               <p className="text-green text-sm font-semibold mt-1">
-                67% off — Founding Members Only
+                47% off — Founding Members Only
               </p>
             </div>
 
@@ -63,6 +63,28 @@ export default function FoundersPricing() {
             <p className="text-muted/50 text-xs text-center mt-4">
               Cancel anytime. 2-year price lock guarantee.
             </p>
+          </div>
+        </FadeUp>
+
+        {/* Trust badges */}
+        <FadeUp delay={0.25}>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-muted/60 text-xs">
+            <div className="flex items-center gap-2">
+              <span className="text-green">✓</span>
+              <span>30-Day Money-Back Guarantee</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-green">✓</span>
+              <span>Secure Stripe Checkout</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-green">✓</span>
+              <span>Cancel Anytime</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-green">✓</span>
+              <span>Instant Access</span>
+            </div>
           </div>
         </FadeUp>
 

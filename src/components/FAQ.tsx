@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: 'What happens after the 100 founding spots fill?',
-    a: 'The price goes to $149/mo. If you lock in the founding rate at $49/mo, that rate stays locked for 2 years. No bait and switch.',
+    a: 'The price goes to $149/mo. If you lock in the founding rate at $79/mo, that rate stays locked for 2 years. No bait and switch.',
   },
   {
     q: 'Can I cancel anytime?',

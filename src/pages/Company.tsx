@@ -5,6 +5,7 @@ import EfficiencyTable from '../components/company/EfficiencyTable'
 import Benefits from '../components/company/Benefits'
 import Problem from '../components/company/Problem'
 import Founder from '../components/company/Founder'
+import Objections from '../components/company/Objections'
 import FoundersPricing from '../components/company/FoundersPricing'
 import CompanyCTA from '../components/company/CompanyCTA'
 import Footer from '../components/Footer'
@@ -39,6 +40,7 @@ export default function Company() {
       <Benefits />
       <Problem />
       <Founder />
+      <Objections />
       <FoundersPricing />
       <CompanyCTA />
       <Footer
