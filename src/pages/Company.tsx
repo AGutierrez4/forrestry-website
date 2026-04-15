@@ -34,15 +34,17 @@ export default function Company() {
         signInHref="https://app.funnelstudio.forrestry.ai"
         logoHref="/"
       />
-      <CompanyHero />
-      <StudioBento />
-      <EfficiencyTable />
-      <Benefits />
-      <Problem />
-      <Founder />
-      <Objections />
-      <FoundersPricing />
-      <CompanyCTA />
+      <main>
+        <CompanyHero />
+        <StudioBento />
+        <EfficiencyTable />
+        <Benefits />
+        <Problem />
+        <Founder />
+        <Objections />
+        <FoundersPricing />
+        <CompanyCTA />
+      </main>
       <Footer
         links={companyFooterLinks}
         tagline="Your funnel. Finally finished."

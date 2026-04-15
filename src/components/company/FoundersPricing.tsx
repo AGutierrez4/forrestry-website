@@ -60,7 +60,7 @@ export default function FoundersPricing() {
               Claim Your Founders Spot
             </a>
 
-            <p className="text-muted/50 text-xs text-center mt-4">
+            <p className="text-muted text-xs text-center mt-4">
               Cancel anytime. 2-year price lock guarantee.
             </p>
           </div>
@@ -68,7 +68,7 @@ export default function FoundersPricing() {
 
         {/* Trust badges */}
         <FadeUp delay={0.25}>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-muted/60 text-xs">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-muted text-xs">
             <div className="flex items-center gap-2">
               <span className="text-green">✓</span>
               <span>14-Day Money-Back Guarantee</span>

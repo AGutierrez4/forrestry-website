@@ -46,7 +46,7 @@ export default function CompanyHero() {
           >
             Claim Your Founders Spot — $79/mo
           </a>
-          <p className="text-muted/60 text-sm mb-14">
+          <p className="text-muted text-sm mb-14">
             $149/mo after founding spots fill. Lock in your rate today.
           </p>
         </FadeUp>
