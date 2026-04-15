@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import FadeUp from './FadeUp'
 
 const faqs = [
   {
@@ -38,36 +37,33 @@ export default function FAQ() {
   return (
     <section className="py-24 px-6">
       <div className="max-w-[700px] mx-auto">
-        <FadeUp>
-          <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
-            FAQ
-          </p>
-          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-14">
-            Common questions, straight answers.
-          </h2>
-        </FadeUp>
+        <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
+          FAQ
+        </p>
+        <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-14">
+          Common questions, straight answers.
+        </h2>
 
         <div className="flex flex-col gap-3">
           {faqs.map((faq, i) => (
-            <FadeUp key={i} delay={0.05 * i}>
-              <button
-                onClick={() => setOpen(open === i ? null : i)}
-                className="w-full text-left bg-card-bg border border-card-border rounded-xl p-5 cursor-pointer hover:border-green/30 transition-colors"
-                aria-expanded={open === i}
-              >
-                <div className="flex items-center justify-between gap-4">
-                  <span className="text-text font-medium text-sm">{faq.q}</span>
-                  <span className="text-muted shrink-0 text-lg">
-                    {open === i ? '−' : '+'}
-                  </span>
-                </div>
-                {open === i && (
-                  <p className="text-muted text-sm leading-relaxed mt-4 pr-8">
-                    {faq.a}
-                  </p>
-                )}
-              </button>
-            </FadeUp>
+            <button
+              key={i}
+              onClick={() => setOpen(open === i ? null : i)}
+              className="w-full text-left bg-card-bg border border-card-border rounded-xl p-5 cursor-pointer hover:border-green/30 transition-colors"
+              aria-expanded={open === i}
+            >
+              <div className="flex items-center justify-between gap-4">
+                <span className="text-text font-medium text-sm">{faq.q}</span>
+                <span className="text-muted shrink-0 text-lg">
+                  {open === i ? '−' : '+'}
+                </span>
+              </div>
+              {open === i && (
+                <p className="text-muted text-sm leading-relaxed mt-4 pr-8">
+                  {faq.a}
+                </p>
+              )}
+            </button>
           ))}
         </div>
       </div>

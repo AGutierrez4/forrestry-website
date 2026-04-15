@@ -1,5 +1,3 @@
-import FadeUp from './FadeUp'
-
 const problems = [
   {
     emoji: '✍️',
@@ -27,38 +25,34 @@ export default function SocialProof() {
   return (
     <section id="social-proof" className="py-24 px-6 border-t border-white/[0.06]">
       <div className="max-w-[1400px] mx-auto">
-        <FadeUp>
-          <div className="text-center mb-16">
-            <p className="text-green text-xs tracking-[0.2em] uppercase mb-4 font-semibold">
-              THE PROBLEM
-            </p>
-            <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold text-text mb-4">
-              You don't have a funnel problem.
-            </h2>
-            <h3 className="text-[clamp(1.5rem,3vw,2.25rem)] font-extrabold bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent mb-6">
-              You have a friction problem.
-            </h3>
-            <p className="text-muted text-lg max-w-[700px] mx-auto leading-relaxed">
-              Legacy tools like ClickFunnels hand you the bricks and tell you to build a house.
-              You're forced to be the copywriter, the designer, the strategist, and the tech
-              integrator — all at once. That's not a tool. That's a second job.
-            </p>
-          </div>
-        </FadeUp>
+        <div className="text-center mb-16">
+          <p className="text-green text-xs tracking-[0.2em] uppercase mb-4 font-semibold">
+            THE PROBLEM
+          </p>
+          <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold text-text mb-4">
+            You don't have a funnel problem.
+          </h2>
+          <h3 className="text-[clamp(1.5rem,3vw,2.25rem)] font-extrabold bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent mb-6">
+            You have a friction problem.
+          </h3>
+          <p className="text-muted text-lg max-w-[700px] mx-auto leading-relaxed">
+            Legacy tools like ClickFunnels hand you the bricks and tell you to build a house.
+            You're forced to be the copywriter, the designer, the strategist, and the tech
+            integrator — all at once. That's not a tool. That's a second job.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {problems.map((p, i) => (
-            <FadeUp key={p.title} delay={i * 0.1}>
-              <div className="bg-card-bg rounded-xl p-8 border border-card-border backdrop-blur-sm hover:border-green/30 transition-all">
-                <div className="flex items-start gap-4 mb-4">
-                  <span className="text-[2.5rem]">{p.emoji}</span>
-                  <div>
-                    <h3 className="text-2xl font-bold text-text mb-3">{p.title}</h3>
-                    <p className="text-muted leading-relaxed">{p.desc}</p>
-                  </div>
+          {problems.map((p) => (
+            <div key={p.title} className="bg-card-bg rounded-xl p-8 border border-card-border backdrop-blur-sm hover:border-green/30 transition-all">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="text-[2.5rem]">{p.emoji}</span>
+                <div>
+                  <h3 className="text-2xl font-bold text-text mb-3">{p.title}</h3>
+                  <p className="text-muted leading-relaxed">{p.desc}</p>
                 </div>
               </div>
-            </FadeUp>
+            </div>
           ))}
         </div>
       </div>

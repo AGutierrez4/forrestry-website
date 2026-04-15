@@ -1,5 +1,3 @@
-import FadeUp from './FadeUp'
-
 const steps = [
   {
     num: '01',
@@ -67,55 +65,52 @@ export default function HowItWorks() {
   return (
     <section id="product" className="py-24 px-6 bg-bg">
       <div className="max-w-[1400px] mx-auto">
-        <FadeUp>
-          <div className="text-center mb-16">
-            <p className="text-green text-xs tracking-[0.2em] uppercase mb-4 font-semibold">
-              THE SOLUTION
-            </p>
-            <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold text-text mb-4">
-              Your entire funnel.
-            </h2>
-            <h3 className="text-[clamp(1.5rem,3vw,2.25rem)] font-extrabold bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent mb-6">
-              Built in the right order.
-            </h3>
-            <p className="text-muted text-lg max-w-[700px] mx-auto leading-relaxed">
-              Every tool in Funnel Studio™ maps to a stage in your launch journey — so nothing
-              falls through the cracks and nothing slows you down.
-            </p>
-          </div>
-        </FadeUp>
+        <div className="text-center mb-16">
+          <p className="text-green text-xs tracking-[0.2em] uppercase mb-4 font-semibold">
+            THE SOLUTION
+          </p>
+          <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold text-text mb-4">
+            Your entire funnel.
+          </h2>
+          <h3 className="text-[clamp(1.5rem,3vw,2.25rem)] font-extrabold bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent mb-6">
+            Built in the right order.
+          </h3>
+          <p className="text-muted text-lg max-w-[700px] mx-auto leading-relaxed">
+            Every tool in Funnel Studio™ maps to a stage in your launch journey — so nothing
+            falls through the cracks and nothing slows you down.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {steps.map((step, i) => (
-            <FadeUp key={step.num} delay={i * 0.08}>
-              <div
-                className={`relative rounded-xl p-6 border backdrop-blur-sm transition-all hover:scale-[1.02] ${
-                  step.highlighted
-                    ? 'border-green shadow-[0_0_30px_rgba(74,222,128,0.15)] bg-card-bg'
-                    : 'border-card-border bg-card-bg'
-                }`}
-              >
-                {step.highlighted && (
-                  <div className="absolute inset-0 bg-gradient-to-br from-green/10 to-transparent rounded-xl pointer-events-none" />
-                )}
-                <div className="relative">
-                  <div className="flex justify-between items-start mb-4">
-                    <span className="text-muted font-bold text-sm">{step.num}</span>
-                    <span className="px-2.5 py-1 rounded-full bg-white/[0.08] text-muted text-xs font-semibold">
-                      {step.time}
-                    </span>
-                  </div>
-                  <div
-                    className={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4 ${step.iconBg}`}
-                  >
-                    {step.icon}
-                  </div>
-                  <h3 className="text-xl font-bold text-text mb-2">{step.title}</h3>
-                  <p className="text-green text-sm font-semibold mb-3">{step.subtitle}</p>
-                  <p className="text-muted text-sm leading-relaxed">{step.desc}</p>
+          {steps.map((step) => (
+            <div
+              key={step.num}
+              className={`relative rounded-xl p-6 border backdrop-blur-sm transition-all hover:scale-[1.02] ${
+                step.highlighted
+                  ? 'border-green shadow-[0_0_30px_rgba(74,222,128,0.15)] bg-card-bg'
+                  : 'border-card-border bg-card-bg'
+              }`}
+            >
+              {step.highlighted && (
+                <div className="absolute inset-0 bg-gradient-to-br from-green/10 to-transparent rounded-xl pointer-events-none" />
+              )}
+              <div className="relative">
+                <div className="flex justify-between items-start mb-4">
+                  <span className="text-muted font-bold text-sm">{step.num}</span>
+                  <span className="px-2.5 py-1 rounded-full bg-white/[0.08] text-muted text-xs font-semibold">
+                    {step.time}
+                  </span>
                 </div>
+                <div
+                  className={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4 ${step.iconBg}`}
+                >
+                  {step.icon}
+                </div>
+                <h3 className="text-xl font-bold text-text mb-2">{step.title}</h3>
+                <p className="text-green text-sm font-semibold mb-3">{step.subtitle}</p>
+                <p className="text-muted text-sm leading-relaxed">{step.desc}</p>
               </div>
-            </FadeUp>
+            </div>
           ))}
         </div>
       </div>

@@ -1,5 +1,3 @@
-import FadeUp from '../FadeUp'
-
 const rows = [
   { label: 'Time to launch', diy: '80+ hours', agency: '2-4 weeks', fs: 'As little as 1 day' },
   { label: 'Cost', diy: 'Your time + 6 subscriptions', agency: '$5,000-$15,000', fs: '$79/mo Founders Rate' },
@@ -17,53 +15,45 @@ export default function EfficiencyTable() {
   return (
     <section className="py-24 px-6">
       <div className="max-w-[1000px] mx-auto">
-        <FadeUp>
-          <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
-            The Real Cost
-          </p>
-        </FadeUp>
+        <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
+          The Real Cost
+        </p>
 
-        <FadeUp delay={0.1}>
-          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-14">
-            Three paths. Only one gets you launched.
-          </h2>
-        </FadeUp>
+        <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-14">
+          Three paths. Only one gets you launched.
+        </h2>
 
-        <FadeUp delay={0.2}>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr>
-                  <th className="text-left text-muted text-xs uppercase tracking-wider pb-4 pr-4 font-medium w-[20%]"></th>
-                  <th className="text-left text-muted text-xs uppercase tracking-wider pb-4 px-4 font-medium w-[25%]">Do It Yourself</th>
-                  <th className="text-left text-muted text-xs uppercase tracking-wider pb-4 px-4 font-medium w-[25%]">Hire an Agency</th>
-                  <th className="text-left text-green text-xs uppercase tracking-wider pb-4 pl-4 font-medium w-[30%]">Funnel Studio™</th>
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse">
+            <thead>
+              <tr>
+                <th className="text-left text-muted text-xs uppercase tracking-wider pb-4 pr-4 font-medium w-[20%]"></th>
+                <th className="text-left text-muted text-xs uppercase tracking-wider pb-4 px-4 font-medium w-[25%]">Do It Yourself</th>
+                <th className="text-left text-muted text-xs uppercase tracking-wider pb-4 px-4 font-medium w-[25%]">Hire an Agency</th>
+                <th className="text-left text-green text-xs uppercase tracking-wider pb-4 pl-4 font-medium w-[30%]">Funnel Studio™</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row, i) => (
+                <tr key={i} className="border-t border-card-border">
+                  <td className="py-4 pr-4 text-text text-sm font-medium">{row.label}</td>
+                  <td className="py-4 px-4 text-muted/70 text-sm line-through decoration-muted/40">{row.diy}</td>
+                  <td className="py-4 px-4 text-muted/70 text-sm line-through decoration-muted/40">{row.agency}</td>
+                  <td className="py-4 pl-4 text-text text-sm">{row.fs}</td>
                 </tr>
-              </thead>
-              <tbody>
-                {rows.map((row, i) => (
-                  <tr key={i} className="border-t border-card-border">
-                    <td className="py-4 pr-4 text-text text-sm font-medium">{row.label}</td>
-                    <td className="py-4 px-4 text-muted/70 text-sm line-through decoration-muted/40">{row.diy}</td>
-                    <td className="py-4 px-4 text-muted/70 text-sm line-through decoration-muted/40">{row.agency}</td>
-                    <td className="py-4 pl-4 text-text text-sm">{row.fs}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </FadeUp>
+              ))}
+            </tbody>
+          </table>
+        </div>
 
-        <FadeUp delay={0.3}>
-          <div className="mt-14 text-center">
-            <a
-              href="https://buy.stripe.com/8x24gAb9p0fF2nOce2frW00"
-              className="inline-block px-10 py-4 rounded-xl bg-green text-black font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all"
-            >
-              Claim Your Founders Spot — $79/mo
-            </a>
-          </div>
-        </FadeUp>
+        <div className="mt-14 text-center">
+          <a
+            href="https://buy.stripe.com/8x24gAb9p0fF2nOce2frW00"
+            className="inline-block px-10 py-4 rounded-xl bg-green text-black font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all"
+          >
+            Claim Your Founders Spot — $79/mo
+          </a>
+        </div>
       </div>
     </section>
   )

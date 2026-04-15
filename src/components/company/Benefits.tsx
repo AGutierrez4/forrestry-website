@@ -1,5 +1,3 @@
-import FadeUp from '../FadeUp'
-
 const benefits = [
   {
     icon: '🚀',
@@ -22,24 +20,20 @@ export default function Benefits() {
   return (
     <section className="py-24 px-6">
       <div className="max-w-[1100px] mx-auto">
-        <FadeUp>
-          <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
-            What Changes
-          </p>
-          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-14">
-            What your week looks like after the Brain Dump™.
-          </h2>
-        </FadeUp>
+        <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
+          What Changes
+        </p>
+        <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-14">
+          What your week looks like after the Brain Dump™.
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {benefits.map((b, i) => (
-            <FadeUp key={b.title} delay={0.1 * i}>
-              <div className="bg-card-bg border border-card-border rounded-2xl p-7 hover:border-green/30 transition-colors h-full">
-                <span className="text-3xl mb-4 block">{b.icon}</span>
-                <h3 className="text-white font-bold text-lg mb-3">{b.title}</h3>
-                <p className="text-muted text-sm leading-relaxed">{b.body}</p>
-              </div>
-            </FadeUp>
+          {benefits.map((b) => (
+            <div key={b.title} className="bg-card-bg border border-card-border rounded-2xl p-7 hover:border-green/30 transition-colors h-full">
+              <span className="text-3xl mb-4 block">{b.icon}</span>
+              <h3 className="text-white font-bold text-lg mb-3">{b.title}</h3>
+              <p className="text-muted text-sm leading-relaxed">{b.body}</p>
+            </div>
           ))}
         </div>
       </div>

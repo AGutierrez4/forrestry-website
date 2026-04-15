@@ -1,5 +1,3 @@
-import FadeUp from '../FadeUp'
-
 const products = [
   {
     name: 'Funnel Studio\u2122',
@@ -40,45 +38,40 @@ export default function Products() {
   return (
     <section id="products" className="py-24 px-6">
       <div className="max-w-[1100px] mx-auto">
-        <FadeUp>
-          <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
-            The Ecosystem
-          </p>
-        </FadeUp>
+        <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
+          The Ecosystem
+        </p>
 
-        <FadeUp delay={0.1}>
-          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-14">
-            One ecosystem. Every tool you need to launch.
-          </h2>
-        </FadeUp>
+        <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-14">
+          One ecosystem. Every tool you need to launch.
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {products.map((product, i) => (
-            <FadeUp key={product.name} delay={0.15 * i}>
-              <div
-                className={`bg-card-bg border ${product.borderClass} rounded-2xl p-8 flex flex-col h-full transition-colors`}
+          {products.map((product) => (
+            <div
+              key={product.name}
+              className={`bg-card-bg border ${product.borderClass} rounded-2xl p-8 flex flex-col h-full transition-colors`}
+            >
+              <span
+                className={`inline-block self-start text-xs font-semibold px-3 py-1 rounded-full mb-4 ${product.badgeColor}`}
               >
-                <span
-                  className={`inline-block self-start text-xs font-semibold px-3 py-1 rounded-full mb-4 ${product.badgeColor}`}
-                >
-                  {product.badge}
-                </span>
-                <h3 className="text-xl font-bold text-white mb-3">{product.name}</h3>
-                <p className="text-white/60 text-sm leading-relaxed mb-6 flex-1">
-                  {product.description}
-                </p>
-                <a
-                  href={product.ctaHref}
-                  className={`inline-block text-center px-6 py-3 rounded-xl font-semibold text-sm no-underline transition-all ${
-                    product.primary
-                      ? 'bg-green text-black hover:bg-green/90'
-                      : 'border border-white/20 text-white/70 hover:border-white/40 hover:text-white'
-                  }`}
-                >
-                  {product.cta}
-                </a>
-              </div>
-            </FadeUp>
+                {product.badge}
+              </span>
+              <h3 className="text-xl font-bold text-white mb-3">{product.name}</h3>
+              <p className="text-white/60 text-sm leading-relaxed mb-6 flex-1">
+                {product.description}
+              </p>
+              <a
+                href={product.ctaHref}
+                className={`inline-block text-center px-6 py-3 rounded-xl font-semibold text-sm no-underline transition-all ${
+                  product.primary
+                    ? 'bg-green text-black hover:bg-green/90'
+                    : 'border border-white/20 text-white/70 hover:border-white/40 hover:text-white'
+                }`}
+              >
+                {product.cta}
+              </a>
+            </div>
           ))}
         </div>
       </div>
