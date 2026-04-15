@@ -144,7 +144,6 @@ export default function StudioBento() {
                           <div className="rounded-xl overflow-hidden">
                             <LazyVideo
                               src={feature.videoSrc}
-                              label={feature.title}
                               className="w-full aspect-video object-cover"
                             />
                           </div>
