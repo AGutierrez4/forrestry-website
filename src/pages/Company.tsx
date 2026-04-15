@@ -30,7 +30,7 @@ export default function Company() {
       <Navbar
         links={companyNavLinks}
         ctaText="Claim Founders Spot"
-        ctaHref="/pricing#pricing"
+        ctaHref="https://buy.stripe.com/8x24gAb9p0fF2nOce2frW00"
         signInHref="https://app.funnelstudio.forrestry.ai"
         logoHref="/"
       />
