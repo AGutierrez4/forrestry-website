@@ -8,7 +8,7 @@ const plans = [
     period: '/month',
     note: 'cancel anytime',
     cta: 'Get Started',
-    ctaHref: 'https://buy.stripe.com/starter',
+    ctaHref: 'https://buy.stripe.com/8x24gAb9p0fF2nOce2frW00',
     ctaStyle: 'outline' as const,
     featured: false,
     features: [
@@ -28,7 +28,7 @@ const plans = [
     note: null,
     savings: 'Most popular plan',
     cta: 'Get Started',
-    ctaHref: 'https://buy.stripe.com/pro',
+    ctaHref: 'https://buy.stripe.com/8x24gAb9p0fF2nOce2frW00',
     ctaStyle: 'primary' as const,
     featured: true,
     features: [
@@ -48,7 +48,7 @@ const plans = [
     note: null,
     savings: 'Save over $767 vs monthly Pro',
     cta: 'Get Started',
-    ctaHref: 'https://buy.stripe.com/annual',
+    ctaHref: 'https://buy.stripe.com/8x24gAb9p0fF2nOce2frW00',
     ctaStyle: 'outline' as const,
     featured: false,
     features: [
