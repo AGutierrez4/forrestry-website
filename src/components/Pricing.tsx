@@ -17,7 +17,7 @@ const plans = [
       'Basic analytics',
       'Email support',
       'Community Access',
-      '30-Day Launch Guarantee',
+      '14-Day Money-Back Guarantee',
     ],
   },
   {
@@ -37,7 +37,7 @@ const plans = [
       'Advanced analytics',
       'Priority support',
       'Custom domains',
-      '30-Day Launch Guarantee',
+      '14-Day Money-Back Guarantee',
     ],
   },
   {
@@ -57,7 +57,7 @@ const plans = [
       'Dedicated onboarding',
       'SLA support',
       'Priority Feature Access',
-      '30-Day Launch Guarantee',
+      '14-Day Money-Back Guarantee',
     ],
   },
 ]
@@ -139,9 +139,8 @@ export default function Pricing() {
             <span className="text-green text-2xl shrink-0">🛡</span>
             <p className="text-muted leading-relaxed">
               All plans include a{' '}
-              <strong className="text-text">30-Day "Launch or Don't Pay" Guarantee</strong>.
-              Build your funnel. Launch it. If you're not live in 30 days, we'll refund every
-              penny.
+              <strong className="text-text">14-Day Money-Back Guarantee</strong>.
+              Try Funnel Studio™. If it is not for you, email us within 14 days for a full refund.
             </p>
           </div>
         </FadeUp>

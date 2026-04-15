@@ -71,7 +71,7 @@ export default function FoundersPricing() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-muted/60 text-xs">
             <div className="flex items-center gap-2">
               <span className="text-green">✓</span>
-              <span>30-Day Money-Back Guarantee</span>
+              <span>14-Day Money-Back Guarantee</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-green">✓</span>
@@ -92,8 +92,8 @@ export default function FoundersPricing() {
           <div className="mt-8 bg-card-bg border border-card-border rounded-xl p-5 flex items-start gap-3">
             <span className="text-green text-xl shrink-0">🛡</span>
             <p className="text-muted text-sm leading-relaxed">
-              <span className="text-text font-semibold">30-Day "Launch or Don't Pay" Guarantee.</span>{' '}
-              Build your funnel. Launch it. If you are not live in 30 days, full refund. No questions.
+              <span className="text-text font-semibold">14-Day Money-Back Guarantee.</span>{' '}
+              Try Funnel Studio™. If it is not for you, email us within 14 days for a full refund.
             </p>
           </div>
         </FadeUp>

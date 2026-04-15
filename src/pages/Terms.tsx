@@ -63,11 +63,11 @@ export default function Terms() {
               </div>
 
               <div>
-                <h2 className="text-lg font-semibold text-white mb-3">4. 30-Day Guarantee</h2>
+                <h2 className="text-lg font-semibold text-white mb-3">4. 14-Day Guarantee</h2>
                 <p>
-                  If you are not live with a funnel within 30 days of subscribing, you may
-                  request a full refund. Contact support@forrestry.ai within the 30-day
-                  window to initiate a refund.
+                  If you are not satisfied with Funnel Studio™, you may request a full
+                  refund within 14 days of subscribing. Contact support@forrestry.ai to
+                  initiate a refund.
                 </p>
               </div>
 

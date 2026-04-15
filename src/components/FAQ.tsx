@@ -19,8 +19,8 @@ const faqs = [
     a: 'Yes. No long-term contracts. Cancel whenever you want. If you cancel and come back later, you will be at the current price, not the founding rate.',
   },
   {
-    q: 'What is the 30-Day "Launch or Don\'t Pay" Guarantee?',
-    a: 'Build your funnel. Launch it. If you are not live within 30 days, we refund every penny. No questions asked.',
+    q: 'What is the 14-Day Money-Back Guarantee?',
+    a: 'Try Funnel Studio™. If it is not for you, email us within 14 days for a full refund. No hoops, no hassle.',
   },
   {
     q: 'Do I need to be technical to use this?',
