@@ -27,7 +27,7 @@ export default function Benefits() {
             What Changes
           </p>
           <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-14">
-            What your week looks like after the Brain Dump™.
+            What changes after one conversation.
           </h2>
         </FadeUp>
 

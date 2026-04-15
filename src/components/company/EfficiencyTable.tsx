@@ -25,7 +25,7 @@ export default function EfficiencyTable() {
 
         <FadeUp delay={0.1}>
           <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-14">
-            Three paths. Only one gets you launched.
+            Three paths. One takes 80 hours. One costs $10,000. One takes a conversation.
           </h2>
         </FadeUp>
 
@@ -62,6 +62,9 @@ export default function EfficiencyTable() {
             >
               Claim Your Founders Spot — $79/mo
             </a>
+            <p className="text-muted text-sm mt-4">
+              Limited to the first 100 founding members.
+            </p>
           </div>
         </FadeUp>
       </div>

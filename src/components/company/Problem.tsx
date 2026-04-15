@@ -3,7 +3,7 @@ import FadeUp from '../FadeUp'
 const painPoints = [
   {
     emoji: '⏳',
-    title: 'The Blank Page',
+    title: 'The AI Letdown',
     body: 'You open the AI tool, hit generate, and the output reads like it was written for nobody. Thin. Generic. Not even close to what you needed.',
   },
   {

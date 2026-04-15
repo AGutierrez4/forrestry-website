@@ -105,7 +105,7 @@ export default function StudioBento() {
       <div className="relative z-10 max-w-[1100px] mx-auto">
         <FadeUp>
           <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
-            The Product
+            Inside Funnel Studio™
           </p>
         </FadeUp>
 

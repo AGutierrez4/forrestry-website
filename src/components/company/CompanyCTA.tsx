@@ -31,6 +31,9 @@ export default function CompanyCTA() {
           >
             Claim Your Founders Spot — $79/mo
           </a>
+          <p className="text-muted text-sm">
+            Limited to the first 100 founding members.
+          </p>
         </FadeUp>
       </div>
     </section>

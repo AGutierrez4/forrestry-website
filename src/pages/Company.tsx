@@ -39,11 +39,11 @@ export default function Company() {
         <CompanyHero />
         <StudioBento />
         <EfficiencyTable />
-        <LazySection minHeight={500}>
-          <Benefits />
-        </LazySection>
         <LazySection minHeight={600}>
           <Problem />
+        </LazySection>
+        <LazySection minHeight={500}>
+          <Benefits />
         </LazySection>
         <LazySection minHeight={500}>
           <Founder />

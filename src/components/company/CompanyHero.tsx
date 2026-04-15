@@ -14,11 +14,11 @@ export default function CompanyHero() {
 
       <div className="relative z-10 max-w-[1100px] mx-auto px-6 text-center">
         <p className="text-green text-sm font-semibold tracking-wide uppercase mb-6">
-          For Founders Who Are Ready to Launch
+          For Founders Who Are Tired Of Being Stuck
         </p>
 
         <h1 className="text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-[1.1] mb-6">
-          <span className="text-white">Your next launch changes everything.</span>
+          <span className="text-white">This is the launch that changes everything.</span>
           <br />
           <span className="bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent">
             It starts with one conversation.
@@ -26,9 +26,9 @@ export default function CompanyHero() {
         </h1>
 
         <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-muted mb-10 max-w-[640px] mx-auto leading-relaxed">
-          You have the offer. You have the audience. The only thing between you and
-          your first real launch is the 80-hour funnel stack nobody warned you about.
-          That ends here.
+          You had the idea. You had the momentum. Then you sat down to build the funnel
+          and realized it was 80 hours of work nobody warned you about. That wall
+          between you and your first real launch? It just came down.
         </p>
 
         <div>
