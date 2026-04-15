@@ -11,11 +11,80 @@
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" /></noscript>
     <style>
-      body { font-family: system-ui, -apple-system, sans-serif; }
+      /* Critical CSS — paints navbar + hero before JS loads */
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: Inter, system-ui, -apple-system, sans-serif;
+        background-color: #09090B;
+        color: #FFFFFF;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .shell-nav {
+        position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+        padding: 1rem 1.5rem;
+        display: flex; align-items: center; justify-content: space-between;
+      }
+      .shell-nav-logo {
+        display: flex; align-items: center; gap: 0.5rem;
+        text-decoration: none;
+      }
+      .shell-nav-logo img { width: 40px; height: 40px; border-radius: 50%; }
+      .shell-nav-logo span { color: #4ADE80; font-weight: 700; font-size: 1.125rem; }
+      .shell-hero {
+        min-height: 100vh; display: flex; align-items: center; justify-content: center;
+        padding-top: 5rem; text-align: center;
+      }
+      .shell-hero-inner { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+      .shell-eyebrow {
+        color: #4ADE80; font-size: 0.875rem; font-weight: 600;
+        text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1.5rem;
+      }
+      .shell-h1 {
+        font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800;
+        line-height: 1.1; margin-bottom: 1.5rem;
+      }
+      .shell-h1-gradient {
+        background: linear-gradient(to bottom right, #00FF85, #7C3AED);
+        -webkit-background-clip: text; background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .shell-sub {
+        font-size: clamp(1rem, 2.5vw, 1.25rem); color: #A1A1AA;
+        max-width: 640px; margin: 0 auto 2.5rem; line-height: 1.6;
+      }
+      /* Hide shell when React mounts */
+      #root:not(:empty) ~ #shell { display: none; }
     </style>
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Static shell — visible instantly, hidden when React mounts -->
+    <div id="shell">
+      <nav class="shell-nav">
+        <a href="/" class="shell-nav-logo">
+          <img src="/logo.webp" alt="forrestry.ai" width="40" height="40" />
+          <span>forrestry.ai</span>
+        </a>
+      </nav>
+      <section class="shell-hero">
+        <div class="shell-hero-inner">
+          <p class="shell-eyebrow">For Founders Who Are Ready to Launch</p>
+          <h1 class="shell-h1">
+            <span>Your next launch changes everything.</span><br />
+            <span class="shell-h1-gradient">It starts with one conversation.</span>
+          </h1>
+          <p class="shell-sub">
+            You have the offer. You have the audience. The only thing between you and
+            your first real launch is the 80-hour funnel stack nobody warned you about.
+            That ends here.
+          </p>
+        </div>
+      </section>
+    </div>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
