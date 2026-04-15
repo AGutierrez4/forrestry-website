@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar'
+import LazySection from '../components/LazySection'
 import CompanyHero from '../components/company/CompanyHero'
 import StudioBento from '../components/company/StudioBento'
 import EfficiencyTable from '../components/company/EfficiencyTable'
@@ -36,14 +37,14 @@ export default function Company() {
       />
       <main>
         <CompanyHero />
-        <StudioBento />
-        <EfficiencyTable />
-        <Benefits />
-        <Problem />
-        <Founder />
-        <Objections />
-        <FoundersPricing />
-        <CompanyCTA />
+        <LazySection><StudioBento /></LazySection>
+        <LazySection><EfficiencyTable /></LazySection>
+        <LazySection><Benefits /></LazySection>
+        <LazySection><Problem /></LazySection>
+        <LazySection><Founder /></LazySection>
+        <LazySection><Objections /></LazySection>
+        <LazySection><FoundersPricing /></LazySection>
+        <LazySection><CompanyCTA /></LazySection>
       </main>
       <Footer
         links={companyFooterLinks}
