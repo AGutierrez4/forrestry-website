@@ -8,9 +8,9 @@ const steps = [
 export default function CompanyHero() {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-      {/* Glow effects */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-green-bright/[0.08] rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple/[0.08] rounded-full blur-[100px] pointer-events-none" />
+      {/* Glow effects — hidden on mobile for performance */}
+      <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-green-bright/[0.08] rounded-full blur-[120px] pointer-events-none" />
+      <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple/[0.08] rounded-full blur-[100px] pointer-events-none" />
 
       <div className="relative z-10 max-w-[1100px] mx-auto px-6 text-center">
         <p className="text-green text-sm font-semibold tracking-wide uppercase mb-6">

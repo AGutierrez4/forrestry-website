@@ -3,9 +3,9 @@ import FadeUp from '../FadeUp'
 export default function CompanyCTA() {
   return (
     <section className="py-24 px-6 relative overflow-hidden">
-      {/* Green glow */}
+      {/* Green glow — hidden on mobile for performance */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[2px] bg-gradient-to-r from-transparent via-green/60 to-transparent" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[120px] bg-green/[0.08] blur-[80px] pointer-events-none" />
+      <div className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[120px] bg-green/[0.08] blur-[80px] pointer-events-none" />
 
       <div className="relative z-10 max-w-[1100px] mx-auto text-center">
         <FadeUp>

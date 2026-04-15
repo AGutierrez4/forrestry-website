@@ -99,8 +99,8 @@ const features: FeatureRow[] = [
 export default function StudioBento() {
   return (
     <section id="studio" className="py-24 px-6 relative overflow-hidden">
-      {/* Forest haze glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[1200px] bg-[#16261C]/30 rounded-full blur-[200px] pointer-events-none" />
+      {/* Forest haze glow — hidden on mobile for performance */}
+      <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[1200px] bg-[#16261C]/30 rounded-full blur-[200px] pointer-events-none" />
 
       <div className="relative z-10 max-w-[1100px] mx-auto">
         <FadeUp>
