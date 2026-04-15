@@ -1,3 +1,5 @@
+import FadeUp from '../FadeUp'
+
 const lineItems = [
   {
     label: 'Long-Form Squeeze Page',
@@ -25,36 +27,44 @@ export default function RealCost() {
   return (
     <section className="py-24 px-6">
       <div className="max-w-[1100px] mx-auto">
-        <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
-          The Real Cost
-        </p>
+        <FadeUp>
+          <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
+            The Real Cost
+          </p>
+        </FadeUp>
 
-        <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-4">
-          A complete funnel stack is not a landing page. It is 80 hours of work.
-        </h2>
-        <p className="text-white/70 text-center max-w-[640px] mx-auto mb-12 text-lg">
-          And that is for someone who already knows what they are doing.
-        </p>
+        <FadeUp delay={0.1}>
+          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-4">
+            A complete funnel stack is not a landing page. It is 80 hours of work.
+          </h2>
+          <p className="text-white/70 text-center max-w-[640px] mx-auto mb-12 text-lg">
+            And that is for someone who already knows what they are doing.
+          </p>
+        </FadeUp>
 
         <div className="max-w-[640px] mx-auto mb-12 space-y-6">
           {lineItems.map((item, i) => (
-            <div key={i} className="flex gap-3">
-              <span className="text-green mt-1 shrink-0">●</span>
-              <div>
-                <p className="text-white font-semibold">{item.label}</p>
-                <p className="text-white/60 text-sm leading-relaxed">{item.detail}</p>
+            <FadeUp key={i} delay={0.1 * i}>
+              <div className="flex gap-3">
+                <span className="text-green mt-1 shrink-0">●</span>
+                <div>
+                  <p className="text-white font-semibold">{item.label}</p>
+                  <p className="text-white/60 text-sm leading-relaxed">{item.detail}</p>
+                </div>
               </div>
-            </div>
+            </FadeUp>
           ))}
         </div>
 
-        <div className="bg-card-bg border-l-4 border-green rounded-xl p-6 max-w-[640px] mx-auto">
-          <p className="text-white/80 leading-relaxed">
-            Eighty hours. At minimum. And that is before the imposter syndrome sets
-            in. The paralyzing fear that your copy is not good enough, your hook is
-            not sharp enough, or your offer will not convert.
-          </p>
-        </div>
+        <FadeUp delay={0.6}>
+          <div className="bg-card-bg border-l-4 border-green rounded-xl p-6 max-w-[640px] mx-auto">
+            <p className="text-white/80 leading-relaxed">
+              Eighty hours. At minimum. And that is before the imposter syndrome sets
+              in. The paralyzing fear that your copy is not good enough, your hook is
+              not sharp enough, or your offer will not convert.
+            </p>
+          </div>
+        </FadeUp>
       </div>
     </section>
   )
