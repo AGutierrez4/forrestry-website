@@ -3,14 +3,14 @@ import FadeUp from '../FadeUp'
 const rows = [
   { label: 'Time to launch', diy: '80+ hours', agency: '2-4 weeks', fs: 'As little as 1 day' },
   { label: 'Cost', diy: 'Your time + 6 subscriptions', agency: '$5,000-$15,000', fs: '$79/mo Founders Rate' },
-  { label: 'Webinar script', diy: '20-25 hours of writing', agency: 'Copywriter writes it', fs: 'Generated from your story' },
-  { label: 'Funnel pages', diy: 'DIY in your page builder', agency: 'Designer builds them', fs: 'Copy generated, ready to paste' },
+  { label: 'Webinar script', diy: '20-25 hours of writing', agency: 'Copywriter writes it', fs: '60-min. webinar script generated from your story' },
+  { label: 'Funnel pages', diy: 'DIY in your page builder', agency: 'Designer builds them', fs: 'Fully designed 4-page funnel stack, ready to deploy' },
   { label: 'Email sequences', diy: '10-15 hours minimum', agency: 'Extra cost, extra wait', fs: 'Full nurture stack, in order' },
   { label: 'Ad copy', diy: 'Guess and test', agency: 'Another retainer', fs: 'Cold, warm, and hot variations' },
-  { label: 'AI output quality', diy: 'Generic, one asset at a time', agency: 'N/A', fs: 'Connected to your Blueprint' },
+  { label: 'AI output quality', diy: 'Generic, one asset at a time', agency: 'N/A', fs: 'Highly trained, consistent, connected to your Blueprint' },
   { label: 'Revisions', diy: 'Start over each time', agency: 'Limited rounds, extra fees', fs: 'Unlimited, instant' },
   { label: 'Number of funnels', diy: 'However many you survive', agency: '1, then pay again', fs: 'Unlimited' },
-  { label: 'Launch confidence', diy: 'Second-guessing everything', agency: 'Depends on the agency', fs: 'Launch-ready system' },
+  { label: 'Launch confidence', diy: 'Second-guessing everything', agency: 'Depends on the agency', fs: 'Every asset connected, nothing left to guess' },
 ]
 
 export default function EfficiencyTable() {
