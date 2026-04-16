@@ -20,7 +20,7 @@ const features: FeatureRow[] = [
       'Works with voice or text',
       'Maps your input into the Strategic Blueprint',
     ],
-    videoSrc: '/Brain-Dump-Demo.webm',
+    videoSrc: '/Brain-Dump-Demo.mp4',
   },
   {
     step: 2,
@@ -68,7 +68,7 @@ const features: FeatureRow[] = [
       'Show-day reminder sequence',
       'Post-show follow-up and cart close',
     ],
-    videoSrc: '/Email-Writer.webm',
+    videoSrc: '/Email-Writer.mp4',
   },
   {
     step: 6,
@@ -80,7 +80,7 @@ const features: FeatureRow[] = [
       'Multiple variations per concept',
       'Optimized for organic reach',
     ],
-    videoSrc: '/60-Second-Hook.webm',
+    videoSrc: '/60-Second-Hook.mp4',
   },
   {
     step: 7,
@@ -92,7 +92,7 @@ const features: FeatureRow[] = [
       'Warm retargeting sequences',
       'Hot audience conversion copy',
     ],
-    videoSrc: '/Social-Ads-Writer.webm',
+    videoSrc: '/Social-Ads-Writer.mp4',
   },
 ]
 
