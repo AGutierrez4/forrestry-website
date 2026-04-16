@@ -106,7 +106,7 @@ export default function About() {
           </FadeUp>
         </div>
       </div>
-      <Footer links={footerLinks} tagline="Your funnel. Finally finished." />
+      <Footer links={footerLinks} tagline="Stop Building. Start Launching." />
     </>
   )
 }

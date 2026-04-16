@@ -31,7 +31,7 @@ export default function PricingPage() {
         <FoundersPricing />
         <FAQ />
       </div>
-      <Footer links={footerLinks} tagline="Your funnel. Finally finished." />
+      <Footer links={footerLinks} tagline="Stop Building. Start Launching." />
     </>
   )
 }

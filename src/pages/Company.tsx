@@ -56,7 +56,7 @@ export default function Company() {
       </main>
       <Footer
         links={companyFooterLinks}
-        tagline="Your funnel. Finally finished."
+        tagline="Stop Building. Start Launching."
       />
     </>
   )
