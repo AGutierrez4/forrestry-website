@@ -24,13 +24,13 @@ export default function FoundersPricing() {
             </div>
 
             <div className="text-center mt-4 mb-6">
-              <p className="text-muted text-sm line-through mb-1">$149/mo</p>
+              <p className="text-muted text-sm line-through mb-1">$97/mo</p>
               <div className="flex items-baseline justify-center gap-2">
-                <span className="text-[3rem] font-extrabold text-text">$79</span>
+                <span className="text-[3rem] font-extrabold text-text">$47</span>
                 <span className="text-muted text-lg">/mo</span>
               </div>
               <p className="text-green text-sm font-semibold mt-1">
-                47% off — Founding Members Only
+                52% off — Founding Members Only
               </p>
             </div>
 

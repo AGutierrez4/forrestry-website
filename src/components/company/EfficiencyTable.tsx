@@ -2,7 +2,7 @@ import FadeUp from '../FadeUp'
 
 const rows = [
   { label: 'Time to launch', diy: '80+ hours', agency: '2-4 weeks', fs: 'As little as 1 day' },
-  { label: 'Cost', diy: 'Your time + 6 subscriptions', agency: '$5,000-$15,000', fs: '$79/mo Founders Rate' },
+  { label: 'Cost', diy: 'Your time + 6 subscriptions', agency: '$5,000-$15,000', fs: '$47/mo Founders Rate' },
   { label: 'Webinar script', diy: '20-25 hours of writing', agency: 'Copywriter writes it', fs: '60-min. webinar script generated from your story' },
   { label: 'Funnel pages', diy: 'DIY in your page builder', agency: 'Designer builds them', fs: 'Fully designed 4-page funnel stack, ready to deploy' },
   { label: 'Email sequences', diy: '10-15 hours minimum', agency: 'Extra cost, extra wait', fs: 'Full nurture stack, in order' },
@@ -60,7 +60,7 @@ export default function EfficiencyTable() {
               href="https://buy.stripe.com/8x24gAb9p0fF2nOce2frW00"
               className="inline-block px-10 py-4 rounded-xl bg-green text-black font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all"
             >
-              Claim Your Founders Spot — $79/mo
+              Claim Your Founders Spot — $47/mo
             </a>
             <p className="text-muted text-sm mt-4">
               Limited to the first 100 founding members.

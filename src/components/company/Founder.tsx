@@ -59,7 +59,7 @@ export default function Founder() {
                 </p>
               </blockquote>
               <p className="text-muted text-sm leading-relaxed">
-                100 founding spots. Once they are gone, the price goes to $149/mo.
+                100 founding spots. Once they are gone, the price goes to $97/mo.
               </p>
             </div>
           </div>
