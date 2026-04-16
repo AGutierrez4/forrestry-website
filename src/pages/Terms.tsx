@@ -22,7 +22,7 @@ export default function Terms() {
       <Navbar
         links={navLinks}
         ctaText="Claim Founders Spot"
-        ctaHref="https://buy.stripe.com/8x24gAb9p0fF2nOce2frW00"
+        ctaHref="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01"
         signInHref="https://app.funnelstudio.forrestry.ai"
         logoHref="/"
       />

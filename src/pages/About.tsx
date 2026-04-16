@@ -22,7 +22,7 @@ export default function About() {
       <Navbar
         links={navLinks}
         ctaText="Claim Founders Spot"
-        ctaHref="https://buy.stripe.com/8x24gAb9p0fF2nOce2frW00"
+        ctaHref="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01"
         signInHref="https://app.funnelstudio.forrestry.ai"
         logoHref="/"
       />
@@ -97,7 +97,7 @@ export default function About() {
           <FadeUp delay={0.25}>
             <div className="mt-16 text-center">
               <a
-                href="https://buy.stripe.com/8x24gAb9p0fF2nOce2frW00"
+                href="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01"
                 className="inline-block px-10 py-4 rounded-xl bg-green text-black font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all"
               >
                 Claim Your Founders Spot — $47/mo

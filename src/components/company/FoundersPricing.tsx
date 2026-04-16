@@ -54,7 +54,7 @@ export default function FoundersPricing() {
             </ul>
 
             <a
-              href="https://buy.stripe.com/8x24gAb9p0fF2nOce2frW00"
+              href="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01"
               className="block w-full py-4 rounded-xl bg-green text-black font-bold text-lg text-center no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all"
             >
               Claim Your Founders Spot
