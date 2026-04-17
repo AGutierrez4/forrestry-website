@@ -69,7 +69,7 @@ export default function MasterclassVIP() {
       </section>
 
       {/* VIP Offer Stack */}
-      <section className="bg-card-bg py-16 px-4 mb-16 border-y-4 border-green/30">
+      <section className="bg-[#0A1A0F] py-16 px-4 mb-16 border-y-4 border-green/30">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-black mb-4 bg-gradient-to-r from-green-bright to-green bg-clip-text text-transparent">
@@ -120,7 +120,7 @@ export default function MasterclassVIP() {
       </section>
 
       {/* Social Proof */}
-      <section className="max-w-5xl mx-auto px-4 mb-16">
+      <section className="max-w-5xl mx-auto px-4 mb-16 py-16 bg-[#0D0D0F] rounded-2xl">
         <h2 className="text-3xl font-black text-center mb-10">They Escaped The Grind. Will You?</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {[
@@ -165,7 +165,7 @@ export default function MasterclassVIP() {
       </section>
 
       {/* Final Dual CTA */}
-      <section className="max-w-3xl mx-auto px-4 pb-20 text-center">
+      <section className="max-w-3xl mx-auto px-4 pb-20 text-center bg-gradient-to-b from-bg to-[#0A1A0F] pt-16 rounded-t-2xl">
         {/* TODO: Replace # with Stripe VIP payment link */}
         <a
           href="#"

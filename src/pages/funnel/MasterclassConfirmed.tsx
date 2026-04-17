@@ -15,7 +15,7 @@ export default function MasterclassConfirmed() {
       </div>
 
       {/* Congratulations Header */}
-      <header className="bg-card-bg pt-16 pb-20 px-4 text-center border-b-4 border-green/40">
+      <header className="bg-[#0A1A0F] pt-16 pb-20 px-4 text-center border-b-4 border-green/40">
         <div className="max-w-4xl mx-auto">
           <div className="inline-block bg-green/20 text-green px-4 py-1 rounded-full text-sm font-bold tracking-widest uppercase mb-6">
             🎉 Your Spot is Officially Secured
@@ -145,7 +145,7 @@ export default function MasterclassConfirmed() {
         </div>
 
         {/* Pain vs Relief Grid */}
-        <div className="bg-card-bg rounded-2xl border border-card-border p-8 md:p-12 mb-16">
+        <div className="bg-[#0D0D0F] rounded-2xl border border-card-border p-8 md:p-12 mb-16">
           <h3 className="text-3xl font-extrabold text-center mb-10">
             What To Expect:{' '}
             <br />
@@ -179,7 +179,7 @@ export default function MasterclassConfirmed() {
         </div>
 
         {/* Strategy Session Soft Pitch */}
-        <div className="bg-purple/20 rounded-2xl border-2 border-purple/40 p-8 md:p-12 mb-16 text-center">
+        <div className="bg-gradient-to-br from-[#0A1A0F] to-[#0F0A1A] rounded-2xl border-2 border-green/30 p-8 md:p-12 mb-16 text-center">
           <span className="bg-green text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-4 inline-block">
             Accelerated Pain Relief
           </span>

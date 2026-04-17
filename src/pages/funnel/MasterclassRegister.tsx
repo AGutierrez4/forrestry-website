@@ -122,7 +122,7 @@ export default function MasterclassRegister() {
       </section>
 
       {/* WHO THIS IS FOR */}
-      <section className="py-20">
+      <section className="py-20 bg-[#0D0D0F]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-black text-center mb-10">
             Is The Pain Of Funnel Building Holding You Back?{' '}
@@ -181,7 +181,7 @@ export default function MasterclassRegister() {
       </section>
 
       {/* SOCIAL PROOF */}
-      <section className="py-20">
+      <section className="py-20 bg-[#0A0A0C]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-black text-center mb-12">
             Entrepreneurs Just Like You Are Escaping The Grind...
@@ -222,7 +222,7 @@ export default function MasterclassRegister() {
       </section>
 
       {/* 3 SECRETS REVEALED */}
-      <section className="py-20 bg-green/10 border-y border-green/20">
+      <section className="py-20 bg-[#0A1A0F] border-y border-green/20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-black text-center mb-12">
             We're Going Deep. Here Are The 3 Core "Pain-Killers" I'm Revealing On This Masterclass:
@@ -283,7 +283,7 @@ export default function MasterclassRegister() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20">
+      <section className="py-20 bg-[#0D0D0F]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-black text-center mb-12">
             Frequently Asked Questions
@@ -326,7 +326,7 @@ export default function MasterclassRegister() {
       </section>
 
       {/* FINAL CTA / REGISTRATION */}
-      <section className="py-20 bg-card-bg border-t-4 border-green/40" id="register">
+      <section className="py-20 bg-gradient-to-b from-card-bg to-[#0A1A0F] border-t-4 border-green/40" id="register">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Guarantee */}
           <div className="mb-10 flex flex-col items-center">

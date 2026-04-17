@@ -57,7 +57,7 @@ export default function MasterclassStrategy() {
         </div>
 
         {/* The Solution */}
-        <div className="bg-card-bg rounded-2xl p-8 md:p-12 mb-12 border border-card-border">
+        <div className="bg-[#0A1A0F] rounded-2xl p-8 md:p-12 mb-12 border border-green/20">
           <h2 className="text-3xl md:text-4xl font-black mb-6 text-center text-green-bright">
             The Solution: The "Done-With-You" Launch Strategy Session
           </h2>
@@ -112,7 +112,7 @@ export default function MasterclassStrategy() {
         </div>
 
         {/* Social Proof */}
-        <div className="bg-card-bg rounded-2xl p-8 md:p-12 mb-12 border border-card-border">
+        <div className="bg-[#0D0D0F] rounded-2xl p-8 md:p-12 mb-12 border border-card-border">
           <h2 className="text-3xl font-black mb-8 text-center">They Escaped The Grind. Now It's Your Turn.</h2>
           <div className="space-y-8">
             {[
@@ -142,7 +142,7 @@ export default function MasterclassStrategy() {
         </div>
 
         {/* Dual CTA */}
-        <div className="text-center bg-card-bg p-10 rounded-2xl border border-card-border mb-12">
+        <div className="text-center bg-gradient-to-b from-card-bg to-[#0A1A0F] p-10 rounded-2xl border border-card-border mb-12">
           <h2 className="text-2xl font-black mb-6">Make Your Choice:</h2>
           {/* TODO: Replace # with Stripe payment link for $297 strategy session */}
           <a
