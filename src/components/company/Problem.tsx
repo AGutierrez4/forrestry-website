@@ -51,6 +51,8 @@ export default function Problem() {
             The long-form squeeze page. The 60-minute webinar script. The 50-slide deck.
             The email sequences. The social ads that go stale every two weeks. Every single
             asset has to be written, designed, and tested before you ever see a dollar.
+            Most people fail right at the one-yard line — not because they lack the vision,
+            but because the execution exhausted them before they could cross it.
             That is not a strategy problem. That is a system problem.
           </p>
         </FadeUp>

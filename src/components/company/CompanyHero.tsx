@@ -18,17 +18,18 @@ export default function CompanyHero() {
         </p>
 
         <h1 className="text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-[1.1] mb-6">
-          <span className="text-white">This is the launch that changes everything.</span>
+          <span className="text-white">Talk your funnel into existence.</span>
           <br />
           <span className="bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent">
-            It starts with one conversation.
+            One conversation. Launch-ready.
           </span>
         </h1>
 
         <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-muted mb-10 max-w-[640px] mx-auto leading-relaxed">
           You had the idea. You had the momentum. Then you sat down to build the funnel
-          and realized it was 80 hours of work nobody warned you about. That wall
-          between you and your first real launch? It just came down.
+          and realized it was 80 hours of work nobody warned you about. Funnel Studio™
+          extracts your genius in a single conversation and builds your entire launch
+          stack — so you never stall at the one-yard line again.
         </p>
 
         <div>

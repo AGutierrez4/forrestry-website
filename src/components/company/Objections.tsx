@@ -15,7 +15,7 @@ const objections = [
   },
   {
     q: 'What if I am not technical?',
-    a: 'The Brain Dump™ is a conversation. You talk about your offer, your audience, and your story. No prompts to engineer, no templates to fill out. If you can describe what you sell, you can use this.',
+    a: 'If you can talk to a friend at a coffee shop about what you do, you can use this. The Brain Dump™ is a conversation, not a form. You talk about your offer, your audience, and your story. No prompts to engineer, no templates to fill out. Your unique business is not a hurdle — it is the fuel.',
   },
 ]
 

@@ -14,7 +14,7 @@ const features: FeatureRow[] = [
     step: 1,
     title: 'Brain Dump™',
     description:
-      'It starts with a conversation. The Brain Dump™ is a guided chat that captures your story, your offer, and who you serve. No prompts to engineer. No templates to fill out. Just talk, and watch it organize everything into your Strategic Blueprint.',
+      'It starts with a conversation. The Brain Dump™ doesn\'t just generate text — it extracts your genius. In 15 minutes, it clones a world-class funnel strategist trained on your story, your offer, and your audience. No prompts to engineer. No templates to fill out. Just talk, and watch it build.',
     details: [
       'Guided conversation, not a form',
       'Works with voice or text',
