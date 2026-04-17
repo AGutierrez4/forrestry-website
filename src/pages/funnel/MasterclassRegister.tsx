@@ -1,4 +1,14 @@
+import { useNavigate } from 'react-router-dom'
+
 export default function MasterclassRegister() {
+  const navigate = useNavigate()
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    // TODO: Wire email service (ConvertKit, Mailchimp) to capture name + email BEFORE redirect
+    navigate('/masterclass/vip')
+  }
+
   return (
     <div className="bg-bg text-text min-h-screen">
       {/* HERO SECTION */}
@@ -343,7 +353,7 @@ export default function MasterclassRegister() {
             <p className="text-xl font-bold text-green mb-6">
               ⚠️ WARNING: Spots Are Strictly Limited!
             </p>
-            <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <input
                 type="text"
                 placeholder="Enter Your First Name"

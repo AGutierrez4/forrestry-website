@@ -9,6 +9,9 @@ const About = lazy(() => import('./pages/About'))
 const Privacy = lazy(() => import('./pages/Privacy'))
 const Terms = lazy(() => import('./pages/Terms'))
 const MasterclassRegister = lazy(() => import('./pages/funnel/MasterclassRegister'))
+const MasterclassVIP = lazy(() => import('./pages/funnel/MasterclassVIP'))
+const MasterclassConfirmed = lazy(() => import('./pages/funnel/MasterclassConfirmed'))
+const MasterclassStrategy = lazy(() => import('./pages/funnel/MasterclassStrategy'))
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -31,6 +34,9 @@ export default function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/masterclass" element={<MasterclassRegister />} />
+          <Route path="/masterclass/vip" element={<MasterclassVIP />} />
+          <Route path="/masterclass/confirmed" element={<MasterclassConfirmed />} />
+          <Route path="/masterclass/strategy" element={<MasterclassStrategy />} />
         </Routes>
       </Suspense>
     </>
