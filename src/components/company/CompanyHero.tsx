@@ -14,22 +14,21 @@ export default function CompanyHero() {
 
       <div className="relative z-10 max-w-[1100px] mx-auto px-6 text-center">
         <p className="text-green text-sm font-semibold tracking-wide uppercase mb-6">
-          For Founders Who Are Tired Of Being Stuck
+          From One Conversation to a Complete Launch Stack
         </p>
 
         <h1 className="text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-[1.1] mb-6">
-          <span className="text-white">Talk your funnel into existence.</span>
+          <span className="text-white">Talk Your Funnel</span>
           <br />
           <span className="bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent">
-            One conversation. Launch-ready.
+            Into Existence.
           </span>
         </h1>
 
         <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-muted mb-10 max-w-[640px] mx-auto leading-relaxed">
-          You had the idea. You had the momentum. Then you sat down to build the funnel
-          and realized it was 80 hours of work nobody warned you about. Funnel Studio™
-          extracts your genius in a single conversation and builds your entire launch
-          stack — so you never stall at the one-yard line again.
+          Funnel Studio's Brain Dump™ turns your story, offer, and messaging into the
+          offer pages, webinar, emails, and ads you need to launch — built in sequence
+          so every piece works together.
         </p>
 
         <div>
