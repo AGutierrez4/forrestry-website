@@ -27,7 +27,7 @@ export default function CompanyHero() {
 
         <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-muted mb-10 max-w-[640px] mx-auto leading-relaxed">
           Funnel Studio's Brain Dump™ turns your story, offer, and messaging into the
-          offer pages, webinar, emails, and ads you need to launch — built in sequence
+          squeeze pages, webinar, emails, and ads you need to launch — built in sequence
           so every piece works together.
         </p>
 
