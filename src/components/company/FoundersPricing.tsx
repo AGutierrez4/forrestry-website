@@ -20,7 +20,7 @@ export default function FoundersPricing() {
           <div className="relative rounded-2xl border border-green/40 bg-card-bg p-8 shadow-[0_0_60px_rgba(74,222,128,0.1)]">
             {/* Founders badge */}
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-green text-black px-5 py-1.5 rounded-full text-xs font-bold whitespace-nowrap">
-              Founding Member — Limited to 100 Spots
+              Founding Member. Limited to 100 Spots
             </div>
 
             <div className="text-center mt-4 mb-6">
@@ -30,7 +30,7 @@ export default function FoundersPricing() {
                 <span className="text-muted text-lg">/mo</span>
               </div>
               <p className="text-green text-sm font-semibold mt-1">
-                52% off — Founding Members Only
+                52% off. Founding Members Only
               </p>
             </div>
 

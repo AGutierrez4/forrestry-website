@@ -2,7 +2,7 @@ const steps = [
   { num: 1, text: 'Squeeze page, upsell, and thank you pages generated' },
   { num: 2, text: 'Full 60-minute webinar script written from your story' },
   { num: 3, text: 'Email sequences and social ad copy completed for you' },
-  { num: 4, text: 'Fully functional funnel stack launched in 8 hours' },
+  { num: 4, text: 'Fully functional funnel stack launched in an afternoon' },
 ]
 
 export default function CompanyHero() {
@@ -26,8 +26,8 @@ export default function CompanyHero() {
         </h1>
 
         <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-muted mb-10 max-w-[640px] mx-auto leading-relaxed">
-          One guided conversation turns your idea into a complete, connected funnel —
-          pages, webinar, emails, and ads — built to convert, not fall apart.
+          One guided conversation turns your idea into a complete, connected funnel.
+          Pages, webinar, emails, and ads. Built to convert, not fall apart.
         </p>
 
         <div>
@@ -37,7 +37,7 @@ export default function CompanyHero() {
             rel="noopener noreferrer"
             className="inline-block px-10 py-4 rounded-xl bg-green text-black font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all mb-4"
           >
-            Claim Your Founders Spot — $47/mo
+            Claim Your Founders Spot. $47/mo
           </a>
           <p className="text-muted text-sm mb-14">
             $97/mo after founding spots fill. Lock in your rate today.

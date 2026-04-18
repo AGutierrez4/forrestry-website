@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: 'What does "Perfect Webinar" mean?',
-    a: 'The Perfect Webinar is a proven framework for structuring high-converting webinar presentations. Funnel Studio™ has this framework built into every webinar script it generates. You do not need to know the framework — the tool handles it.',
+    a: 'The Perfect Webinar is a proven framework for structuring high-converting webinar presentations. Funnel Studio™ has this framework built into every webinar script it generates. You do not need to know the framework. The tool handles it.',
   },
 ]
 

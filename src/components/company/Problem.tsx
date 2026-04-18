@@ -14,7 +14,7 @@ const painPoints = [
   {
     emoji: '😶',
     title: 'The Comparison Trap',
-    body: 'You know what a high-converting funnel looks like. You\'ve studied them. You just can\'t make yours look — or feel — the same.',
+    body: 'You know what a high-converting funnel looks like. You\'ve studied them. You just can\'t make yours look, or feel, the same.',
   },
   {
     emoji: '🔥',
@@ -50,7 +50,7 @@ export default function Problem() {
           </p>
           <p className="text-white/70 text-center max-w-[640px] mx-auto mb-14 text-lg leading-relaxed">
             The 60-minute script doesn't write itself. The 15-email sequence feels like
-            a mountain. The "Frankenstein" funnel starts to emerge — where nothing quite
+            a mountain. The "Frankenstein" funnel starts to emerge, where nothing quite
             matches, and the tech feels like it's winning. Most funnels die here. Not
             because the vision was wrong, but because the execution was exhausting.
           </p>

@@ -1,7 +1,7 @@
 import FadeUp from '../FadeUp'
 
 const rows = [
-  { label: 'Time to Launch', diy: '80+ hours of "figuring it out"', agency: '4–8 weeks of back-and-forth', fs: 'Under 24 hours' },
+  { label: 'Time to Launch', diy: '80+ hours of "figuring it out"', agency: '4–8 weeks of back-and-forth', fs: 'A single afternoon' },
   { label: 'Total Cost', diy: 'Your sanity + software fees', agency: '$5,000 – $15,000+', fs: '$47/mo (Founders Rate)' },
   { label: 'Webinar Script', diy: '3 days of staring at a blank page', agency: '$2k+ and 2 weeks of waiting', fs: 'Done in 30 minutes' },
   { label: 'Funnel Pages', diy: '"Frankenstein" copy that leaks', agency: 'High fees for every revision', fs: 'Connected, cohesive copy' },
@@ -55,7 +55,7 @@ export default function EfficiencyTable() {
 
         <FadeUp delay={0.3}>
           <p className="text-muted text-center max-w-[640px] mx-auto mt-10 mb-8 text-lg leading-relaxed">
-            The math is simple: For less than the cost of a business lunch, you get the strategist, the copywriter, and the builder — all working together to get you live by tomorrow.
+            The math is simple: For less than the cost of a business lunch, you get the strategist, the copywriter, and the builder. All working together to get you live by tomorrow.
           </p>
           <div className="text-center">
             <a
@@ -64,7 +64,7 @@ export default function EfficiencyTable() {
               rel="noopener noreferrer"
               className="inline-block px-10 py-4 rounded-xl bg-green text-black font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all"
             >
-              Claim Your Founders Spot — $47/mo
+              Claim Your Founders Spot. $47/mo
             </a>
             <p className="text-muted text-sm mt-4">
               Limited to the first 100 founding members.
