@@ -4,22 +4,22 @@ const painPoints = [
   {
     emoji: '⏳',
     title: 'The AI Letdown',
-    body: 'You open the AI tool, hit generate, and the output reads like it was written for nobody. Thin. Generic. Not even close to what you needed.',
+    body: 'You hit \'generate\' and get generic robot-fluff. It doesn\'t sound like you, and it definitely won\'t sell for you.',
   },
   {
     emoji: '📝',
     title: 'The Tab Graveyard',
-    body: 'Six tabs open. Three subscriptions running. A Notion doc full of half-finished copy. Still no launch date.',
+    body: '14 tabs open, three subscriptions running, and a Notion doc full of half-finished copy. Still no launch date.',
   },
   {
     emoji: '😶',
     title: 'The Comparison Trap',
-    body: 'You know what a high-converting funnel looks like. You have studied them. You just cannot get yours to look like that.',
+    body: 'You know what a high-converting funnel looks like. You\'ve studied them. You just can\'t make yours look — or feel — the same.',
   },
   {
     emoji: '🔥',
-    title: 'The Quiet Quit',
-    body: 'You start to wonder if maybe this just is not for you.\nIt is.',
+    title: 'The Founder\'s Burnout',
+    body: 'You start to wonder if you\'re "not a funnel person." (Spoiler: You are. You just need a better system.)',
   },
 ]
 
@@ -35,25 +35,24 @@ export default function Problem() {
 
         <FadeUp delay={0.1}>
           <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-2">
-            You know exactly what you need to build.
+            You have the strategy. You have the offer.
           </h2>
           <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-8 bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent">
-            That was never the problem.
+            You just don't have the 80 hours.
           </h2>
         </FadeUp>
 
         <FadeUp delay={0.2}>
           <p className="text-white/70 text-center max-w-[640px] mx-auto mb-6 text-lg leading-relaxed">
-            You have the offer. You know your audience. You could sketch the funnel on a
-            napkin right now. But then you sit down to actually build it, and the real work starts.
+            You've been through the challenges. You've sketched the funnel on a napkin.
+            You know exactly who you're serving. But the moment you sit down to build,
+            the "One-Yard Line" syndrome kicks in.
           </p>
           <p className="text-white/70 text-center max-w-[640px] mx-auto mb-14 text-lg leading-relaxed">
-            The long-form squeeze page. The 60-minute webinar script. The 50-slide deck.
-            The email sequences. The social ads that go stale every two weeks. Every single
-            asset has to be written, designed, and tested before you ever see a dollar.
-            Most people fail right at the one-yard line — not because they lack the vision,
-            but because the execution exhausted them before they could cross it.
-            That is not a strategy problem. That is a system problem.
+            The 60-minute script doesn't write itself. The 15-email sequence feels like
+            a mountain. The "Frankenstein" funnel starts to emerge — where nothing quite
+            matches, and the tech feels like it's winning. Most funnels die here. Not
+            because the vision was wrong, but because the execution was exhausting.
           </p>
         </FadeUp>
 

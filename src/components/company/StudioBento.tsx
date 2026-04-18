@@ -12,85 +12,85 @@ interface FeatureRow {
 const features: FeatureRow[] = [
   {
     step: 1,
-    title: 'Brain Dump™',
+    title: 'The Brain Dump™: Turn What\'s in Your Head Into a Real Funnel Plan',
     description:
-      'It starts with a conversation. The Brain Dump™ doesn\'t just generate text — it extracts your genius. In 15 minutes, it clones a world-class funnel strategist trained on your story, your offer, and your audience. No prompts to engineer. No templates to fill out. Just talk, and watch it build.',
+      'Talk through your idea, offer, and audience — and watch it turn into a structured foundation for your entire funnel. No prompts. No templates. No blank page.',
     details: [
-      'Guided conversation, not a form',
+      'Guided conversation (not a form)',
       'Works with voice or text',
-      'Maps your input into the Strategic Blueprint',
+      'Instantly maps into your funnel strategy',
     ],
     videoSrc: '/Brain-Dump-Demo.mp4',
   },
   {
     step: 2,
-    title: 'Strategic Blueprint',
+    title: 'Your Funnel Blueprint: Everything Aligned Before You Build',
     description:
-      'Your Brain Dump™, organized. The Strategic Blueprint is automatically generated from your conversation. It captures your story, your offer, and your audience into a structured strategy that steers every asset Funnel Studio™ builds.',
+      'Your story, offer, and messaging — organized into a clear strategy that guides every page, email, and ad. No guessing. No disconnects.',
     details: [
-      'Brand story messaging framework',
-      'Audience avatar and pain point mapping',
-      'Feeds every tool that follows',
+      'Clear positioning and messaging',
+      'Audience + pain point clarity',
+      'Powers everything that follows',
     ],
     videoSrc: '/Strategic Blueprint.mp4',
   },
   {
     step: 3,
-    title: 'Webinar Builder',
+    title: 'The Perfect Webinar: A 60-Minute Script That Sells for You',
     description:
-      'The Perfect Webinar script, generated from your Blueprint. Hook, origin story, three secrets, the stack, the close. Every section written in order so the narrative builds the way it should.',
+      'A complete webinar built from your story — structured to build belief, handle objections, and lead naturally to the sale.',
     details: [
-      'Full 60-minute webinar script',
-      '50-slide deck structure',
-      'Stack and close sequence',
+      'Full 60-minute script',
+      'Slide-by-slide structure',
+      'Stack and close sequence included',
     ],
     videoSrc: '/webinar-builder.mp4',
   },
   {
     step: 4,
-    title: 'Funnel Stack',
+    title: 'The Complete Funnel: A Seamless Path From Click to Checkout',
     description:
-      'Squeeze page, upsell, and VIP pages synced to your Blueprint so the messaging stays consistent from the first ad click to the final checkout. No more Frankenstein funnels.',
+      'Every page your funnel needs — written and aligned so your messaging flows from first impression to final decision.',
     details: [
-      'Registration and squeeze pages',
+      'Squeeze + registration pages',
       'Upsell and downsell copy',
-      'Thank you and confirmation pages',
+      'Thank-you and confirmation pages',
     ],
     videoSrc: '/Funnel Stack.mp4',
   },
   {
     step: 5,
-    title: 'Email Writer',
+    title: 'The Follow-Up Engine: Emails That Bring People Back to Buy',
     description:
-      'The full nurture sequence. Pre-show indoctrination, show-day reminders, post-show objection handling, cart close. 10-15 emails written in your voice, not a robot\'s.',
+      'Pre-show, show-day, and post-show sequences that build trust, handle objections, and convert attention into sales.',
     details: [
-      'Pre-show indoctrination series',
-      'Show-day reminder sequence',
-      'Post-show follow-up and cart close',
+      'Pre-show indoctrination',
+      'Show-day reminders',
+      'Post-show close sequence',
     ],
     videoSrc: '/Email-Writer.mp4',
   },
   {
     step: 6,
-    title: '60-Second Hook',
+    title: 'The Attention Engine: Short-Form Hooks That Stop the Scroll',
     description:
-      'The scroll-stopper. Short-form video scripts for TikTok and Instagram that actually sound like you. Your organic path to getting eyeballs on your funnel without spending a dollar on ads.',
+      'Turn your message into platform-native video scripts designed to grab attention and drive people into your funnel.',
     details: [
-      'Platform-native hook scripts',
-      'Multiple variations per concept',
-      'Optimized for organic reach',
+      'TikTok & IG-ready scripts',
+      'Multiple angles per idea',
+      'Built for organic reach',
     ],
     videoSrc: '/60-Second-Hook.mp4',
   },
   {
     step: 7,
-    title: 'Social Ads Writer',
+    title: 'The Traffic Engine: Ads That Meet Buyers at Every Stage',
     description:
-      'Cold, warm, and hot audiences each get different copy because they are at different stages. Funnel Studio™ knows the difference and writes accordingly.',
+      'Cold, warm, and hot audience ads — each written to match where your buyer is in their decision process.',
     details: [
-      'Cold traffic awareness ads',
-      'Warm retargeting sequences',
-      'Hot audience conversion copy',
+      'Cold awareness ads',
+      'Retargeting sequences',
+      'Conversion-focused copy',
     ],
     videoSrc: '/Social-Ads-Writer.mp4',
   },
@@ -111,10 +111,10 @@ export default function StudioBento() {
 
         <FadeUp delay={0.1}>
           <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-4">
-            One conversation. Seven launch-ready engines.
+            Everything You Need to Go From Idea to Live — In a Single Afternoon
           </h2>
           <p className="text-muted text-center max-w-[600px] mx-auto mb-20 text-lg leading-relaxed">
-            Every asset your launch needs, built from a single Brain Dump™ conversation.
+            Built from one guided conversation. Structured so every piece connects, converts, and is ready to launch.
           </p>
         </FadeUp>
 
@@ -185,6 +185,12 @@ export default function StudioBento() {
             })}
           </div>
         </div>
+
+        <FadeUp delay={0.1}>
+          <p className="text-muted text-center max-w-[640px] mx-auto mt-20 text-lg italic leading-relaxed">
+            Nothing is created in isolation. Every piece is built from the same conversation — so your funnel finally works as one system.
+          </p>
+        </FadeUp>
       </div>
     </section>
   )

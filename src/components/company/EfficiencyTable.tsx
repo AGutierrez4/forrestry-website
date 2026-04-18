@@ -1,16 +1,15 @@
 import FadeUp from '../FadeUp'
 
 const rows = [
-  { label: 'Time to launch', diy: '80+ hours', agency: '2-4 weeks', fs: 'As little as 1 day' },
-  { label: 'Cost', diy: 'Your time + 6 subscriptions', agency: '$5,000-$15,000', fs: '$47/mo Founders Rate' },
-  { label: 'Webinar script', diy: '20-25 hours of writing', agency: 'Copywriter writes it', fs: '60-min. webinar script generated from your story' },
-  { label: 'Funnel pages', diy: 'DIY in your page builder', agency: 'Designer builds them', fs: 'Fully designed 4-page funnel stack, ready to deploy' },
-  { label: 'Email sequences', diy: '10-15 hours minimum', agency: 'Extra cost, extra wait', fs: 'Full nurture stack, in order' },
-  { label: 'Ad copy', diy: 'Guess and test', agency: 'Another retainer', fs: 'Cold, warm, and hot variations' },
-  { label: 'AI output quality', diy: 'Generic, one asset at a time', agency: 'N/A', fs: 'Highly trained, consistent, connected to your Blueprint' },
-  { label: 'Revisions', diy: 'Start over each time', agency: 'Limited rounds, extra fees', fs: 'Unlimited, instant' },
-  { label: 'Number of funnels', diy: 'However many you survive', agency: '1, then pay again', fs: 'Unlimited' },
-  { label: 'Launch confidence', diy: 'Second-guessing everything', agency: 'Depends on the agency', fs: 'Every asset connected, nothing left to guess' },
+  { label: 'Time to Launch', diy: '80+ hours of "figuring it out"', agency: '4–8 weeks of back-and-forth', fs: 'Under 24 hours' },
+  { label: 'Total Cost', diy: 'Your sanity + software fees', agency: '$5,000 – $15,000+', fs: '$47/mo (Founders Rate)' },
+  { label: 'Webinar Script', diy: '3 days of staring at a blank page', agency: '$2k+ and 2 weeks of waiting', fs: 'Done in 30 minutes' },
+  { label: 'Funnel Pages', diy: '"Frankenstein" copy that leaks', agency: 'High fees for every revision', fs: 'Connected, cohesive copy' },
+  { label: 'Email Nurture', diy: 'Usually forgotten or rushed', agency: 'Another $1,500 "add-on"', fs: '15+ emails, fully synced' },
+  { label: 'Ad Strategy', diy: 'Guessing and wasting ad spend', agency: 'A separate monthly retainer', fs: 'Cold, Warm, & Hot variations' },
+  { label: 'AI Quality', diy: 'Generic "Chatbot" fluff', agency: 'N/A', fs: 'Trained Funnel Strategist' },
+  { label: 'Revisions', diy: 'Exhausting manual rewrites', agency: 'Limited rounds & slow turnarounds', fs: 'Instant and Unlimited' },
+  { label: 'Confidence', diy: '"Is this even going to work?"', agency: '"Hope they understood my vision."', fs: 'Launch with Certainty' },
 ]
 
 export default function EfficiencyTable() {
@@ -25,7 +24,7 @@ export default function EfficiencyTable() {
 
         <FadeUp delay={0.1}>
           <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-14">
-            Three paths. One takes 80 hours. One costs $10,000. One takes a conversation.
+            Choose Your Launch Path: 80 Hours of Work, $10k in Fees, or One Conversation.
           </h2>
         </FadeUp>
 
@@ -55,7 +54,10 @@ export default function EfficiencyTable() {
         </FadeUp>
 
         <FadeUp delay={0.3}>
-          <div className="mt-14 text-center">
+          <p className="text-muted text-center max-w-[640px] mx-auto mt-10 mb-8 text-lg leading-relaxed">
+            The math is simple: For less than the cost of a business lunch, you get the strategist, the copywriter, and the builder — all working together to get you live by tomorrow.
+          </p>
+          <div className="text-center">
             <a
               href="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01"
               target="_blank"

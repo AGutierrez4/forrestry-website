@@ -26,9 +26,15 @@ export default function Benefits() {
           <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
             What Changes
           </p>
-          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-14">
-            What changes after one conversation.
+          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-6">
+            What changes after one afternoon?
           </h2>
+          <p className="text-white/70 text-center max-w-[640px] mx-auto mb-14 text-lg leading-relaxed">
+            Imagine waking up tomorrow with your "Launch Stack" actually finished.
+            No more "Frankenstein" copy. No more second-guessing if your ads match your
+            webinar. You go from being a perpetual builder to a confident launcher.
+            You stop managing tools and start managing your business.
+          </p>
         </FadeUp>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

@@ -54,8 +54,8 @@ export default function Founder() {
               </p>
               <blockquote className="border-l-4 border-green pl-4 mb-5">
                 <p className="text-green italic text-lg leading-relaxed">
-                  "This is not a magic button. It takes real work from you. But the 80
-                  hours of writing, designing, and second-guessing? That part is over."
+                  "This isn't a magic button. It still requires your genius. But the 80
+                  hours of manual labor? That's officially over."
                 </p>
               </blockquote>
               <p className="text-muted text-sm leading-relaxed">

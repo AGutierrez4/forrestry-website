@@ -18,17 +18,16 @@ export default function CompanyHero() {
         </p>
 
         <h1 className="text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-[1.1] mb-6">
-          <span className="text-white">Talk Your Funnel</span>
+          <span className="text-white">Turn One Conversation Into a Complete Funnel</span>
           <br />
           <span className="bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent">
-            Into Existence.
+            You're Confident Launching.
           </span>
         </h1>
 
         <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-muted mb-10 max-w-[640px] mx-auto leading-relaxed">
-          Funnel Studio's Brain Dump™ turns your story, offer, and messaging into the
-          squeeze pages, webinar, emails, and ads you need to launch — built in sequence
-          so every piece works together.
+          One guided conversation turns your idea into a complete, connected funnel —
+          pages, webinar, emails, and ads — built to convert, not fall apart.
         </p>
 
         <div>

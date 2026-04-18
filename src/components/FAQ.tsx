@@ -4,7 +4,7 @@ import FadeUp from './FadeUp'
 const faqs = [
   {
     q: 'How is Funnel Studio™ different from ChatGPT or other AI writers?',
-    a: 'ChatGPT gives you one asset at a time with no context between them. Funnel Studio™ builds your entire launch stack from a single Brain Dump™ conversation. Every asset — squeeze page, webinar script, emails, ads — is connected to your story, your offer, and your audience. Nothing is generic because nothing is generated in isolation.',
+    a: 'ChatGPT is a blank page that requires you to be a Prompt Engineer. Funnel Studio™ is a Funnel Strategist that asks YOU the right questions. It doesn\'t just write text; it builds a connected system where the email you send on Day 7 perfectly references the secret you shared in your webinar on Day 1.',
   },
   {
     q: 'What if I already have a funnel builder like ClickFunnels?',
