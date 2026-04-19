@@ -91,54 +91,57 @@ export default function MasterclassConfirmed() {
               <span className="text-green text-2xl mr-3">📅</span>
               <h3 className="text-2xl font-bold text-white">Block Out Your Calendar</h3>
             </div>
-            <p className="text-white/70 mb-6 leading-relaxed">Protect this time like your business depends on it—because it does. Click below to add this session to your calendar immediately.</p>
+            <p className="text-white/70 mb-2 leading-relaxed">Protect this time like your business depends on it, because it does.</p>
+            <p className="text-green font-semibold mb-6">Tuesday, April 21 at 3:00 PM EST</p>
             <div className="flex flex-wrap gap-3">
-              {/* TODO: Replace # with real calendar event URLs */}
-              <a href="#" className="bg-card-bg text-green font-semibold py-2 px-4 rounded border border-green/20 hover:bg-green/10 transition text-sm no-underline">🍏 Apple Calendar</a>
-              <a href="#" className="bg-card-bg text-green font-semibold py-2 px-4 rounded border border-green/20 hover:bg-green/10 transition text-sm no-underline">📅 Google Calendar</a>
-              <a href="#" className="bg-card-bg text-green font-semibold py-2 px-4 rounded border border-green/20 hover:bg-green/10 transition text-sm no-underline">✉️ Outlook</a>
+              <a
+                href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Funnel+Studio+Masterclass&dates=20260421T200000Z/20260421T213000Z&details=Your+free+Funnel+Studio+masterclass.+Show+up+10+minutes+early+to+secure+your+seat.&location=Online"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-card-bg text-green font-semibold py-2 px-4 rounded border border-green/20 hover:bg-green/10 transition text-sm no-underline"
+              >
+                📅 Google Calendar
+              </a>
+              <a
+                href="/masterclass-event.ics"
+                download
+                className="bg-card-bg text-green font-semibold py-2 px-4 rounded border border-green/20 hover:bg-green/10 transition text-sm no-underline"
+              >
+                🍏 Apple Calendar
+              </a>
+              <a
+                href="/masterclass-event.ics"
+                download
+                className="bg-card-bg text-green font-semibold py-2 px-4 rounded border border-green/20 hover:bg-green/10 transition text-sm no-underline"
+              >
+                ✉️ Outlook
+              </a>
             </div>
           </div>
 
           {/* Community */}
           <div className="bg-card-bg text-white p-8 rounded-2xl border border-card-border">
-            <h3 className="text-2xl font-bold mb-3 text-green-bright">Join The "Funnel Launcher" Community</h3>
-            <p className="text-muted mb-6 leading-relaxed">Building funnels in isolation is a recipe for burnout. You are not alone. Join our private community of recovering "Funnel Builders" who are actively using Funnel Studio™ to launch faster.</p>
-            {/* TODO: Replace # with community/Facebook group URL */}
+            <h3 className="text-2xl font-bold mb-3 text-green-bright">Join the Funnel Studio Forresters</h3>
+            <p className="text-muted mb-6 leading-relaxed">Building funnels in isolation is a recipe for burnout. You are not alone. Join our private community of founders who are actively using Funnel Studio™ to launch faster, share wins, and help each other grow.</p>
+            {/* TODO: Replace # with Skool community URL */}
             <a href="#" className="inline-block bg-green hover:bg-green/90 text-black font-bold py-3 px-6 rounded-lg transition no-underline">
-              Join The Private Community →
+              Join the Forresters Community →
             </a>
           </div>
         </div>
 
-        {/* Bonus + Affiliate Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          {/* Bonus Download */}
+        {/* Bonus Download */}
+        <div className="max-w-xl mx-auto mb-16">
           <div className="bg-card-bg p-8 rounded-xl border-t-4 border-green flex items-start">
             <div className="bg-green/10 p-3 rounded-full mr-5 shrink-0">
               <span className="text-green text-2xl">📄</span>
             </div>
             <div>
-              <h4 className="text-xl font-bold text-white mb-2">Free Bonus Unlocked!</h4>
-              <p className="text-muted text-sm mb-4 leading-relaxed">Download <strong className="text-white">"The Anti-Prompt Cheat Sheet."</strong> Stop staring at a blank screen trying to figure out what to type. This guide shows you how to bypass prompt engineering completely.</p>
-              {/* TODO: Replace with real PDF download link */}
+              <h4 className="text-xl font-bold text-white mb-2">Free Bonus: Core Offer Checklist</h4>
+              <p className="text-muted text-sm mb-4 leading-relaxed">Download the <strong className="text-white">Core Offer Checklist</strong> to clarify your offer foundations before the masterclass. Work through each section so you show up ready to build, not guessing.</p>
+              {/* TODO: Replace with hosted PDF download link */}
               <button className="bg-green hover:bg-green/90 text-black font-bold py-2 px-4 rounded transition cursor-pointer">
-                Download PDF Now
-              </button>
-            </div>
-          </div>
-
-          {/* Affiliate */}
-          <div className="bg-card-bg p-8 rounded-xl border-t-4 border-purple flex items-start">
-            <div className="bg-purple/10 p-3 rounded-full mr-5 shrink-0">
-              <span className="text-purple text-2xl">💰</span>
-            </div>
-            <div>
-              <h4 className="text-xl font-bold text-white mb-2">Share The Relief & Get Paid</h4>
-              <p className="text-muted text-sm mb-4 leading-relaxed">Do you know another entrepreneur whose sanity is being destroyed by the 80-hour funnel grind? Share your custom affiliate link and earn recurring commissions when they upgrade.</p>
-              {/* TODO: Replace with affiliate signup URL */}
-              <button className="bg-purple hover:bg-purple/90 text-white font-bold py-2 px-4 rounded transition cursor-pointer">
-                Get Your Affiliate Link
+                Download the Checklist
               </button>
             </div>
           </div>

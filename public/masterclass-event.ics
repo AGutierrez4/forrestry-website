@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//forrestry.ai//Funnel Studio Masterclass//EN
+BEGIN:VEVENT
+DTSTART:20260421T200000Z
+DTEND:20260421T213000Z
+SUMMARY:Funnel Studio Masterclass
+DESCRIPTION:Your free Funnel Studio masterclass. Show up 10 minutes early to secure your seat.\n\nHosted by forrestry.ai
+LOCATION:Online
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
