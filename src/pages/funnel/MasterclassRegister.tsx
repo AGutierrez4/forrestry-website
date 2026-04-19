@@ -1,11 +1,43 @@
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+
+const HUBSPOT_PORTAL_ID = '51365645'
+const HUBSPOT_FORM_GUID = '752b6fa9-b4e8-4db3-9e00-29d75ab6ca98'
 
 export default function MasterclassRegister() {
   const navigate = useNavigate()
+  const [submitting, setSubmitting] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    // TODO: Wire email service (ConvertKit, Mailchimp) to capture name + email BEFORE redirect
+    setSubmitting(true)
+
+    const form = e.currentTarget
+    const firstName = (form.elements.namedItem('firstName') as HTMLInputElement).value
+    const email = (form.elements.namedItem('email') as HTMLInputElement).value
+
+    try {
+      await fetch(
+        `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL_ID}/${HUBSPOT_FORM_GUID}`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            fields: [
+              { name: 'firstname', value: firstName },
+              { name: 'email', value: email },
+            ],
+            context: {
+              pageUri: window.location.href,
+              pageName: 'Masterclass Registration',
+            },
+          }),
+        }
+      )
+    } catch {
+      // Still redirect even if HubSpot call fails
+    }
+
     navigate('/masterclass/vip')
   }
 
@@ -356,21 +388,24 @@ export default function MasterclassRegister() {
             <form className="space-y-4" onSubmit={handleSubmit}>
               <input
                 type="text"
+                name="firstName"
                 placeholder="Enter Your First Name"
                 className="w-full px-4 py-3 rounded-lg bg-card-bg border border-card-border text-white font-medium placeholder:text-muted/50 focus:outline-none focus:border-green/50 transition-colors"
                 required
               />
               <input
                 type="email"
+                name="email"
                 placeholder="Enter Your Best Email"
                 className="w-full px-4 py-3 rounded-lg bg-card-bg border border-card-border text-white font-medium placeholder:text-muted/50 focus:outline-none focus:border-green/50 transition-colors"
                 required
               />
               <button
                 type="submit"
-                className="w-full bg-green hover:bg-green/90 text-black text-xl font-black py-4 px-6 rounded-lg shadow-[0_6px_0_0_#166534] hover:shadow-[0_3px_0_0_#166534] hover:translate-y-[3px] transition-all duration-200 uppercase tracking-wide mt-2 cursor-pointer"
+                disabled={submitting}
+                className="w-full bg-green hover:bg-green/90 text-black text-xl font-black py-4 px-6 rounded-lg shadow-[0_6px_0_0_#166534] hover:shadow-[0_3px_0_0_#166534] hover:translate-y-[3px] transition-all duration-200 uppercase tracking-wide mt-2 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Register Now
+                {submitting ? 'Registering...' : 'Register Now'}
               </button>
             </form>
             <p className="text-xs text-muted mt-4">
