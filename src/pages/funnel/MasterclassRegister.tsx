@@ -43,6 +43,13 @@ export default function MasterclassRegister() {
 
   return (
     <div className="bg-white text-gray-900 min-h-screen" style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>
+      {/* Top Bar */}
+      <div className="bg-gray-900 text-white text-center py-3 border-b-4 border-green-600">
+        <p className="text-sm md:text-base font-semibold tracking-wide uppercase">
+          Funnel Studio™ by forrestry.ai presents <span className="text-green-400 font-bold">'One Funnel Today'</span> Masterclass
+        </p>
+      </div>
+
       {/* HERO */}
       <section className="pt-16 pb-12 bg-gray-50 border-b-4 border-green-600">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
