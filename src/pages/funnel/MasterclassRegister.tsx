@@ -44,7 +44,7 @@ export default function MasterclassRegister() {
   return (
     <div className="bg-white text-gray-900 min-h-screen" style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>
       {/* HERO */}
-      <section className="pt-16 pb-12 border-b-4 border-green-600">
+      <section className="pt-16 pb-12 bg-gray-50 border-b-4 border-green-600">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-block bg-green-50 border border-green-200 text-green-800 px-6 py-2 rounded-full text-sm font-bold tracking-wide uppercase mb-6">
             ⚠️ Exhausted from the 80-Hour Funnel Grind? Read This Immediately...
