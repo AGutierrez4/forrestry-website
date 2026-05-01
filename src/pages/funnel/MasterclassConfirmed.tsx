@@ -124,7 +124,7 @@ export default function MasterclassConfirmed() {
             {[
               { type: 'pain', text: 'Staring at a blank screen for hours, paralyzed by the overwhelming scope of building a funnel from scratch.' },
               { type: 'relief', label: 'The \'Brain Dump\' Protocol.', text: 'Bypass the endless build cycle by simply having a conversation. Funnel Studio™ takes your raw ideas and architects the entire structure.' },
-              { type: 'pain', text: 'Feeling unqualified because you\'re not a copywriter or a tech expert — and generic AI tools only make it worse with robotic, off-brand output.' },
+              { type: 'pain', text: 'Feeling unqualified because you\'re not a copywriter or a tech expert, and generic AI tools only make it worse with robotic, off-brand output.' },
               { type: 'relief', label: 'The Anti-Prompt Method.', text: 'No prompts, no code, no design skills. A system trained on proven frameworks extracts your genius through conversation and produces copy that sounds like you.' },
               { type: 'pain', text: 'Finally launching your funnel after weeks of work, only to hear crickets because you didn\'t have the bandwidth to set up traffic and follow-up sequences.' },
               { type: 'relief', label: 'The 10% Launch Ecosystem.', text: 'Your ads, emails, and video scripts are generated alongside your funnel pages — so everything launches together, not piece by piece.' },

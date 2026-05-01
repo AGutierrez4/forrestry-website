@@ -27,8 +27,8 @@ export default function CompanyHero() {
 
         <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-muted mb-10 max-w-[640px] mx-auto leading-relaxed">
           You've been to the events. You know the frameworks. The only thing missing is the execution.
-          One guided conversation turns your idea into a complete, connected funnel —
-          pages, webinar, emails, and ads — all cohesive, all in your voice.
+          One guided conversation turns your idea into a complete, connected funnel:
+          pages, webinar, emails, and ads. All cohesive, all in your voice.
         </p>
 
         <div>

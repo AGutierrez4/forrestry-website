@@ -70,7 +70,7 @@ export default function MasterclassRegister() {
             Russell teaches you the game. <span className="font-bold text-green-700">We play it for you.</span>{' '}
             Discover the{' '}
             <span className="font-bold text-green-700">"Brain Dump" protocol</span>{' '}
-            that turns a single conversation into a complete funnel ecosystem — webinar, pages, emails, ads, and video scripts — all cohesive, all in your voice.
+            that turns a single conversation into a complete funnel ecosystem: webinar, pages, emails, ads, and video scripts. All cohesive, all in your voice.
           </p>
           <p className="text-sm text-gray-400 font-semibold mb-10">
             🛠️ Proof it works: This entire funnel was built using Funnel Studio in a single weekend.
@@ -107,7 +107,7 @@ export default function MasterclassRegister() {
               {[
                 { icon: '❌', color: 'text-red-400', label: 'The Endless Build Trap:', text: 'Why spending weeks "tweaking" your funnel design is actually killing your conversions (and the exact "Brain Dump" protocol that builds it for you instantly).' },
                 { icon: '🔥', color: 'text-green-400', label: 'The Confidence Killer:', text: 'Feeling unqualified because you don\'t know code or design? Discover how to permanently bypass tech headaches without hiring expensive developers.' },
-                { icon: '❌', color: 'text-red-400', label: 'The Generic AI Problem:', text: 'Why standard AI tools (like ChatGPT) produce robotic, off-brand copy — and the "Anti-Prompt" secret that fixes it forever.' },
+                { icon: '❌', color: 'text-red-400', label: 'The Generic AI Problem:', text: 'Why standard AI tools (like ChatGPT) produce robotic, off-brand copy, and the "Anti-Prompt" secret that fixes it forever.' },
                 { icon: '🔥', color: 'text-green-400', label: 'The Bandwidth Nightmare:', text: 'Drowning in the anxiety of traffic generation and follow-up emails? See how the \'10% Launch Ecosystem\' handles the heavy lifting so you can finally breathe.' },
                 { icon: '❌', color: 'text-red-400', label: 'The Prompt-Engineering Lie:', text: 'Why trying to learn "AI Prompts" is just another exhausting full-time job you didn\'t ask for (and what to do instead).' },
                 { icon: '🔥', color: 'text-green-400', label: 'The Builder vs. Launcher Shift:', text: 'How to shed the exhausting identity of a \'Funnel Builder\' and step into the highly-leveraged role of a \'Funnel Launcher\'.' },
@@ -120,12 +120,12 @@ export default function MasterclassRegister() {
             </ul>
             <ul className="space-y-6">
               {[
-                { icon: '❌', color: 'text-red-400', label: 'The Blank Screen Paralysis:', text: 'Staring at a blinking cursor with no idea what to write? I\'ll show you how to pull high-converting copy directly from your brain — without typing a single prompt.' },
+                { icon: '❌', color: 'text-red-400', label: 'The Blank Screen Paralysis:', text: 'Staring at a blinking cursor with no idea what to write? I\'ll show you how to pull high-converting copy directly from your brain, without typing a single prompt.' },
                 { icon: '🔥', color: 'text-green-400', label: 'The Follow-Up Failure:', text: 'Losing sleep because you know you\'re leaving money on the table without an email sequence? Discover the automated ecosystem that ends this guilt.' },
                 { icon: '❌', color: 'text-red-400', label: 'The "Frankenstein" Funnel:', text: 'The pain of duct-taping 5 different AI tools together and getting copy that sounds like 5 different people wrote it (and the single system that replaces them all).' },
                 { icon: '🔥', color: 'text-green-400', label: 'The Weekend Thief:', text: 'How to reclaim your Saturdays and Sundays from the jaws of funnel building, while actually launching MORE campaigns than ever before.' },
-                { icon: '❌', color: 'text-red-400', label: 'The "Traffic Is Too Hard" Myth:', text: 'Why your funnel copy — not your ad budget — is the real reason traffic isn\'t converting, and the fix that changes everything.' },
-                { icon: '🔥', color: 'text-green-400', label: 'Plus much, much more!', text: 'We\'re going deep into the exact frameworks used by elite funnel builders — adapted so anyone can execute them.' },
+                { icon: '❌', color: 'text-red-400', label: 'The "Traffic Is Too Hard" Myth:', text: 'Why your funnel copy (not your ad budget) is the real reason traffic isn\'t converting, and the fix that changes everything.' },
+                { icon: '🔥', color: 'text-green-400', label: 'Plus much, much more!', text: 'We\'re going deep into the exact frameworks used by elite funnel builders, adapted so anyone can execute them.' },
               ].map((item, i) => (
                 <li key={i} className="flex items-start">
                   <span className="mr-4 text-2xl shrink-0">{item.icon}</span>
@@ -150,7 +150,7 @@ export default function MasterclassRegister() {
             <span className="text-green-600">One Weekend. One Conversation. Everything Done.</span>
           </h2>
           <p className="text-xl text-gray-500 text-center max-w-3xl mx-auto mb-12 leading-relaxed">
-            It's Saturday morning. Coffee in hand. You open Funnel Studio and start talking — about your offer, your story, your audience. No prompts. No formulas. No copywriting degree required. By Sunday night:
+            It's Saturday morning. Coffee in hand. You open Funnel Studio and start talking. About your offer, your story, your audience. No prompts. No formulas. No copywriting degree required. By Sunday night:
           </p>
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
             {[
@@ -171,11 +171,11 @@ export default function MasterclassRegister() {
             ))}
           </div>
           <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-            All cohesive. All in your voice. All built from one Strategic Blueprint — not five disconnected AI tools stitched together like a Frankenstein funnel.
+            All cohesive. All in your voice. All built from one Strategic Blueprint, not five disconnected AI tools stitched together like a Frankenstein funnel.
           </p>
           <div className="text-center">
             <a href="#register" className="inline-block bg-green-600 hover:bg-green-700 text-white text-xl md:text-2xl font-black py-5 px-12 rounded-lg shadow-[0_6px_0_0_#166534] hover:shadow-[0_3px_0_0_#166534] hover:translate-y-[3px] transition-all duration-200 uppercase tracking-wide w-full md:w-auto no-underline">
-              Show Me How — Save My Free Seat
+              Show Me How. Save My Free Seat
             </a>
           </div>
         </div>
@@ -190,7 +190,7 @@ export default function MasterclassRegister() {
           <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-lg">
             <ul className="space-y-5">
               {[
-                'You\'ve attended events like Funnel Hacking Live or the Selling Online challenge and left fired up — but couldn\'t execute what you learned.',
+                'You\'ve attended events like Funnel Hacking Live or the Selling Online challenge and left fired up, but couldn\'t execute what you learned.',
                 'You know your offer is good, but the gap between the idea in your head and a live, converting funnel feels enormous.',
                 'You\'ve tried using ChatGPT, Claude, or other AI tools for copy and the output sounded generic, robotic, or nothing like you.',
                 'You don\'t have the bandwidth to figure out traffic, email sequences, AND funnel pages all at once.',
@@ -221,12 +221,12 @@ export default function MasterclassRegister() {
                 <span className="text-green-600">It Almost Broke Me.</span>
               </h2>
               <div className="text-lg text-gray-600 space-y-4 leading-relaxed">
-                <p>Hi, I'm Andrew — the creator of Funnel Studio™ by forrestry.ai.</p>
-                <p>A few years back, I co-owned a trucking organization. We were successful, but the reality was a 24/7 grind: $25,000 weekly fuel bills and 3 AM phone calls about blown transmissions. When we sold the company, I walked away with a fire in my gut. Marketing wasn't just a pivot — it was my calling.</p>
+                <p>Hi, I'm Andrew, the creator of Funnel Studio™ by forrestry.ai.</p>
+                <p>A few years back, I co-owned a trucking organization. We were successful, but the reality was a 24/7 grind: $25,000 weekly fuel bills and 3 AM phone calls about blown transmissions. When we sold the company, I walked away with a fire in my gut. Marketing wasn't just a pivot, it was my calling.</p>
                 <p>That's when I discovered Russell Brunson, ClickFunnels, the whole world. I was <strong className="text-gray-900">all in.</strong></p>
                 <p>But within 48 hours of logging into ClickFunnels, I realized two things: I didn't know how to use the tools, and I didn't know how to write copy that converts. I could build the box, but I couldn't fill it with anything that made people want to open it.</p>
-                <p>I burned through savings on subscriptions and courses. The imposter syndrome kicked in hard. And eventually, I made one of the hardest decisions of my life — <strong className="text-gray-900">I went back to the workforce for seven years.</strong></p>
-                <p>But those seven years weren't wasted. I spent them working with <span className="bg-green-50 px-1 rounded text-green-700 font-semibold">B2B brands that operate on a global scale</span> — aerospace and defense, MedTech and healthcare — plus small businesses, coaches, and consultants. I gained deep expertise in marketing strategy and execution at the highest levels.</p>
+                <p>I burned through savings on subscriptions and courses. The imposter syndrome kicked in hard. And eventually, I made one of the hardest decisions of my life: <strong className="text-gray-900">I went back to the workforce for seven years.</strong></p>
+                <p>But those seven years weren't wasted. I spent them working with <span className="bg-green-50 px-1 rounded text-green-700 font-semibold">B2B brands that operate on a global scale</span> (aerospace and defense, MedTech and healthcare), plus small businesses, coaches, and consultants. I gained deep expertise in marketing strategy and execution at the highest levels.</p>
                 <p>Then in Fall 2025, I came back. I tried the new AI tools. And the output was still generic, robotic, and disconnected. That's when I realized: <strong className="text-gray-900">I don't need another generic AI tool. I need a system trained on the actual proven frameworks.</strong></p>
                 <p>So I built Funnel Studio. And on this masterclass, I'm going to show you exactly how it works.</p>
               </div>
@@ -249,9 +249,9 @@ export default function MasterclassRegister() {
           <div className="bg-green-700 p-8 md:p-12 rounded-2xl shadow-2xl">
             <div className="space-y-10">
               {[
-                { title: 'SECRET #1: The "Brain Dump" Protocol', bullets: ['How to bypass the endless funnel-building grind using a process that extracts your vision through a simple conversation — no code, no design skills.', 'Why traditional "funnel mapping" is causing your burnout, and the 5-minute brain dump that replaces it.', 'The secret to taking your raw, messy ideas and having them structurally organized into a strategic blueprint.'] },
-                { title: 'SECRET #2: The Anti-Prompt Method', bullets: ['Why you don\'t need to be a copywriter, a tech expert, or a prompt engineer to produce elite-level funnel content.', 'The exact reason why "prompt engineering" is a trap — and what to do instead.', 'How a system trained on proven frameworks (Brunson, Edwards, Miller, Cardone) produces categorically different output than generic AI.'] },
-                { title: 'SECRET #3: The 10% Launch Ecosystem', bullets: ['Why building four funnel pages is just the tip of the iceberg — and what\'s below the waterline is where revenue actually lives.', 'The automated ecosystem that generates your webinar, ads, emails, and video scripts from one blueprint.', 'How to shift your identity from "Funnel Builder" to "Ecosystem Launcher" — and why that shift changes everything.'] },
+                { title: 'SECRET #1: The "Brain Dump" Protocol', bullets: ['How to bypass the endless funnel-building grind using a process that extracts your vision through a simple conversation. No code, no design skills.', 'Why traditional "funnel mapping" is causing your burnout, and the 5-minute brain dump that replaces it.', 'The secret to taking your raw, messy ideas and having them structurally organized into a strategic blueprint.'] },
+                { title: 'SECRET #2: The Anti-Prompt Method', bullets: ['Why you don\'t need to be a copywriter, a tech expert, or a prompt engineer to produce elite-level funnel content.', 'The exact reason why "prompt engineering" is a trap, and what to do instead.', 'How a system trained on proven frameworks (Brunson, Edwards, Miller, Cardone) produces categorically different output than generic AI.'] },
+                { title: 'SECRET #3: The 10% Launch Ecosystem', bullets: ['Why building four funnel pages is just the tip of the iceberg, and what\'s below the waterline is where revenue actually lives.', 'The automated ecosystem that generates your webinar, ads, emails, and video scripts from one blueprint.', 'How to shift your identity from "Funnel Builder" to "Ecosystem Launcher," and why that shift changes everything.'] },
               ].map((secret, i) => (
                 <div key={i}>
                   <h3 className="text-2xl font-black mb-4 text-yellow-300">{secret.title}</h3>
@@ -280,9 +280,9 @@ export default function MasterclassRegister() {
           <h2 className="text-3xl md:text-4xl font-black text-center mb-12 text-gray-900">Frequently Asked Questions</h2>
           <div className="space-y-6">
             {[
-              { q: 'Q: I am completely exhausted by tech. Will this still work for me?', a: 'Absolutely. This was built specifically for people who feel overwhelmed by page builders and tech stacks. The entire goal of the "Brain Dump" protocol is to remove the tech barrier — you just have a conversation, and the system handles the rest.' },
-              { q: 'Q: I\'ve tried standard AI (like ChatGPT) and it was terrible. How is this different?', a: 'Generic AI produces generic output because it wasn\'t trained on funnel-specific frameworks. On this masterclass, I\'ll show you the "Anti-Prompt Method" — a system trained on the proven methodologies of Brunson, Edwards, Miller, and Cardone that produces categorically different copy without you writing a single prompt.' },
-              { q: 'Q: I don\'t have the bandwidth for traffic or follow-ups. Will this just add to my plate?', a: 'The opposite. The reason you don\'t have bandwidth is because building the funnel itself is consuming all your energy. The ecosystem approach generates your ads, emails, and video scripts alongside your funnel pages — so you launch everything at once instead of building piece by piece.' },
+              { q: 'Q: I am completely exhausted by tech. Will this still work for me?', a: 'Absolutely. This was built specifically for people who feel overwhelmed by page builders and tech stacks. The entire goal of the "Brain Dump" protocol is to remove the tech barrier. You just have a conversation, and the system handles the rest.' },
+              { q: 'Q: I\'ve tried standard AI (like ChatGPT) and it was terrible. How is this different?', a: 'Generic AI produces generic output because it wasn\'t trained on funnel-specific frameworks. On this masterclass, I\'ll show you the "Anti-Prompt Method," a system trained on the proven methodologies of Brunson, Edwards, Miller, and Cardone that produces categorically different copy without you writing a single prompt.' },
+              { q: 'Q: I don\'t have the bandwidth for traffic or follow-ups. Will this just add to my plate?', a: 'The opposite. The reason you don\'t have bandwidth is because building the funnel itself is consuming all your energy. The ecosystem approach generates your ads, emails, and video scripts alongside your funnel pages, so you launch everything at once instead of building piece by piece.' },
               { q: 'Q: Is this masterclass actually free?', a: 'Yes, 100% free. No credit card required. Just bring a notepad and an open mind.' },
               { q: 'Q: How long is the training?', a: 'About 60-90 minutes. We cut the fluff and go straight into the "Brain Dump" protocol, the "Anti-Prompt" method, and the Launch Ecosystem.' },
               { q: 'Q: Will a replay be available?', a: 'Replays are not guaranteed. Show up live to make sure you don\'t miss anything.' },
@@ -307,7 +307,7 @@ export default function MasterclassRegister() {
             </div>
             <h3 className="text-2xl font-bold mb-4">My Promise To You</h3>
             <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
-              Your only investment today is your time. If you show up to this free masterclass, you will walk away understanding exactly how to go from a raw idea to a complete, launch-ready funnel ecosystem — in a single weekend.
+              Your only investment today is your time. If you show up to this free masterclass, you will walk away understanding exactly how to go from a raw idea to a complete, launch-ready funnel ecosystem in a single weekend.
             </p>
           </div>
 
