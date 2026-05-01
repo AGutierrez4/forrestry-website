@@ -45,11 +45,11 @@ export default function MasterclassConfirmed() {
               </div>
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Please, Stop Punishing Yourself.</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">You Made The Right Call. Here's What's Next.</h2>
               <div className="text-gray-600 space-y-4 leading-relaxed">
-                <p>If you've been feeling that heavy, visceral knot in your stomach every time you open a funnel builder... I need you to know that <strong className="text-gray-900">I understand exactly how much that hurts.</strong></p>
-                <p className="text-gray-900 font-semibold text-lg border-l-4 border-green-600 pl-4">That pain is exactly why I built Funnel Studio™. And it's exactly why this masterclass is going to change your life.</p>
-                <p>Watch the short video above, then complete the mandatory steps below.</p>
+                <p>If you've been feeling overwhelmed every time you sit down to build a funnel... I need you to know that <strong className="text-gray-900">you're not alone, and that feeling is about to change.</strong></p>
+                <p className="text-gray-900 font-semibold text-lg border-l-4 border-green-600 pl-4">That frustration is exactly why I built Funnel Studio™. And this masterclass is going to show you a completely different way forward.</p>
+                <p>Watch the short video above, then complete the steps below so you're ready to hit the ground running.</p>
               </div>
             </div>
           </div>
@@ -123,11 +123,11 @@ export default function MasterclassConfirmed() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               { type: 'pain', text: 'Staring at a blank screen for hours, paralyzed by the overwhelming scope of building a funnel from scratch.' },
-              { type: 'relief', label: 'The \'Brain Dump\' Protocol.', text: 'Watch as we bypass the 80-hour grind by letting you simply "brain dump" your raw ideas, while Funnel Studio™ instantly architects the structure.' },
-              { type: 'pain', text: 'The crushing imposter syndrome of needing to be a "tech wizard" or learning complex prompt engineering just to get copy that doesn\'t sound like a robot.' },
-              { type: 'relief', label: 'The Anti-Prompt Method.', text: 'Discover how to completely eliminate the need for tech skills. Generate high-converting assets without writing a single line of code.' },
-              { type: 'pain', text: 'Finally launching your funnel after weeks of exhausting work, only to hear crickets because you lack the bandwidth to solve traffic and follow-up issues.' },
-              { type: 'relief', label: 'The 10% Launch Ecosystem.', text: 'Automate the heavy lifting of traffic and follow-up, so you can focus on the 10% of tasks that actually generate revenue.' },
+              { type: 'relief', label: 'The \'Brain Dump\' Protocol.', text: 'Bypass the endless build cycle by simply having a conversation. Funnel Studio™ takes your raw ideas and architects the entire structure.' },
+              { type: 'pain', text: 'Feeling unqualified because you\'re not a copywriter or a tech expert — and generic AI tools only make it worse with robotic, off-brand output.' },
+              { type: 'relief', label: 'The Anti-Prompt Method.', text: 'No prompts, no code, no design skills. A system trained on proven frameworks extracts your genius through conversation and produces copy that sounds like you.' },
+              { type: 'pain', text: 'Finally launching your funnel after weeks of work, only to hear crickets because you didn\'t have the bandwidth to set up traffic and follow-up sequences.' },
+              { type: 'relief', label: 'The 10% Launch Ecosystem.', text: 'Your ads, emails, and video scripts are generated alongside your funnel pages — so everything launches together, not piece by piece.' },
             ].map((item, i) => (
               <div key={i} className={`flex items-start p-4 rounded-lg border ${item.type === 'pain' ? 'bg-white border-gray-200' : 'bg-green-50 border-green-200'}`}>
                 <span className={`mr-4 mt-1 shrink-0 ${item.type === 'pain' ? 'text-red-400' : 'text-green-600'}`}>
@@ -150,13 +150,13 @@ export default function MasterclassConfirmed() {
         {/* Strategy Session Soft Pitch */}
         <div className="bg-gray-900 text-white rounded-2xl border-2 border-green-600 p-8 md:p-12 mb-16 text-center">
           <span className="bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-4 inline-block">
-            Accelerated Pain Relief
+            Want To Move Even Faster?
           </span>
           <h3 className="text-3xl md:text-4xl font-extrabold mb-6">
-            Can't Afford To Wait Another Minute In The "Grind"?
+            Skip The DIY Learning Curve Entirely
           </h3>
           <p className="text-lg text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-            Skip the line. Book a private, 1-on-1 <strong className="text-white">Funnel Escape Strategy Session</strong> with our team right now. We will look under the hood of your current setup and map out your custom transition plan.
+            If you'd rather have someone implement alongside you, we offer a private 1-on-1 <strong className="text-white">Funnel Launch Strategy Session</strong> where our team maps out your custom plan and helps you execute.
           </p>
           <Link to="/masterclass/strategy" className="inline-block bg-green-500 hover:bg-green-400 text-gray-900 font-extrabold text-lg py-4 px-10 rounded-full transition no-underline">
             Yes! Map Out My Escape Route Now →

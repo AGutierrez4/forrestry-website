@@ -12,7 +12,7 @@ export default function MasterclassStrategy() {
     <div className="bg-white text-gray-900 min-h-screen" style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>
       {/* Warning Bar */}
       <div className="bg-green-600 text-white text-center py-3 px-4 font-bold text-sm md:text-base tracking-wide">
-        WAIT! YOUR ORDER IS NOT COMPLETE. DO NOT CLOSE THIS PAGE.
+        YOU'VE TAKEN STEP ONE. HERE'S HOW TO SKIP THE LINE.
       </div>
 
       <div className="max-w-5xl mx-auto px-4 py-10">
@@ -21,7 +21,7 @@ export default function MasterclassStrategy() {
             Tired of the post-event "Implementation Crash"?
           </p>
           <h1 className="text-4xl md:text-6xl font-black leading-tight mb-6 text-gray-900">
-            Want To <span className="text-green-600">Bypass The 80-Hour Grind</span> Completely?
+            Want To <span className="text-green-600">Skip The Learning Curve</span> Completely?
           </h1>
           <p className="text-lg md:text-2xl text-gray-500 font-medium max-w-4xl mx-auto">
             Let us personally hold your hand and implement the 'Brain Dump' Protocol for you.
@@ -41,11 +41,11 @@ export default function MasterclassStrategy() {
 
         {/* Pain */}
         <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-12 border-t-4 border-green-600">
-          <h2 className="text-3xl font-black mb-6 text-gray-900">The "Heart Hit The Floor" Moment Is Coming...</h2>
+          <h2 className="text-3xl font-black mb-6 text-gray-900">Here's What Usually Happens Next...</h2>
           <div className="text-lg text-gray-600 space-y-6 leading-relaxed">
             <p>You just made an incredible decision. You have Funnel Studio™. You have the blueprint. You are officially on the path to becoming a true <strong className="text-gray-900">Funnel Launcher</strong>.</p>
-            <p>But let's be brutally honest about what usually happens next. Tomorrow morning, the hype fades. <strong className="text-gray-900">Imposter syndrome creeps back in.</strong></p>
-            <p>If you try to go it alone right now, without personalized guidance, you risk falling right back into that trap.</p>
+            <p>But let's be honest about what usually happens after the excitement fades. <strong className="text-gray-900">Tomorrow morning, the doubt creeps back in.</strong> The gap between knowing what to do and actually doing it starts to feel wide again.</p>
+            <p>If you try to go it alone without personalized guidance, you risk losing momentum right when it matters most.</p>
           </div>
         </div>
 
@@ -85,9 +85,9 @@ export default function MasterclassStrategy() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               'You have a graveyard of half-finished funnels because the tech always breaks your momentum.',
-              'You feel a knot in your stomach every time you think about having to learn "prompt engineering."',
-              'You are terrified of the post-webinar "implementation crash" where you\'re left alone to figure it out.',
-              'You simply do not have the 80 hours required to grind out a funnel, traffic plan, and follow-up sequence by yourself.',
+              'You\'d rather have an expert guide you through the process than spend hours figuring it out alone.',
+              'You\'re concerned about the post-webinar "implementation crash" where excitement fades and nothing gets launched.',
+              'You simply don\'t have the time to build a funnel, traffic plan, and email sequence from scratch by yourself.',
             ].map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl shadow-md border-l-4 border-green-600">
                 <p className="text-gray-700 font-medium">❌ {item}</p>
@@ -96,22 +96,10 @@ export default function MasterclassStrategy() {
           </div>
         </div>
 
-        {/* Social Proof */}
-        <div className="bg-gray-50 rounded-2xl p-8 md:p-12 mb-12 border border-gray-200">
-          <h2 className="text-3xl font-black mb-8 text-center text-gray-900">They Escaped The Grind. Now It's Your Turn.</h2>
-          <div className="space-y-8">
-            {[
-              { quote: '"The 1-on-1 session changed everything. They extracted my \'Brain Dump\' in 45 minutes, and we launched my funnel the next day. The imposter syndrome is completely gone."', name: '- Sarah T., Former Frustrated Funnel Builder' },
-              { quote: '"The team used the Anti-Prompt Method on my business during our call, and suddenly, the 10% Launch Ecosystem made perfect sense. I went from staring at a blank screen to having a live, converting funnel."', name: '- Marcus J., Digital Course Creator' },
-            ].map((t, i) => (
-              <div key={i} className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <div className="text-yellow-400 text-xl mb-4">★★★★★</div>
-                <p className="text-gray-600 italic mb-4 leading-relaxed">{t.quote}</p>
-                <p className="font-bold text-gray-900">{t.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* TODO: Restore testimonials section when real customer feedback is available.
+           Original section: "They Escaped The Grind. Now It's Your Turn."
+           with 2 testimonial cards (Sarah T., Marcus J.).
+           Replace with real strategy session testimonials before driving paid traffic. */}
 
         {/* Guarantee */}
         <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-12 border-4 border-green-500 text-center">
@@ -132,7 +120,7 @@ export default function MasterclassStrategy() {
           {/* TODO: Replace # with Stripe payment link for $297 */}
           <a href="#" className="block w-full md:w-3/4 mx-auto bg-green-600 hover:bg-green-700 text-white font-black text-xl md:text-2xl py-6 px-8 rounded-xl shadow-[0_8px_0_0_#166534] hover:shadow-[0_4px_0_0_#166534] hover:translate-y-1 transition-all duration-200 mb-8 no-underline">
             YES! Add The Strategy Session For Just $297
-            <span className="block text-sm md:text-base font-normal mt-2 opacity-80">I want to skip the 80-hour grind and get Done-With-You implementation.</span>
+            <span className="block text-sm md:text-base font-normal mt-2 opacity-80">I want done-with-you implementation so I can launch faster.</span>
           </a>
           <Link to="/masterclass/confirmed" className="inline-block text-gray-400 hover:text-gray-600 text-sm md:text-base underline transition-colors max-w-lg mx-auto leading-relaxed">
             No thanks. I'll figure it out on my own.

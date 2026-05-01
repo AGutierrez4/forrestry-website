@@ -52,13 +52,13 @@ export default function MasterclassVIP() {
       {/* Sales Letter */}
       <section className="max-w-3xl mx-auto px-4 mb-16 text-lg text-gray-600 leading-relaxed">
         <p className="mb-4">You just secured your seat for the Funnel Studio™ Masterclass, and I couldn't be more excited to help you shift from a stressed-out "Funnel Builder" to a high-leverage "Funnel Launcher."</p>
-        <p className="mb-4 font-bold text-gray-900">But let's be brutally honest about why you registered today.</p>
+        <p className="mb-4 font-bold text-gray-900">But let's be honest about why you registered today.</p>
         <p className="mb-4 bg-green-50 p-4 border-l-4 border-green-600 italic text-gray-700">
-          You are exhausted.<br /><br />
-          You know the visceral frustration of the 80-hour funnel build. You know the "heart hit the floor" moment when you finally try to use standard AI to speed things up, only to get robotic, unusable garbage back.
+          You've been through the grind.<br /><br />
+          You know the frustration of spending weeks on a funnel that still doesn't convert. You've tried standard AI tools and gotten generic, off-brand copy that doesn't sound like you.
         </p>
         <p className="mb-4">The free masterclass is going to show you the exact blueprint to fix this forever.</p>
-        <p className="mb-6 font-bold text-xl text-center text-gray-900">But... why suffer through another week of the 80-hour grind waiting for the masterclass to start?</p>
+        <p className="mb-6 font-bold text-xl text-center text-gray-900">But... why wait for the masterclass when you can get a head start right now?</p>
       </section>
 
       {/* VIP Offer Stack */}
@@ -101,35 +101,17 @@ export default function MasterclassVIP() {
         </div>
       </section>
 
-      {/* Social Proof */}
-      <section className="max-w-5xl mx-auto px-4 mb-16">
-        <h2 className="text-3xl font-black text-center text-gray-900 mb-10">They Escaped The Grind. Will You?</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          {[
-            { quote: '"Upgrading to VIP gave me the Anti-Prompt swipe file, and I finished the funnel in 2 hours. The pain relief was immediate."', name: 'Sarah J.', role: 'Funnel Launcher' },
-            { quote: '"The Brain Dump protocol I got in the VIP upgrade completely bypassed my tech limitations. I went from a struggling builder to a Launcher overnight."', name: 'Mike T.', role: 'Agency Owner' },
-          ].map((t, i) => (
-            <div key={i} className="bg-gray-50 p-8 rounded-xl border border-gray-200 shadow-md relative">
-              <div className="text-green-600/20 text-6xl absolute top-4 left-4 font-serif leading-none">"</div>
-              <p className="text-gray-600 italic mb-4 relative z-10 leading-relaxed">{t.quote}</p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-gray-200 rounded-full mr-4" />
-                <div>
-                  <p className="font-bold text-gray-900">{t.name}</p>
-                  <p className="text-sm text-gray-500">{t.role}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* TODO: Restore testimonials section when real customer feedback is available.
+         Original section: "They Escaped The Grind. Will You?"
+         with 2 testimonial cards (Sarah J., Mike T.).
+         Replace with real VIP upgrade testimonials before driving paid traffic. */}
 
       {/* Urgency & Guarantee */}
       <section className="max-w-4xl mx-auto px-4 mb-16 text-center">
         <div className="bg-green-50 border-2 border-green-300 rounded-xl p-8 mb-8">
           <h3 className="text-2xl font-black text-green-700 mb-4 uppercase">⚠️ URGENT WARNING ⚠️</h3>
           <p className="text-lg text-gray-800 font-semibold mb-2">We only have the bandwidth to host 50 VIPs on the Backstage Q&A.</p>
-          <p className="text-gray-600">Once those 50 spots are gone, this page will redirect. <strong className="text-gray-900">Every minute you wait is another minute stuck in the 80-hour grind.</strong></p>
+          <p className="text-gray-600">Once those 50 spots are gone, this page will redirect. <strong className="text-gray-900">Don't let this head start slip away.</strong></p>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-left bg-white p-8 rounded-xl shadow-lg border border-gray-200">
           <div className="w-24 h-24 shrink-0 rounded-full bg-green-50 border-2 border-green-300 flex items-center justify-center">
@@ -139,8 +121,8 @@ export default function MasterclassVIP() {
             </div>
           </div>
           <div>
-            <h3 className="text-2xl font-black text-gray-900 mb-2">My "End The Grind" 30-Day Guarantee</h3>
-            <p className="text-gray-600 leading-relaxed">If you upgrade to VIP, attend the masterclass, use the tools, and don't feel like we've completely eliminated the 80-hour grind... email my team. I will refund your $47 immediately, and you can keep all the VIP bonuses.</p>
+            <h3 className="text-2xl font-black text-gray-900 mb-2">My 30-Day Money-Back Guarantee</h3>
+            <p className="text-gray-600 leading-relaxed">If you upgrade to VIP, attend the masterclass, use the tools, and don't feel like the VIP bonuses were worth every penny... email my team. I will refund your $47 immediately, and you can keep all the VIP materials.</p>
           </div>
         </div>
       </section>
