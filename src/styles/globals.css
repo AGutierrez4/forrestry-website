@@ -354,3 +354,129 @@ body {
   border: none;
   border-radius: 0;
 }
+
+
+/* ===== HubSpot Form Style Overrides ===== */
+
+/* Target HubSpot's rendered form inside our lead magnet card */
+.article-content .lead-magnet-card form,
+.article-content .lead-magnet-card .hs-form,
+.article-content .lead-magnet-card .hs-form-private {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Input fields */
+.article-content .lead-magnet-card input[type="text"],
+.article-content .lead-magnet-card input[type="email"],
+.article-content .lead-magnet-card input[type="tel"],
+.article-content .lead-magnet-card input[type="number"],
+.article-content .lead-magnet-card textarea,
+.article-content .lead-magnet-card select,
+.article-content .lead-magnet-card .hs-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border-radius: 0.625rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 0.95rem;
+  font-family: var(--font-sans);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.article-content .lead-magnet-card input[type="text"]:focus,
+.article-content .lead-magnet-card input[type="email"]:focus,
+.article-content .lead-magnet-card input[type="tel"]:focus,
+.article-content .lead-magnet-card input[type="number"]:focus,
+.article-content .lead-magnet-card textarea:focus,
+.article-content .lead-magnet-card select:focus,
+.article-content .lead-magnet-card .hs-input:focus {
+  border-color: var(--color-green);
+  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.1);
+}
+
+.article-content .lead-magnet-card input::placeholder,
+.article-content .lead-magnet-card textarea::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* Labels */
+.article-content .lead-magnet-card label,
+.article-content .lead-magnet-card .hs-form-field > label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+/* Submit button */
+.article-content .lead-magnet-card input[type="submit"],
+.article-content .lead-magnet-card button[type="submit"],
+.article-content .lead-magnet-card .hs-button {
+  width: 100%;
+  padding: 0.9rem 2rem;
+  border-radius: 0.625rem;
+  border: none;
+  background: var(--color-green);
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 12px rgba(74, 222, 128, 0.2);
+}
+
+.article-content .lead-magnet-card input[type="submit"]:hover,
+.article-content .lead-magnet-card button[type="submit"]:hover,
+.article-content .lead-magnet-card .hs-button:hover {
+  background: #3fcf72;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(74, 222, 128, 0.3);
+}
+
+.article-content .lead-magnet-card input[type="submit"]:active,
+.article-content .lead-magnet-card button[type="submit"]:active,
+.article-content .lead-magnet-card .hs-button:active {
+  transform: translateY(0);
+}
+
+/* Error messages */
+.article-content .lead-magnet-card .hs-error-msgs,
+.article-content .lead-magnet-card .hs-error-msg {
+  color: #f87171;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+/* Field groups */
+.article-content .lead-magnet-card .hs-form-field {
+  margin-bottom: 0.5rem;
+}
+
+/* Legal consent / GDPR text */
+.article-content .lead-magnet-card .legal-consent-container,
+.article-content .lead-magnet-card .hs-richtext {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+/* Hide HubSpot branding if present */
+.article-content .lead-magnet-card .hs-form__virality-link {
+  display: none;
+}
+
+/* Submitted message */
+.article-content .lead-magnet-card .submitted-message {
+  color: var(--color-green);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem 0;
+}
