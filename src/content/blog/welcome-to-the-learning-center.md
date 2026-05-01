@@ -5,6 +5,7 @@ publishDate: 2026-05-01
 author: "Andrew Gutierrez"
 category: "Announcements"
 tags: ["getting-started", "funnel-studio"]
+draft: true
 ---
 
 If you're here, you're probably in one of two places:

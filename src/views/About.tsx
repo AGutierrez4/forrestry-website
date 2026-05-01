@@ -4,12 +4,14 @@ import Footer from '../components/Footer'
 
 const navLinks = [
   { label: 'Product', href: '/#studio' },
+  { label: 'Learning Center', href: '/learning-center' },
   { label: 'Pricing', href: '/pricing' },
   { label: 'About', href: '/about' },
 ]
 
 const footerLinks = [
   { label: 'Product', href: '/#studio' },
+  { label: 'Learning Center', href: '/learning-center' },
   { label: 'Pricing', href: '/pricing' },
   { label: 'About', href: '/about' },
   { label: 'Privacy', href: '/privacy' },
