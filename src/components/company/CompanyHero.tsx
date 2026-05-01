@@ -14,7 +14,7 @@ export default function CompanyHero() {
 
       <div className="relative z-10 max-w-[1100px] mx-auto px-6 text-center">
         <p className="text-green text-sm font-semibold tracking-wide uppercase mb-6">
-          From One Conversation to a Complete Launch Stack
+          You learned the strategy. Now launch the funnel.
         </p>
 
         <h1 className="text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-[1.1] mb-6">
@@ -26,8 +26,9 @@ export default function CompanyHero() {
         </h1>
 
         <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-muted mb-10 max-w-[640px] mx-auto leading-relaxed">
-          One guided conversation turns your idea into a complete, connected funnel.
-          Pages, webinar, emails, and ads. Built to convert, not fall apart.
+          You've been to the events. You know the frameworks. The only thing missing is the execution.
+          One guided conversation turns your idea into a complete, connected funnel —
+          pages, webinar, emails, and ads — all cohesive, all in your voice.
         </p>
 
         <div>

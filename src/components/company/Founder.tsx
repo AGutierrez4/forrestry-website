@@ -35,25 +35,19 @@ export default function Founder() {
               <h3 className="text-xl font-bold text-white mb-1">Andrew Gutierrez</h3>
               <p className="text-green text-sm font-medium mb-5">Founder, forrestry.ai</p>
               <p className="text-white/70 leading-relaxed mb-4">
-                If you've ever sat down to build your funnel and felt that quiet panic. "I know what this should look like… so why can't I get it out of my head?"
+                If you've ever sat down to build your funnel and felt that quiet panic — "I know what this should look like… so why can't I get it out of my head?" — that's the moment this was built for.
               </p>
               <p className="text-white/70 leading-relaxed mb-4">
-                That's the moment this was built for.
+                Before funnels, I co-owned a trucking organization. When we sold the company, I dove headfirst into online marketing — and hit the wall hard. The strategy made sense. The frameworks made sense. But execution? Copy, pages, emails, ads, tech. All at once. I burned through savings and eventually stepped away.
               </p>
               <p className="text-white/70 leading-relaxed mb-4">
-                I got pulled into the funnel world in 2019 and hit that wall hard. The strategy made sense. The frameworks made sense. But execution? Copy, pages, emails, ads, tech. All at once.
+                Over the next seven years, I worked with B2B brands operating on a global scale — aerospace and defense, MedTech and healthcare — plus small businesses, coaches, and consultants. I gained deep expertise in what actually makes marketing convert at the highest levels.
               </p>
               <p className="text-white/70 leading-relaxed mb-4">
-                So I did what most people do. I stepped away.
+                When I came back to build my own funnel in 2025, I thought AI would solve it. It didn't. The output was generic, disconnected, and I was still staring down 80+ hours of real work.
               </p>
               <p className="text-white/70 leading-relaxed mb-4">
-                Over the next few years, I worked across agencies, brands, and campaigns, learning what actually makes things convert.
-              </p>
-              <p className="text-white/70 leading-relaxed mb-4">
-                When I came back to build my own funnel, I thought AI would solve it. It didn't. The output was generic. Disconnected. And I was still staring down 80+ hours of real work.
-              </p>
-              <p className="text-white/70 leading-relaxed mb-4">
-                That's when it clicked: The problem isn't knowing what to build. It's having a system that actually builds it with you.
+                That's when it clicked: I don't need another generic AI tool. I need a system trained on the actual proven frameworks — one that turns a conversation into a complete, cohesive ecosystem.
               </p>
               <p className="text-white/70 leading-relaxed mb-6">
                 So I stopped trying to finish my funnel… and built the tool I wish existed the first time.
