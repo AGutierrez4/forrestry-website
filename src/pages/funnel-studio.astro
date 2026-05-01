@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
+import SocialProof from '../components/SocialProof'
+import HowItWorks from '../components/HowItWorks'
+import Pricing from '../components/Pricing'
+import Community from '../components/Community'
+import FinalCTA from '../components/FinalCTA'
+import Footer from '../components/Footer'
+---
+
+<BaseLayout title="Funnel Studio™ | Stop Building Funnels. Start Launching Them." description="AI-powered launch ecosystem for entrepreneurs. Go from raw idea to live, revenue-generating funnel in hours, not months.">
+  <Navbar client:load links={[{label:'Product',href:'#product'},{label:'Community',href:'#community'},{label:'Pricing',href:'#pricing'}]} ctaText="Join Beta →" ctaHref="https://app.funnelstudio.forrestry.ai" signInHref="https://app.funnelstudio.forrestry.ai" logoHref="/funnel-studio" />
+  <Hero client:visible />
+  <SocialProof client:visible />
+  <HowItWorks client:visible />
+  <Pricing client:visible />
+  <Community client:visible />
+  <FinalCTA client:visible />
+  <Footer />
+</BaseLayout>

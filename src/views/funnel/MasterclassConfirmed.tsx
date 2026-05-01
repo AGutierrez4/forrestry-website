@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+
 
 export default function MasterclassConfirmed() {
   return (
@@ -158,9 +158,9 @@ export default function MasterclassConfirmed() {
           <p className="text-lg text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
             If you'd rather have someone implement alongside you, we offer a private 1-on-1 <strong className="text-white">Funnel Launch Strategy Session</strong> where our team maps out your custom plan and helps you execute.
           </p>
-          <Link to="/masterclass/strategy" className="inline-block bg-green-500 hover:bg-green-400 text-gray-900 font-extrabold text-lg py-4 px-10 rounded-full transition no-underline">
+          <a href="/masterclass/strategy" className="inline-block bg-green-500 hover:bg-green-400 text-gray-900 font-extrabold text-lg py-4 px-10 rounded-full transition no-underline">
             Yes! Map Out My Escape Route Now →
-          </Link>
+          </a>
           <p className="mt-4 text-sm text-gray-400">*Extremely limited bandwidth. Only 5 strategy sessions available per week.</p>
         </div>
 

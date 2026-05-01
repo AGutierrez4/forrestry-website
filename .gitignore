@@ -1,29 +1,8 @@
-# Dependencies
-node_modules/
-
-# Build output
-dist/
-
-# Environment variables
+node_modules
+dist
+.vercel/output
+.astro
 .env
 .env.*
 !.env.example
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
 .DS_Store
-Thumbs.db
-
-# Logs
-*.log
-npm-debug.log*
-
-# Analysis docs (optional - remove if you want to track these)
-*_RLM_ANALYSIS.md
-*_COMPLETE.md
-*_ORIGINAL_CODE.md

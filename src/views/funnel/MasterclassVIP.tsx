@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+
 
 const stackItems = [
   { title: 'The \'Brain Dump\' Protocol Quick-Start Guide', value: '$297', desc: 'Bypass the agonizing outlining phase. Just dump your raw thoughts, and watch as it maps your entire architecture.' },
@@ -134,9 +134,9 @@ export default function MasterclassVIP() {
           YES! Upgrade Me To VIP Access Now ($47)
         </a>
         <br />
-        <Link to="/masterclass/confirmed" className="inline-block text-gray-400 hover:text-gray-600 text-sm underline transition-colors max-w-lg mx-auto leading-relaxed">
+        <a href="/masterclass/confirmed" className="inline-block text-gray-400 hover:text-gray-600 text-sm underline transition-colors max-w-lg mx-auto leading-relaxed">
           No thanks. Take me to the confirmation page.
-        </Link>
+        </a>
       </section>
 
       <footer className="bg-gray-950 py-8 text-center text-gray-500 text-sm">

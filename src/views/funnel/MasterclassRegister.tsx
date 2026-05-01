@@ -1,11 +1,11 @@
-import { useNavigate } from 'react-router-dom'
+
 import { useState } from 'react'
 
 const HUBSPOT_PORTAL_ID = '51365645'
 const HUBSPOT_FORM_GUID = '752b6fa9-b4e8-4db3-9e00-29d75ab6ca98'
 
 export default function MasterclassRegister() {
-  const navigate = useNavigate()
+  
   const [submitting, setSubmitting] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -38,7 +38,7 @@ export default function MasterclassRegister() {
       // Still redirect even if HubSpot call fails
     }
 
-    navigate('/masterclass/vip')
+    window.location.href = '/masterclass/vip'
   }
 
   return (

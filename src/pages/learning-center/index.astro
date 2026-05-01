@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Navbar from '../../components/Navbar'
+import Footer from '../../components/Footer'
+import { getCollection } from 'astro:content'
+
+const posts = (await getCollection('blog'))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+---
+
+<BaseLayout title="Learning Center | forrestry.ai" description="Funnel strategy, launch frameworks, and practical guides for entrepreneurs who are done waiting.">
+  <Navbar client:load links={[{label:'Product',href:'/#studio'},{label:'Learning Center',href:'/learning-center'},{label:'Pricing',href:'/pricing'}]} ctaText="Claim Founders Spot" ctaHref="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01" signInHref="https://app.funnelstudio.forrestry.ai" logoHref="/" />
+
+  <div class="pt-32 pb-24 px-6">
+    <div class="max-w-[1100px] mx-auto">
+      <p class="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">Learning Center</p>
+      <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-extrabold text-center leading-[1.1] mb-4">Strategy, frameworks, and launch guides.</h1>
+      <p class="text-muted text-lg text-center max-w-[600px] mx-auto mb-16 leading-relaxed">Practical content for entrepreneurs who want to stop building and start launching.</p>
+
+      {posts.length === 0 ? (
+        <p class="text-muted text-center text-lg">Posts coming soon.</p>
+      ) : (
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {posts.map((post) => (
+            <a href={`/learning-center/${post.id}`} class="group block bg-card-bg border border-card-border rounded-2xl p-6 no-underline hover:border-green/30 transition-colors">
+              <span class="text-green text-xs font-semibold tracking-wide uppercase">{post.data.category}</span>
+              <h2 class="text-white font-bold text-lg mt-2 mb-3 group-hover:text-green transition-colors">{post.data.title}</h2>
+              <p class="text-muted text-sm leading-relaxed mb-4">{post.data.description}</p>
+              <time datetime={post.data.publishDate.toISOString()} class="text-muted/60 text-xs">
+                {post.data.publishDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </time>
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+
+  <Footer links={[{label:'Product',href:'/#studio'},{label:'Learning Center',href:'/learning-center'},{label:'Pricing',href:'/pricing'},{label:'Privacy',href:'/privacy'},{label:'Terms',href:'/terms'}]} tagline="Stop Building. Start Launching." />
+</BaseLayout>

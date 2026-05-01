@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+
 
 const valueItems = [
   { title: 'The 1-on-1 "Brain Dump" Extraction Session', value: '$1,500', desc: 'We will personally extract your expertise and feed it into Funnel Studio™ for you, ensuring your funnels sound exactly like you.' },
@@ -122,9 +122,9 @@ export default function MasterclassStrategy() {
             YES! Add The Strategy Session For Just $297
             <span className="block text-sm md:text-base font-normal mt-2 opacity-80">I want done-with-you implementation so I can launch faster.</span>
           </a>
-          <Link to="/masterclass/confirmed" className="inline-block text-gray-400 hover:text-gray-600 text-sm md:text-base underline transition-colors max-w-lg mx-auto leading-relaxed">
+          <a href="/masterclass/confirmed" className="inline-block text-gray-400 hover:text-gray-600 text-sm md:text-base underline transition-colors max-w-lg mx-auto leading-relaxed">
             No thanks. I'll figure it out on my own.
-          </Link>
+          </a>
         </div>
       </div>
 
