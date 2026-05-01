@@ -20,6 +20,7 @@ const formattedDate = post.data.publishDate.toLocaleDateString('en-US', {
 })
 
 const isoDate = post.data.publishDate.toISOString().split('T')[0]
+const readingTime = Math.ceil(post.body.split(/\s+/).length / 230)
 
 const articleSchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -40,37 +41,78 @@ const articleSchema = JSON.stringify({
   },
   "datePublished": isoDate,
   "description": post.data.description,
+  "image": post.data.heroImage ? `https://www.forrestry.ai${post.data.heroImage}` : undefined,
   "mainEntityOfPage": {
     "@type": "WebPage"
   }
 })
 ---
 
-<BaseLayout title={`${post.data.title} | Learning Center`} description={post.data.description}>
+<BaseLayout title={`${post.data.title} | Learning Center`} description={post.data.description} ogImage={post.data.heroImage}>
   <script type="application/ld+json" set:html={articleSchema} slot="head" />
   <Navbar client:load links={[{label:'Product',href:'/#studio'},{label:'Learning Center',href:'/learning-center'},{label:'Pricing',href:'/pricing'},{label:'About',href:'/about'}]} ctaText="Claim Founders Spot" ctaHref="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01" signInHref="https://app.funnelstudio.forrestry.ai" logoHref="/" />
 
-  <article class="pt-32 pb-24 px-6">
-    <div class="max-w-[720px] mx-auto">
-      <nav class="mb-8">
-        <a href="/learning-center" class="text-green text-sm font-medium no-underline hover:underline">← Learning Center</a>
+  <article class="pt-28 pb-24">
+    <!-- Breadcrumb -->
+    <div class="max-w-[800px] mx-auto px-6 mb-8">
+      <nav>
+        <a href="/learning-center" class="text-green text-sm font-medium no-underline hover:underline inline-flex items-center gap-1.5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          Learning Center
+        </a>
       </nav>
-      <header class="mb-12">
-        <span class="text-green text-xs font-semibold tracking-wide uppercase">{post.data.category}</span>
-        <h1 class="text-[clamp(2rem,5vw,3rem)] font-extrabold leading-[1.15] mt-2 mb-4">{post.data.title}</h1>
-        <div class="flex items-center gap-3 text-muted text-sm">
-          <span>{post.data.author}</span>
-          <span>·</span>
-          <time datetime={post.data.publishDate.toISOString()}>{formattedDate}</time>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="max-w-[800px] mx-auto px-6 mb-12">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="inline-block px-3 py-1 rounded-full bg-green/10 text-green text-xs font-semibold tracking-wide uppercase">{post.data.category}</span>
+        <span class="text-muted/60 text-xs">·</span>
+        <span class="text-muted/60 text-xs">{readingTime} min read</span>
+      </div>
+      <h1 class="text-[clamp(1.75rem,4.5vw,2.75rem)] font-extrabold leading-[1.15] mb-6">{post.data.title}</h1>
+      <p class="text-muted text-lg leading-relaxed mb-6">{post.data.description}</p>
+      <div class="flex items-center gap-3 text-sm">
+        <div class="w-8 h-8 rounded-full bg-green/20 flex items-center justify-center">
+          <span class="text-green font-bold text-xs">AG</span>
         </div>
-      </header>
-      <div class="prose prose-invert prose-green max-w-none prose-headings:font-bold prose-headings:text-white prose-p:text-white/70 prose-p:leading-relaxed prose-a:text-green prose-a:no-underline prose-strong:text-white prose-li:text-white/70">
+        <div class="flex flex-col">
+          <span class="text-white font-medium text-sm">{post.data.author}</span>
+          <time datetime={post.data.publishDate.toISOString()} class="text-muted/60 text-xs">{formattedDate}</time>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    {post.data.heroImage && (
+      <div class="max-w-[900px] mx-auto px-6 mb-14">
+        <div class="rounded-2xl overflow-hidden border border-white/[0.06]">
+          <img
+            src={post.data.heroImage}
+            alt={post.data.title}
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+      </div>
+    )}
+
+    <!-- Article Body -->
+    <div class="max-w-[720px] mx-auto px-6">
+      <div class="article-content">
         <Content />
       </div>
-      <div class="mt-16 p-8 rounded-2xl bg-white/[0.03] border border-white/[0.06] text-center">
-        <h3 class="text-xl font-bold text-white mb-3">Ready to launch your funnel?</h3>
-        <p class="text-muted text-sm mb-6 max-w-md mx-auto">Funnel Studio turns one conversation into a complete funnel ecosystem.</p>
-        <a href="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-3 rounded-xl bg-green text-black font-bold text-sm no-underline shadow-[0_0_30px_rgba(74,222,128,0.15)] hover:bg-green/90 transition-all">Claim Your Founders Spot. $47/mo</a>
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="max-w-[720px] mx-auto px-6 mt-20">
+      <div class="relative p-10 rounded-2xl bg-gradient-to-br from-green/[0.04] to-transparent border border-green/[0.12] text-center overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(74,222,128,0.05),transparent_70%)]"></div>
+        <div class="relative">
+          <h3 class="text-2xl font-bold text-white mb-3">Ready to launch your funnel?</h3>
+          <p class="text-muted text-base mb-8 max-w-md mx-auto leading-relaxed">Funnel Studio turns one conversation into a complete funnel ecosystem. Strategy, copy, emails, ads — all from one Brain Dump.</p>
+          <a href="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-3.5 rounded-xl bg-green text-black font-bold text-sm no-underline shadow-[0_0_30px_rgba(74,222,128,0.15)] hover:bg-green/90 hover:scale-[1.02] transition-all">Claim Your Founders Spot — $47/mo</a>
+        </div>
       </div>
     </div>
   </article>

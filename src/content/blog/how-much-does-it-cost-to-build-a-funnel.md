@@ -5,6 +5,7 @@ publishDate: 2026-05-01
 author: "Andrew Gutierrez"
 category: "Pricing & Costs"
 tags: ["funnel-strategy", "pricing", "cost-comparison", "ai-tools"]
+heroImage: "/how-much-does-it-cost-to-build-a-funnel-hero-image.png"
 ---
 
 You need a funnel. You know that. The question keeping you up at night is: what is this actually going to cost me?
@@ -287,13 +288,9 @@ None of these paths are wrong. They are just optimized for different stages of b
 
 ---
 
-## Get Your Free Funnel Cost Calculator
-
-Want to see what each path will *actually* cost based on YOUR revenue and hourly rate?
-
-Download the **Funnel Build Cost Calculator** — an interactive tool that factors in out-of-pocket costs, opportunity cost of your time, delay cost (lost revenue while building), and break-even timeline. Just plug in your numbers and get a data-driven recommendation.
-
-<div class="not-prose my-8">
+<div class="lead-magnet-card">
+<h4 class="lead-magnet-title">Get Your Free Funnel Cost Calculator</h4>
+<p class="lead-magnet-description">An interactive tool that factors in out-of-pocket costs, opportunity cost of your time, delay cost, and break-even timeline. Plug in your numbers and get a data-driven recommendation.</p>
 <script src="https://js.hsforms.net/forms/embed/51365645.js" defer></script>
 <div class="hs-form-frame" data-region="na1" data-form-id="60359e57-471c-44c1-9a92-b84b72c7b157" data-portal-id="51365645"></div>
 </div>

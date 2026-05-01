@@ -5,6 +5,7 @@ publishDate: 2026-05-01
 author: "Andrew Gutierrez"
 category: "Problems"
 tags: ["funnel-strategy", "conversion", "diagnostics", "content-marketing"]
+heroImage: "/why-is-my-funnel-not-converting-hero-image.png"
 ---
 
 You built the funnel. You picked your platform. You wrote the pages, set up the emails, maybe even recorded a webinar. You turned on ads or started posting content, and then... nothing. Or close to nothing. A trickle of opt-ins. Almost zero sales. Maybe a few people hit the registration page and bounced.
@@ -127,13 +128,9 @@ Whether you use Funnel Studio or do it by hand, the principle is the same: **you
 
 ---
 
-## Get Your Free Funnel Content Audit Checklist
-
-Want to diagnose exactly which of these 7 problems exist in your funnel?
-
-Download the **Funnel Content Audit Checklist** — an interactive worksheet that walks you through each diagnostic question, automatically scores your funnel health, and gives you prioritized next steps.
-
-<div class="not-prose my-8">
+<div class="lead-magnet-card">
+<h4 class="lead-magnet-title">Get Your Free Funnel Content Audit Checklist</h4>
+<p class="lead-magnet-description">An interactive worksheet that walks you through each diagnostic question, scores your funnel health, and gives you prioritized next steps.</p>
 <script src="https://js.hsforms.net/forms/embed/51365645.js" defer></script>
 <div class="hs-form-frame" data-region="na1" data-form-id="60359e57-471c-44c1-9a92-b84b72c7b157" data-portal-id="51365645"></div>
 </div>
