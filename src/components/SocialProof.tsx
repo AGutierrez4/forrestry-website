@@ -14,7 +14,7 @@ const problems = [
   {
     emoji: '🔗',
     title: 'The Integration Maze',
-    desc: "Email tools, page builders, payment processors, webinar platforms — each one a new rabbit hole. By the time it's connected, your momentum is gone.",
+    desc: "Email tools, page builders, payment processors, webinar platforms. Each one a new rabbit hole. By the time it's connected, your momentum is gone.",
   },
   {
     emoji: '🔥',
@@ -41,7 +41,7 @@ export default function SocialProof() {
             <p className="text-muted text-lg max-w-[700px] mx-auto leading-relaxed">
               Legacy tools like ClickFunnels hand you the bricks and tell you to build a house.
               You're forced to be the copywriter, the designer, the strategist, and the tech
-              integrator — all at once. That's not a tool. That's a second job.
+              integrator, all at once. That's not a tool. That's a second job.
             </p>
           </div>
         </FadeUp>

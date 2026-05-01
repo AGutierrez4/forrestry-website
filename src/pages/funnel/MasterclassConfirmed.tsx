@@ -127,7 +127,7 @@ export default function MasterclassConfirmed() {
               { type: 'pain', text: 'Feeling unqualified because you\'re not a copywriter or a tech expert, and generic AI tools only make it worse with robotic, off-brand output.' },
               { type: 'relief', label: 'The Anti-Prompt Method.', text: 'No prompts, no code, no design skills. A system trained on proven frameworks extracts your genius through conversation and produces copy that sounds like you.' },
               { type: 'pain', text: 'Finally launching your funnel after weeks of work, only to hear crickets because you didn\'t have the bandwidth to set up traffic and follow-up sequences.' },
-              { type: 'relief', label: 'The 10% Launch Ecosystem.', text: 'Your ads, emails, and video scripts are generated alongside your funnel pages — so everything launches together, not piece by piece.' },
+              { type: 'relief', label: 'The 10% Launch Ecosystem.', text: 'Your ads, emails, and video scripts are generated alongside your funnel pages, so everything launches together, not piece by piece.' },
             ].map((item, i) => (
               <div key={i} className={`flex items-start p-4 rounded-lg border ${item.type === 'pain' ? 'bg-white border-gray-200' : 'bg-green-50 border-green-200'}`}>
                 <span className={`mr-4 mt-1 shrink-0 ${item.type === 'pain' ? 'text-red-400' : 'text-green-600'}`}>

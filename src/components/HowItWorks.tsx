@@ -8,7 +8,7 @@ const steps = [
     iconBg: 'bg-white/[0.08]',
     title: 'Brain Dump™',
     subtitle: 'Turn a messy idea into a strategic offer',
-    desc: 'Dump everything you know about your offer, your audience, and your story. The AI organizes it into a strategic foundation — your Big Domino, your hook, your transformation.',
+    desc: 'Dump everything you know about your offer, your audience, and your story. The AI organizes it into a strategic foundation: your Big Domino, your hook, your transformation.',
     highlighted: false,
   },
   {
@@ -17,7 +17,7 @@ const steps = [
     icon: '📄',
     iconBg: 'bg-green',
     title: 'Webinar Builder',
-    subtitle: 'Script your Perfect Webinar — without being a copywriter',
+    subtitle: 'Script your Perfect Webinar without being a copywriter',
     desc: 'The AI builds your complete webinar script using the proven Perfect Webinar framework. Hook, origin story, the 3 Secrets, the stack, the close. Done.',
     highlighted: true,
   },
@@ -38,7 +38,7 @@ const steps = [
     iconBg: 'bg-white/[0.08]',
     title: 'Long-Form Registration Page',
     subtitle: 'A full registration page that sells the click',
-    desc: 'Headline, subheadline, bullets, social proof, CTA — all generated and structured to maximize registrations. No designer needed. No blank page paralysis.',
+    desc: 'Headline, subheadline, bullets, social proof, CTA. All generated and structured to maximize registrations. No designer needed. No blank page paralysis.',
     highlighted: false,
   },
   {
@@ -48,7 +48,7 @@ const steps = [
     iconBg: 'bg-green',
     title: 'Funnel Stack',
     subtitle: 'Your complete funnel architecture, mapped and built',
-    desc: 'The full funnel — opt-in, confirmation, sales page, order form, upsell, downsell, thank you. Every page, every transition, every piece of copy. The whole machine.',
+    desc: 'The full funnel: opt-in, confirmation, sales page, order form, upsell, downsell, thank you. Every page, every transition, every piece of copy. The whole machine.',
     highlighted: true,
   },
   {
@@ -57,8 +57,8 @@ const steps = [
     icon: '✉️',
     iconBg: 'bg-white/[0.08]',
     title: 'Social Ads + Email Writer',
-    subtitle: 'Drive traffic and follow up — on autopilot',
-    desc: 'Hook-Story-Offer ad scripts for cold, warm, and hot traffic. Plus full email sequences — soap opera, cart abandonment, post-webinar follow-up. A funnel without traffic is a billboard in the desert.',
+    subtitle: 'Drive traffic and follow up on autopilot',
+    desc: 'Hook-Story-Offer ad scripts for cold, warm, and hot traffic. Plus full email sequences: soap opera, cart abandonment, post-webinar follow-up. A funnel without traffic is a billboard in the desert.',
     highlighted: false,
   },
 ]
@@ -79,7 +79,7 @@ export default function HowItWorks() {
               Built in the right order.
             </h3>
             <p className="text-muted text-lg max-w-[700px] mx-auto leading-relaxed">
-              Every tool in Funnel Studio™ maps to a stage in your launch journey — so nothing
+              Every tool in Funnel Studio™ maps to a stage in your launch journey, so nothing
               falls through the cracks and nothing slows you down.
             </p>
           </div>

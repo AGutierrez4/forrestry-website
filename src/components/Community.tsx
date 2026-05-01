@@ -17,7 +17,7 @@ export default function Community() {
               THE COMMUNITY
             </p>
             <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold text-text mb-4">
-              You're not just getting a tool.
+              More than a tool.
             </h2>
             <h3 className="text-[clamp(1.5rem,3vw,2.25rem)] font-extrabold bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent mb-6">
               You're joining the Forresters.
@@ -34,7 +34,7 @@ export default function Community() {
           <div className="max-w-[700px] mx-auto bg-card-bg border border-card-border rounded-xl p-8 backdrop-blur-sm">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-2xl">🌲</span>
-              <h4 className="text-xl font-bold text-text">Forresters — Live</h4>
+              <h4 className="text-xl font-bold text-text">Forresters: Live</h4>
             </div>
             <p className="text-muted text-sm mb-6">What your community is doing right now</p>
             <div className="flex flex-col gap-4">

@@ -82,7 +82,7 @@ export default function About() {
               <h3 className="text-2xl font-bold text-white">The mission</h3>
               <p className="text-muted text-lg leading-relaxed">
                 forrestry.ai is an ecosystem of AI-powered launch tools for entrepreneurs
-                who are done waiting. Funnel Studio™ is the first product — it turns a
+                who are done waiting. Funnel Studio™ is the first product. It turns a
                 single 15-minute Brain Dump™ conversation into a complete launch stack:
                 squeeze pages, webinar scripts, email sequences, ad copy, and promo scripts.
                 Built in order, from your story, so nothing gets missed.
@@ -102,7 +102,7 @@ export default function About() {
                 rel="noopener noreferrer"
                 className="inline-block px-10 py-4 rounded-xl bg-green text-black font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all"
               >
-                Claim Your Founders Spot — $47/mo
+                Claim Your Founders Spot. $47/mo
               </a>
             </div>
           </FadeUp>

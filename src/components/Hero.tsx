@@ -19,7 +19,7 @@ export default function Hero() {
         <FadeUp>
           <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-green/30 backdrop-blur-sm mb-8 text-sm">
             <span className="text-green font-semibold">Beta Now Open</span>
-            <span className="text-white/60">—</span>
+            <span className="text-white/60">·</span>
             <span className="text-white/90">23 of 100 Founding Member Spots Claimed</span>
           </div>
         </FadeUp>
@@ -39,7 +39,7 @@ export default function Hero() {
         <FadeUp delay={0.2}>
           <p className="text-[clamp(1rem,2.5vw,1.25rem)] text-white/70 mb-12 max-w-[700px] mx-auto leading-relaxed">
             forrestry.ai is the AI-powered launch ecosystem for entrepreneurs who are done
-            waiting. Go from raw idea to live, revenue-generating funnel — in hours, not months.
+            waiting. Go from raw idea to live, revenue-generating funnel in hours, not months.
           </p>
         </FadeUp>
 

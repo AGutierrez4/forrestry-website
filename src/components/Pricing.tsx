@@ -76,7 +76,7 @@ export default function Pricing() {
             </h2>
             <p className="text-muted text-lg max-w-[700px] mx-auto leading-relaxed">
               No hidden fees. No feature gates. Just the tools you need to go from idea to
-              revenue — fast.
+              revenue, fast.
             </p>
           </div>
         </FadeUp>
