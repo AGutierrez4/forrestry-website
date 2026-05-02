@@ -18,8 +18,8 @@ export default function PricingFinalCTA() {
             Ready to stop duct-taping your funnel?
           </h2>
           <p className="text-muted text-base leading-relaxed mb-8 max-w-[480px] mx-auto">
-            One Brain Dump. One subscription. A complete, connected funnel — not
-            a pile of disconnected pieces.
+            One Brain Dump. One subscription. A complete, connected funnel
+            instead of a pile of disconnected pieces.
           </p>
 
           <a

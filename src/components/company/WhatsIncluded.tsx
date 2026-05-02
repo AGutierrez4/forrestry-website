@@ -4,12 +4,12 @@ const features = [
   {
     icon: '🧠',
     title: 'Brain Dump™',
-    desc: 'A guided AI conversation that extracts your offer, audience, and story — then organizes it into a strategic foundation. No prompts to write. Just talk.',
+    desc: 'A guided AI conversation that extracts your offer, audience, and story, then organizes it into a strategic foundation. No prompts to write. Just talk.',
   },
   {
     icon: '📄',
     title: 'Strategic Blueprint',
-    desc: 'Your funnel\'s master plan: Big Domino, hook, transformation, objections, and audience language — all mapped before a single word of copy is written.',
+    desc: 'Your funnel\'s master plan: Big Domino, hook, transformation, objections, and audience language. All mapped before a single word of copy is written.',
   },
   {
     icon: '🎬',
@@ -29,7 +29,7 @@ const features = [
   {
     icon: '✉️',
     title: 'Email Sequences',
-    desc: 'Soap opera sequences, cart abandonment, post-webinar follow-up. Strategically connected to your webinar and pages — not generic templates.',
+    desc: 'Soap opera sequences, cart abandonment, post-webinar follow-up. Strategically connected to your webinar and pages, not generic templates.',
   },
   {
     icon: '📢',
@@ -55,7 +55,7 @@ export default function WhatsIncluded() {
             Everything inside Funnel Studio
           </h2>
           <p className="text-muted text-base text-center max-w-[600px] mx-auto mb-14 leading-relaxed">
-            Every tool maps to a stage in your launch — so nothing falls through the
+            Every tool maps to a stage in your launch, so nothing falls through the
             cracks and nothing gets built in isolation.
           </p>
         </FadeUp>

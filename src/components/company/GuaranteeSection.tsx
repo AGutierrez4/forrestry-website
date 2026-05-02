@@ -51,7 +51,7 @@ export default function GuaranteeSection() {
               <p className="text-muted text-sm leading-relaxed">
                 Cancel anytime from your account. No contracts. No penalties. No
                 "retention specialists." If you cancel and come back later, you'll
-                be at the current price — not the founding rate.
+                be at the current price, not the founding rate.
               </p>
             </div>
           </div>

@@ -4,7 +4,7 @@ const tools = [
   {
     name: 'ChatGPT Pro',
     cost: '$20/mo',
-    note: 'General AI — you write the prompts, you connect the dots',
+    note: 'General AI. You write the prompts, you connect the dots',
   },
   {
     name: 'Funnel course or templates',
@@ -26,7 +26,7 @@ const tools = [
   {
     name: 'Email platform',
     cost: '$29 – $59/mo',
-    note: 'Sends emails — doesn\'t write them',
+    note: 'Sends emails, doesn\'t write them',
   },
   {
     name: 'Your time stitching it all together',

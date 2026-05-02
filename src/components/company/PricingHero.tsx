@@ -21,9 +21,9 @@ export default function PricingHero() {
 
         <FadeUp delay={0.15}>
           <p className="text-muted text-lg leading-relaxed max-w-[600px] mx-auto">
-            Most founders piece together 4–5 tools and still end up doing all the
-            writing themselves. Funnel Studio replaces the duct tape with a system
-            — one conversation in, complete funnel content out.
+            Most founders piece together 4 or 5 tools and still end up doing all the
+            writing themselves. Funnel Studio replaces the duct tape with a system:
+            one conversation in, complete funnel content out.
           </p>
         </FadeUp>
       </div>
