@@ -9,11 +9,11 @@ const activities = [
 
 export default function Community() {
   return (
-    <section id="community" className="py-24 px-6 border-t border-white/[0.06]">
-      <div className="max-w-[1400px] mx-auto">
+    <section id="community" className="py-16 md:py-[120px] px-6 bg-bg-section-b">
+      <div className="max-w-[1100px] mx-auto">
         <FadeUp>
           <div className="text-center mb-16">
-            <p className="text-green text-xs tracking-[0.2em] uppercase mb-4 font-semibold">
+            <p className="eyebrow mb-4">
               THE COMMUNITY
             </p>
             <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold text-text mb-4">

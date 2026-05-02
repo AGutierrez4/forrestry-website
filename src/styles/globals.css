@@ -14,6 +14,24 @@
   --color-card-border: #1F1F1F;
   --color-forest-haze: #16261C;
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  /* Alternating section backgrounds */
+  --color-bg-section-a: #0a0f0a;
+  --color-bg-section-b: #0f160f;
+
+  /* Section layout */
+  --spacing-section-y: 120px;
+  --spacing-section-y-mobile: 64px;
+  --spacing-section-max-w: 1100px;
+}
+
+/* Reusable eyebrow label */
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  color: var(--color-green);
+  text-transform: uppercase;
 }
 
 html {
@@ -27,6 +45,7 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.75;
 }
 
 /* Floating animation */

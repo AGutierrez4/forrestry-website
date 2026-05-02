@@ -1,146 +1,72 @@
 import FadeUp from './FadeUp'
 
-const plans = [
-  {
-    name: 'Starter',
-    desc: 'Everything you need to launch your first funnel and start generating revenue.',
-    price: '$97',
-    period: '/month',
-    note: 'cancel anytime',
-    cta: 'Get Started',
-    ctaHref: 'https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01',
-    ctaStyle: 'outline' as const,
-    featured: false,
-    features: [
-      '3 funnels',
-      'AI copywriting',
-      'Basic analytics',
-      'Email support',
-      'Community Access',
-      '14-Day Money-Back Guarantee',
-    ],
-  },
-  {
-    name: 'Pro',
-    desc: 'For serious launchers who want unlimited power and priority access to every feature.',
-    price: '$147',
-    period: '/month',
-    note: null,
-    savings: 'Most popular plan',
-    cta: 'Get Started',
-    ctaHref: 'https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01',
-    ctaStyle: 'primary' as const,
-    featured: true,
-    features: [
-      'Unlimited funnels',
-      'AI copywriting',
-      'Advanced analytics',
-      'Priority support',
-      'Custom domains',
-      '14-Day Money-Back Guarantee',
-    ],
-  },
-  {
-    name: 'Annual',
-    desc: 'Lock in the best rate. Get everything in Pro plus dedicated onboarding and SLA support.',
-    price: '$997',
-    period: '/year',
-    note: null,
-    savings: 'Save over $767 vs monthly Pro',
-    cta: 'Get Started',
-    ctaHref: 'https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01',
-    ctaStyle: 'outline' as const,
-    featured: false,
-    features: [
-      'Everything in Pro',
-      '2 months free',
-      'Dedicated onboarding',
-      'SLA support',
-      'Priority Feature Access',
-      '14-Day Money-Back Guarantee',
-    ],
-  },
+const checklist = [
+  'Full Funnel Studio access',
+  'AI copywriting engine',
+  'Webinar script builder',
+  'Email sequence generator',
+  'Ad copy writer',
+  'Community access',
+  '14-Day Money-Back Guarantee',
 ]
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-24 px-6 bg-bg">
-      <div className="max-w-[1400px] mx-auto">
+    <section id="pricing" className="py-16 md:py-[120px] px-6 bg-bg-section-a">
+      <div className="max-w-[700px] mx-auto text-center">
         <FadeUp>
-          <div className="text-center mb-16">
-            <p className="text-green text-xs tracking-[0.2em] uppercase mb-4 font-semibold">
-              PRICING
-            </p>
-            <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold text-text mb-4">
-              Simple. Transparent. Built for launchers.
-            </h2>
-            <p className="text-muted text-lg max-w-[700px] mx-auto leading-relaxed">
-              No hidden fees. No feature gates. Just the tools you need to go from idea to
-              revenue, fast.
-            </p>
-          </div>
+          <p className="eyebrow mb-4">FOUNDING MEMBER PRICING</p>
+          <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-extrabold text-text mb-8">
+            Lock in the founding rate.
+          </h2>
         </FadeUp>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1100px] mx-auto mb-12">
-          {plans.map((plan, i) => (
-            <FadeUp key={plan.name} delay={i * 0.1}>
-              <div
-                className={`relative rounded-xl p-8 border backdrop-blur-sm transition-all ${
-                  plan.featured
-                    ? 'border-green shadow-[0_0_40px_rgba(74,222,128,0.15)] bg-card-bg md:scale-105'
-                    : 'border-card-border bg-card-bg'
-                }`}
-              >
-                {plan.featured && (
-                  <>
-                    <div className="absolute inset-0 bg-gradient-to-br from-green/10 to-purple/10 rounded-xl pointer-events-none" />
-                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-green-bright to-purple text-black px-4 py-1 rounded-full text-xs font-bold whitespace-nowrap">
-                      ⚡ Most Popular
-                    </div>
-                  </>
-                )}
-                <div className="relative">
-                  <h3 className="text-2xl font-bold text-text mb-2">{plan.name}</h3>
-                  <p className="text-muted text-sm mb-6 leading-relaxed">{plan.desc}</p>
-                  <div className="mb-6">
-                    <span className="text-[2.5rem] font-extrabold text-text">{plan.price}</span>
-                    <span className="text-muted text-base">{plan.period}</span>
-                    {'savings' in plan && plan.savings && (
-                      <p className="text-green text-sm mt-1">{plan.savings}</p>
-                    )}
-                    {plan.note && <p className="text-muted text-sm mt-1">{plan.note}</p>}
-                  </div>
-                  <a
-                    href={plan.ctaHref}
-                    className={`block w-full py-3 rounded-full font-semibold text-base text-center no-underline transition-all mb-8 ${
-                      plan.ctaStyle === 'primary'
-                        ? 'bg-green text-black hover:bg-green/90 hover:scale-105'
-                        : 'bg-transparent text-green border border-green hover:bg-green/10'
-                    }`}
-                  >
-                    {plan.cta}
-                  </a>
-                  <ul className="flex flex-col gap-3">
-                    {plan.features.map((f) => (
-                      <li key={f} className="flex items-start gap-3 text-sm text-text">
-                        <span className="text-green shrink-0 mt-0.5">✓</span>
-                        {f}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+        <FadeUp delay={0.1}>
+          <div className="bg-card-bg border border-card-border rounded-2xl p-8 md:p-12">
+            {/* Price display */}
+            <div className="mb-6">
+              <span className="text-[16px] text-muted line-through opacity-50">$97/mo</span>
+              <div className="flex items-center justify-center gap-3 mt-2">
+                <span className="text-[48px] font-extrabold text-text">$47</span>
+                <span className="text-muted text-lg">/mo</span>
               </div>
-            </FadeUp>
-          ))}
-        </div>
+              <span className="inline-block mt-2 bg-[rgba(74,222,128,0.15)] text-green text-sm font-semibold rounded px-2.5 py-1">
+                52% off
+              </span>
+            </div>
 
-        <FadeUp>
-          <div className="max-w-[900px] mx-auto bg-card-bg border border-card-border rounded-xl p-6 flex items-start gap-4">
-            <span className="text-green text-2xl shrink-0">🛡</span>
-            <p className="text-muted leading-relaxed">
-              All plans include a{' '}
-              <strong className="text-text">14-Day Money-Back Guarantee</strong>.
-              Try Funnel Studio™. If it is not for you, email us within 14 days for a full refund.
+            {/* Progress bar */}
+            <div className="max-w-[400px] mx-auto mb-8">
+              <div className="flex justify-between text-sm mb-2">
+                <span className="text-green font-semibold">23 of 100 spots claimed</span>
+                <span className="text-muted">77 remaining</span>
+              </div>
+              <div className="w-full h-2 bg-white/[0.08] rounded-full overflow-hidden">
+                <div className="h-full w-[23%] bg-gradient-to-r from-green-bright to-purple rounded-full" />
+              </div>
+            </div>
+
+            {/* Checklist */}
+            <ul className="flex flex-col gap-3 text-left max-w-[360px] mx-auto mb-8">
+              {checklist.map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm text-text">
+                  <span className="text-green text-[16px] shrink-0 mt-0.5">✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            {/* CTA */}
+            <a
+              href="https://app.forrestry.ai/register"
+              className="inline-block w-full max-w-[400px] px-10 py-4 rounded-xl bg-green text-black font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all mb-4"
+            >
+              Claim Your Founding Member Access →
+            </a>
+
+            {/* Trust badges */}
+            <p className="text-muted text-[13px]">
+              Cancel anytime · No credit card required · 14-day money-back guarantee
             </p>
           </div>
         </FadeUp>

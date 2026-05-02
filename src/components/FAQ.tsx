@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import FadeUp from './FadeUp'
 
 const faqs = [
@@ -45,40 +44,25 @@ const faqs = [
 ]
 
 export default function FAQ() {
-  const [open, setOpen] = useState<number | null>(null)
-
   return (
-    <section className="py-24 px-6">
-      <div className="max-w-[700px] mx-auto">
+    <section className="py-16 md:py-[120px] px-6 bg-bg-section-a">
+      <div className="max-w-[1100px] mx-auto">
         <FadeUp>
-          <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
-            FAQ
-          </p>
-          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-14">
-            Common questions, straight answers.
-          </h2>
+          <div className="text-center mb-14">
+            <p className="eyebrow mb-4">FAQ</p>
+            <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-text">
+              Common questions, straight answers.
+            </h2>
+          </div>
         </FadeUp>
 
-        <div className="flex flex-col gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {faqs.map((faq, i) => (
             <FadeUp key={i} delay={0.05 * i}>
-              <button
-                onClick={() => setOpen(open === i ? null : i)}
-                className="w-full text-left bg-card-bg border border-card-border rounded-xl p-5 cursor-pointer hover:border-green/30 transition-colors"
-                aria-expanded={open === i}
-              >
-                <div className="flex items-center justify-between gap-4">
-                  <span className="text-text font-medium text-sm">{faq.q}</span>
-                  <span className="text-muted shrink-0 text-lg">
-                    {open === i ? '−' : '+'}
-                  </span>
-                </div>
-                {open === i && (
-                  <p className="text-muted text-sm leading-relaxed mt-4 pr-8">
-                    {faq.a}
-                  </p>
-                )}
-              </button>
+              <div className="bg-card-bg border border-[rgba(255,255,255,0.08)] rounded-xl p-7 h-full">
+                <h3 className="text-[17px] font-bold text-white mb-3">{faq.q}</h3>
+                <p className="text-[15px] opacity-75 leading-[1.7]">{faq.a}</p>
+              </div>
             </FadeUp>
           ))}
         </div>

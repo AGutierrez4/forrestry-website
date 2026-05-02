@@ -25,11 +25,11 @@ const problems = [
 
 export default function SocialProof() {
   return (
-    <section id="social-proof" className="py-24 px-6 border-t border-white/[0.06]">
-      <div className="max-w-[1400px] mx-auto">
+    <section id="social-proof" className="py-16 md:py-[120px] px-6 bg-bg-section-b">
+      <div className="max-w-[1100px] mx-auto">
         <FadeUp>
           <div className="text-center mb-16">
-            <p className="text-green text-xs tracking-[0.2em] uppercase mb-4 font-semibold">
+            <p className="eyebrow mb-4">
               THE PROBLEM
             </p>
             <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold text-text mb-4">
@@ -49,11 +49,11 @@ export default function SocialProof() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {problems.map((p, i) => (
             <FadeUp key={p.title} delay={i * 0.1}>
-              <div className="bg-card-bg rounded-xl p-8 border border-card-border backdrop-blur-sm hover:border-green/30 transition-all">
+              <div className="bg-card-bg rounded-xl p-7 border border-card-border border-l-4 border-l-[rgba(74,222,128,0.4)] backdrop-blur-sm hover:border-green/30 transition-all">
                 <div className="flex items-start gap-4 mb-4">
-                  <span className="text-[2.5rem]">{p.emoji}</span>
+                  <span className="text-[32px]">{p.emoji}</span>
                   <div>
-                    <h3 className="text-2xl font-bold text-text mb-3">{p.title}</h3>
+                    <h3 className="text-[18px] font-semibold text-text mb-3">{p.title}</h3>
                     <p className="text-muted leading-relaxed">{p.desc}</p>
                   </div>
                 </div>

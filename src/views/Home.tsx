@@ -2,15 +2,19 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import SocialProof from '../components/SocialProof'
 import HowItWorks from '../components/HowItWorks'
+import ComparisonTable from '../components/ComparisonTable'
+import BenefitCards from '../components/BenefitCards'
+import FounderStory from '../components/FounderStory'
 import Pricing from '../components/Pricing'
 import Community from '../components/Community'
-import FinalCTA from '../components/FinalCTA'
+import FAQ from '../components/FAQ'
 import Footer from '../components/Footer'
 
 const funnelStudioNavLinks = [
   { label: 'Product', href: '#product' },
   { label: 'Community', href: '#community' },
   { label: 'Pricing', href: '#pricing' },
+  { label: 'FAQ', href: '#faq' },
 ]
 
 export default function Home() {
@@ -26,10 +30,13 @@ export default function Home() {
       <Hero />
       <SocialProof />
       <HowItWorks />
+      <ComparisonTable />
+      <BenefitCards />
+      <FounderStory />
       <Pricing />
       <Community />
-      <FinalCTA />
-      <Footer />
+      <FAQ />
+      <Footer tagline="Stop Building. Start Launching." />
     </>
   )
 }

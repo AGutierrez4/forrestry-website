@@ -19,7 +19,7 @@ export default function Footer({
   tagline,
 }: FooterProps) {
   return (
-    <footer className="bg-[#050505] border-t border-[#1F1F1F] py-12 px-6">
+    <footer className="bg-[#050505] border-t border-[rgba(255,255,255,0.08)] py-12 px-6">
       <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex flex-col items-center md:items-start gap-1">
           <div className="flex items-center gap-2">
@@ -33,7 +33,7 @@ export default function Footer({
             <span className="text-green font-bold text-lg">forrestry.ai</span>
           </div>
           {tagline && (
-            <p className="text-muted text-sm">{tagline}</p>
+            <p className="text-[14px] font-medium text-green">{tagline}</p>
           )}
         </div>
         <div className="flex items-center gap-8">

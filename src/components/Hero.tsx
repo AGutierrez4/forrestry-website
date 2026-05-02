@@ -14,15 +14,18 @@ export default function Hero() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-green-bright/[0.08] rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple/[0.08] rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="relative z-10 max-w-[1000px] mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-[1100px] mx-auto px-6 text-center">
         {/* Beta badge */}
         <FadeUp>
-          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-green/30 backdrop-blur-sm mb-8 text-sm">
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-green/30 backdrop-blur-sm mb-8 text-[13px] tracking-[0.15em]">
             <span className="text-green font-semibold">Beta Now Open</span>
             <span className="text-white/60">·</span>
             <span className="text-white/90">23 of 100 Founding Member Spots Claimed</span>
           </div>
         </FadeUp>
+
+        {/* Radial gradient glow behind headline */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] pointer-events-none" style={{ background: 'radial-gradient(circle at 50% 50%, rgba(74,222,128,0.06) 0%, transparent 70%)' }} />
 
         {/* Headline */}
         <FadeUp delay={0.1}>
@@ -56,7 +59,7 @@ export default function Hero() {
         </FadeUp>
 
         <FadeUp delay={0.35}>
-          <p className="text-white/50 text-sm mb-12">
+          <p className="text-white/70 text-sm mb-8">
             $97/mo · Limited to first 100 members · No credit card required
           </p>
         </FadeUp>
@@ -66,7 +69,7 @@ export default function Hero() {
           {badges.map((badge) => (
             <FadeUp key={badge.text} delay={0.4 + badge.delay}>
               <div
-                className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm text-left"
+                className="flex items-center gap-3 px-5 py-4 rounded-xl bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.08)] backdrop-blur-sm text-left"
                 style={{ animation: `float 3s ease-in-out infinite ${badge.delay}s` }}
               >
                 <span className="text-xl shrink-0">{badge.icon}</span>

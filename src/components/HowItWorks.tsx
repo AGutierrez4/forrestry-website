@@ -1,78 +1,68 @@
 import FadeUp from './FadeUp'
+import LazyVideo from './LazyVideo'
 
-const steps = [
+interface FeatureItem {
+  num: string
+  title: string
+  subtitle: string
+  desc: string
+  videoSrc: string
+}
+
+const features: FeatureItem[] = [
   {
     num: '01',
-    time: '⏱ 10 min → Clarity',
-    icon: '🧠',
-    iconBg: 'bg-white/[0.08]',
     title: 'Brain Dump™',
     subtitle: 'Turn a messy idea into a strategic offer',
     desc: 'Dump everything you know about your offer, your audience, and your story. The AI organizes it into a strategic foundation: your Big Domino, your hook, your transformation.',
-    highlighted: false,
+    videoSrc: '/Brain-Dump-Demo.mp4',
   },
   {
     num: '02',
-    time: '⏱ Hours → Full Script',
-    icon: '📄',
-    iconBg: 'bg-green',
     title: 'Webinar Builder',
     subtitle: 'Script your Perfect Webinar without being a copywriter',
     desc: 'The AI builds your complete webinar script using the proven Perfect Webinar framework. Hook, origin story, the 3 Secrets, the stack, the close. Done.',
-    highlighted: true,
+    videoSrc: '/webinar-builder.mp4',
   },
   {
     num: '03',
-    time: '⏱ Minutes → Instant Pitch',
-    icon: '⏱',
-    iconBg: 'bg-white/[0.08]',
     title: '60-Sec Webinar',
     subtitle: 'A punchy, high-converting pitch for any platform',
     desc: 'Need a quick pitch for Instagram, a Skool post, or a DM? The 60-Second Webinar distills your full offer into a tight, compelling format that converts cold audiences fast.',
-    highlighted: false,
+    videoSrc: '/60-Second-Hook.mp4',
   },
   {
     num: '04',
-    time: '⏱ Days → 30 Minutes',
-    icon: '🌐',
-    iconBg: 'bg-white/[0.08]',
-    title: 'Long-Form Registration Page',
+    title: 'Strategic Blueprint',
     subtitle: 'A full registration page that sells the click',
     desc: 'Headline, subheadline, bullets, social proof, CTA. All generated and structured to maximize registrations. No designer needed. No blank page paralysis.',
-    highlighted: false,
+    videoSrc: '/Strategic Blueprint.mp4',
   },
   {
     num: '05',
-    time: '⏱ Months → A Weekend',
-    icon: '⚡',
-    iconBg: 'bg-green',
     title: 'Funnel Stack',
     subtitle: 'Your complete funnel architecture, mapped and built',
     desc: 'The full funnel: opt-in, confirmation, sales page, order form, upsell, downsell, thank you. Every page, every transition, every piece of copy. The whole machine.',
-    highlighted: true,
+    videoSrc: '/Funnel Stack.mp4',
   },
   {
     num: '06',
-    time: '⏱ Fill it. Launch it.',
-    icon: '✉️',
-    iconBg: 'bg-white/[0.08]',
     title: 'Social Ads + Email Writer',
     subtitle: 'Drive traffic and follow up on autopilot',
     desc: 'Hook-Story-Offer ad scripts for cold, warm, and hot traffic. Plus full email sequences: soap opera, cart abandonment, post-webinar follow-up. A funnel without traffic is a billboard in the desert.',
-    highlighted: false,
+    videoSrc: '/Email-Writer.mp4',
   },
 ]
 
 export default function HowItWorks() {
   return (
-    <section id="product" className="py-24 px-6 bg-bg">
-      <div className="max-w-[1400px] mx-auto">
+    <section id="product" className="py-16 md:py-[120px] px-6 bg-bg-section-a">
+      <div className="max-w-[1100px] mx-auto">
+        {/* Section header */}
         <FadeUp>
-          <div className="text-center mb-16">
-            <p className="text-green text-xs tracking-[0.2em] uppercase mb-4 font-semibold">
-              THE SOLUTION
-            </p>
-            <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold text-text mb-4">
+          <div className="text-center mb-20">
+            <p className="eyebrow mb-4">INSIDE FUNNEL STUDIO</p>
+            <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-extrabold text-text mb-4">
               Your entire funnel.
             </h2>
             <h3 className="text-[clamp(1.5rem,3vw,2.25rem)] font-extrabold bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent mb-6">
@@ -85,39 +75,48 @@ export default function HowItWorks() {
           </div>
         </FadeUp>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {steps.map((step, i) => (
-            <FadeUp key={step.num} delay={i * 0.08}>
-              <div
-                className={`relative rounded-xl p-6 border backdrop-blur-sm transition-all hover:scale-[1.02] ${
-                  step.highlighted
-                    ? 'border-green shadow-[0_0_30px_rgba(74,222,128,0.15)] bg-card-bg'
-                    : 'border-card-border bg-card-bg'
-                }`}
-              >
-                {step.highlighted && (
-                  <div className="absolute inset-0 bg-gradient-to-br from-green/10 to-transparent rounded-xl pointer-events-none" />
-                )}
-                <div className="relative">
-                  <div className="flex justify-between items-start mb-4">
-                    <span className="text-muted font-bold text-sm">{step.num}</span>
-                    <span className="px-2.5 py-1 rounded-full bg-white/[0.08] text-muted text-xs font-semibold">
-                      {step.time}
-                    </span>
+        {/* Feature items — alternating layout */}
+        <div className="flex flex-col gap-24">
+          {features.map((feature, i) => {
+            const isOdd = i % 2 === 0 // 0-indexed: items 01,03,05 are at index 0,2,4
+            return (
+              <FadeUp key={feature.num} delay={0.1}>
+                <div className={`grid grid-cols-1 md:grid-cols-2 gap-12 items-center ${!isOdd ? 'md:[direction:rtl]' : ''}`}>
+                  {/* Text side */}
+                  <div className={!isOdd ? 'md:[direction:ltr]' : ''}>
+                    {/* Section marker */}
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green to-green-bright flex items-center justify-center text-black font-bold text-xl mb-6 -mt-2">
+                      {feature.num}
+                    </div>
+                    <h3 className="text-[28px] md:text-[32px] font-bold text-text mb-2">
+                      {feature.title}
+                    </h3>
+                    <p className="text-green text-sm font-semibold mb-4">{feature.subtitle}</p>
+                    <p className="text-muted leading-relaxed">{feature.desc}</p>
                   </div>
-                  <div
-                    className={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4 ${step.iconBg}`}
-                  >
-                    {step.icon}
+
+                  {/* Video side */}
+                  <div className={!isOdd ? 'md:[direction:ltr]' : ''}>
+                    <div className="rounded-xl border border-[rgba(74,222,128,0.2)] border-t-2 border-t-green shadow-[0_24px_64px_rgba(0,0,0,0.4)] overflow-hidden">
+                      <LazyVideo
+                        src={feature.videoSrc}
+                        className="w-full h-auto block"
+                      />
+                    </div>
                   </div>
-                  <h3 className="text-xl font-bold text-text mb-2">{step.title}</h3>
-                  <p className="text-green text-sm font-semibold mb-3">{step.subtitle}</p>
-                  <p className="text-muted text-sm leading-relaxed">{step.desc}</p>
                 </div>
-              </div>
-            </FadeUp>
-          ))}
+              </FadeUp>
+            )
+          })}
         </div>
+
+        {/* Closing thesis statement */}
+        <FadeUp>
+          <p className="text-center text-[22px] italic opacity-85 my-20 max-w-[800px] mx-auto leading-relaxed">
+            This is not a collection of tools. It is a system. Each piece feeds the next, so
+            nothing falls through the cracks and nothing slows you down.
+          </p>
+        </FadeUp>
       </div>
     </section>
   )
