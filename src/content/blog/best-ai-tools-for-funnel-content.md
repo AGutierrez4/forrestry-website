@@ -6,11 +6,6 @@ author: "Andrew Gutierrez"
 category: "Best in Class"
 tags: ["ai-tools", "funnel-strategy", "tool-comparison", "copywriting", "decision-guide"]
 heroImage: "/5-Best-AI-Tools-Hero-Image.webp"
-leadMagnet:
-  title: "AI Funnel Tool Decision Matrix"
-  description: "A scored comparison worksheet that matches your budget, timeline, and experience level to the right AI tool. Get a personalized recommendation in under 2 minutes."
-  buttonText: "Download Now"
-  downloadUrl: "https://docs.google.com/spreadsheets/d/placeholder"
 faq:
   - question: "Can I use Funnel Studio to create content for other marketing channels like blogs and social media?"
     answer: "Funnel Studio is specifically built for funnel content: webinar scripts, registration pages, emails, sales pages, and ads. It is not designed for blog posts, long-form educational content, or general brand storytelling. If you need multi-channel content, use Jasper, Copy.ai, or ChatGPT instead."
