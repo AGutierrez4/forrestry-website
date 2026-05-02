@@ -6,6 +6,24 @@ author: "Andrew Gutierrez"
 category: "Pricing & Costs"
 tags: ["funnel-strategy", "pricing", "cost-comparison", "ai-tools"]
 heroImage: "/how-much-does-it-cost-to-build-a-funnel-hero-image.png"
+leadMagnet:
+  title: "Funnel Build Cost Calculator"
+  description: "An interactive tool that factors in out-of-pocket costs, opportunity cost of your time, delay cost, and break-even timeline. Plug in your numbers and get a data-driven recommendation."
+  buttonText: "Download Now"
+  downloadUrl: "https://docs.google.com/spreadsheets/d/1sGOIN38fi8KnDFmNwc7CD0hFz1_Xg1fs/edit?usp=drive_link&ouid=108812864879107610827&rtpof=true&sd=true"
+faq:
+  - question: "Can I start with a cheaper path and upgrade later?"
+    answer: "Yes, and most people do. Start with what you can afford now, launch, and reinvest revenue into better copy or design later. A decent funnel live today beats a perfect funnel 6 months from now."
+  - question: "What if I hire a copywriter and the funnel doesn't convert?"
+    answer: "This is a real risk. Copywriters write based on the information you give them. If your offer is not validated, your positioning is unclear, or your traffic is cold, even great copy will struggle. Before hiring anyone, make sure you have sold your offer successfully at least a few times. That proves the offer works and gives the copywriter something to build from."
+  - question: "Are AI-generated funnels as good as human-written ones?"
+    answer: "Depends on the tool and how you use it. Generic ChatGPT output won't compete with a skilled copywriter. But AI tools trained on specific frameworks (like Funnel Studio, which uses Brunson, Cardone, Edwards, and others) produce strategically sound first drafts that you can refine. Think of it like having a junior copywriter who knows the frameworks but needs your stories, voice, and examples added in."
+  - question: "How much should I budget for ad spend on top of the funnel build cost?"
+    answer: "Plan for at least $1,000 to test. Ideally $3,000 to $5,000 if you can afford it. You need enough data to know what is working. If your ad budget is under $500, you are guessing, not testing."
+  - question: "What is the ROI timeline? When should I expect the funnel to pay for itself?"
+    answer: "If the funnel is working, you should see positive ROI within 90 days. That doesn't mean you are profitable on day one, but within 3 months you should know whether the funnel converts and what your cost-per-acquisition looks like. If you are 6 months in and still not breaking even, the issue is likely the offer, the audience, or the traffic source, not the funnel copy."
+  - question: "Can I use a funnel template instead of paying for custom copy?"
+    answer: "You can, and templates work if you know how to adapt them to your offer. The problem is most people fill in templates like a form and end up with generic copy that doesn't connect. If you go the template route, treat it like a structure guide, not a fill-in-the-blank worksheet. Rewrite it in your voice, add your stories, and customize the objections to your audience."
 ---
 
 You need a funnel. You know that. The question keeping you up at night is: what is this actually going to cost me?
@@ -287,13 +305,6 @@ Here is the honest answer: it depends on where you are.
 None of these paths are wrong. They are just optimized for different stages of business and different constraints.
 
 ---
-
-<div class="lead-magnet-card">
-<h4 class="lead-magnet-title">Get Your Free Funnel Cost Calculator</h4>
-<p class="lead-magnet-description">An interactive tool that factors in out-of-pocket costs, opportunity cost of your time, delay cost, and break-even timeline. Plug in your numbers and get a data-driven recommendation.</p>
-<script src="https://js.hsforms.net/forms/embed/51365645.js" defer></script>
-<div class="hs-form-frame" data-region="na1" data-form-id="60359e57-471c-44c1-9a92-b84b72c7b157" data-portal-id="51365645"></div>
-</div>
 
 ---
 

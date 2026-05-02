@@ -6,6 +6,24 @@ author: "Andrew Gutierrez"
 category: "Problems"
 tags: ["funnel-strategy", "conversion", "diagnostics", "content-marketing"]
 heroImage: "/why-is-my-funnel-not-converting-hero-image.png"
+leadMagnet:
+  title: "Funnel Content Audit Checklist"
+  description: "An interactive worksheet that walks you through each diagnostic question, scores your funnel health, and gives you prioritized next steps."
+  buttonText: "Download Now"
+  downloadUrl: "https://docs.google.com/spreadsheets/d/1MhPQSLZUnUEZxDLqKBB9SuT-Iiflhzlp/edit?usp=drive_link&ouid=108812864879107610827&rtpof=true&sd=true"
+faq:
+  - question: "How long does it take to fix a non-converting funnel?"
+    answer: "It depends on how many content-level problems exist. An isolated issue like a weak email sequence might take a few days. If the root cause is fragmented strategy across all content, a realistic timeline is 4 to 8 weeks for a manual rewrite or a few hours using an AI-powered tool like Funnel Studio that generates everything from one strategic input."
+  - question: "Should I fix my existing funnel or start over?"
+    answer: "If your offer has been validated (people have bought it before, even in small numbers), keep the offer and rebuild the content. If the offer itself has never converted in any format, test it in a simpler format like a direct conversation or live workshop before investing in a full funnel rebuild."
+  - question: "Can I just hire a copywriter to fix my funnel?"
+    answer: "You can, and for some businesses that is the right move. The challenge is that most copywriters write great individual pages but may not maintain strategic consistency across the entire funnel. If you go this route, make sure the copywriter starts with a strategic brief covering your core promise, origin story, audience language, and objection framework before writing anything."
+  - question: "What conversion rate should I expect from a webinar funnel?"
+    answer: "Reasonable benchmarks for a standard webinar funnel: registration page opt-in rate of 20-40%, webinar show-up rate of 25-40%, and sales conversion of 2-10% of attendees. If you are significantly below any of those, diagnose the stage with the biggest drop-off first."
+  - question: "Is my funnel builder the problem?"
+    answer: "Almost certainly not. ClickFunnels, Kajabi, WordPress, or any other builder is just the container. Conversion depends on what is inside: the copy, narrative structure, email sequence, and strategic alignment between all pieces. Switching platforms without fixing the content changes nothing."
+  - question: "My funnel was converting and then stopped. What happened?"
+    answer: "Three common causes: audience fatigue (same people seeing the same funnel), offer-market drift (your market's needs evolved and your content didn't), or platform changes (ad costs went up, deliverability dropped). Check whether front-end metrics (click-through, opt-in rates) or back-end metrics (attendance, sales conversion) changed to locate the breakdown."
 ---
 
 You built the funnel. You picked your platform. You wrote the pages, set up the emails, maybe even recorded a webinar. You turned on ads or started posting content, and then... nothing. Or close to nothing. A trickle of opt-ins. Almost zero sales. Maybe a few people hit the registration page and bounced.
@@ -127,13 +145,6 @@ The content is consistent because it was born from the same conversation. The me
 Whether you use Funnel Studio or do it by hand, the principle is the same: **your funnel cannot out-convert its own content.** Fix the words, fix the strategy underneath the words, and the conversion follows.
 
 ---
-
-<div class="lead-magnet-card">
-<h4 class="lead-magnet-title">Get Your Free Funnel Content Audit Checklist</h4>
-<p class="lead-magnet-description">An interactive worksheet that walks you through each diagnostic question, scores your funnel health, and gives you prioritized next steps.</p>
-<script src="https://js.hsforms.net/forms/embed/51365645.js" defer></script>
-<div class="hs-form-frame" data-region="na1" data-form-id="60359e57-471c-44c1-9a92-b84b72c7b157" data-portal-id="51365645"></div>
-</div>
 
 ---
 

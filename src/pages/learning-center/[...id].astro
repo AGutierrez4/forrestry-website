@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
+import BlogLeadForm from '../../components/BlogLeadForm'
 import { getCollection, render } from 'astro:content'
 
 export async function getStaticPaths() {
@@ -22,6 +23,7 @@ const formattedDate = post.data.publishDate.toLocaleDateString('en-US', {
 const isoDate = post.data.publishDate.toISOString().split('T')[0]
 const readingTime = Math.ceil(post.body.split(/\s+/).length / 230)
 
+// Article Schema
 const articleSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Article",
@@ -41,15 +43,63 @@ const articleSchema = JSON.stringify({
   },
   "datePublished": isoDate,
   "description": post.data.description,
-  "image": post.data.heroImage ? `https://www.forrestry.ai${post.data.heroImage}` : undefined,
+  "image": post.data.heroImage ? {
+    "@type": "ImageObject",
+    "url": `https://www.forrestry.ai${post.data.heroImage}`,
+    "width": 1200,
+    "height": 630
+  } : undefined,
+  "wordCount": post.body.split(/\s+/).length,
   "mainEntityOfPage": {
-    "@type": "WebPage"
+    "@type": "WebPage",
+    "@id": `https://www.forrestry.ai/learning-center/${post.id}`
   }
+})
+
+// FAQ Schema (only if post has faq data)
+const faqSchema = post.data.faq ? JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": post.data.faq.map(item => ({
+    "@type": "Question",
+    "name": item.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.answer
+    }
+  }))
+}) : null
+
+// BreadcrumbList Schema
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.forrestry.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Learning Center",
+      "item": "https://www.forrestry.ai/learning-center/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": post.data.title
+    }
+  ]
 })
 ---
 
 <BaseLayout title={`${post.data.title} | Learning Center`} description={post.data.description} ogImage={post.data.heroImage}>
   <script type="application/ld+json" set:html={articleSchema} slot="head" />
+  {faqSchema && <script type="application/ld+json" set:html={faqSchema} slot="head" />}
+  <script type="application/ld+json" set:html={breadcrumbSchema} slot="head" />
   <Navbar client:load links={[{label:'Product',href:'/#studio'},{label:'Learning Center',href:'/learning-center'},{label:'Pricing',href:'/pricing'},{label:'About',href:'/about'}]} ctaText="Claim Founders Spot" ctaHref="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01" signInHref="https://app.funnelstudio.forrestry.ai" logoHref="/" />
 
   <article class="pt-28 pb-24">
@@ -103,6 +153,19 @@ const articleSchema = JSON.stringify({
         <div class="article-content">
           <Content />
         </div>
+
+        <!-- Lead Magnet Form (inside the content card) -->
+        {post.data.leadMagnet && (
+          <div class="mt-14">
+            <BlogLeadForm
+              client:visible
+              title={post.data.leadMagnet.title}
+              description={post.data.leadMagnet.description}
+              buttonText={post.data.leadMagnet.buttonText}
+              downloadUrl={post.data.leadMagnet.downloadUrl}
+            />
+          </div>
+        )}
       </div>
     </div>
 
