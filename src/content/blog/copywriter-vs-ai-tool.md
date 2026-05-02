@@ -282,6 +282,8 @@ This gives you speed (you launched fast), data (you know what needs fixing), and
 
 You can also use AI tools for secondary funnels (lead magnets, tripwires, evergreen sequences) and save your copywriter budget for your one big annual launch.
 
+Still choosing between AI tools? Check our [comprehensive guide to the 5 best AI tools for funnel content](/learning-center/best-ai-tools-for-funnel-content).
+
 ---
 
 ---

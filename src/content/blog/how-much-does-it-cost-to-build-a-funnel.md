@@ -127,7 +127,7 @@ Here is the typical pricing breakdown for a full funnel (webinar or VSL-based):
 - Ads management (the copywriter writes the ads, you or an ads manager runs them)
 - Funnel builder software subscription (still your cost)
 
-Not sure whether a copywriter is the right move for you? We wrote a [detailed comparison of hiring a copywriter vs. using an AI tool](/learning-center/copywriter-vs-ai-tool) to help you decide.
+Not sure whether a copywriter is the right move for you? We wrote a [detailed comparison of hiring a copywriter vs. using an AI tool](/learning-center/copywriter-vs-ai-tool) to help you decide. Want to compare specific AI tools and features? See our [detailed comparison of the 5 best AI tools for funnel content](/learning-center/best-ai-tools-for-funnel-content).
 
 **When This Path Makes Sense:**
 - You are doing $10K+ per month and can afford the investment

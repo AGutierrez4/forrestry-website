@@ -161,6 +161,8 @@ From the implementation docs, each post should include:
 |---|------|----------|-------------|
 | 1 | `why-is-my-funnel-not-converting` | Problems | Funnel Content Audit Checklist |
 | 2 | `how-much-does-it-cost-to-build-a-funnel` | Pricing & Costs | Funnel Build Cost Calculator |
+| 3 | `copywriter-vs-ai-tool` | Tools & Tech | Copywriter vs. AI Tool Decision Guide |
+| 4 | `best-ai-tools-for-funnel-content` | Best in Class | AI Funnel Tool Decision Matrix |
 
 ---
 
