@@ -1,6 +1,11 @@
 import Navbar from '../components/Navbar'
+import PricingHero from '../components/company/PricingHero'
 import FoundersPricing from '../components/company/FoundersPricing'
+import WhatsIncluded from '../components/company/WhatsIncluded'
+import CostComparison from '../components/company/CostComparison'
+import GuaranteeSection from '../components/company/GuaranteeSection'
 import FAQ from '../components/FAQ'
+import PricingFinalCTA from '../components/company/PricingFinalCTA'
 import Footer from '../components/Footer'
 
 const navLinks = [
@@ -28,8 +33,13 @@ export default function PricingPage() {
         logoHref="/"
       />
       <div className="pt-24">
+        <PricingHero />
         <FoundersPricing />
+        <WhatsIncluded />
+        <CostComparison />
+        <GuaranteeSection />
         <FAQ />
+        <PricingFinalCTA />
       </div>
       <Footer links={footerLinks} tagline="Stop Building. Start Launching." />
     </>

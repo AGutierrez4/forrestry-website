@@ -30,6 +30,18 @@ const faqs = [
     q: 'What does "Perfect Webinar" mean?',
     a: 'The Perfect Webinar is a proven framework for structuring high-converting webinar presentations. Funnel Studio™ has this framework built into every webinar script it generates. You do not need to know the framework. The tool handles it.',
   },
+  {
+    q: 'What if I am already using ChatGPT for my funnel copy?',
+    a: 'ChatGPT can write text, but it cannot build a funnel strategy. You still have to figure out the framework, write the prompts, and connect the pieces yourself. That is how Frankenstein funnels get built — each piece sounds fine alone, but the messaging shifts at every transition. Funnel Studio generates everything from one strategic conversation, so every piece is connected.',
+  },
+  {
+    q: 'How long does it take to generate a full funnel?',
+    a: 'The Brain Dump takes about 10 minutes. From there, Funnel Studio generates your Strategic Blueprint, webinar script, email sequences, ad copy, and page copy. Most founders have complete funnel content within a day or two — not weeks.',
+  },
+  {
+    q: 'What format does the content come in?',
+    a: 'Everything is generated as clean, ready-to-use text. Copy it into any page builder (ClickFunnels, WordPress, Kajabi, Carrd — whatever you use), any email platform, or any ad manager. Funnel Studio is the content engine, not the page builder.',
+  },
 ]
 
 export default function FAQ() {

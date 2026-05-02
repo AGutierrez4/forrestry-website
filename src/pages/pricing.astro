@@ -1,16 +1,26 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import Navbar from '../components/Navbar'
+import PricingHero from '../components/company/PricingHero'
 import FoundersPricing from '../components/company/FoundersPricing'
+import WhatsIncluded from '../components/company/WhatsIncluded'
+import CostComparison from '../components/company/CostComparison'
+import GuaranteeSection from '../components/company/GuaranteeSection'
 import FAQ from '../components/FAQ'
+import PricingFinalCTA from '../components/company/PricingFinalCTA'
 import Footer from '../components/Footer'
 ---
 
-<BaseLayout title="Pricing | Funnel Studio™ by forrestry.ai" description="Lock in your Founding Member rate at $47/mo. 100 spots available.">
+<BaseLayout title="Pricing | Funnel Studio™ by forrestry.ai" description="Your entire funnel, one subscription. Lock in the Founding Member rate at $47/mo before 100 spots fill.">
   <Navbar client:load links={[{label:'Product',href:'/#studio'},{label:'Learning Center',href:'/learning-center'},{label:'Pricing',href:'/pricing'},{label:'About',href:'/about'}]} ctaText="Claim Founders Spot" ctaHref="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01" signInHref="https://app.funnelstudio.forrestry.ai" logoHref="/" />
   <div class="pt-24">
+    <PricingHero client:visible />
     <FoundersPricing client:visible />
+    <WhatsIncluded client:visible />
+    <CostComparison client:visible />
+    <GuaranteeSection client:visible />
     <FAQ client:visible />
+    <PricingFinalCTA client:visible />
   </div>
   <Footer links={[{label:'Product',href:'/#studio'},{label:'Learning Center',href:'/learning-center'},{label:'Pricing',href:'/pricing'},{label:'About',href:'/about'},{label:'Privacy',href:'/privacy'},{label:'Terms',href:'/terms'}]} tagline="Stop Building. Start Launching." />
 </BaseLayout>
