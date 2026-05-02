@@ -5,7 +5,7 @@ publishDate: 2026-05-01
 author: "Andrew Gutierrez"
 category: "Pricing & Costs"
 tags: ["funnel-strategy", "pricing", "cost-comparison", "ai-tools"]
-heroImage: "/how-much-does-it-cost-to-build-a-funnel-hero-image.png"
+heroImage: "/how-much-does-it-cost-to-build-a-funnel-hero-image.webp"
 leadMagnet:
   title: "Funnel Build Cost Calculator"
   description: "An interactive tool that factors in out-of-pocket costs, opportunity cost of your time, delay cost, and break-even timeline. Plug in your numbers and get a data-driven recommendation."

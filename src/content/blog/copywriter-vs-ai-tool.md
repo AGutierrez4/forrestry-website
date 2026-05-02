@@ -5,7 +5,7 @@ publishDate: 2026-05-01
 author: "Andrew Gutierrez"
 category: "Tools & Tech"
 tags: ["funnel-strategy", "copywriting", "ai-tools", "cost-comparison", "decision-guide"]
-heroImage: "/Copywriter-vs-AI-Tool-hero-image.png"
+heroImage: "/Copywriter-vs-AI-Tool-hero-image.webp"
 leadMagnet:
   title: "Copywriter vs. AI Tool Decision Guide"
   description: "A 10-question interactive quiz that automatically scores both options based on your revenue, timeline, budget, and needs. Get a personalized recommendation in under 2 minutes."

@@ -5,7 +5,7 @@ publishDate: 2026-05-01
 author: "Andrew Gutierrez"
 category: "Problems"
 tags: ["funnel-strategy", "conversion", "diagnostics", "content-marketing"]
-heroImage: "/why-is-my-funnel-not-converting-hero-image.png"
+heroImage: "/why-is-my-funnel-not-converting-hero-image.webp"
 leadMagnet:
   title: "Funnel Content Audit Checklist"
   description: "An interactive worksheet that walks you through each diagnostic question, scores your funnel health, and gives you prioritized next steps."
