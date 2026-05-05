@@ -22,15 +22,13 @@ export default function Footer({
     <footer className="bg-[#050505] border-t border-[rgba(255,255,255,0.08)] py-12 px-6">
       <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex flex-col items-center md:items-start gap-1">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center">
             <img
               src="/logo.webp"
               alt="forrestry.ai"
-              width={36}
-              height={36}
-              className="w-9 h-9 rounded-full object-cover"
+              height={32}
+              className="h-8 w-auto object-contain"
             />
-            <span className="text-green font-bold text-lg">forrestry.ai</span>
           </div>
           {tagline && (
             <p className="text-[14px] font-medium text-green">{tagline}</p>

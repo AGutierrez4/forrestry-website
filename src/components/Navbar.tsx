@@ -48,15 +48,13 @@ export default function Navbar({
     >
       <div className="max-w-[1400px] mx-auto flex items-center justify-between">
         {/* Logo */}
-        <a href={logoHref} className="flex items-center gap-2 no-underline">
+        <a href={logoHref} className="flex items-center no-underline">
           <img
             src="/logo.webp"
             alt="forrestry.ai"
-            width={40}
-            height={40}
-            className="w-10 h-10 rounded-full object-cover"
+            height={36}
+            className="h-9 w-auto object-contain"
           />
-          <span className="text-green font-bold text-lg">forrestry.ai</span>
         </a>
 
         {/* Desktop nav links */}
