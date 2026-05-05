@@ -24,7 +24,7 @@ export default function Footer({
         <div className="flex flex-col items-center md:items-start gap-1">
           <div className="flex items-center">
             <img
-              src="/logo.webp"
+              src="/logo.png"
               alt="forrestry.ai"
               height={32}
               className="h-8 w-auto object-contain"

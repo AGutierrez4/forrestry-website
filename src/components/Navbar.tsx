@@ -50,7 +50,7 @@ export default function Navbar({
         {/* Logo */}
         <a href={logoHref} className="flex items-center no-underline">
           <img
-            src="/logo.webp"
+            src="/logo.png"
             alt="forrestry.ai"
             height={36}
             className="h-9 w-auto object-contain"
