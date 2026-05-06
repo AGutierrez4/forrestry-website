@@ -73,12 +73,15 @@ export default function EcosystemSection() {
                   </li>
                 ))}
               </ul>
-              <p className="text-white/40 text-xs mb-3">Available Now — $97</p>
+              <p className="text-[#818cf8] text-xs mb-3 font-medium">Available Now — $97</p>
               <a
                 href={FUNNEL_STUDIO_URL}
-                className="inline-block w-full text-center px-6 py-3 rounded-full bg-[#818cf8] text-white font-semibold text-sm no-underline hover:bg-[#818cf8]/90 transition-all"
+                className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 rounded-full bg-[#818cf8] text-white font-semibold text-sm no-underline hover:bg-[#818cf8]/90 transition-all"
               >
-                Learn More
+                Get Access to Funnel Studio
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </a>
             </div>
           </FadeUp>

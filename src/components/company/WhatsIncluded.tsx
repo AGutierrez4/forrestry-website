@@ -38,8 +38,8 @@ const features = [
   },
   {
     icon: '🔒',
-    title: '2-Year Founding Rate',
-    desc: 'Your $47/mo rate stays locked for 2 full years. When the price goes to $97/mo, yours doesn\'t. No bait and switch.',
+    title: 'Instant Access',
+    desc: 'Get immediate access to the full Funnel Studio suite the moment you sign up. No waiting, no onboarding calls, no delays.',
   },
 ]
 

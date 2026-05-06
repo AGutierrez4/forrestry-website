@@ -23,7 +23,7 @@ export default function About() {
     <>
       <Navbar
         links={navLinks}
-        ctaText="Claim Founders Spot"
+        ctaText="Get Access to Funnel Studio"
         ctaHref="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01"
         signInHref="https://app.funnelstudio.forrestry.ai"
         logoHref="/"
@@ -102,15 +102,18 @@ export default function About() {
                 href="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-10 py-4 rounded-xl bg-green text-black font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all"
+                className="inline-flex items-center gap-2 px-10 py-4 rounded-xl bg-green text-white font-bold text-lg no-underline shadow-[0_0_40px_rgba(16,185,129,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(16,185,129,0.4)] transition-all"
               >
-                Claim Your Founders Spot. $47/mo
+                Get Access to Funnel Studio — $97
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </a>
             </div>
           </FadeUp>
         </div>
       </div>
-      <Footer links={footerLinks} tagline="Stop Building. Start Launching." />
+      <Footer links={footerLinks} tagline="Enterprise-grade strategy and connected tools for entrepreneurs who are ready to launch." />
     </>
   )
 }

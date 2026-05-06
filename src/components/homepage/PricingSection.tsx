@@ -66,9 +66,12 @@ export default function PricingSection() {
                 href={STRIPE_CHECKOUT_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full py-4 rounded-full bg-green text-white font-bold text-base text-center no-underline shadow-[0_0_30px_rgba(16,185,129,0.2)] hover:bg-green/90 hover:shadow-[0_0_50px_rgba(16,185,129,0.3)] transition-all"
+                className="flex items-center justify-center gap-2 w-full py-4 rounded-full bg-green text-white font-bold text-base text-center no-underline shadow-[0_0_30px_rgba(16,185,129,0.2)] hover:bg-green/90 hover:shadow-[0_0_50px_rgba(16,185,129,0.3)] transition-all"
               >
                 Get Access to Funnel Studio
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </a>
 
               <p className="text-white/40 text-xs mt-5 text-center">

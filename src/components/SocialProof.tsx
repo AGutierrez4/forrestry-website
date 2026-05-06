@@ -33,10 +33,10 @@ export default function SocialProof() {
               THE PROBLEM
             </p>
             <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold text-text mb-4">
-              You don't have a funnel problem.
+              The friction is real.
             </h2>
             <h3 className="text-[clamp(1.5rem,3vw,2.25rem)] font-extrabold bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent mb-6">
-              You have a friction problem.
+              And it's killing great ideas.
             </h3>
             <p className="text-muted text-lg max-w-[700px] mx-auto leading-relaxed">
               Legacy tools like ClickFunnels hand you the bricks and tell you to build a house.

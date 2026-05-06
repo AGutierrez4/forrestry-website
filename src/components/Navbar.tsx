@@ -84,7 +84,7 @@ export default function Navbar({
             href={ctaHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-green text-black px-6 py-2.5 rounded-full font-semibold text-[0.95rem] no-underline hover:bg-green/90 hover:scale-105 transition-all"
+            className="bg-green text-white px-6 py-2.5 rounded-full font-semibold text-[0.95rem] no-underline hover:bg-green/90 hover:scale-105 transition-all"
           >
             {ctaText}
           </a>
@@ -127,7 +127,7 @@ export default function Navbar({
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMobile}
-            className="bg-green text-black px-6 py-2.5 rounded-full font-semibold text-base no-underline text-center hover:bg-green/90 transition-all"
+            className="bg-green text-white px-6 py-2.5 rounded-full font-semibold text-base no-underline text-center hover:bg-green/90 transition-all"
           >
             {ctaText}
           </a>

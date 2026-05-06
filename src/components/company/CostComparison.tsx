@@ -112,11 +112,8 @@ export default function CostComparison() {
             <div className="grid grid-cols-[1fr_auto] md:grid-cols-[1fr_140px_1fr] gap-4 items-center">
               <div>
                 <span className="text-text text-sm font-bold">Funnel Studio™</span>
-                <span className="ml-2 text-xs bg-green/20 text-green px-2 py-0.5 rounded-full font-semibold">
-                  Founding Rate
-                </span>
               </div>
-              <span className="text-green text-sm font-bold text-right md:text-left">$47/mo</span>
+              <span className="text-green text-sm font-bold text-right md:text-left">$97</span>
               <span className="text-text text-sm hidden md:block">
                 One conversation → complete, connected funnel content.
               </span>

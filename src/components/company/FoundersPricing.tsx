@@ -6,45 +6,46 @@ export default function FoundersPricing() {
       <div className="max-w-[600px] mx-auto">
         <FadeUp>
           <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
-            Founders Pricing
+            Start Building
           </p>
         </FadeUp>
 
         <FadeUp delay={0.1}>
           <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold text-center mb-14">
-            Lock in the founding rate before it is gone.
+            Everything you need to launch.
           </h2>
         </FadeUp>
 
         <FadeUp delay={0.2}>
-          <div className="relative rounded-2xl border border-green/40 bg-card-bg p-8 shadow-[0_0_60px_rgba(74,222,128,0.1)]">
-            {/* Founders badge */}
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-green text-black px-5 py-1.5 rounded-full text-xs font-bold whitespace-nowrap">
-              Founding Member. Limited to 100 Spots
+          <div className="relative rounded-2xl border border-green/40 bg-card-bg p-8 shadow-[0_0_60px_rgba(16,185,129,0.1)]">
+            {/* Badge */}
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-green text-white px-5 py-1.5 rounded-full text-xs font-bold whitespace-nowrap">
+              Most Popular
             </div>
 
             <div className="text-center mt-4 mb-6">
-              <p className="text-muted text-sm line-through mb-1">$97/mo</p>
+              <h3 className="text-white font-bold text-xl mb-2">Funnel Studio</h3>
+              <p className="text-muted text-sm mb-3">Complete funnel ecosystem generator</p>
               <div className="flex items-baseline justify-center gap-2">
-                <span className="text-[3rem] font-extrabold text-text">$47</span>
-                <span className="text-muted text-lg">/mo</span>
+                <span className="text-[3rem] font-extrabold text-text">$97</span>
               </div>
-              <p className="text-green text-sm font-semibold mt-1">
-                52% off. Founding Members Only
+              <p className="text-muted text-sm mt-1">
+                One-time access
               </p>
             </div>
 
             <ul className="flex flex-col gap-3 mb-8">
               {[
-                'Unlimited funnels',
-                'AI copywriting from your Brain Dump™',
-                'Perfect Webinar script builder',
-                'Email sequence generator',
-                'Social ad copy (Cold, Warm, Hot)',
-                '60-Second Hook scripts',
-                'Strategic Blueprint',
-                'Priority support',
-                '2-year founding rate',
+                'Brain Dump Agent™ — conversational AI intake',
+                'Strategic Blueprint generation',
+                '4-Page HTML Funnel Stack (squeeze, sales, order, thank you)',
+                'Perfect Webinar Builder (60-min script)',
+                '60-Second Webinar Hook Script',
+                '12-Email Sequence Generator',
+                'Social Ad Matrix (cold/warm/hot traffic)',
+                'Funnel Video Scripts',
+                'Built-in Audit Tool with conversion grades',
+                'Content Refinement Bar for iterative editing',
               ].map((feature) => (
                 <li key={feature} className="flex items-start gap-3 text-sm text-text">
                   <span className="text-green shrink-0 mt-0.5">✓</span>
@@ -57,13 +58,16 @@ export default function FoundersPricing() {
               href="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full py-4 rounded-xl bg-green text-black font-bold text-lg text-center no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all"
+              className="flex items-center justify-center gap-2 w-full py-4 rounded-xl bg-green text-white font-bold text-lg text-center no-underline shadow-[0_0_40px_rgba(16,185,129,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(16,185,129,0.4)] transition-all"
             >
-              Claim Your Founders Spot
+              Get Access to Funnel Studio
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
             </a>
 
             <p className="text-muted text-xs text-center mt-4">
-              Cancel anytime. 2-year price lock guarantee.
+              Cancel anytime. 14-day money-back guarantee.
             </p>
           </div>
         </FadeUp>

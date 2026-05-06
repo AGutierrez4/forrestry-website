@@ -2,11 +2,15 @@ import FadeUp from './FadeUp'
 
 const checklist = [
   'Full Funnel Studio access',
-  'AI copywriting engine',
-  'Webinar script builder',
-  'Email sequence generator',
-  'Ad copy writer',
-  'Community access',
+  'Brain Dump Agent™ conversational AI intake',
+  'Strategic Blueprint generation',
+  '4-Page HTML Funnel Stack',
+  'Perfect Webinar Builder (60-min script)',
+  '60-Second Webinar Hook Script',
+  '12-Email Sequence Generator',
+  'Social Ad Matrix (cold/warm/hot traffic)',
+  'Built-in Audit Tool with conversion grades',
+  'Content Refinement Bar for iterative editing',
   '14-Day Money-Back Guarantee',
 ]
 
@@ -15,9 +19,9 @@ export default function Pricing() {
     <section id="pricing" className="py-16 md:py-[120px] px-6 bg-bg-section-a">
       <div className="max-w-[700px] mx-auto text-center">
         <FadeUp>
-          <p className="eyebrow mb-4">FOUNDING MEMBER PRICING</p>
+          <p className="eyebrow mb-4">START BUILDING</p>
           <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-extrabold text-text mb-8">
-            Lock in the founding rate.
+            Everything you need to launch.
           </h2>
         </FadeUp>
 
@@ -25,29 +29,14 @@ export default function Pricing() {
           <div className="bg-card-bg border border-card-border rounded-2xl p-8 md:p-12">
             {/* Price display */}
             <div className="mb-6">
-              <span className="text-[16px] text-muted line-through opacity-50">$97/mo</span>
               <div className="flex items-center justify-center gap-3 mt-2">
-                <span className="text-[48px] font-extrabold text-text">$47</span>
-                <span className="text-muted text-lg">/mo</span>
+                <span className="text-[48px] font-extrabold text-text">$97</span>
               </div>
-              <span className="inline-block mt-2 bg-[rgba(74,222,128,0.15)] text-green text-sm font-semibold rounded px-2.5 py-1">
-                52% off
-              </span>
-            </div>
-
-            {/* Progress bar */}
-            <div className="max-w-[400px] mx-auto mb-8">
-              <div className="flex justify-between text-sm mb-2">
-                <span className="text-green font-semibold">23 of 100 spots claimed</span>
-                <span className="text-muted">77 remaining</span>
-              </div>
-              <div className="w-full h-2 bg-white/[0.08] rounded-full overflow-hidden">
-                <div className="h-full w-[23%] bg-gradient-to-r from-green-bright to-purple rounded-full" />
-              </div>
+              <p className="text-muted text-sm mt-2">One-time access</p>
             </div>
 
             {/* Checklist */}
-            <ul className="flex flex-col gap-3 text-left max-w-[360px] mx-auto mb-8">
+            <ul className="flex flex-col gap-3 text-left max-w-[400px] mx-auto mb-8">
               {checklist.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-text">
                   <span className="text-green text-[16px] shrink-0 mt-0.5">✓</span>
@@ -58,15 +47,20 @@ export default function Pricing() {
 
             {/* CTA */}
             <a
-              href="https://app.forrestry.ai/register"
-              className="inline-block w-full max-w-[400px] px-10 py-4 rounded-xl bg-green text-black font-bold text-lg no-underline shadow-[0_0_40px_rgba(74,222,128,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(74,222,128,0.4)] transition-all mb-4"
+              href="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 w-full max-w-[400px] px-10 py-4 rounded-xl bg-green text-white font-bold text-lg no-underline shadow-[0_0_40px_rgba(16,185,129,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(16,185,129,0.4)] transition-all mb-4"
             >
-              Claim Your Founding Member Access →
+              Get Access to Funnel Studio
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
             </a>
 
             {/* Trust badges */}
             <p className="text-muted text-[13px]">
-              Cancel anytime · No credit card required · 14-day money-back guarantee
+              Cancel anytime. 14-day money-back guarantee.
             </p>
           </div>
         </FadeUp>

@@ -14,7 +14,7 @@ export default function PricingHero() {
           <h1 className="text-[clamp(2rem,5vw,3.25rem)] font-extrabold text-text mb-6 leading-[1.1]">
             Your entire funnel.{' '}
             <span className="bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent">
-              One subscription.
+              One ecosystem.
             </span>
           </h1>
         </FadeUp>
