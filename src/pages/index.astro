@@ -4,6 +4,7 @@ import HomepageNavbar from '../components/homepage/HomepageNavbar'
 import HomepageHero from '../components/homepage/HomepageHero'
 import PainSection from '../components/homepage/PainSection'
 import EcosystemSection from '../components/homepage/EcosystemSection'
+import WorkflowSection from '../components/homepage/WorkflowSection'
 import FlagshipSection from '../components/homepage/FlagshipSection'
 import CostComparisonSection from '../components/homepage/CostComparisonSection'
 import FounderSection from '../components/homepage/FounderSection'
@@ -18,11 +19,12 @@ import Footer from '../components/Footer'
     <HomepageHero client:load />
     <PainSection client:visible />
     <EcosystemSection client:visible />
+    <WorkflowSection client:visible />
     <FlagshipSection client:visible />
     <CostComparisonSection client:visible />
     <FounderSection client:visible />
     <PricingSection client:visible />
     <FinalCTASection client:visible />
   </main>
-  <Footer links={[{label:'Products',href:'#ecosystem'},{label:'Pricing',href:'/pricing'},{label:'About',href:'/about'},{label:'Privacy',href:'/privacy'},{label:'Terms',href:'/terms'}]} tagline="Stop Building. Start Launching." />
+  <Footer links={[{label:'Products',href:'#ecosystem'},{label:'Pricing',href:'/pricing'},{label:'About',href:'/about'},{label:'Privacy',href:'/privacy'},{label:'Terms',href:'/terms'}]} tagline="Enterprise-grade strategy and connected tools for entrepreneurs who are ready to launch." />
 </BaseLayout>

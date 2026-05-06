@@ -30,7 +30,7 @@ export default function HomepageNavbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4 ${
         scrolled || mobileOpen
-          ? 'bg-white shadow-sm'
+          ? 'bg-[#09090B]/90 backdrop-blur-md border-b border-white/[0.06]'
           : 'bg-transparent'
       }`}
     >
@@ -41,9 +41,7 @@ export default function HomepageNavbar() {
             src="/logo.png"
             alt="forrestry.ai"
             height={32}
-            className={`h-8 w-auto object-contain transition-all ${
-              scrolled || mobileOpen ? '' : 'brightness-0 invert'
-            }`}
+            className="h-8 w-auto object-contain transition-all"
           />
         </a>
 
@@ -53,9 +51,7 @@ export default function HomepageNavbar() {
           <div ref={dropdownRef} className="relative">
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
-              className={`flex items-center gap-1 text-[0.95rem] font-medium no-underline bg-transparent border-none cursor-pointer transition-colors ${
-                scrolled ? 'text-text-dark hover:text-green' : 'text-white hover:text-green'
-              }`}
+              className="flex items-center gap-1 text-[0.95rem] font-medium no-underline bg-transparent border-none cursor-pointer transition-colors text-white/80 hover:text-green"
               aria-expanded={dropdownOpen}
               aria-haspopup="true"
             >
@@ -66,34 +62,34 @@ export default function HomepageNavbar() {
             {dropdownOpen && (
               <div
                 role="menu"
-                className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50"
+                className="absolute top-full left-0 mt-2 w-64 bg-[#111] rounded-xl shadow-lg border border-white/[0.08] py-2 z-50"
               >
                 <a
                   href={FUNNEL_STUDIO_URL}
                   role="menuitem"
-                  className="block px-4 py-3 text-text-dark no-underline hover:bg-bg-light transition-colors"
+                  className="block px-4 py-3 text-white no-underline hover:bg-white/[0.04] transition-colors"
                   onClick={() => setDropdownOpen(false)}
                 >
                   <span className="font-semibold text-sm">Funnel Studio</span>
-                  <span className="block text-xs text-text-body mt-0.5">The Conversion Engine</span>
+                  <span className="block text-xs text-white/50 mt-0.5">The Conversion Engine</span>
                 </a>
                 <a
                   href={ECOSYSTEM_ANCHOR}
                   role="menuitem"
-                  className="block px-4 py-3 text-text-dark no-underline hover:bg-bg-light transition-colors opacity-60"
+                  className="block px-4 py-3 text-white no-underline hover:bg-white/[0.04] transition-colors opacity-60"
                   onClick={() => setDropdownOpen(false)}
                 >
                   <span className="font-semibold text-sm">Answer Your Audience</span>
-                  <span className="block text-xs text-text-body mt-0.5">Coming Soon</span>
+                  <span className="block text-xs text-white/50 mt-0.5">Coming Soon</span>
                 </a>
                 <a
                   href={ECOSYSTEM_ANCHOR}
                   role="menuitem"
-                  className="block px-4 py-3 text-text-dark no-underline hover:bg-bg-light transition-colors opacity-60"
+                  className="block px-4 py-3 text-white no-underline hover:bg-white/[0.04] transition-colors opacity-60"
                   onClick={() => setDropdownOpen(false)}
                 >
                   <span className="font-semibold text-sm">BrandStory</span>
-                  <span className="block text-xs text-text-body mt-0.5">Coming Soon</span>
+                  <span className="block text-xs text-white/50 mt-0.5">Coming Soon</span>
                 </a>
               </div>
             )}
@@ -101,17 +97,13 @@ export default function HomepageNavbar() {
 
           <a
             href="/pricing"
-            className={`text-[0.95rem] font-medium no-underline transition-colors ${
-              scrolled ? 'text-text-dark hover:text-green' : 'text-white hover:text-green'
-            }`}
+            className="text-[0.95rem] font-medium no-underline transition-colors text-white/80 hover:text-green"
           >
             Pricing
           </a>
           <a
             href="/about"
-            className={`text-[0.95rem] font-medium no-underline transition-colors ${
-              scrolled ? 'text-text-dark hover:text-green' : 'text-white hover:text-green'
-            }`}
+            className="text-[0.95rem] font-medium no-underline transition-colors text-white/80 hover:text-green"
           >
             About
           </a>
@@ -131,9 +123,7 @@ export default function HomepageNavbar() {
 
         {/* Hamburger */}
         <button
-          className={`md:hidden p-2 bg-transparent border-none cursor-pointer ${
-            scrolled || mobileOpen ? 'text-text-dark' : 'text-white'
-          }`}
+          className="md:hidden p-2 bg-transparent border-none cursor-pointer text-white"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -143,40 +133,40 @@ export default function HomepageNavbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden flex flex-col gap-2 pt-4 pb-6 bg-white rounded-b-xl">
+        <div className="md:hidden flex flex-col gap-2 pt-4 pb-6 bg-[#111] rounded-b-xl border-t border-white/[0.06]">
           <a
             href={FUNNEL_STUDIO_URL}
             onClick={closeMobile}
-            className="text-text-dark no-underline py-2 px-2 text-base font-medium hover:text-green transition-colors"
+            className="text-white no-underline py-2 px-2 text-base font-medium hover:text-green transition-colors"
           >
             Funnel Studio
           </a>
           <a
             href={ECOSYSTEM_ANCHOR}
             onClick={closeMobile}
-            className="text-text-body no-underline py-2 px-2 text-sm hover:text-green transition-colors"
+            className="text-white/50 no-underline py-2 px-2 text-sm hover:text-green transition-colors"
           >
             Answer Your Audience (Coming Soon)
           </a>
           <a
             href={ECOSYSTEM_ANCHOR}
             onClick={closeMobile}
-            className="text-text-body no-underline py-2 px-2 text-sm hover:text-green transition-colors"
+            className="text-white/50 no-underline py-2 px-2 text-sm hover:text-green transition-colors"
           >
             BrandStory (Coming Soon)
           </a>
-          <hr className="border-gray-100 my-2" />
+          <hr className="border-white/[0.06] my-2" />
           <a
             href="/pricing"
             onClick={closeMobile}
-            className="text-text-dark no-underline py-2 px-2 text-base font-medium hover:text-green transition-colors"
+            className="text-white no-underline py-2 px-2 text-base font-medium hover:text-green transition-colors"
           >
             Pricing
           </a>
           <a
             href="/about"
             onClick={closeMobile}
-            className="text-text-dark no-underline py-2 px-2 text-base font-medium hover:text-green transition-colors"
+            className="text-white no-underline py-2 px-2 text-base font-medium hover:text-green transition-colors"
           >
             About
           </a>

@@ -4,21 +4,18 @@ import { STRIPE_CHECKOUT_URL } from './constants'
 
 const tools = [
   {
-    label: 'Step 1',
     title: 'Brain Dump™',
     body: 'Talk to our AI like a mentor. Describe your business naturally, and we extract your core transformation, Big Domino statement, audience pain points, and offer architecture into a structured foundation.',
     image: '/Brain Dump.jpg',
     imageAlt: 'Brain Dump conversation interface',
   },
   {
-    label: 'Step 2',
     title: 'Strategic Blueprint',
     body: 'Your Brain Dump becomes a comprehensive strategic blueprint that feeds every downstream tool. One input, consistent messaging everywhere. Framework-driven by Russell Brunson, Alex Hormozi, and Marcus Sheridan.',
     image: '/Strategic Blueprint.jpg',
     imageAlt: 'Strategic Blueprint document interface',
   },
   {
-    label: 'Step 3',
     title: 'Funnel Stack',
     body: 'Generate production-ready HTML for your complete funnel: squeeze page, sales page, order page, and thank you page. Headlines, persuasion copy, CTAs, FAQs, trust badges, and guarantees. Copy, paste, go live.',
     image: '/Funnel Stack.jpg',
@@ -28,11 +25,11 @@ const tools = [
 
 export default function FlagshipSection() {
   return (
-    <section className="py-20 sm:py-28 bg-[#09090B]">
+    <section className="py-20 sm:py-28 section-alt">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
         <FadeUp>
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <p className="text-xs font-semibold text-green uppercase tracking-wider mb-3">How It Works</p>
+            <p className="text-xs font-semibold text-green uppercase tracking-wider mb-3">The Tools</p>
             <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-white tracking-tight">
               Three tools,{' '}
               <span className="bg-gradient-to-r from-green-bright to-green bg-clip-text text-transparent">
@@ -53,9 +50,6 @@ export default function FlagshipSection() {
                 {/* Text */}
                 <SlideIn from={isEven ? 'right' : 'left'} delay={0.1}>
                   <div className="flex-1 max-w-lg">
-                    <span className="text-xs font-semibold text-green uppercase tracking-wider mb-2 block">
-                      {tool.label}
-                    </span>
                     <h3 className="text-white font-extrabold text-xl sm:text-2xl tracking-tight mb-3">
                       {tool.title}
                     </h3>
@@ -87,7 +81,7 @@ export default function FlagshipSection() {
               href={STRIPE_CHECKOUT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-8 py-4 rounded-full bg-green text-black font-bold text-base no-underline shadow-[0_0_30px_rgba(74,222,128,0.15)] hover:bg-green/90 hover:shadow-[0_0_50px_rgba(74,222,128,0.25)] hover:scale-[1.02] transition-all"
+              className="inline-block px-8 py-4 rounded-full bg-green text-black font-bold text-base no-underline shadow-[0_0_30px_rgba(16,185,129,0.15)] hover:bg-green/90 hover:shadow-[0_0_50px_rgba(16,185,129,0.25)] hover:scale-[1.02] transition-all"
             >
               Get Access to Funnel Studio
             </a>
