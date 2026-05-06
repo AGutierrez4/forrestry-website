@@ -1,22 +1,26 @@
 import FadeUp from '../FadeUp'
+import SlideIn from '../SlideIn'
 import { STRIPE_CHECKOUT_URL } from './constants'
 
-const pillars = [
+const tools = [
   {
-    title: 'A Unified Voice',
-    body: 'Your ads, your emails, and your pages finally speak the same language. One conversation powers every touchpoint.',
+    label: 'Step 1',
+    title: 'Brain Dump™',
+    body: 'Talk to our AI like a mentor. Describe your business naturally, and we extract your core transformation, Big Domino statement, audience pain points, and offer architecture into a structured foundation.',
     image: '/Brain Dump.jpg',
-    imageAlt: 'Brain Dump conversation powering unified messaging',
+    imageAlt: 'Brain Dump conversation interface',
   },
   {
-    title: 'Framework-Driven Copy',
-    body: 'No more "robot" text. Every word is rooted in the methodologies of legends like Russell Brunson and Marcus Sheridan.',
+    label: 'Step 2',
+    title: 'Strategic Blueprint',
+    body: 'Your Brain Dump becomes a comprehensive strategic blueprint that feeds every downstream tool. One input, consistent messaging everywhere. Framework-driven by Russell Brunson, Alex Hormozi, and Marcus Sheridan.',
     image: '/Strategic Blueprint.jpg',
-    imageAlt: 'Strategic Blueprint with framework-driven copy',
+    imageAlt: 'Strategic Blueprint document interface',
   },
   {
-    title: 'The Funnel Stack Builder',
-    body: 'Stop wrestling with drag-and-drop editors for 24 hours. We generate the HTML for a pro-level 4-page stack. Just copy, paste, and go live.',
+    label: 'Step 3',
+    title: 'Funnel Stack',
+    body: 'Generate production-ready HTML for your complete funnel: squeeze page, sales page, order page, and thank you page. Headlines, persuasion copy, CTAs, FAQs, trust badges, and guarantees. Copy, paste, go live.',
     image: '/Funnel Stack.jpg',
     imageAlt: 'Funnel Stack Builder interface',
   },
@@ -24,54 +28,68 @@ const pillars = [
 
 export default function FlagshipSection() {
   return (
-    <section className="py-24 px-6 bg-[#0f1210]">
-      <div className="max-w-[1100px] mx-auto">
+    <section className="py-20 sm:py-28 bg-[#09090B]">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
         <FadeUp>
-          <div className="text-center mb-20">
-            <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-white mb-4">
-              Meet Funnel Studio: Where Your Vision Becomes a Reality.
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <p className="text-xs font-semibold text-green uppercase tracking-wider mb-3">How It Works</p>
+            <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-white tracking-tight">
+              Three tools,{' '}
+              <span className="bg-gradient-to-r from-green-bright to-green bg-clip-text text-transparent">
+                built to be connected
+              </span>
             </h2>
           </div>
         </FadeUp>
 
-        {/* Alternating split layouts */}
-        <div className="flex flex-col gap-20">
-          {pillars.map((pillar, i) => {
+        <div className="flex flex-col gap-20 lg:gap-28">
+          {tools.map((tool, i) => {
             const isEven = i % 2 === 1
             return (
-              <FadeUp key={pillar.title} delay={0.1}>
-                <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${isEven ? 'lg:[direction:rtl]' : ''}`}>
-                  {/* Text */}
-                  <div className={isEven ? 'lg:[direction:ltr]' : ''}>
-                    <h3 className="text-white font-bold text-2xl mb-4">{pillar.title}</h3>
-                    <p className="text-white/60 text-base leading-relaxed">{pillar.body}</p>
+              <div
+                key={tool.title}
+                className={`flex flex-col ${isEven ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-10 lg:gap-14`}
+              >
+                {/* Text */}
+                <SlideIn from={isEven ? 'right' : 'left'} delay={0.1}>
+                  <div className="flex-1 max-w-lg">
+                    <span className="text-xs font-semibold text-green uppercase tracking-wider mb-2 block">
+                      {tool.label}
+                    </span>
+                    <h3 className="text-white font-extrabold text-xl sm:text-2xl tracking-tight mb-3">
+                      {tool.title}
+                    </h3>
+                    <p className="text-white/50 leading-relaxed text-base">{tool.body}</p>
                   </div>
-                  {/* Image */}
-                  <div className={isEven ? 'lg:[direction:ltr]' : ''}>
-                    <div className="rounded-xl overflow-hidden shadow-[0_16px_48px_rgba(0,0,0,0.4)] border border-white/[0.08]">
+                </SlideIn>
+
+                {/* Screenshot */}
+                <SlideIn from={isEven ? 'left' : 'right'} delay={0.2}>
+                  <div className="flex-1 w-full max-w-xl">
+                    <div className="rounded-xl overflow-hidden shadow-[0_16px_48px_rgba(0,0,0,0.4)] border border-white/[0.08] bg-[#111]">
                       <img
-                        src={pillar.image}
-                        alt={pillar.imageAlt}
+                        src={tool.image}
+                        alt={tool.imageAlt}
                         className="w-full h-auto block"
                         loading="lazy"
                       />
                     </div>
                   </div>
-                </div>
-              </FadeUp>
+                </SlideIn>
+              </div>
             )
           })}
         </div>
 
         <FadeUp delay={0.2}>
-          <div className="text-center mt-20">
+          <div className="text-center mt-16">
             <a
               href={STRIPE_CHECKOUT_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-4 rounded-full bg-green text-black font-bold text-base no-underline shadow-[0_0_30px_rgba(74,222,128,0.15)] hover:bg-green/90 hover:shadow-[0_0_50px_rgba(74,222,128,0.25)] hover:scale-[1.02] transition-all"
             >
-              Launch Your First Ecosystem with Funnel Studio ($97)
+              Get Access to Funnel Studio
             </a>
           </div>
         </FadeUp>

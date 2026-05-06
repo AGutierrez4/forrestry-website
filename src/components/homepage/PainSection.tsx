@@ -1,11 +1,11 @@
 import FadeUp from '../FadeUp'
 import { Wrench, Compass, Unplug } from 'lucide-react'
 
-const painPoints = [
+const problems = [
   {
     icon: Wrench,
     title: 'Technical Exhaustion',
-    body: 'Spending 20+ hours fighting with page builders just to end up with a site that looks amateur. The tools were supposed to make it easy. They didn\'t.',
+    body: 'Spending 20+ hours fighting with page builders just to end up with a site that looks amateur. The tools were supposed to make it easy.',
   },
   {
     icon: Compass,
@@ -21,43 +21,35 @@ const painPoints = [
 
 export default function PainSection() {
   return (
-    <section className="py-24 px-6 bg-[#0f1210]">
-      <div className="max-w-[1100px] mx-auto">
+    <section className="py-20 sm:py-28 bg-[#09090B]">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
         <FadeUp>
-          <div className="text-center mb-16">
-            <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-white mb-6">
-              The "Digital Jungle" is real. We're here to help you navigate it.
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <p className="text-xs font-semibold text-green uppercase tracking-wider mb-3">The Problem</p>
+            <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-white tracking-tight mb-4">
+              Building a funnel shouldn't{' '}
+              <span className="text-white/40">feel like this</span>
             </h2>
-            <p className="text-white/60 text-lg max-w-[640px] mx-auto leading-relaxed">
+            <p className="text-white/60 text-lg leading-relaxed">
               Most great ideas never see the light of day. Not because the founder lacks drive,
-              but because the path is buried under a mountain of disconnected tools, confusing
-              strategies, and the constant fear of wasting time on the wrong thing.
+              but because the path is buried under disconnected tools and confusing strategies.
             </p>
           </div>
         </FadeUp>
 
-        {/* Horizontal layout with left icon accent */}
-        <div className="flex flex-col gap-8 max-w-[800px] mx-auto mb-14">
-          {painPoints.map((point, i) => (
-            <FadeUp key={point.title} delay={i * 0.1}>
-              <div className="flex items-start gap-5 bg-[#1a1f1c] border border-white/[0.06] rounded-xl p-6">
-                <div className="w-12 h-12 rounded-lg bg-green/10 flex items-center justify-center shrink-0">
-                  <point.icon size={22} className="text-green" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-[1000px] mx-auto">
+          {problems.map((problem, i) => (
+            <FadeUp key={problem.title} delay={i * 0.08}>
+              <div className="rounded-xl bg-[#111] border border-white/[0.06] p-6 h-full hover:border-green/20 transition-colors">
+                <div className="w-9 h-9 rounded-lg bg-green/10 flex items-center justify-center mb-4">
+                  <problem.icon size={18} className="text-green" />
                 </div>
-                <div>
-                  <h3 className="text-white font-bold text-base mb-1.5">{point.title}</h3>
-                  <p className="text-white/60 text-sm leading-relaxed">{point.body}</p>
-                </div>
+                <h3 className="text-white font-bold text-sm mb-2">{problem.title}</h3>
+                <p className="text-white/50 text-sm leading-relaxed">{problem.body}</p>
               </div>
             </FadeUp>
           ))}
         </div>
-
-        <FadeUp delay={0.3}>
-          <p className="text-center text-white font-semibold text-lg max-w-[600px] mx-auto">
-            Forrestry.ai was built to replace that chaos with a single, connected ecosystem.
-          </p>
-        </FadeUp>
       </div>
     </section>
   )
