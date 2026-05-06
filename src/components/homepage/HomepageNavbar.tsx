@@ -83,7 +83,7 @@ export default function HomepageNavbar() {
                   className="block px-4 py-3 text-text-dark no-underline hover:bg-bg-light transition-colors opacity-60"
                   onClick={() => setDropdownOpen(false)}
                 >
-                  <span className="font-semibold text-sm">AYA</span>
+                  <span className="font-semibold text-sm">Answer Your Audience</span>
                   <span className="block text-xs text-text-body mt-0.5">Coming Soon</span>
                 </a>
                 <a
@@ -156,7 +156,7 @@ export default function HomepageNavbar() {
             onClick={closeMobile}
             className="text-text-body no-underline py-2 px-2 text-sm hover:text-green transition-colors"
           >
-            AYA (Coming Soon)
+            Answer Your Audience (Coming Soon)
           </a>
           <a
             href={ECOSYSTEM_ANCHOR}
