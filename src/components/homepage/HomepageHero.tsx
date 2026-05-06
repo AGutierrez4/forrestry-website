@@ -1,9 +1,9 @@
 import FadeUp from '../FadeUp'
 import { STRIPE_CHECKOUT_URL } from './constants'
-import { Zap, Layers, Sparkles } from 'lucide-react'
+import { Zap, Clock, Layers, Sparkles } from 'lucide-react'
 
 const subHeroCards = [
-  { icon: Zap, text: 'Launch in days, not months' },
+  { icon: Clock, text: 'Launch in days, not months' },
   { icon: Layers, text: 'Proven frameworks built in' },
   { icon: Sparkles, text: 'One input, full ecosystem' },
 ]
@@ -19,6 +19,15 @@ export default function HomepageHero() {
         {/* Centered copy */}
         <div className="max-w-3xl mx-auto text-center">
           <FadeUp>
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green/[0.08] border border-green/20 mb-6">
+              <Zap size={14} className="text-green" />
+              <span className="text-xs font-semibold text-green uppercase tracking-wider">
+                The Business Growth Ecosystem for Entrepreneurs
+              </span>
+            </div>
+          </FadeUp>
+
+          <FadeUp delay={0.05}>
             <h1 className="text-[clamp(2.25rem,5vw,3.75rem)] font-extrabold leading-[1.08] tracking-tight text-white mb-6">
               Stop guessing.{' '}
               <span className="bg-gradient-to-r from-green-bright to-green bg-clip-text text-transparent">
@@ -27,7 +36,7 @@ export default function HomepageHero() {
             </h1>
           </FadeUp>
 
-          <FadeUp delay={0.05}>
+          <FadeUp delay={0.1}>
             <p className="text-lg sm:text-xl text-white/60 leading-relaxed max-w-2xl mx-auto mb-8">
               Forrestry.ai turns one conversation into a complete marketing ecosystem:
               funnel pages, webinar scripts, email sequences, and ad copy. All connected,
@@ -35,13 +44,13 @@ export default function HomepageHero() {
             </p>
           </FadeUp>
 
-          <FadeUp delay={0.1}>
+          <FadeUp delay={0.15}>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <a
                 href={STRIPE_CHECKOUT_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-green text-black font-bold text-base no-underline shadow-[0_0_30px_rgba(16,185,129,0.2)] hover:bg-green/90 hover:shadow-[0_0_50px_rgba(16,185,129,0.3)] hover:scale-[1.02] transition-all"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-green text-white font-bold text-base no-underline shadow-[0_0_30px_rgba(16,185,129,0.2)] hover:bg-green/90 hover:shadow-[0_0_50px_rgba(16,185,129,0.3)] hover:scale-[1.02] transition-all"
               >
                 Get Access to Funnel Studio
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="ml-1">

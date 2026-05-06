@@ -47,17 +47,17 @@ export default function EcosystemSection() {
         </FadeUp>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Funnel Studio — Live */}
+          {/* Funnel Studio — Live (Purple branded) */}
           <FadeUp delay={0}>
-            <div className="relative bg-[#111] border border-green/30 rounded-2xl p-8 shadow-[0_0_40px_rgba(16,185,129,0.06)] h-full flex flex-col">
-              <div className="absolute -top-3 left-6 bg-green text-black text-xs font-bold px-3 py-1 rounded-full">
+            <div className="relative bg-[#111] border border-[#818cf8]/30 rounded-2xl p-8 shadow-[0_0_40px_rgba(129,140,248,0.06)] h-full flex flex-col">
+              <div className="absolute -top-3 left-6 bg-[#818cf8] text-white text-xs font-bold px-3 py-1 rounded-full">
                 LIVE
               </div>
-              <div className="w-12 h-12 rounded-xl bg-green/10 flex items-center justify-center mb-5">
-                <Zap size={22} className="text-green" />
+              <div className="w-12 h-12 rounded-xl bg-[#818cf8]/10 flex items-center justify-center mb-5">
+                <Zap size={22} className="text-[#818cf8]" />
               </div>
               <h3 className="text-white font-bold text-xl mb-1">Funnel Studio</h3>
-              <span className="text-xs font-bold tracking-wider uppercase text-green mb-3">
+              <span className="text-xs font-bold tracking-wider uppercase text-[#818cf8] mb-3">
                 The Launch Engine
               </span>
               <p className="text-white/60 text-sm leading-relaxed mb-5 flex-1">
@@ -68,7 +68,7 @@ export default function EcosystemSection() {
               <ul className="flex flex-col gap-2 mb-6">
                 {funnelStudioFeatures.map((f) => (
                   <li key={f} className="flex items-center gap-2 text-xs text-white/60">
-                    <span className="text-green text-sm">✓</span>
+                    <span className="text-[#818cf8] text-sm">✓</span>
                     {f}
                   </li>
                 ))}
@@ -76,21 +76,21 @@ export default function EcosystemSection() {
               <p className="text-white/40 text-xs mb-3">Available Now — $97</p>
               <a
                 href={FUNNEL_STUDIO_URL}
-                className="inline-block w-full text-center px-6 py-3 rounded-full bg-green text-black font-semibold text-sm no-underline hover:bg-green/90 transition-all"
+                className="inline-block w-full text-center px-6 py-3 rounded-full bg-[#818cf8] text-white font-semibold text-sm no-underline hover:bg-[#818cf8]/90 transition-all"
               >
                 Learn More
               </a>
             </div>
           </FadeUp>
 
-          {/* Answer Your Audience — Coming Soon */}
+          {/* Answer Your Audience — Coming Soon (Blue branded) */}
           <FadeUp delay={0.1}>
-            <div className="bg-[#111] border border-white/[0.06] rounded-2xl p-8 h-full flex flex-col opacity-70">
-              <div className="w-12 h-12 rounded-xl bg-white/[0.04] flex items-center justify-center mb-5">
-                <MessageCircle size={22} className="text-white/40" />
+            <div className="bg-[#111] border border-white/[0.06] rounded-2xl p-8 h-full flex flex-col">
+              <div className="w-12 h-12 rounded-xl bg-[#38bdf8]/10 flex items-center justify-center mb-5">
+                <MessageCircle size={22} className="text-[#38bdf8]" />
               </div>
               <h3 className="text-white font-bold text-xl mb-1">Answer Your Audience</h3>
-              <span className="text-xs font-bold tracking-wider uppercase text-white/40 mb-3">
+              <span className="text-xs font-bold tracking-wider uppercase text-[#38bdf8] mb-3">
                 The Authority Engine
               </span>
               <p className="text-white/50 text-sm leading-relaxed mb-5 flex-1">
@@ -101,23 +101,23 @@ export default function EcosystemSection() {
               <ul className="flex flex-col gap-2 mb-6">
                 {ayaFeatures.map((f) => (
                   <li key={f} className="flex items-center gap-2 text-xs text-white/40">
-                    <span className="text-white/30 text-sm">✓</span>
+                    <span className="text-[#38bdf8]/60 text-sm">✓</span>
                     {f}
                   </li>
                 ))}
               </ul>
-              <p className="text-white/30 text-xs font-medium">Coming Soon</p>
+              <p className="text-[#38bdf8]/60 text-xs font-medium">Coming Soon</p>
             </div>
           </FadeUp>
 
-          {/* BrandStory — Coming Soon */}
+          {/* BrandStory — Coming Soon (Orange branded) */}
           <FadeUp delay={0.2}>
-            <div className="bg-[#111] border border-white/[0.06] rounded-2xl p-8 h-full flex flex-col opacity-70">
-              <div className="w-12 h-12 rounded-xl bg-white/[0.04] flex items-center justify-center mb-5">
-                <Globe size={22} className="text-white/40" />
+            <div className="bg-[#111] border border-white/[0.06] rounded-2xl p-8 h-full flex flex-col">
+              <div className="w-12 h-12 rounded-xl bg-[#fb923c]/10 flex items-center justify-center mb-5">
+                <Globe size={22} className="text-[#fb923c]" />
               </div>
               <h3 className="text-white font-bold text-xl mb-1">BrandStory</h3>
-              <span className="text-xs font-bold tracking-wider uppercase text-white/40 mb-3">
+              <span className="text-xs font-bold tracking-wider uppercase text-[#fb923c] mb-3">
                 The Identity Engine
               </span>
               <p className="text-white/50 text-sm leading-relaxed mb-5 flex-1">
@@ -127,12 +127,12 @@ export default function EcosystemSection() {
               <ul className="flex flex-col gap-2 mb-6">
                 {brandStoryFeatures.map((f) => (
                   <li key={f} className="flex items-center gap-2 text-xs text-white/40">
-                    <span className="text-white/30 text-sm">✓</span>
+                    <span className="text-[#fb923c]/60 text-sm">✓</span>
                     {f}
                   </li>
                 ))}
               </ul>
-              <p className="text-white/30 text-xs font-medium">Coming Soon</p>
+              <p className="text-[#fb923c]/60 text-xs font-medium">Coming Soon</p>
             </div>
           </FadeUp>
         </div>

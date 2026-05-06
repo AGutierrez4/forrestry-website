@@ -31,7 +31,7 @@ export default function Footer({
             />
           </div>
           {tagline && (
-            <p className="text-[14px] font-medium text-green">{tagline}</p>
+            <p className="text-[14px] font-medium text-green max-w-[320px] text-center md:text-left">{tagline}</p>
           )}
         </div>
         <div className="flex items-center gap-8">

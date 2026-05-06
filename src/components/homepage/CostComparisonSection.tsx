@@ -52,6 +52,7 @@ const milestones = [
     icon: Target,
     iconColor: 'text-green',
     iconBg: 'bg-green/10',
+    numColor: 'text-green',
     amount: 10000,
     prefix: '$',
     suffix: '+',
@@ -60,8 +61,9 @@ const milestones = [
   },
   {
     icon: Award,
-    iconColor: 'text-green',
-    iconBg: 'bg-green/10',
+    iconColor: 'text-[#38bdf8]',
+    iconBg: 'bg-[#38bdf8]/10',
+    numColor: 'text-[#38bdf8]',
     amount: 100000,
     prefix: '$',
     suffix: '+',
@@ -70,8 +72,9 @@ const milestones = [
   },
   {
     icon: Rocket,
-    iconColor: 'text-green',
-    iconBg: 'bg-green/10',
+    iconColor: 'text-[#818cf8]',
+    iconBg: 'bg-[#818cf8]/10',
+    numColor: 'text-[#818cf8]',
     amount: 1000000,
     prefix: '$',
     suffix: '+',
@@ -107,7 +110,7 @@ export default function CostComparisonSection() {
                 <div className={`w-12 h-12 rounded-xl ${item.iconBg} flex items-center justify-center mx-auto mb-4`}>
                   <item.icon size={22} className={item.iconColor} />
                 </div>
-                <p className="text-2xl sm:text-3xl font-extrabold text-green mb-2">
+                <p className={`text-2xl sm:text-3xl font-extrabold ${item.numColor} mb-2`}>
                   <AnimatedNumber target={item.amount} prefix={item.prefix} suffix={item.suffix} />
                 </p>
                 <h3 className="text-white font-bold text-base mb-2">{item.title}</h3>

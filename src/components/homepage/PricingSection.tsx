@@ -37,7 +37,7 @@ export default function PricingSection() {
           <div className="max-w-[480px] mx-auto">
             <div className="relative bg-[#111] border border-green/20 rounded-2xl p-8 md:p-10 shadow-[0_0_40px_rgba(16,185,129,0.04)]">
               {/* Most Popular badge */}
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-green text-black text-xs font-bold px-4 py-1 rounded-full">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-green text-white text-xs font-bold px-4 py-1 rounded-full">
                 Most Popular
               </div>
 
@@ -66,7 +66,7 @@ export default function PricingSection() {
                 href={STRIPE_CHECKOUT_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full py-4 rounded-full bg-green text-black font-bold text-base text-center no-underline shadow-[0_0_30px_rgba(16,185,129,0.2)] hover:bg-green/90 hover:shadow-[0_0_50px_rgba(16,185,129,0.3)] transition-all"
+                className="block w-full py-4 rounded-full bg-green text-white font-bold text-base text-center no-underline shadow-[0_0_30px_rgba(16,185,129,0.2)] hover:bg-green/90 hover:shadow-[0_0_50px_rgba(16,185,129,0.3)] transition-all"
               >
                 Get Access to Funnel Studio
               </a>

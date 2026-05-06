@@ -43,7 +43,7 @@ export default function FounderSection() {
                 those tools weren't built for solopreneurs. So I built one that was.
               </p>
               <p className="text-white/70 text-base leading-relaxed mb-6">
-                Funnel Studio was born from a simple belief: no great idea should go to waste because
+                Funnel Studio was born from a simple belief: <span className="text-white font-bold">no great idea should go to waste</span> because
                 of a lack of business expertise or resources. Every framework, every methodology, every
                 proven system, democratized and accessible to anyone ready to launch.
               </p>

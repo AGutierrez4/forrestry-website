@@ -1,4 +1,5 @@
 import FadeUp from '../FadeUp'
+import SlideIn from '../SlideIn'
 import { MessageSquare, FileText, Rocket } from 'lucide-react'
 
 const steps = [
@@ -7,18 +8,24 @@ const steps = [
     icon: MessageSquare,
     title: 'Brain Dump™',
     body: 'Have a natural conversation about your business, offer, and audience. Voice or text, our AI asks the strategic questions that matter. In 15 minutes, you\'ll extract what took you years to learn.',
+    image: '/Brain Dump.jpg',
+    imageAlt: 'Brain Dump conversation interface',
   },
   {
     num: '02',
     icon: FileText,
     title: 'Strategic Blueprint',
     body: 'Your Brain Dump becomes a comprehensive strategic blueprint: core transformation, Big Domino statement, audience pain points, unique mechanism, and offer architecture. This is your shared DNA.',
+    image: '/Strategic Blueprint.jpg',
+    imageAlt: 'Strategic Blueprint document interface',
   },
   {
     num: '03',
     icon: Rocket,
     title: 'Launch Your Ecosystem',
     body: 'One click generates your entire marketing ecosystem: funnel pages, webinar scripts, emails, ads, and hooks. Every piece speaks with one voice because they all share one strategic foundation.',
+    image: '/Funnel Stack.jpg',
+    imageAlt: 'Funnel Stack Builder interface',
   },
 ]
 
@@ -41,25 +48,49 @@ export default function WorkflowSection() {
           </div>
         </FadeUp>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1000px] mx-auto">
-          {steps.map((step, i) => (
-            <FadeUp key={step.title} delay={i * 0.1}>
-              <div className="text-center">
-                {/* Icon */}
-                <div className="w-14 h-14 rounded-2xl bg-green/10 flex items-center justify-center mx-auto mb-5">
-                  <step.icon size={24} className="text-green" />
-                </div>
-                {/* Step number */}
-                <p className="text-xs font-bold text-green/60 uppercase tracking-wider mb-2">
-                  Step {step.num}
-                </p>
-                {/* Title */}
-                <h3 className="text-white font-bold text-lg mb-3">{step.title}</h3>
-                {/* Body */}
-                <p className="text-white/50 text-sm leading-relaxed">{step.body}</p>
+        <div className="flex flex-col gap-20 lg:gap-28">
+          {steps.map((step, i) => {
+            const isEven = i % 2 === 1
+            const Icon = step.icon
+            return (
+              <div
+                key={step.title}
+                className={`flex flex-col ${isEven ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-10 lg:gap-14`}
+              >
+                {/* Text */}
+                <SlideIn from={isEven ? 'right' : 'left'} delay={0.1}>
+                  <div className="flex-1 max-w-lg">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 rounded-xl bg-green/10 flex items-center justify-center">
+                        <Icon size={20} className="text-green" />
+                      </div>
+                      <span className="text-xs font-bold text-green/60 uppercase tracking-wider">
+                        Step {step.num}
+                      </span>
+                    </div>
+                    <h3 className="text-white font-extrabold text-xl sm:text-2xl tracking-tight mb-3">
+                      {step.title}
+                    </h3>
+                    <p className="text-white/50 leading-relaxed text-base">{step.body}</p>
+                  </div>
+                </SlideIn>
+
+                {/* Screenshot */}
+                <SlideIn from={isEven ? 'left' : 'right'} delay={0.2}>
+                  <div className="flex-1 w-full max-w-xl">
+                    <div className="rounded-xl overflow-hidden shadow-[0_16px_48px_rgba(0,0,0,0.4)] border border-white/[0.08] bg-[#111]">
+                      <img
+                        src={step.image}
+                        alt={step.imageAlt}
+                        className="w-full h-auto block"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </SlideIn>
               </div>
-            </FadeUp>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>

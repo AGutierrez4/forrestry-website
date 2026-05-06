@@ -81,7 +81,7 @@ export default function FlagshipSection() {
               href={STRIPE_CHECKOUT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-8 py-4 rounded-full bg-green text-black font-bold text-base no-underline shadow-[0_0_30px_rgba(16,185,129,0.15)] hover:bg-green/90 hover:shadow-[0_0_50px_rgba(16,185,129,0.25)] hover:scale-[1.02] transition-all"
+              className="inline-block px-8 py-4 rounded-full bg-green text-white font-bold text-base no-underline shadow-[0_0_30px_rgba(16,185,129,0.15)] hover:bg-green/90 hover:shadow-[0_0_50px_rgba(16,185,129,0.25)] hover:scale-[1.02] transition-all"
             >
               Get Access to Funnel Studio
             </a>
