@@ -2,10 +2,10 @@ import FadeUp from '../FadeUp'
 
 export default function FounderSection() {
   return (
-    <section className="py-24 px-6 bg-bg-warm">
+    <section className="py-24 px-6 bg-[#09090B]">
       <div className="max-w-[1100px] mx-auto">
         <FadeUp>
-          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-text-dark text-center mb-14">
+          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-white text-center mb-14">
             Built by a Marketing Professional Who's Been in the Trenches.
           </h2>
         </FadeUp>
@@ -20,25 +20,25 @@ export default function FounderSection() {
                 width={200}
                 height={200}
                 loading="lazy"
-                className="w-48 h-48 rounded-2xl object-cover shadow-lg"
+                className="w-48 h-48 rounded-2xl object-cover border border-green/20 shadow-[0_0_30px_rgba(74,222,128,0.08)]"
               />
             </div>
 
             {/* Copy */}
             <div className="flex-1 text-center md:text-left">
-              <p className="text-text-body text-base leading-relaxed mb-4">
-                My name is Andrew, and I built Forrestry because I was tired of seeing brilliant
-                ideas die in the gap between "Vision" and "Execution."
+              <p className="text-white/70 text-base leading-relaxed mb-4">
+                7+ years helping global B2B brands (aerospace, defense, MedTech, healthcare)
+                build and execute enterprise-grade GTM systems. The kind of structure that
+                turns scattered efforts into predictable revenue.
               </p>
-              <p className="text-text-body text-base leading-relaxed mb-4">
-                With 7+ years of experience helping global and national B2B brands scale, I've
-                seen how enterprise-grade GTM (Go-To-Market) systems work. I realized that
-                solopreneurs didn't need more "hacks." They needed the same holistic structure
-                used by the giants, made practical and fast.
+              <p className="text-white/70 text-base leading-relaxed mb-4">
+                Forrestry.ai exists because solopreneurs deserve that same level of strategic
+                infrastructure. Not more "hacks." Not another template library. A real system
+                that connects strategy to execution in one place.
               </p>
-              <p className="text-text-dark text-base leading-relaxed font-medium">
-                Forrestry.ai is my mission to give every entrepreneur with gumption a
-                professional-grade platform to build their dream.
+              <p className="text-white font-medium text-base leading-relaxed">
+                The mission: give every entrepreneur with gumption a professional-grade
+                platform to build their dream.
               </p>
             </div>
           </div>

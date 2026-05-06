@@ -25,11 +25,11 @@ const steps = [
 
 export default function WorkflowSection() {
   return (
-    <section className="py-24 px-6 bg-bg-light">
+    <section className="py-24 px-6 bg-[#09090B]">
       <div className="max-w-[1100px] mx-auto">
         <FadeUp>
           <div className="text-center mb-16">
-            <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-text-dark mb-4">
+            <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-white mb-4">
               Strategy into Execution. The Forrestry Path.
             </h2>
           </div>
@@ -49,8 +49,8 @@ export default function WorkflowSection() {
                   </div>
                   {/* Content */}
                   <div className="pt-1">
-                    <h3 className="text-text-dark font-bold text-lg mb-2">{step.title}</h3>
-                    <p className="text-text-body text-sm leading-relaxed">{step.body}</p>
+                    <h3 className="text-white font-bold text-lg mb-2">{step.title}</h3>
+                    <p className="text-white/60 text-sm leading-relaxed">{step.body}</p>
                   </div>
                 </div>
               </FadeUp>

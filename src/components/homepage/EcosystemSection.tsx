@@ -4,14 +4,17 @@ import { Zap, MessageCircle, Globe } from 'lucide-react'
 
 export default function EcosystemSection() {
   return (
-    <section id="ecosystem" className="py-24 px-6 bg-white">
-      <div className="max-w-[1100px] mx-auto">
+    <section id="ecosystem" className="py-24 px-6 relative overflow-hidden bg-[rgba(74,222,128,0.04)] border-y border-green/10">
+      {/* Green ambient glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-green/[0.03] rounded-full blur-[150px] pointer-events-none" />
+
+      <div className="relative z-10 max-w-[1100px] mx-auto">
         <FadeUp>
           <div className="text-center mb-16">
-            <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-text-dark mb-4">
+            <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-white mb-4">
               One Connected Ecosystem. Three Engines for Growth.
             </h2>
-            <p className="text-text-body text-lg max-w-[600px] mx-auto leading-relaxed">
+            <p className="text-white/60 text-lg max-w-[600px] mx-auto leading-relaxed">
               Each product in the Forrestry ecosystem solves a different stage of your growth journey.
             </p>
           </div>
@@ -20,7 +23,7 @@ export default function EcosystemSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Funnel Studio — Live */}
           <FadeUp delay={0}>
-            <div className="relative bg-white border-2 border-green/30 rounded-2xl p-8 shadow-lg h-full flex flex-col">
+            <div className="relative bg-[#111] border border-green/30 rounded-2xl p-8 shadow-[0_0_40px_rgba(74,222,128,0.06)] h-full flex flex-col">
               <div className="absolute -top-3 left-6 bg-green text-black text-xs font-bold px-3 py-1 rounded-full">
                 LIVE
               </div>
@@ -30,8 +33,8 @@ export default function EcosystemSection() {
               <span className="text-xs font-bold tracking-wider uppercase text-green mb-2">
                 THE CONVERSION ENGINE
               </span>
-              <h3 className="text-text-dark font-bold text-xl mb-3">Funnel Studio</h3>
-              <p className="text-text-body text-sm leading-relaxed mb-6 flex-1">
+              <h3 className="text-white font-bold text-xl mb-3">Funnel Studio</h3>
+              <p className="text-white/60 text-sm leading-relaxed mb-6 flex-1">
                 Build your Strategic Blueprint and launch a high-converting 4-page funnel stack
                 in days, not months.
               </p>
@@ -46,15 +49,15 @@ export default function EcosystemSection() {
 
           {/* Answer Your Audience — Coming Soon */}
           <FadeUp delay={0.1}>
-            <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8 h-full flex flex-col opacity-75">
-              <div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center mb-5">
-                <MessageCircle size={22} className="text-gray-400" />
+            <div className="bg-[#111] border border-white/[0.06] rounded-2xl p-8 h-full flex flex-col opacity-60">
+              <div className="w-12 h-12 rounded-xl bg-white/[0.04] flex items-center justify-center mb-5">
+                <MessageCircle size={22} className="text-white/40" />
               </div>
-              <span className="text-xs font-bold tracking-wider uppercase text-gray-400 mb-2">
+              <span className="text-xs font-bold tracking-wider uppercase text-white/40 mb-2">
                 COMING SOON
               </span>
-              <h3 className="text-text-dark font-bold text-xl mb-3">Answer Your Audience</h3>
-              <p className="text-text-body text-sm leading-relaxed flex-1">
+              <h3 className="text-white font-bold text-xl mb-3">Answer Your Audience</h3>
+              <p className="text-white/50 text-sm leading-relaxed flex-1">
                 Stop guessing what your customers want. Use AI-driven research to generate
                 high-quality, authority-building content at scale.
               </p>
@@ -63,15 +66,15 @@ export default function EcosystemSection() {
 
           {/* BrandStory — Coming Soon */}
           <FadeUp delay={0.2}>
-            <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8 h-full flex flex-col opacity-75">
-              <div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center mb-5">
-                <Globe size={22} className="text-gray-400" />
+            <div className="bg-[#111] border border-white/[0.06] rounded-2xl p-8 h-full flex flex-col opacity-60">
+              <div className="w-12 h-12 rounded-xl bg-white/[0.04] flex items-center justify-center mb-5">
+                <Globe size={22} className="text-white/40" />
               </div>
-              <span className="text-xs font-bold tracking-wider uppercase text-gray-400 mb-2">
+              <span className="text-xs font-bold tracking-wider uppercase text-white/40 mb-2">
                 COMING SOON
               </span>
-              <h3 className="text-text-dark font-bold text-xl mb-3">BrandStory</h3>
-              <p className="text-text-body text-sm leading-relaxed flex-1">
+              <h3 className="text-white font-bold text-xl mb-3">BrandStory</h3>
+              <p className="text-white/50 text-sm leading-relaxed flex-1">
                 Your professional home. A website builder designed to anchor your brand identity
                 and give your audience confidence as you scale.
               </p>

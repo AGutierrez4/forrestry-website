@@ -56,7 +56,7 @@ export default function HomepageHero() {
           {/* Right: Product screenshots */}
           <FadeUp delay={0.3}>
             <div className="relative">
-              {/* Main screenshot: Brain Dump */}
+              {/* Main screenshot: Brain Dump Chat */}
               <div className="rounded-2xl overflow-hidden shadow-[0_32px_80px_rgba(0,0,0,0.5)] border border-white/10">
                 <img
                   src="/Brain Dump.jpg"

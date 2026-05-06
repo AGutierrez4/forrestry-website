@@ -3,10 +3,10 @@ import { STRIPE_CHECKOUT_URL } from './constants'
 
 const pillars = [
   {
-    title: 'The Funnel Stack Builder',
-    body: 'Stop wrestling with drag-and-drop editors for 24 hours. We generate the HTML for a pro-level 4-page stack. Just copy, paste, and go live.',
-    image: '/Funnel Stack.jpg',
-    imageAlt: 'Funnel Stack Builder interface',
+    title: 'A Unified Voice',
+    body: 'Your ads, your emails, and your pages finally speak the same language. One conversation powers every touchpoint.',
+    image: '/Brain Dump.jpg',
+    imageAlt: 'Brain Dump conversation powering unified messaging',
   },
   {
     title: 'Framework-Driven Copy',
@@ -15,20 +15,20 @@ const pillars = [
     imageAlt: 'Strategic Blueprint with framework-driven copy',
   },
   {
-    title: 'A Unified Voice',
-    body: 'Your ads, your emails, and your pages finally speak the same language. One conversation powers every touchpoint.',
-    image: '/Brain Dump.jpg',
-    imageAlt: 'Brain Dump conversation powering unified messaging',
+    title: 'The Funnel Stack Builder',
+    body: 'Stop wrestling with drag-and-drop editors for 24 hours. We generate the HTML for a pro-level 4-page stack. Just copy, paste, and go live.',
+    image: '/Funnel Stack.jpg',
+    imageAlt: 'Funnel Stack Builder interface',
   },
 ]
 
 export default function FlagshipSection() {
   return (
-    <section className="py-24 px-6 bg-white">
+    <section className="py-24 px-6 bg-[#0f1210]">
       <div className="max-w-[1100px] mx-auto">
         <FadeUp>
           <div className="text-center mb-20">
-            <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-text-dark mb-4">
+            <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-white mb-4">
               Meet Funnel Studio: Where Your Vision Becomes a Reality.
             </h2>
           </div>
@@ -43,12 +43,12 @@ export default function FlagshipSection() {
                 <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${isEven ? 'lg:[direction:rtl]' : ''}`}>
                   {/* Text */}
                   <div className={isEven ? 'lg:[direction:ltr]' : ''}>
-                    <h3 className="text-text-dark font-bold text-2xl mb-4">{pillar.title}</h3>
-                    <p className="text-text-body text-base leading-relaxed">{pillar.body}</p>
+                    <h3 className="text-white font-bold text-2xl mb-4">{pillar.title}</h3>
+                    <p className="text-white/60 text-base leading-relaxed">{pillar.body}</p>
                   </div>
                   {/* Image */}
                   <div className={isEven ? 'lg:[direction:ltr]' : ''}>
-                    <div className="rounded-xl overflow-hidden shadow-[0_16px_48px_rgba(0,0,0,0.08)] border border-gray-200">
+                    <div className="rounded-xl overflow-hidden shadow-[0_16px_48px_rgba(0,0,0,0.4)] border border-white/[0.08]">
                       <img
                         src={pillar.image}
                         alt={pillar.imageAlt}

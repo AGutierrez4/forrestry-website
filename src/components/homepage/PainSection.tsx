@@ -21,14 +21,14 @@ const painPoints = [
 
 export default function PainSection() {
   return (
-    <section className="py-24 px-6 bg-bg-light">
+    <section className="py-24 px-6 bg-[#0f1210]">
       <div className="max-w-[1100px] mx-auto">
         <FadeUp>
           <div className="text-center mb-16">
-            <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-text-dark mb-6">
+            <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-white mb-6">
               The "Digital Jungle" is real. We're here to help you navigate it.
             </h2>
-            <p className="text-text-body text-lg max-w-[640px] mx-auto leading-relaxed">
+            <p className="text-white/60 text-lg max-w-[640px] mx-auto leading-relaxed">
               Most great ideas never see the light of day. Not because the founder lacks drive,
               but because the path is buried under a mountain of disconnected tools, confusing
               strategies, and the constant fear of wasting time on the wrong thing.
@@ -40,13 +40,13 @@ export default function PainSection() {
         <div className="flex flex-col gap-8 max-w-[800px] mx-auto mb-14">
           {painPoints.map((point, i) => (
             <FadeUp key={point.title} delay={i * 0.1}>
-              <div className="flex items-start gap-5 bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+              <div className="flex items-start gap-5 bg-[#1a1f1c] border border-white/[0.06] rounded-xl p-6">
                 <div className="w-12 h-12 rounded-lg bg-green/10 flex items-center justify-center shrink-0">
                   <point.icon size={22} className="text-green" />
                 </div>
                 <div>
-                  <h3 className="text-text-dark font-bold text-base mb-1.5">{point.title}</h3>
-                  <p className="text-text-body text-sm leading-relaxed">{point.body}</p>
+                  <h3 className="text-white font-bold text-base mb-1.5">{point.title}</h3>
+                  <p className="text-white/60 text-sm leading-relaxed">{point.body}</p>
                 </div>
               </div>
             </FadeUp>
@@ -54,7 +54,7 @@ export default function PainSection() {
         </div>
 
         <FadeUp delay={0.3}>
-          <p className="text-center text-text-dark font-semibold text-lg max-w-[600px] mx-auto">
+          <p className="text-center text-white font-semibold text-lg max-w-[600px] mx-auto">
             Forrestry.ai was built to replace that chaos with a single, connected ecosystem.
           </p>
         </FadeUp>
