@@ -1,30 +1,30 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-import Navbar from '../components/Navbar'
-import CompanyHero from '../components/company/CompanyHero'
-import StudioBento from '../components/company/StudioBento'
-import EfficiencyTable from '../components/company/EfficiencyTable'
-import Benefits from '../components/company/Benefits'
-import Problem from '../components/company/Problem'
-import Founder from '../components/company/Founder'
-import Objections from '../components/company/Objections'
-import FoundersPricing from '../components/company/FoundersPricing'
-import CompanyCTA from '../components/company/CompanyCTA'
+import HomepageNavbar from '../components/homepage/HomepageNavbar'
+import HomepageHero from '../components/homepage/HomepageHero'
+import PainSection from '../components/homepage/PainSection'
+import EcosystemSection from '../components/homepage/EcosystemSection'
+import WorkflowSection from '../components/homepage/WorkflowSection'
+import FlagshipSection from '../components/homepage/FlagshipSection'
+import FounderSection from '../components/homepage/FounderSection'
+import CommunitySection from '../components/homepage/CommunitySection'
+import PricingSection from '../components/homepage/PricingSection'
+import FinalCTASection from '../components/homepage/FinalCTASection'
 import Footer from '../components/Footer'
 ---
 
-<BaseLayout title="forrestry.ai | Turn One Conversation Into a Complete Funnel" description="You learned the strategy. Now launch the funnel. One guided conversation turns your idea into a complete, connected funnel ecosystem.">
-  <Navbar client:load links={[{label:'Product',href:'/#studio'},{label:'Learning Center',href:'/learning-center'},{label:'Pricing',href:'/pricing'},{label:'About',href:'/about'}]} ctaText="Claim Founders Spot" ctaHref="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01" signInHref="https://app.funnelstudio.forrestry.ai" logoHref="/" />
+<BaseLayout title="forrestry.ai | The Entrepreneurial Growth Ecosystem" description="Build your business on a clear path. Forrestry.ai connects strategy, funnels, and content into one ecosystem so you can stop wrestling with disconnected tools.">
+  <HomepageNavbar client:load />
   <main>
-    <CompanyHero client:load />
-    <StudioBento client:visible />
-    <EfficiencyTable client:visible />
-    <Problem client:visible />
-    <Benefits client:visible />
-    <Founder client:visible />
-    <Objections client:visible />
-    <FoundersPricing client:visible />
-    <CompanyCTA client:visible />
+    <HomepageHero client:load />
+    <PainSection client:visible />
+    <EcosystemSection client:visible />
+    <WorkflowSection client:visible />
+    <FlagshipSection client:visible />
+    <FounderSection client:visible />
+    <CommunitySection client:visible />
+    <PricingSection client:visible />
+    <FinalCTASection client:visible />
   </main>
-  <Footer links={[{label:'Product',href:'/#studio'},{label:'Learning Center',href:'/learning-center'},{label:'Pricing',href:'/pricing'},{label:'About',href:'/about'},{label:'Privacy',href:'/privacy'},{label:'Terms',href:'/terms'}]} tagline="Stop Building. Start Launching." />
+  <Footer links={[{label:'Products',href:'#ecosystem'},{label:'Pricing',href:'/pricing'},{label:'About',href:'/about'},{label:'Privacy',href:'/privacy'},{label:'Terms',href:'/terms'}]} tagline="Stop Building. Start Launching." />
 </BaseLayout>

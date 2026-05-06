@@ -23,6 +23,12 @@
   --spacing-section-y: 120px;
   --spacing-section-y-mobile: 64px;
   --spacing-section-max-w: 1100px;
+
+  /* Light-mode homepage tokens */
+  --color-bg-light: #FAFAF9;
+  --color-bg-warm: #F5F5F4;
+  --color-text-dark: #1C1917;
+  --color-text-body: #4B5563;
 }
 
 /* Reusable eyebrow label */
