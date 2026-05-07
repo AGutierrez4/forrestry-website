@@ -116,7 +116,13 @@ export default function HomepageNavbar() {
         </div>
 
         {/* Desktop CTA */}
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-4">
+          <a
+            href="https://app.forrestry.ai"
+            className="text-[0.95rem] font-medium no-underline transition-colors text-white/80 hover:text-green"
+          >
+            Sign In
+          </a>
           <a
             href={STRIPE_CHECKOUT_URL}
             target="_blank"
