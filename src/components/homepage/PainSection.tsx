@@ -41,7 +41,7 @@ export default function PainSection() {
             <p className="text-xs font-semibold text-green uppercase tracking-wider mb-3">The Problem</p>
             <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-white tracking-tight mb-4">
               Building a funnel shouldn't{' '}
-              <span className="text-white/40">feel this hard</span>
+              <span className="bg-gradient-to-r from-green-bright to-green bg-clip-text text-transparent">feel this hard</span>
             </h2>
             <p className="text-white/60 text-lg leading-relaxed">
               Most entrepreneurs hit the same walls. Disconnected tools, overwhelming complexity,

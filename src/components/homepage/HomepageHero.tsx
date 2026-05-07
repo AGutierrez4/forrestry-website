@@ -29,7 +29,8 @@ export default function HomepageHero() {
 
           <FadeUp delay={0.05}>
             <h1 className="text-[clamp(2.25rem,5vw,3.75rem)] font-extrabold leading-[1.08] tracking-tight text-white mb-6">
-              Stop guessing.{' '}
+              Stop guessing.
+              <br />
               <span className="bg-gradient-to-r from-green-bright to-green bg-clip-text text-transparent">
                 Start launching.
               </span>

@@ -1,10 +1,11 @@
 import FadeUp from './FadeUp'
+import { Zap, Brain, XCircle, Users } from 'lucide-react'
 
 const badges = [
-  { icon: '⚡', text: 'Idea to live funnel in under 48 hours', delay: 0 },
-  { icon: '🧠', text: 'Built on the Perfect Webinar Framework', delay: 0.2 },
-  { icon: '✕', text: 'No copywriters. No designers. No code.', delay: 0.4 },
-  { icon: '👥', text: 'Join a community of Forresters', delay: 0.6 },
+  { icon: Zap, color: 'text-yellow-400', text: 'Idea to live funnel in under 48 hours', delay: 0 },
+  { icon: Brain, color: 'text-purple-400', text: 'Built on the Perfect Webinar Framework', delay: 0.2 },
+  { icon: XCircle, color: 'text-rose-400', text: 'No copywriters. No designers. No code.', delay: 0.4 },
+  { icon: Users, color: 'text-blue-400', text: 'Join a community of Forresters', delay: 0.6 },
 ]
 
 export default function Hero() {
@@ -68,18 +69,21 @@ export default function Hero() {
         </FadeUp>
 
         {/* Floating badges */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[800px] mx-auto">
-          {badges.map((badge) => (
-            <FadeUp key={badge.text} delay={0.4 + badge.delay}>
-              <div
-                className="flex items-center gap-3 px-5 py-4 rounded-xl bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.08)] backdrop-blur-sm text-left"
-                style={{ animation: `float 3s ease-in-out infinite ${badge.delay}s` }}
-              >
-                <span className="text-xl shrink-0">{badge.icon}</span>
-                <span className="text-[0.8rem] text-white/90 leading-snug">{badge.text}</span>
-              </div>
-            </FadeUp>
-          ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[900px] mx-auto">
+          {badges.map((badge) => {
+            const Icon = badge.icon
+            return (
+              <FadeUp key={badge.text} delay={0.4 + badge.delay}>
+                <div
+                  className="flex flex-col items-center gap-3 px-5 py-5 rounded-xl bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.08)] backdrop-blur-sm text-center h-full"
+                  style={{ animation: `float 3s ease-in-out infinite ${badge.delay}s` }}
+                >
+                  <Icon size={20} className={`${badge.color} shrink-0`} />
+                  <span className="text-[0.8rem] text-white/90 leading-snug">{badge.text}</span>
+                </div>
+              </FadeUp>
+            )
+          })}
         </div>
       </div>
     </section>
