@@ -61,11 +61,11 @@ export default function HowItWorks() {
         {/* Section header */}
         <FadeUp>
           <div className="text-center mb-20">
-            <p className="eyebrow mb-4">INSIDE FUNNEL STUDIO</p>
+            <p className="eyebrow mb-4" style={{ color: '#818cf8' }}>INSIDE FUNNEL STUDIO</p>
             <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-extrabold text-text mb-4">
               Your entire funnel.
             </h2>
-            <h3 className="text-[clamp(1.5rem,3vw,2.25rem)] font-extrabold bg-gradient-to-br from-[#a5b4fc] to-[#818cf8] bg-clip-text text-transparent mb-6">
+            <h3 className="text-[clamp(1.5rem,3vw,2.25rem)] font-extrabold text-white mb-6">
               Built in the right order.
             </h3>
             <p className="text-muted text-lg max-w-[700px] mx-auto leading-relaxed">

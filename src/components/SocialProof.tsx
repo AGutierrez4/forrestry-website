@@ -29,13 +29,13 @@ export default function SocialProof() {
       <div className="max-w-[1100px] mx-auto">
         <FadeUp>
           <div className="text-center mb-16">
-            <p className="eyebrow mb-4">
+            <p className="eyebrow mb-4" style={{ color: '#818cf8' }}>
               THE PROBLEM
             </p>
             <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold text-text mb-4">
               The friction is real.
             </h2>
-            <h3 className="text-[clamp(1.5rem,3vw,2.25rem)] font-extrabold bg-gradient-to-br from-[#a5b4fc] to-[#818cf8] bg-clip-text text-transparent mb-6">
+            <h3 className="text-[clamp(1.5rem,3vw,2.25rem)] font-extrabold text-white mb-6">
               And it's killing great ideas.
             </h3>
             <p className="text-muted text-lg max-w-[700px] mx-auto leading-relaxed">
