@@ -1,23 +1,24 @@
 import FadeUp from './FadeUp'
+import { PenTool, Palette, Link2, Flame } from 'lucide-react'
 
 const problems = [
   {
-    emoji: '✍️',
+    icon: PenTool,
     title: 'The Copy Gap',
     desc: "You have a page but no words. You stare at a blank editor for hours, second-guessing every headline. Meanwhile, your offer sits unlaunched.",
   },
   {
-    emoji: '🎨',
+    icon: Palette,
     title: 'The Design Trap',
     desc: "500 templates, none of them right. You spend days tweaking colors and padding instead of talking to customers and making money.",
   },
   {
-    emoji: '🔗',
+    icon: Link2,
     title: 'The Integration Maze',
     desc: "Email tools, page builders, payment processors, webinar platforms. Each one a new rabbit hole. By the time it's connected, your momentum is gone.",
   },
   {
-    emoji: '🔥',
+    icon: Flame,
     title: 'The Burnout Wall',
     desc: "You started with a great idea and real energy. Weeks later, you're exhausted, nothing is live, and you're questioning whether any of this is worth it.",
   },
@@ -47,19 +48,24 @@ export default function SocialProof() {
         </FadeUp>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {problems.map((p, i) => (
-            <FadeUp key={p.title} delay={i * 0.1}>
-              <div className="bg-card-bg rounded-xl p-7 border border-card-border border-l-4 border-l-[rgba(129,140,248,0.4)] backdrop-blur-sm hover:border-[#818cf8]/30 transition-all">
-                <div className="flex items-start gap-4 mb-4">
-                  <span className="text-[32px]">{p.emoji}</span>
-                  <div>
-                    <h3 className="text-[18px] font-semibold text-text mb-3">{p.title}</h3>
-                    <p className="text-muted leading-relaxed">{p.desc}</p>
+          {problems.map((p, i) => {
+            const Icon = p.icon
+            return (
+              <FadeUp key={p.title} delay={i * 0.1}>
+                <div className="bg-card-bg rounded-xl p-7 border border-card-border border-l-4 border-l-[rgba(129,140,248,0.4)] backdrop-blur-sm hover:border-[#818cf8]/30 transition-all">
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-lg bg-[#818cf8]/10 flex items-center justify-center shrink-0">
+                      <Icon size={20} className="text-[#818cf8]" />
+                    </div>
+                    <div>
+                      <h3 className="text-[18px] font-semibold text-text mb-3">{p.title}</h3>
+                      <p className="text-muted leading-relaxed">{p.desc}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </FadeUp>
-          ))}
+              </FadeUp>
+            )
+          })}
         </div>
       </div>
     </section>

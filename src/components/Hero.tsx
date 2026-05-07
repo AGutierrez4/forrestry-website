@@ -30,7 +30,7 @@ export default function Hero() {
           <h1 className="text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-[1.1] mb-6">
             <span className="text-white">Stop Building Funnels.</span>
             <br />
-            <span className="text-white">
+            <span className="text-[#818cf8]">
               Start Launching Them.
             </span>
           </h1>
