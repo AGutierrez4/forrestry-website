@@ -66,6 +66,15 @@ body {
     radial-gradient(ellipse 40% 30% at 20% 10%, rgba(16, 185, 129, 0.04), transparent);
 }
 
+/* Disable expensive blur effects on mobile for performance */
+@media (max-width: 768px) {
+  .blur-\[150px\],
+  .blur-\[120px\],
+  .blur-\[100px\] {
+    display: none !important;
+  }
+}
+
 /* Section alt background */
 .section-alt {
   background-color: var(--color-bg-alt);

@@ -84,6 +84,9 @@ export default function WorkflowSection() {
                         alt={step.imageAlt}
                         className="w-full h-auto block"
                         loading="lazy"
+                        decoding="async"
+                        width={800}
+                        height={500}
                       />
                     </div>
                   </div>
