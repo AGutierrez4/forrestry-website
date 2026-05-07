@@ -40,8 +40,8 @@ export default function EcosystemSection() {
               </span>
             </h2>
             <p className="text-white/60 text-lg leading-relaxed">
-              Forrestry.ai isn't just another tool. It's an ecosystem where every component
-              shares your strategy, your voice, and your story.
+              Forrestry.ai connects three purpose-built products into one shared ecosystem.
+              Your strategy, your voice, and your story flow through every tool automatically.
             </p>
           </div>
         </FadeUp>

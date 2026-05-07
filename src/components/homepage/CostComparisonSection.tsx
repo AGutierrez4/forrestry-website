@@ -56,8 +56,8 @@ const milestones = [
     amount: 10000,
     prefix: '$',
     suffix: '+',
-    title: 'First 5-Figure Month',
-    body: 'Launch your funnel ecosystem and hit your first meaningful revenue milestone with confidence.',
+    title: 'Your First Launch',
+    body: 'The confidence of going live with a complete system behind you. Strategy, copy, and funnel pages working together from day one.',
   },
   {
     icon: Award,
@@ -67,8 +67,8 @@ const milestones = [
     amount: 100000,
     prefix: '$',
     suffix: '+',
-    title: '6-Figure Year',
-    body: 'Scale what works with the Authority Engine and a content strategy that builds trust at scale.',
+    title: 'Scaling What Works',
+    body: 'Expanding with authority content and a repeatable process. The ecosystem gives you the tools to grow without starting over.',
   },
   {
     icon: Rocket,
@@ -78,8 +78,8 @@ const milestones = [
     amount: 1000000,
     prefix: '$',
     suffix: '+',
-    title: '7-8 Figure Growth',
-    body: 'Build a complete brand ecosystem that attracts, converts, and retains at the highest levels.',
+    title: 'Full Ecosystem',
+    body: 'A brand that attracts, converts, and retains at scale. Strategy, funnels, content, and identity all connected.',
   },
 ]
 
@@ -97,8 +97,8 @@ export default function CostComparisonSection() {
               </span>
             </h2>
             <p className="text-white/60 text-lg leading-relaxed">
-              Every Forrester starts somewhere. The ecosystem grows with you, from first launch
-              to scaling to seven figures and beyond.
+              Every entrepreneur starts somewhere. The ecosystem grows with you, from first launch
+              to scaling with confidence.
             </p>
           </div>
         </FadeUp>

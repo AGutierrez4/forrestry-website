@@ -1,4 +1,5 @@
 import FadeUp from '../FadeUp'
+import { Shield } from 'lucide-react'
 
 const steps = [
   {
@@ -26,7 +27,7 @@ export default function GuaranteeSection() {
         <FadeUp>
           <div className="bg-card-bg border border-card-border rounded-2xl p-8 md:p-10">
             <div className="text-center mb-8">
-              <span className="text-4xl mb-4 block">🛡</span>
+              <Shield size={36} className="text-green mx-auto mb-4" />
               <h2 className="text-[clamp(1.5rem,3vw,2rem)] font-bold text-text mb-3">
                 14-Day Money-Back Guarantee
               </h2>

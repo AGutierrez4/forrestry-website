@@ -111,7 +111,7 @@ export default function CostComparison() {
           <div className="bg-card-bg border-2 border-green/40 rounded-2xl px-6 py-5 shadow-[0_0_40px_rgba(74,222,128,0.08)]">
             <div className="grid grid-cols-[1fr_auto] md:grid-cols-[1fr_140px_1fr] gap-4 items-center">
               <div>
-                <span className="text-text text-sm font-bold">Funnel Studio™</span>
+                <span className="text-sm font-bold"><span className="font-black text-white">funnel</span><span className="font-light text-[#818cf8]">studio</span></span>
               </div>
               <span className="text-green text-sm font-bold text-right md:text-left">$97</span>
               <span className="text-text text-sm hidden md:block">

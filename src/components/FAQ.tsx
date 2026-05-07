@@ -10,12 +10,8 @@ const faqs = [
     a: 'Funnel Studio™ is not a page builder. It is a content engine. It generates the copy, scripts, and sequences that go inside your funnel. You can use the output in any builder you already have.',
   },
   {
-    q: 'What happens after the 100 founding spots fill?',
-    a: 'The price goes to $97/mo. If you lock in the founding rate at $47/mo, that rate stays locked for 2 years. No bait and switch.',
-  },
-  {
     q: 'Can I cancel anytime?',
-    a: 'Yes. No long-term contracts. Cancel whenever you want. If you cancel and come back later, you will be at the current price, not the founding rate.',
+    a: 'Yes. No long-term contracts. Cancel whenever you want.',
   },
   {
     q: 'What is the 14-Day Money-Back Guarantee?',
@@ -36,10 +32,6 @@ const faqs = [
   {
     q: 'How long does it take to generate a full funnel?',
     a: 'The Brain Dump takes about 10 minutes. From there, Funnel Studio generates your Strategic Blueprint, webinar script, email sequences, ad copy, and page copy. Most founders have complete funnel content within a day or two, not weeks.',
-  },
-  {
-    q: 'What format does the content come in?',
-    a: 'Everything is generated as clean, ready-to-use text. Copy it into any page builder (ClickFunnels, WordPress, Kajabi, Carrd, whatever you use), any email platform, or any ad manager. Funnel Studio is the content engine, not the page builder.',
   },
 ]
 

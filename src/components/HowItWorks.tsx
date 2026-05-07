@@ -19,24 +19,24 @@ const features: FeatureItem[] = [
   },
   {
     num: '02',
+    title: 'Strategic Blueprint',
+    subtitle: 'Your funnel\'s master plan, mapped before a word is written',
+    desc: 'Big Domino, hook, transformation, objections, and audience language. All mapped into a comprehensive strategic blueprint that feeds every downstream tool.',
+    videoSrc: '/Strategic Blueprint.mp4',
+  },
+  {
+    num: '03',
     title: 'Webinar Builder',
     subtitle: 'Script your Perfect Webinar without being a copywriter',
     desc: 'The AI builds your complete webinar script using the proven Perfect Webinar framework. Hook, origin story, the 3 Secrets, the stack, the close. Done.',
     videoSrc: '/webinar-builder.mp4',
   },
   {
-    num: '03',
+    num: '04',
     title: '60-Sec Webinar',
     subtitle: 'A punchy, high-converting pitch for any platform',
     desc: 'Need a quick pitch for Instagram, a Skool post, or a DM? The 60-Second Webinar distills your full offer into a tight, compelling format that converts cold audiences fast.',
     videoSrc: '/60-Second-Hook.mp4',
-  },
-  {
-    num: '04',
-    title: 'Strategic Blueprint',
-    subtitle: 'A full registration page that sells the click',
-    desc: 'Headline, subheadline, bullets, social proof, CTA. All generated and structured to maximize registrations. No designer needed. No blank page paralysis.',
-    videoSrc: '/Strategic Blueprint.mp4',
   },
   {
     num: '05',
@@ -47,9 +47,16 @@ const features: FeatureItem[] = [
   },
   {
     num: '06',
-    title: 'Social Ads + Email Writer',
-    subtitle: 'Drive traffic and follow up on autopilot',
-    desc: 'Hook-Story-Offer ad scripts for cold, warm, and hot traffic. Plus full email sequences: soap opera, cart abandonment, post-webinar follow-up. A funnel without traffic is a billboard in the desert.',
+    title: 'Social Ads',
+    subtitle: 'Drive traffic with strategic ad copy',
+    desc: 'Hook-Story-Offer ad scripts for cold, warm, and hot traffic. Three strategically segmented ad sets with unique targeting psychology, headline variations, and full ad copy.',
+    videoSrc: '/Social-Ads-Writer.mp4',
+  },
+  {
+    num: '07',
+    title: 'Email Writer',
+    subtitle: 'Follow up on autopilot with cohesive sequences',
+    desc: 'Full email sequences: soap opera, cart abandonment, post-webinar follow-up. Strategically connected to your webinar and pages, not generic templates.',
     videoSrc: '/Email-Writer.mp4',
   },
 ]

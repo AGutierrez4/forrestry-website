@@ -31,21 +31,31 @@ export default function FounderSection() {
             {/* Copy */}
             <div className="flex-1 text-center md:text-left">
               <h3 className="text-white font-extrabold text-xl mb-4">
-                I built this because I needed it first.
+                This didn't come from theory. It came from hitting the same wall you're hitting.
               </h3>
               <p className="text-white/70 text-base leading-relaxed mb-4">
-                After 7 years in marketing trenches helping global B2B brands and national companies,
-                I sold my trucking business in 2019 and discovered ClickFunnels. I had the strategy
-                background, but hit the wall of execution.
+                Before funnels, I co-owned a trucking organization. When we sold the company,
+                I dove headfirst into online marketing and hit the wall hard. The strategy made
+                sense. The frameworks made sense. But execution? Copy, pages, emails, ads, tech.
+                All at once. I burned through savings and eventually stepped away.
               </p>
               <p className="text-white/70 text-base leading-relaxed mb-4">
-                As a HubSpot partner, I understood what enterprise-grade ecosystems looked like. But
-                those tools weren't built for solopreneurs. So I built one that was.
+                Over the next seven years, I worked with B2B brands operating on a global scale
+                (aerospace, defense, MedTech, healthcare), plus small businesses, coaches, and
+                consultants. I gained deep expertise in what actually makes marketing convert at
+                the highest levels.
+              </p>
+              <p className="text-white/70 text-base leading-relaxed mb-4">
+                When I came back to build my own funnel in 2025, I thought AI would solve it.
+                It didn't. The output was generic, disconnected, and I was still staring down
+                80+ hours of real work. That's when it clicked: I don't need another generic AI
+                tool. I need a system trained on proven frameworks, one that turns a conversation
+                into a complete, cohesive ecosystem.
               </p>
               <p className="text-white/70 text-base leading-relaxed mb-6">
-                Funnel Studio was born from a simple belief: <span className="text-white font-bold">no great idea should go to waste</span> because
-                of a lack of business expertise or resources. Every framework, every methodology, every
-                proven system, democratized and accessible to anyone ready to launch.
+                So I stopped trying to finish my funnel and built the tool I wish existed the
+                first time. <span className="text-white font-bold">No great idea should go to waste</span> because
+                the path from strategy to execution is too painful to walk alone.
               </p>
               <div>
                 <p className="text-white font-bold text-base">Andrew Gutierrez</p>

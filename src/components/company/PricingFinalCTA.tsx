@@ -18,7 +18,7 @@ export default function PricingFinalCTA() {
             Ready to stop guessing and start building?
           </h2>
           <p className="text-muted text-base leading-relaxed mb-8 max-w-[480px] mx-auto">
-            One Brain Dump. One purchase. A complete, connected funnel
+            One purchase. One Brain Dump. A complete, connected funnel
             ecosystem ready to launch.
           </p>
 
@@ -35,7 +35,7 @@ export default function PricingFinalCTA() {
           </a>
 
           <p className="text-muted text-xs mt-4">
-            One-time access. Cancel anytime. 14-day money-back guarantee.
+            Cancel anytime. 14-day money-back guarantee.
           </p>
         </div>
       </FadeUp>

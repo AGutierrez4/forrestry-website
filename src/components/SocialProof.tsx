@@ -40,7 +40,7 @@ export default function SocialProof() {
               And it's killing great ideas.
             </h3>
             <p className="text-muted text-lg max-w-[700px] mx-auto leading-relaxed">
-              Legacy tools like ClickFunnels hand you the bricks and tell you to build a house.
+              Legacy page builders hand you the bricks and tell you to build a house.
               You're forced to be the copywriter, the designer, the strategist, and the tech
               integrator, all at once. That's not a tool. That's a second job.
             </p>

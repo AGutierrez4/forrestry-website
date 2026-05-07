@@ -37,10 +37,8 @@ export default function WorkflowSection() {
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="text-xs font-semibold text-green uppercase tracking-wider mb-3">How It Works</p>
             <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-white tracking-tight mb-4">
-              Three steps from{' '}
-              <span className="bg-gradient-to-r from-green-bright to-green bg-clip-text text-transparent">
-                stuck to launched
-              </span>
+              <span className="font-black">funnel</span><span className="font-light text-[#818cf8]">studio</span>{' '}
+              moves you from stuck to launched in 3 simple steps.
             </h2>
             <p className="text-white/60 text-lg leading-relaxed">
               No more blank pages. No more disconnected tools. One clear path.

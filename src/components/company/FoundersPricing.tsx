@@ -1,4 +1,5 @@
 import FadeUp from '../FadeUp'
+import { Shield } from 'lucide-react'
 
 export default function FoundersPricing() {
   return (
@@ -24,7 +25,9 @@ export default function FoundersPricing() {
             </div>
 
             <div className="text-center mt-4 mb-6">
-              <h3 className="text-white font-bold text-xl mb-2">Funnel Studio</h3>
+              <div className="text-2xl mb-2">
+                <span className="font-black text-white">funnel</span><span className="font-light text-[#818cf8]">studio</span>
+              </div>
               <p className="text-muted text-sm mb-3">Complete funnel ecosystem generator</p>
               <div className="flex items-baseline justify-center gap-2">
                 <span className="text-[3rem] font-extrabold text-text">$97</span>
@@ -96,7 +99,7 @@ export default function FoundersPricing() {
 
         <FadeUp delay={0.3}>
           <div className="mt-8 bg-card-bg border border-card-border rounded-xl p-5 flex items-start gap-3">
-            <span className="text-green text-xl shrink-0">🛡</span>
+            <Shield size={20} className="text-green shrink-0 mt-0.5" />
             <p className="text-muted text-sm leading-relaxed">
               <span className="text-text font-semibold">14-Day Money-Back Guarantee.</span>{' '}
               Try Funnel Studio™. If it is not for you, email us within 14 days for a full refund.
