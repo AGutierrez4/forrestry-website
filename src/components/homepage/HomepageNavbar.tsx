@@ -118,7 +118,7 @@ export default function HomepageNavbar() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="https://app.forrestry.ai"
+            href="https://app.funnelstudio.forrestry.ai"
             className="text-[0.95rem] font-medium no-underline transition-colors text-white/80 hover:text-green"
           >
             Sign In
