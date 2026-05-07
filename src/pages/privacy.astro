@@ -1,8 +1,80 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-import Privacy from '../views/Privacy'
+import Navbar from '../components/Navbar'
+import FadeUp from '../components/FadeUp'
+import Footer from '../components/Footer'
 ---
 
-<BaseLayout title="Privacy Policy | forrestry.ai" description="Privacy policy for forrestry.ai and Funnel Studio.">
-  <Privacy client:load />
+<BaseLayout title="Privacy Policy | Forrestry.ai" description="Privacy policy for Forrestry.ai and Funnel Studio.">
+  <Navbar client:load links={[{label:'Product',href:'/#studio'},{label:'Pricing',href:'/pricing'},{label:'About',href:'/about'}]} ctaText="Get Access to Funnel Studio" ctaHref="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01" signInHref="https://app.funnelstudio.forrestry.ai" logoHref="/" />
+  <div class="pt-32 pb-24 px-6">
+    <div class="max-w-[700px] mx-auto">
+      <FadeUp client:visible>
+        <h1 class="text-3xl font-bold mb-2">Privacy Policy</h1>
+        <p class="text-muted text-sm mb-12">Last updated: April 8, 2026</p>
+      </FadeUp>
+
+      <FadeUp client:visible delay={0.1}>
+        <div class="space-y-8 text-muted leading-relaxed">
+          <div>
+            <h2 class="text-lg font-semibold text-white mb-3">1. Information We Collect</h2>
+            <p>
+              When you use Forrestry.ai, we collect information you provide directly:
+              your name, email address, and payment information when you subscribe.
+              We also collect usage data such as pages visited, features used, and
+              session duration to improve the product.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-lg font-semibold text-white mb-3">2. How We Use Your Information</h2>
+            <p>
+              We use your information to provide and improve Funnel Studio™, process
+              payments, send account-related communications, and provide customer
+              support. We do not sell your personal information to third parties.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-lg font-semibold text-white mb-3">3. Data Storage & Security</h2>
+            <p>
+              Your data is stored securely using industry-standard encryption. Payment
+              processing is handled by Stripe, which is PCI-DSS compliant. We do not
+              store your credit card information on our servers.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-lg font-semibold text-white mb-3">4. Your Content</h2>
+            <p>
+              Content you create using Funnel Studio™ (funnel copy, scripts, emails)
+              belongs to you. We do not use your generated content to train AI models
+              or share it with other users.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-lg font-semibold text-white mb-3">5. Cookies</h2>
+            <p>
+              We use essential cookies to keep you logged in and analytics cookies to
+              understand how the site is used. You can disable non-essential cookies
+              in your browser settings.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-lg font-semibold text-white mb-3">6. Third-Party Services</h2>
+            <p>
+              We use Stripe for payments, Vercel for hosting, and Supabase for data
+              storage. Each of these services has their own privacy policies and
+              security practices.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-lg font-semibold text-white mb-3">7. Contact</h2>
+            <p>
+              If you have questions about this privacy policy, contact us at
+              <a href="mailto:support@forrestry.ai" class="text-green hover:underline ml-1">support@forrestry.ai</a>.
+            </p>
+          </div>
+        </div>
+      </FadeUp>
+    </div>
+  </div>
+  <Footer links={[{label:'Product',href:'/#studio'},{label:'Pricing',href:'/pricing'},{label:'About',href:'/about'},{label:'Privacy',href:'/privacy'},{label:'Terms',href:'/terms'}]} tagline="Enterprise-grade strategy and connected tools for entrepreneurs who are ready to launch." />
 </BaseLayout>

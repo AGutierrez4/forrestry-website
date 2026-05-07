@@ -1,8 +1,120 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-import Terms from '../views/Terms'
+import Navbar from '../components/Navbar'
+import FadeUp from '../components/FadeUp'
+import Footer from '../components/Footer'
 ---
 
-<BaseLayout title="Terms of Service | forrestry.ai" description="Terms of service for forrestry.ai and Funnel Studio.">
-  <Terms client:load />
+<BaseLayout title="Terms of Service | Forrestry.ai" description="Terms of service for Forrestry.ai and Funnel Studio.">
+  <Navbar client:load links={[{label:'Product',href:'/#studio'},{label:'Pricing',href:'/pricing'},{label:'About',href:'/about'}]} ctaText="Get Access to Funnel Studio" ctaHref="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01" signInHref="https://app.funnelstudio.forrestry.ai" logoHref="/" />
+  <div class="pt-32 pb-24 px-6">
+    <div class="max-w-[700px] mx-auto">
+      <FadeUp client:visible>
+        <h1 class="text-3xl font-bold mb-2">Terms of Service</h1>
+        <p class="text-muted text-sm mb-12">Last updated: April 15, 2026</p>
+      </FadeUp>
+
+      <FadeUp client:visible delay={0.1}>
+        <div class="space-y-8 text-muted leading-relaxed">
+          <div>
+            <h2 class="text-lg font-semibold text-white mb-3">1. Acceptance of Terms</h2>
+            <p>
+              By accessing or using Forrestry.ai and Funnel Studio™, you agree to be
+              bound by these Terms of Service. If you do not agree, do not use the service.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-lg font-semibold text-white mb-3">2. Service Description</h2>
+            <p>
+              Funnel Studio™ is an AI-powered content generation tool that creates
+              marketing funnel assets including landing page copy, webinar scripts,
+              email sequences, and ad copy. The service is provided as a one-time purchase.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-lg font-semibold text-white mb-3">3. Purchase & Access</h2>
+            <p>
+              Access to Funnel Studio is available for a one-time payment of $97 processed
+              through Stripe. You receive immediate, full access to all tools upon purchase.
+              You may cancel your subscription at any time.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-lg font-semibold text-white mb-3">4. 14-Day Guarantee</h2>
+            <p>
+              If you are not satisfied with Funnel Studio™, you may request a full
+              refund within 14 days of purchase. Contact support@forrestry.ai to
+              initiate a refund.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-lg font-semibold text-white mb-3">5. Your Content</h2>
+            <p>
+              You retain full ownership of all content generated using Funnel Studio™.
+              You grant Forrestry.ai no rights to your generated content beyond what
+              is necessary to provide the service.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-lg font-semibold text-white mb-3">6. Acceptable Use</h2>
+            <p>
+              You agree not to use the service to generate content that is illegal,
+              harmful, deceptive, or infringes on the rights of others. We reserve
+              the right to suspend accounts that violate this policy.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-lg font-semibold text-white mb-3">7. Intellectual Property & Proprietary Rights</h2>
+            <p class="mb-4">
+              All intellectual property associated with Forrestry.ai and its products, including
+              but not limited to the Funnel Studio™ and Brain Dump™ names, logos, product designs,
+              user interface layouts, software architecture, AI methodologies, prompt engineering
+              techniques, content generation workflows, marketing frameworks, and all related
+              documentation, is the exclusive property of Forrestry.ai.
+            </p>
+            <p class="mb-4">
+              The names "Funnel Studio," "Brain Dump," and "Forrestry.ai" are trademarks of
+              Forrestry.ai. Use of the ™ symbol indicates a claim of common-law trademark rights.
+              You may not use these marks without prior written permission.
+            </p>
+            <p class="mb-4">
+              You may not copy, reproduce, reverse engineer, decompile, disassemble, or create
+              derivative works based on any part of the Forrestry.ai platform, its underlying
+              technology, proprietary processes, or product methodology.
+            </p>
+            <p>
+              Forrestry.ai reserves the right to pursue all available legal remedies against any
+              individual or entity that infringes upon its intellectual property rights, including
+              but not limited to injunctive relief, actual damages, and recovery of legal fees.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-lg font-semibold text-white mb-3">8. Limitation of Liability</h2>
+            <p>
+              Forrestry.ai provides the service "as is" without warranties of any kind.
+              We are not liable for any indirect, incidental, or consequential damages
+              arising from your use of the service. Our total liability is limited to
+              the amount you paid in the 12 months preceding the claim.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-lg font-semibold text-white mb-3">9. Changes to Terms</h2>
+            <p>
+              We may update these terms from time to time. We will notify you of
+              material changes via email. Continued use of the service after changes
+              constitutes acceptance.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-lg font-semibold text-white mb-3">10. Contact</h2>
+            <p>
+              Questions about these terms? Contact us at
+              <a href="mailto:support@forrestry.ai" class="text-green hover:underline ml-1">support@forrestry.ai</a>.
+            </p>
+          </div>
+        </div>
+      </FadeUp>
+    </div>
+  </div>
+  <Footer links={[{label:'Product',href:'/#studio'},{label:'Pricing',href:'/pricing'},{label:'About',href:'/about'},{label:'Privacy',href:'/privacy'},{label:'Terms',href:'/terms'}]} tagline="Enterprise-grade strategy and connected tools for entrepreneurs who are ready to launch." />
 </BaseLayout>
