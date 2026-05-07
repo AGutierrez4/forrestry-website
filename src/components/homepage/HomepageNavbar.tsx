@@ -96,6 +96,12 @@ export default function HomepageNavbar() {
           </div>
 
           <a
+            href="/learning-center"
+            className="text-[0.95rem] font-medium no-underline transition-colors text-white/80 hover:text-green"
+          >
+            Learning Center
+          </a>
+          <a
             href="/pricing"
             className="text-[0.95rem] font-medium no-underline transition-colors text-white/80 hover:text-green"
           >
@@ -156,6 +162,13 @@ export default function HomepageNavbar() {
             BrandStory (Coming Soon)
           </a>
           <hr className="border-white/[0.06] my-2" />
+          <a
+            href="/learning-center"
+            onClick={closeMobile}
+            className="text-white no-underline py-2 px-2 text-base font-medium hover:text-green transition-colors"
+          >
+            Learning Center
+          </a>
           <a
             href="/pricing"
             onClick={closeMobile}

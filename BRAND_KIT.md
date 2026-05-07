@@ -410,6 +410,8 @@ Focus: Border #4ADE80, Ring 2px rgba(74, 222, 128, 0.2)
 - Use passive voice
 - Assume technical knowledge
 - Use negative framing
+- Use em dashes (—) in user-facing copy. Use commas, periods, colons, semicolons, or parentheses instead
+- Use "it's not X, it's Y" contrast patterns (e.g., "You don't have a funnel problem. You have a friction problem."). State the point directly instead
 
 ### Example Copy
 

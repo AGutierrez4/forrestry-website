@@ -46,7 +46,7 @@ export default function MasterclassRegister() {
       {/* Top Bar */}
       <div className="bg-gray-900 text-white text-center py-3 border-b-4 border-green-600">
         <p className="text-sm md:text-base font-semibold tracking-wide uppercase">
-          Funnel Studio™ by forrestry.ai presents <span className="text-green-400 font-bold">'One Funnel Today'</span> Masterclass
+          Funnel Studio™ by Forrestry.ai presents <span className="text-green-400 font-bold">'One Funnel Today'</span> Masterclass
         </p>
       </div>
 
@@ -221,7 +221,7 @@ export default function MasterclassRegister() {
                 <span className="text-green-600">It Almost Broke Me.</span>
               </h2>
               <div className="text-lg text-gray-600 space-y-4 leading-relaxed">
-                <p>Hi, I'm Andrew, the creator of Funnel Studio™ by forrestry.ai.</p>
+                <p>Hi, I'm Andrew, the creator of Funnel Studio™ by Forrestry.ai.</p>
                 <p>A few years back, I co-owned a trucking organization. We were successful, but the reality was a 24/7 grind: $25,000 weekly fuel bills and 3 AM phone calls about blown transmissions. When we sold the company, I walked away with a fire in my gut. Marketing wasn't just a pivot, it was my calling.</p>
                 <p>That's when I discovered Russell Brunson, ClickFunnels, the whole world. I was <strong className="text-gray-900">all in.</strong></p>
                 <p>But within 48 hours of logging into ClickFunnels, I realized two things: I didn't know how to use the tools, and I didn't know how to write copy that converts. I could build the box, but I couldn't fill it with anything that made people want to open it.</p>
@@ -336,7 +336,7 @@ export default function MasterclassRegister() {
       {/* FOOTER */}
       <footer className="bg-gray-950 py-8 text-center text-gray-500 text-sm">
         <div className="max-w-5xl mx-auto px-4">
-          <p>© 2026 Funnel Studio™ by forrestry.ai. All Rights Reserved.</p>
+          <p>© 2026 Funnel Studio™ by Forrestry.ai. All Rights Reserved.</p>
           <div className="mt-4 space-x-4">
             <a href="/terms" className="hover:text-white transition-colors no-underline">Terms of Service</a>
             <a href="/privacy" className="hover:text-white transition-colors no-underline">Privacy Policy</a>

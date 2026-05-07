@@ -26,7 +26,7 @@ export default function FinalCTA() {
             href="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-green text-white px-10 py-5 rounded-full font-bold text-lg no-underline shadow-[0_0_40px_rgba(16,185,129,0.3)] hover:scale-105 hover:shadow-[0_0_60px_rgba(16,185,129,0.5)] transition-all mb-4"
+            className="inline-flex items-center gap-2 bg-[#818cf8] text-white px-10 py-5 rounded-full font-bold text-lg no-underline shadow-[0_0_40px_rgba(129,140,248,0.3)] hover:scale-105 hover:shadow-[0_0_60px_rgba(129,140,248,0.5)] transition-all mb-4"
           >
             Get Access to Funnel Studio — $97
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">

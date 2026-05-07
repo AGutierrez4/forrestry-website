@@ -65,7 +65,7 @@ export default function HowItWorks() {
             <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-extrabold text-text mb-4">
               Your entire funnel.
             </h2>
-            <h3 className="text-[clamp(1.5rem,3vw,2.25rem)] font-extrabold bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent mb-6">
+            <h3 className="text-[clamp(1.5rem,3vw,2.25rem)] font-extrabold bg-gradient-to-br from-[#a5b4fc] to-[#818cf8] bg-clip-text text-transparent mb-6">
               Built in the right order.
             </h3>
             <p className="text-muted text-lg max-w-[700px] mx-auto leading-relaxed">
@@ -85,19 +85,19 @@ export default function HowItWorks() {
                   {/* Text side */}
                   <div className={!isOdd ? 'md:[direction:ltr]' : ''}>
                     {/* Section marker */}
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green to-green-bright flex items-center justify-center text-black font-bold text-xl mb-6 -mt-2">
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#818cf8] to-[#a5b4fc] flex items-center justify-center text-white font-bold text-xl mb-6 -mt-2">
                       {feature.num}
                     </div>
                     <h3 className="text-[28px] md:text-[32px] font-bold text-text mb-2">
                       {feature.title}
                     </h3>
-                    <p className="text-green text-sm font-semibold mb-4">{feature.subtitle}</p>
+                    <p className="text-[#818cf8] text-sm font-semibold mb-4">{feature.subtitle}</p>
                     <p className="text-muted leading-relaxed">{feature.desc}</p>
                   </div>
 
                   {/* Video side */}
                   <div className={!isOdd ? 'md:[direction:ltr]' : ''}>
-                    <div className="rounded-xl border border-[rgba(74,222,128,0.2)] border-t-2 border-t-green shadow-[0_24px_64px_rgba(0,0,0,0.4)] overflow-hidden">
+                    <div className="rounded-xl border border-[rgba(129,140,248,0.2)] border-t-2 border-t-[#818cf8] shadow-[0_24px_64px_rgba(0,0,0,0.4)] overflow-hidden">
                       <LazyVideo
                         src={feature.videoSrc}
                         className="w-full h-auto block"

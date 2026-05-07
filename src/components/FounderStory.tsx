@@ -33,7 +33,7 @@ export default function FounderStory() {
               </p>
             </blockquote>
 
-            <p className="text-text font-semibold mb-1">— Forrest, Founder of forrestry.ai</p>
+            <p className="text-text font-semibold mb-1">— Forrest, Founder of Forrestry.ai</p>
 
             {/* Footnote */}
             <p className="text-[14px] opacity-60 text-center max-w-[500px]">

@@ -60,7 +60,7 @@ export default function MasterclassConfirmed() {
           <h3 className="text-2xl font-bold text-center mb-10 text-gray-900">Your 3-Step Escape Plan Starts Now:</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { num: 1, title: 'Whitelist Our Email', desc: 'Find the email from forrestry.ai and drag it to your Primary folder. This email contains your private access link.' },
+              { num: 1, title: 'Whitelist Our Email', desc: 'Find the email from Forrestry.ai and drag it to your Primary folder. This email contains your private access link.' },
               { num: 2, title: 'Download the Checklist', desc: 'Download the Core Offer Checklist below and work through it before the masterclass. Show up prepared, not guessing.' },
               { num: 3, title: 'Show Up 10 Mins Early', desc: 'Our webinar rooms fill up. Arrive early to secure your seat.' },
             ].map((step) => (
@@ -185,7 +185,7 @@ export default function MasterclassConfirmed() {
 
       <footer className="bg-gray-950 py-8 text-center text-gray-500 text-sm">
         <div className="max-w-4xl mx-auto px-4">
-          <p>© 2026 Funnel Studio™ by forrestry.ai. All Rights Reserved.</p>
+          <p>© 2026 Funnel Studio™ by Forrestry.ai. All Rights Reserved.</p>
           <div className="mt-4 space-x-4">
             <a href="/terms" className="hover:text-white transition-colors no-underline">Terms of Service</a>
             <a href="/privacy" className="hover:text-white transition-colors no-underline">Privacy Policy</a>

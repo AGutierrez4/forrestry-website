@@ -17,8 +17,8 @@ export default function Hero() {
       <div className="relative z-10 max-w-[1100px] mx-auto px-6 text-center">
         {/* Badge */}
         <FadeUp>
-          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-green/30 backdrop-blur-sm mb-8 text-[13px] tracking-[0.15em]">
-            <span className="text-green font-semibold">The Launch Engine</span>
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-[#818cf8]/30 backdrop-blur-sm mb-8">
+            <span className="text-xl"><span className="font-black text-white">funnel</span><span className="font-light text-[#818cf8]">studio</span></span>
           </div>
         </FadeUp>
 
@@ -30,7 +30,7 @@ export default function Hero() {
           <h1 className="text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-[1.1] mb-6">
             <span className="text-white">Stop Building Funnels.</span>
             <br />
-            <span className="bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent">
+            <span className="bg-gradient-to-br from-[#a5b4fc] to-[#818cf8] bg-clip-text text-transparent">
               Start Launching Them.
             </span>
           </h1>
@@ -51,7 +51,7 @@ export default function Hero() {
               href="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-10 py-4 rounded-xl bg-green text-white font-bold text-lg no-underline shadow-[0_0_40px_rgba(16,185,129,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(16,185,129,0.4)] transition-all"
+              className="inline-flex items-center gap-2 px-10 py-4 rounded-xl bg-[#818cf8] text-white font-bold text-lg no-underline shadow-[0_0_40px_rgba(129,140,248,0.2)] hover:bg-[#818cf8]/90 hover:shadow-[0_0_60px_rgba(129,140,248,0.4)] transition-all"
             >
               Get Access to Funnel Studio
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">

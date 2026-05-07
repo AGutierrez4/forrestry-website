@@ -32,13 +32,13 @@ export default function About() {
         <div className="max-w-[800px] mx-auto">
           <FadeUp>
             <p className="text-green text-sm font-semibold tracking-wide uppercase mb-4 text-center">
-              About forrestry.ai
+              About Forrestry.ai
             </p>
             <h1 className="text-[clamp(2rem,5vw,3.5rem)] font-extrabold text-center leading-[1.1] mb-6">
               Built by a founder who refused to quit.
             </h1>
             <p className="text-muted text-lg text-center max-w-[600px] mx-auto mb-16 leading-relaxed">
-              forrestry.ai exists because the tools that were supposed to make launching
+              Forrestry.ai exists because the tools that were supposed to make launching
               easy never actually did.
             </p>
           </FadeUp>
@@ -55,7 +55,7 @@ export default function About() {
                 className="w-40 h-40 rounded-full object-cover border-2 border-green/30 mb-6"
               />
               <h2 className="text-xl font-bold text-white mb-1">Andrew Gutierrez</h2>
-              <p className="text-green text-sm font-medium mb-8">Founder, forrestry.ai</p>
+              <p className="text-green text-sm font-medium mb-8">Founder, Forrestry.ai</p>
             </div>
           </FadeUp>
 
@@ -83,7 +83,7 @@ export default function About() {
             <div className="mt-12 space-y-6">
               <h3 className="text-2xl font-bold text-white">The mission</h3>
               <p className="text-muted text-lg leading-relaxed">
-                forrestry.ai is an ecosystem of AI-powered launch tools for entrepreneurs
+                Forrestry.ai is an ecosystem of AI-powered launch tools for entrepreneurs
                 who are done waiting. Funnel Studio™ is the first product. It turns a
                 single 15-minute Brain Dump™ conversation into a complete launch stack:
                 squeeze pages, webinar scripts, email sequences, ad copy, and promo scripts.

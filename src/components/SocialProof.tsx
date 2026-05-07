@@ -35,7 +35,7 @@ export default function SocialProof() {
             <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold text-text mb-4">
               The friction is real.
             </h2>
-            <h3 className="text-[clamp(1.5rem,3vw,2.25rem)] font-extrabold bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent mb-6">
+            <h3 className="text-[clamp(1.5rem,3vw,2.25rem)] font-extrabold bg-gradient-to-br from-[#a5b4fc] to-[#818cf8] bg-clip-text text-transparent mb-6">
               And it's killing great ideas.
             </h3>
             <p className="text-muted text-lg max-w-[700px] mx-auto leading-relaxed">
@@ -49,7 +49,7 @@ export default function SocialProof() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {problems.map((p, i) => (
             <FadeUp key={p.title} delay={i * 0.1}>
-              <div className="bg-card-bg rounded-xl p-7 border border-card-border border-l-4 border-l-[rgba(74,222,128,0.4)] backdrop-blur-sm hover:border-green/30 transition-all">
+              <div className="bg-card-bg rounded-xl p-7 border border-card-border border-l-4 border-l-[rgba(129,140,248,0.4)] backdrop-blur-sm hover:border-[#818cf8]/30 transition-all">
                 <div className="flex items-start gap-4 mb-4">
                   <span className="text-[32px]">{p.emoji}</span>
                   <div>

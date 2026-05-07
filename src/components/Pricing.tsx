@@ -19,7 +19,7 @@ export default function Pricing() {
     <section id="pricing" className="py-16 md:py-[120px] px-6 bg-bg-section-a">
       <div className="max-w-[700px] mx-auto text-center">
         <FadeUp>
-          <p className="eyebrow mb-4">START BUILDING</p>
+          <p className="eyebrow mb-4" style={{ color: '#818cf8' }}>START BUILDING</p>
           <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-extrabold text-text mb-8">
             Everything you need to launch.
           </h2>
@@ -29,6 +29,9 @@ export default function Pricing() {
           <div className="bg-card-bg border border-card-border rounded-2xl p-8 md:p-12">
             {/* Price display */}
             <div className="mb-6">
+              <div className="text-2xl mb-3">
+                <span className="font-black text-white">funnel</span><span className="font-light text-[#818cf8]">studio</span>
+              </div>
               <div className="flex items-center justify-center gap-3 mt-2">
                 <span className="text-[48px] font-extrabold text-text">$97</span>
               </div>
@@ -39,7 +42,7 @@ export default function Pricing() {
             <ul className="flex flex-col gap-3 text-left max-w-[400px] mx-auto mb-8">
               {checklist.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-text">
-                  <span className="text-green text-[16px] shrink-0 mt-0.5">✓</span>
+                  <span className="text-[#818cf8] text-[16px] shrink-0 mt-0.5">✓</span>
                   {item}
                 </li>
               ))}
@@ -50,7 +53,7 @@ export default function Pricing() {
               href="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 w-full max-w-[400px] px-10 py-4 rounded-xl bg-green text-white font-bold text-lg no-underline shadow-[0_0_40px_rgba(16,185,129,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(16,185,129,0.4)] transition-all mb-4"
+              className="inline-flex items-center justify-center gap-2 w-full max-w-[400px] px-10 py-4 rounded-xl bg-[#818cf8] text-white font-bold text-lg no-underline shadow-[0_0_40px_rgba(129,140,248,0.2)] hover:bg-[#818cf8]/90 hover:shadow-[0_0_60px_rgba(129,140,248,0.4)] transition-all mb-4"
             >
               Get Access to Funnel Studio
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">

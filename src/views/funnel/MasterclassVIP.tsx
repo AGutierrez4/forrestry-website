@@ -141,7 +141,7 @@ export default function MasterclassVIP() {
 
       <footer className="bg-gray-950 py-8 text-center text-gray-500 text-sm">
         <div className="max-w-4xl mx-auto px-4">
-          <p>© 2026 Funnel Studio™ by forrestry.ai. All Rights Reserved.</p>
+          <p>© 2026 Funnel Studio™ by Forrestry.ai. All Rights Reserved.</p>
           <div className="mt-4 space-x-4">
             <a href="/terms" className="hover:text-white transition-colors no-underline">Terms of Service</a>
             <a href="/privacy" className="hover:text-white transition-colors no-underline">Privacy Policy</a>

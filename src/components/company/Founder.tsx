@@ -33,7 +33,7 @@ export default function Founder() {
             {/* Bio */}
             <div className="text-center md:text-left flex-1">
               <h3 className="text-xl font-bold text-white mb-1">Andrew Gutierrez</h3>
-              <p className="text-green text-sm font-medium mb-5">Founder, forrestry.ai</p>
+              <p className="text-green text-sm font-medium mb-5">Founder, Forrestry.ai</p>
               <p className="text-white/70 leading-relaxed mb-4">
                 If you've ever sat down to build your funnel and felt that quiet panic ("I know what this should look like… so why can't I get it out of my head?"), that's the moment this was built for.
               </p>

@@ -56,8 +56,10 @@ export default function EcosystemSection() {
               <div className="w-12 h-12 rounded-xl bg-[#818cf8]/10 flex items-center justify-center mb-5">
                 <Zap size={22} className="text-[#818cf8]" />
               </div>
-              <h3 className="text-white font-bold text-xl mb-1">Funnel Studio</h3>
-              <span className="text-xs font-bold tracking-wider uppercase text-[#818cf8] mb-3">
+              <div className="text-xl mb-1">
+                <span className="font-black text-white">funnel</span><span className="font-light text-[#818cf8]">studio</span>
+              </div>
+              <span className="text-xs font-bold tracking-wider uppercase text-[#818cf8] mb-3 block">
                 The Launch Engine
               </span>
               <p className="text-white/60 text-sm leading-relaxed mb-5 flex-1">

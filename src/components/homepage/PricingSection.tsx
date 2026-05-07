@@ -43,7 +43,9 @@ export default function PricingSection() {
 
               {/* Plan name */}
               <div className="text-center mb-8 pt-2">
-                <h3 className="text-white font-bold text-xl mb-3">Funnel Studio</h3>
+                <div className="text-2xl mb-2">
+                  <span className="font-black text-white">funnel</span><span className="font-light text-[#818cf8]">studio</span>
+                </div>
                 <p className="text-white/50 text-sm mb-4">Complete funnel ecosystem generator</p>
                 <div className="flex items-baseline justify-center gap-1">
                   <span className="text-[3.5rem] font-extrabold text-white">$97</span>

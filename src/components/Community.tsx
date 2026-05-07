@@ -19,7 +19,7 @@ export default function Community() {
             <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold text-text mb-4">
               More than a tool.
             </h2>
-            <h3 className="text-[clamp(1.5rem,3vw,2.25rem)] font-extrabold bg-gradient-to-br from-green-bright to-purple bg-clip-text text-transparent mb-6">
+            <h3 className="text-[clamp(1.5rem,3vw,2.25rem)] font-extrabold bg-gradient-to-br from-[#a5b4fc] to-[#818cf8] bg-clip-text text-transparent mb-6">
               You're joining the Forresters.
             </h3>
             <p className="text-muted text-lg max-w-[700px] mx-auto leading-relaxed">
@@ -43,7 +43,7 @@ export default function Community() {
                   key={a.initials}
                   className="flex items-center gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-green/30 transition-colors"
                 >
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-bright to-purple flex items-center justify-center font-bold text-black text-sm shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#818cf8] to-[#a5b4fc] flex items-center justify-center font-bold text-white text-sm shrink-0">
                     {a.initials}
                   </div>
                   <div className="flex-1">
