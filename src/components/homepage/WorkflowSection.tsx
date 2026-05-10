@@ -36,8 +36,8 @@ export default function WorkflowSection() {
         <FadeUp>
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="text-xs font-semibold text-green uppercase tracking-wider mb-3">How It Works</p>
-            <div className="text-2xl sm:text-3xl mb-3">
-              <span className="font-black text-white">funnel</span><span className="font-light text-[#818cf8]">studio</span>
+            <div className="inline-flex items-center px-5 py-2.5 rounded-full bg-white/5 border border-[#818cf8]/30 mb-4">
+              <span className="text-xl"><span className="font-black text-white">funnel</span><span className="font-light text-[#818cf8]">studio</span></span>
             </div>
             <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-white tracking-tight mb-4">
               Go from stuck to launched in 3 simple steps.
