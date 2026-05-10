@@ -1,85 +1,48 @@
-import { useRef, useEffect, useState } from 'react'
 import FadeUp from '../FadeUp'
-import { Target, Award, Rocket } from 'lucide-react'
+import { Rocket, TrendingUp, Globe } from 'lucide-react'
 
-function AnimatedNumber({ target, prefix = '', suffix = '' }: { target: number; prefix?: string; suffix?: string }) {
-  const ref = useRef<HTMLSpanElement>(null)
-  const [value, setValue] = useState(0)
-  const [hasAnimated, setHasAnimated] = useState(false)
-
-  useEffect(() => {
-    const el = ref.current
-    if (!el) return
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry && entry.isIntersecting && !hasAnimated) {
-          setHasAnimated(true)
-          const duration = 1500
-          const startTime = performance.now()
-
-          const animate = (currentTime: number) => {
-            const elapsed = currentTime - startTime
-            const progress = Math.min(elapsed / duration, 1)
-            const eased = 1 - Math.pow(1 - progress, 3)
-            setValue(Math.floor(eased * target))
-            if (progress < 1) {
-              requestAnimationFrame(animate)
-            } else {
-              setValue(target)
-            }
-          }
-          requestAnimationFrame(animate)
-          observer.disconnect()
-        }
-      },
-      { threshold: 0.3 }
-    )
-
-    observer.observe(el)
-    return () => observer.disconnect()
-  }, [target, hasAnimated])
-
-  return (
-    <span ref={ref} className="tabular-nums">
-      {prefix}{value.toLocaleString()}{suffix}
-    </span>
-  )
-}
-
-const milestones = [
-  {
-    icon: Target,
-    iconColor: 'text-green',
-    iconBg: 'bg-green/10',
-    numColor: 'text-green',
-    amount: 10000,
-    prefix: '$',
-    suffix: '+',
-    title: 'Your First Launch',
-    body: 'The confidence of going live with a complete system behind you. Strategy, copy, and funnel pages working together from day one.',
-  },
-  {
-    icon: Award,
-    iconColor: 'text-[#38bdf8]',
-    iconBg: 'bg-[#38bdf8]/10',
-    numColor: 'text-[#38bdf8]',
-    amount: 100000,
-    prefix: '$',
-    suffix: '+',
-    title: 'Scaling What Works',
-    body: 'Expanding with authority content and a repeatable process. The ecosystem gives you the tools to grow without starting over.',
-  },
+const stages = [
   {
     icon: Rocket,
+    iconColor: 'text-green',
+    iconBg: 'bg-green/10',
+    accentColor: 'border-green/20',
+    label: 'Stage 1',
+    title: 'The First Launch',
+    body: 'Move your idea from a plan to a live funnel. You can stop over-analyzing and start testing your offer in the real world.',
+    bullets: [
+      'Establish a clear offer and a core message',
+      'Launch a complete system with pages, emails, and a webinar',
+      'Gain the confidence that comes from finally being live',
+    ],
+  },
+  {
+    icon: TrendingUp,
+    iconColor: 'text-[#38bdf8]',
+    iconBg: 'bg-[#38bdf8]/10',
+    accentColor: 'border-[#38bdf8]/20',
+    label: 'Stage 2',
+    title: 'Building Momentum',
+    body: 'Focus on refining your message and creating consistency. You can move away from guesswork by improving a system that is already functioning.',
+    bullets: [
+      'Develop repeatable messaging and positioning',
+      'Create content that answers specific customer questions',
+      'Iterate on your current foundation without needing to rebuild',
+    ],
+  },
+  {
+    icon: Globe,
     iconColor: 'text-[#818cf8]',
     iconBg: 'bg-[#818cf8]/10',
-    numColor: 'text-[#818cf8]',
-    amount: 1000000,
-    prefix: '$',
-    suffix: '+',
-    title: 'Full Ecosystem',
-    body: 'A brand that attracts, converts, and retains at scale. Strategy, funnels, content, and identity all connected.',
+    accentColor: 'border-[#818cf8]/20',
+    label: 'Stage 3',
+    title: 'Scaling with Clarity',
+    body: 'Run a connected ecosystem that handles more complexity as you grow. You can stop trying to link disconnected tools because every part of your marketing works together.',
+    bullets: [
+      'Align your brand, funnel, and content into one voice',
+      'Execute new ideas faster by using your existing strategic DNA',
+      'Manage a business that stays simple even as it expands',
+    ],
   },
 ]
 
@@ -103,21 +66,32 @@ export default function CostComparisonSection() {
           </div>
         </FadeUp>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[1000px] mx-auto">
-          {milestones.map((item, i) => (
-            <FadeUp key={item.title} delay={i * 0.1}>
-              <div className="rounded-xl bg-[#111] border border-white/[0.06] p-6 text-center h-full hover:border-green/20 transition-colors">
-                <div className={`w-12 h-12 rounded-xl ${item.iconBg} flex items-center justify-center mx-auto mb-4`}>
-                  <item.icon size={22} className={item.iconColor} />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[1100px] mx-auto">
+          {stages.map((stage, i) => {
+            const Icon = stage.icon
+            return (
+              <FadeUp key={stage.title} delay={i * 0.1}>
+                <div className={`rounded-xl bg-[#111] border ${stage.accentColor} p-6 h-full flex flex-col`}>
+                  <div className={`w-12 h-12 rounded-xl ${stage.iconBg} flex items-center justify-center mb-4`}>
+                    <Icon size={22} className={stage.iconColor} />
+                  </div>
+                  <p className={`text-xs font-bold uppercase tracking-wider ${stage.iconColor} mb-2`}>
+                    {stage.label}
+                  </p>
+                  <h3 className="text-white font-bold text-lg mb-2">{stage.title}</h3>
+                  <p className="text-white/50 text-sm leading-relaxed mb-4">{stage.body}</p>
+                  <ul className="flex flex-col gap-2 mt-auto">
+                    {stage.bullets.map((bullet) => (
+                      <li key={bullet} className="flex items-start gap-2 text-xs text-white/60">
+                        <span className={`${stage.iconColor} text-sm shrink-0 mt-0.5`}>✓</span>
+                        {bullet}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <p className={`text-2xl sm:text-3xl font-extrabold ${item.numColor} mb-2`}>
-                  <AnimatedNumber target={item.amount} prefix={item.prefix} suffix={item.suffix} />
-                </p>
-                <h3 className="text-white font-bold text-base mb-2">{item.title}</h3>
-                <p className="text-white/50 text-sm leading-relaxed">{item.body}</p>
-              </div>
-            </FadeUp>
-          ))}
+              </FadeUp>
+            )
+          })}
         </div>
       </div>
     </section>

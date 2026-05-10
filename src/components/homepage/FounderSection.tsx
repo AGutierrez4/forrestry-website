@@ -37,7 +37,8 @@ export default function FounderSection() {
                 Before funnels, I co-owned a trucking organization. When we sold the company,
                 I dove headfirst into online marketing and hit the wall hard. The strategy made
                 sense. The frameworks made sense. But execution? Copy, pages, emails, ads, tech.
-                All at once. I burned through savings and eventually stepped away.
+                All at once. I burned through savings and eventually put my dream on pause,
+                taking a 9-to-5 marketing role to rebuild.
               </p>
               <p className="text-white/70 text-base leading-relaxed mb-4">
                 Over the next seven years, I worked with B2B brands operating on a global scale
@@ -46,11 +47,16 @@ export default function FounderSection() {
                 the highest levels.
               </p>
               <p className="text-white/70 text-base leading-relaxed mb-4">
-                When I came back to build my own funnel in 2025, I thought AI would solve it.
-                It didn't. The output was generic, disconnected, and I was still staring down
-                80+ hours of real work. That's when it clicked: I don't need another generic AI
-                tool. I need a system trained on proven frameworks, one that turns a conversation
-                into a complete, cohesive ecosystem.
+                When I came back to build my own funnel in 2025, I thought the AI revolution
+                would solve my earlier struggles. It didn't. AI is powerful in its own right,
+                but when it came to creating content that sounded like me, the output was generic,
+                disconnected, and I was still staring down 80+ hours of real work. Writing the
+                script, building the funnel pages, creating the ads and follow-up emails. There
+                was still a mountain of work and copywriting knowledge required. That's when it
+                clicked: asking an untrained, untailored Large Language Model like ChatGPT or
+                Gemini to create content for my business was like buying a suit off the rack and
+                expecting a custom fit. I needed a system trained on proven frameworks, one that
+                turns a conversation into a complete, cohesive ecosystem.
               </p>
               <p className="text-white/70 text-base leading-relaxed mb-6">
                 So I stopped trying to finish my funnel and built the tool I wish existed the
