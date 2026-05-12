@@ -5,18 +5,18 @@ import Hero from '../components/Hero'
 import SocialProof from '../components/SocialProof'
 import HowItWorks from '../components/HowItWorks'
 import Pricing from '../components/Pricing'
-import Community from '../components/Community'
+// import Community from '../components/Community' // Hidden until Skool community launches
 import FinalCTA from '../components/FinalCTA'
 import Footer from '../components/Footer'
 ---
 
 <BaseLayout title="Funnel Studio™ | Stop Building Funnels. Start Launching Them." description="AI-powered launch ecosystem for entrepreneurs. Go from raw idea to live, revenue-generating funnel in hours, not months.">
-  <Navbar client:load links={[{label:'Home',href:'/'},{label:'Product',href:'#product'},{label:'Community',href:'#community'},{label:'Pricing',href:'/pricing'}]} ctaText="Get Access to Funnel Studio" ctaHref="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01" signInHref="https://app.funnelstudio.forrestry.ai" logoHref="/" />
+  <Navbar client:load links={[{label:'Home',href:'/'},{label:'Product',href:'#product'},{label:'Pricing',href:'/pricing'}]} ctaText="Get Access to Funnel Studio" ctaHref="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01" signInHref="https://app.funnelstudio.forrestry.ai" logoHref="/" />
   <Hero client:visible />
   <SocialProof client:visible />
   <HowItWorks client:visible />
   <Pricing client:visible />
-  <Community client:visible />
+  <!-- <Community client:visible /> Hidden until Skool community launches -->
   <FinalCTA client:visible />
   <Footer tagline="Enterprise-grade strategy and connected tools for entrepreneurs who are ready to launch." />
 </BaseLayout>
