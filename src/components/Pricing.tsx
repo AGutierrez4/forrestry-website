@@ -34,8 +34,9 @@ export default function Pricing() {
               </div>
               <div className="flex items-center justify-center gap-3 mt-2">
                 <span className="text-[48px] font-extrabold text-text">$97</span>
+                <span className="text-muted text-lg font-medium">/mo</span>
               </div>
-              <p className="text-muted text-sm mt-2">One-time access</p>
+              <p className="text-muted text-sm mt-2">Cancel anytime</p>
             </div>
 
             {/* Checklist */}

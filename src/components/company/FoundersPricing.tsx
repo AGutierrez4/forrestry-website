@@ -31,9 +31,10 @@ export default function FoundersPricing() {
               <p className="text-muted text-sm mb-3">Complete funnel ecosystem generator</p>
               <div className="flex items-baseline justify-center gap-2">
                 <span className="text-[3rem] font-extrabold text-text">$97</span>
+                <span className="text-muted text-lg font-medium">/mo</span>
               </div>
               <p className="text-muted text-sm mt-1">
-                One-time access
+                Cancel anytime
               </p>
             </div>
 

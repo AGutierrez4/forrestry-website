@@ -49,8 +49,9 @@ export default function PricingSection() {
                 <p className="text-white/50 text-sm mb-4">Complete funnel ecosystem generator</p>
                 <div className="flex items-baseline justify-center gap-1">
                   <span className="text-[3.5rem] font-extrabold text-white">$97</span>
+                  <span className="text-white/50 text-lg font-medium">/mo</span>
                 </div>
-                <p className="text-white/40 text-sm mt-1">One-time access</p>
+                <p className="text-white/40 text-sm mt-1">Cancel anytime</p>
               </div>
 
               {/* Includes */}

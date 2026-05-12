@@ -28,7 +28,7 @@ export default function FinalCTA() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#818cf8] text-white px-10 py-5 rounded-full font-bold text-lg no-underline shadow-[0_0_40px_rgba(129,140,248,0.3)] hover:scale-105 hover:shadow-[0_0_60px_rgba(129,140,248,0.5)] transition-all mb-4"
           >
-            Get Access to Funnel Studio — $97
+            Get Access to Funnel Studio — $97/mo
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>

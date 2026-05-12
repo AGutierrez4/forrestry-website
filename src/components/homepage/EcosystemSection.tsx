@@ -75,7 +75,7 @@ export default function EcosystemSection() {
                   </li>
                 ))}
               </ul>
-              <p className="text-[#818cf8] text-xs mb-3 font-medium">Available Now — $97</p>
+              <p className="text-[#818cf8] text-xs mb-3 font-medium">Available Now — $97/mo</p>
               <a
                 href={FUNNEL_STUDIO_URL}
                 className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 rounded-full bg-[#818cf8] text-white font-semibold text-sm no-underline hover:bg-[#818cf8]/90 transition-all"

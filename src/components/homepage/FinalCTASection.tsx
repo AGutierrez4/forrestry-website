@@ -24,7 +24,7 @@ export default function FinalCTASection() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white text-[#047857] font-bold text-base no-underline shadow-lg hover:bg-white/90 hover:scale-[1.02] transition-all"
               >
-                Get Access to Funnel Studio — $97
+                Get Access to Funnel Studio — $97/mo
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>

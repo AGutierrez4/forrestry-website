@@ -113,7 +113,7 @@ export default function CostComparison() {
               <div>
                 <span className="text-sm font-bold"><span className="font-black text-white">funnel</span><span className="font-light text-[#818cf8]">studio</span></span>
               </div>
-              <span className="text-green text-sm font-bold text-right md:text-left">$97</span>
+              <span className="text-green text-sm font-bold text-right md:text-left">$97/mo</span>
               <span className="text-text text-sm hidden md:block">
                 One conversation → complete, connected funnel content.
               </span>

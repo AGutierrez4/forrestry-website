@@ -64,7 +64,7 @@ export default function Hero() {
 
         <FadeUp delay={0.35}>
           <p className="text-white/70 text-sm mb-8">
-            $97 · One-time access · Complete ecosystem
+            $97/mo · Cancel anytime · Complete ecosystem
           </p>
         </FadeUp>
 
