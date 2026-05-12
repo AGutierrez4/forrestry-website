@@ -34,7 +34,7 @@ const problems = [
 
 export default function PainSection() {
   return (
-    <section className="py-24 sm:py-36 bg-[#09090B]">
+    <section className="py-24 sm:py-36 bg-bg-section-b section-divider-top">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
         <FadeUp>
           <div className="text-center max-w-2xl mx-auto mb-16">
@@ -53,7 +53,7 @@ export default function PainSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[960px] mx-auto">
           {problems.map((problem, i) => (
             <FadeUp key={problem.title} delay={i * 0.08}>
-              <div className="rounded-xl bg-[#111] border border-white/[0.06] p-8 h-full hover:border-white/[0.12] transition-colors">
+              <div className="rounded-xl bg-card-bg border border-card-border p-8 h-full hover:border-white/[0.12] transition-colors">
                 <div className={`w-12 h-12 rounded-lg ${problem.iconBg} flex items-center justify-center mb-5`}>
                   <problem.icon size={22} className={problem.iconColor} />
                 </div>

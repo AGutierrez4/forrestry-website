@@ -26,7 +26,7 @@ const problems = [
 
 export default function SocialProof() {
   return (
-    <section id="social-proof" className="py-16 md:py-[120px] px-6 bg-bg-section-b">
+    <section id="social-proof" className="py-16 md:py-[120px] px-6 bg-bg-section-b section-divider-top">
       <div className="max-w-[1100px] mx-auto">
         <FadeUp>
           <div className="text-center mb-16">

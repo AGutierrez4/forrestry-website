@@ -3,7 +3,7 @@ import { STRIPE_CHECKOUT_URL } from './constants'
 
 export default function FinalCTASection() {
   return (
-    <section className="py-24 sm:py-36 section-alt">
+    <section className="py-24 sm:py-36 section-alt section-divider-top">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
         <FadeUp>
           <div className="relative rounded-2xl bg-gradient-to-br from-[#059669] via-[#047857] to-[#065F46] p-12 sm:p-20 text-center overflow-hidden">

@@ -63,7 +63,7 @@ const features: FeatureItem[] = [
 
 export default function HowItWorks() {
   return (
-    <section id="product" className="py-16 md:py-[120px] px-6 bg-bg-section-a">
+    <section id="product" className="py-16 md:py-[120px] px-6 bg-bg-section-b section-divider-top">
       <div className="max-w-[1100px] mx-auto">
         {/* Section header */}
         <FadeUp>

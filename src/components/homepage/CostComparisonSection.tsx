@@ -48,7 +48,7 @@ const stages = [
 
 export default function CostComparisonSection() {
   return (
-    <section className="py-24 sm:py-36 bg-[#09090B]">
+    <section className="py-24 sm:py-36 bg-[#09090B] section-divider-top">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
         <FadeUp>
           <div className="text-center max-w-2xl mx-auto mb-16">
@@ -71,7 +71,7 @@ export default function CostComparisonSection() {
             const Icon = stage.icon
             return (
               <FadeUp key={stage.title} delay={i * 0.1}>
-                <div className={`rounded-xl bg-[#111] border ${stage.accentColor} p-6 h-full flex flex-col`}>
+                <div className={`rounded-xl bg-card-bg border ${stage.accentColor} p-6 h-full flex flex-col`}>
                   <div className={`w-12 h-12 rounded-xl ${stage.iconBg} flex items-center justify-center mb-4`}>
                     <Icon size={22} className={stage.iconColor} />
                   </div>

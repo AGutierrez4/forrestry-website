@@ -16,7 +16,7 @@ const includes = [
 
 export default function PricingSection() {
   return (
-    <section id="pricing" className="py-24 sm:py-36 bg-[#09090B]">
+    <section id="pricing" className="py-24 sm:py-36 bg-[#09090B] section-divider-top">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
         <FadeUp>
           <div className="text-center max-w-2xl mx-auto mb-16">
@@ -35,7 +35,7 @@ export default function PricingSection() {
 
         <FadeUp delay={0.1}>
           <div className="max-w-[480px] mx-auto">
-            <div className="relative bg-[#111] border border-green/20 rounded-2xl p-8 md:p-10 shadow-[0_0_40px_rgba(16,185,129,0.04)]">
+            <div className="relative bg-card-bg border border-green/20 rounded-2xl p-8 md:p-10 shadow-[0_0_40px_rgba(16,185,129,0.04)]">
               {/* Most Popular badge */}
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-green text-white text-xs font-bold px-4 py-1 rounded-full">
                 Most Popular

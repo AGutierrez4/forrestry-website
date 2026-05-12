@@ -16,7 +16,7 @@ const checklist = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-16 md:py-[120px] px-6 bg-bg-section-a">
+    <section id="pricing" className="py-16 md:py-[120px] px-6 bg-bg-section-a section-divider-top">
       <div className="max-w-[700px] mx-auto text-center">
         <FadeUp>
           <p className="eyebrow mb-4" style={{ color: '#818cf8' }}>START BUILDING</p>

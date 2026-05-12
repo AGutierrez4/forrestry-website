@@ -29,7 +29,7 @@ const steps = [
 
 export default function WorkflowSection() {
   return (
-    <section id="how-it-works" className="py-24 sm:py-36 bg-[#09090B]">
+    <section id="how-it-works" className="py-24 sm:py-36 bg-bg-section-b section-divider-top">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
         <FadeUp>
           <div className="text-center max-w-2xl mx-auto mb-20">
@@ -76,7 +76,7 @@ export default function WorkflowSection() {
                 {/* Video */}
                 <SlideIn from={isEven ? 'left' : 'right'} delay={0.2}>
                   <div className="flex-1 w-full max-w-xl">
-                    <div className="rounded-xl overflow-hidden shadow-[0_16px_48px_rgba(0,0,0,0.4)] border border-white/[0.08] bg-[#111]">
+                    <div className="rounded-xl overflow-hidden shadow-[0_16px_48px_rgba(0,0,0,0.4)] border border-card-border bg-card-bg">
                       <LazyVideo
                         src={step.videoSrc}
                         className="w-full h-auto block"

@@ -3,22 +3,22 @@
 @theme {
   /* Elite SaaS: Deep Slate & Electric Mint */
   --color-bg: #09090B;
-  --color-bg-elevated: #111111;
-  --color-bg-alt: #0d1117;
+  --color-bg-elevated: #161B22;
+  --color-bg-alt: #111318;
   --color-bg-footer: #050505;
   --color-green: #10B981;
   --color-green-bright: #34D399;
   --color-purple: #7C3AED;
   --color-text: #FFFFFF;
   --color-muted: #A1A1AA;
-  --color-card-bg: #111111;
-  --color-card-border: #1F1F1F;
+  --color-card-bg: #161B22;
+  --color-card-border: #2A2F38;
   --color-forest-haze: #16261C;
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
 
   /* Alternating section backgrounds */
-  --color-bg-section-a: #0a0f0a;
-  --color-bg-section-b: #0f160f;
+  --color-bg-section-a: #09090B;
+  --color-bg-section-b: #111318;
 
   /* Section layout */
   --spacing-section-y: 120px;
@@ -78,6 +78,15 @@ body {
 /* Section alt background */
 .section-alt {
   background-color: var(--color-bg-alt);
+}
+
+/* Subtle section divider — a soft gradient line between sections */
+.section-divider-top {
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.section-divider-bottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 /* Floating animation */

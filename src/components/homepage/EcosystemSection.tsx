@@ -49,7 +49,7 @@ export default function EcosystemSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Funnel Studio — Live (Purple branded) */}
           <FadeUp delay={0}>
-            <div className="relative bg-[#111] border border-[#818cf8]/30 rounded-2xl p-8 shadow-[0_0_40px_rgba(129,140,248,0.06)] h-full flex flex-col">
+            <div className="relative bg-card-bg border border-[#818cf8]/30 rounded-2xl p-8 shadow-[0_0_40px_rgba(129,140,248,0.06)] h-full flex flex-col">
               <div className="absolute -top-3 left-6 bg-[#818cf8] text-white text-xs font-bold px-3 py-1 rounded-full">
                 LIVE
               </div>
@@ -90,7 +90,7 @@ export default function EcosystemSection() {
 
           {/* Answer Your Audience — Coming Soon (Blue branded) */}
           <FadeUp delay={0.1}>
-            <div className="bg-[#111] border border-white/[0.06] rounded-2xl p-8 h-full flex flex-col">
+            <div className="bg-card-bg border border-card-border rounded-2xl p-8 h-full flex flex-col">
               <div className="w-12 h-12 rounded-xl bg-[#38bdf8]/10 flex items-center justify-center mb-5">
                 <MessageCircle size={22} className="text-[#38bdf8]" />
               </div>
@@ -117,7 +117,7 @@ export default function EcosystemSection() {
 
           {/* BrandStory — Coming Soon (Orange branded) */}
           <FadeUp delay={0.2}>
-            <div className="bg-[#111] border border-white/[0.06] rounded-2xl p-8 h-full flex flex-col">
+            <div className="bg-card-bg border border-card-border rounded-2xl p-8 h-full flex flex-col">
               <div className="w-12 h-12 rounded-xl bg-[#fb923c]/10 flex items-center justify-center mb-5">
                 <Globe size={22} className="text-[#fb923c]" />
               </div>
