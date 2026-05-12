@@ -1,5 +1,6 @@
 import FadeUp from '../FadeUp'
 import SlideIn from '../SlideIn'
+import LazyVideo from '../LazyVideo'
 import { MessageSquare, FileText, Rocket } from 'lucide-react'
 
 const steps = [
@@ -8,24 +9,21 @@ const steps = [
     icon: MessageSquare,
     title: 'Brain Dump™',
     body: 'Have a natural conversation about your business, offer, and audience. Voice or text, our AI asks the strategic questions that matter. In 15 minutes, you\'ll extract what took you years to learn.',
-    image: '/Brain Dump.jpg',
-    imageAlt: 'Brain Dump conversation interface',
+    videoSrc: '/Brain_Dump.mp4',
   },
   {
     num: '02',
     icon: FileText,
     title: 'Strategic Blueprint',
     body: 'Your Brain Dump becomes a comprehensive strategic blueprint: core transformation, Big Domino statement, audience pain points, unique mechanism, and offer architecture. This is your shared DNA.',
-    image: '/Strategic Blueprint.jpg',
-    imageAlt: 'Strategic Blueprint document interface',
+    videoSrc: '/Strategic_Blueprint.mp4',
   },
   {
     num: '03',
     icon: Rocket,
     title: 'Launch Your Ecosystem',
     body: 'One click generates your entire marketing ecosystem: funnel pages, webinar scripts, emails, ads, and hooks. Every piece speaks with one voice because they all share one strategic foundation.',
-    image: '/Funnel Stack.jpg',
-    imageAlt: 'Funnel Stack Builder interface',
+    videoSrc: '/Funnel_Stack.mp4',
   },
 ]
 
@@ -75,18 +73,13 @@ export default function WorkflowSection() {
                   </div>
                 </SlideIn>
 
-                {/* Screenshot */}
+                {/* Video */}
                 <SlideIn from={isEven ? 'left' : 'right'} delay={0.2}>
                   <div className="flex-1 w-full max-w-xl">
                     <div className="rounded-xl overflow-hidden shadow-[0_16px_48px_rgba(0,0,0,0.4)] border border-white/[0.08] bg-[#111]">
-                      <img
-                        src={step.image}
-                        alt={step.imageAlt}
+                      <LazyVideo
+                        src={step.videoSrc}
                         className="w-full h-auto block"
-                        loading="lazy"
-                        decoding="async"
-                        width={800}
-                        height={500}
                       />
                     </div>
                   </div>
