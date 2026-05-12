@@ -23,7 +23,7 @@ export default function PricingFinalCTA() {
           </p>
 
           <a
-            href="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01"
+            href="https://buy.stripe.com/fZu28s3GX5zZaUk3HwfrW02"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-green text-white px-8 py-4 rounded-xl font-bold text-base no-underline shadow-[0_0_30px_rgba(16,185,129,0.2)] hover:bg-green/90 hover:shadow-[0_0_50px_rgba(16,185,129,0.35)] hover:scale-105 transition-all"

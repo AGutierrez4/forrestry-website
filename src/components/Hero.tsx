@@ -49,7 +49,7 @@ export default function Hero() {
         <FadeUp delay={0.3}>
           <div className="mb-4">
             <a
-              href="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01"
+              href="https://buy.stripe.com/fZu28s3GX5zZaUk3HwfrW02"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-10 py-4 rounded-xl bg-[#818cf8] text-white font-bold text-lg no-underline shadow-[0_0_40px_rgba(129,140,248,0.2)] hover:bg-[#818cf8]/90 hover:shadow-[0_0_60px_rgba(129,140,248,0.4)] transition-all"

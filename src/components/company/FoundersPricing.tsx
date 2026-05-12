@@ -58,7 +58,7 @@ export default function FoundersPricing() {
             </ul>
 
             <a
-              href="https://buy.stripe.com/8x24gAcdt2nN2nOdi6frW01"
+              href="https://buy.stripe.com/fZu28s3GX5zZaUk3HwfrW02"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full py-4 rounded-xl bg-green text-white font-bold text-lg text-center no-underline shadow-[0_0_40px_rgba(16,185,129,0.2)] hover:bg-green/90 hover:shadow-[0_0_60px_rgba(16,185,129,0.4)] transition-all"
