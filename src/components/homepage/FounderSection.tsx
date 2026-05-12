@@ -3,7 +3,7 @@ import { Quote } from 'lucide-react'
 
 export default function FounderSection() {
   return (
-    <section className="py-20 sm:py-28 section-alt">
+    <section className="py-24 sm:py-36 section-alt">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
         <FadeUp>
           <div className="text-center mb-14">

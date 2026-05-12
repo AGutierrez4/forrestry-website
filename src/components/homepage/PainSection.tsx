@@ -34,31 +34,31 @@ const problems = [
 
 export default function PainSection() {
   return (
-    <section className="py-20 sm:py-28 bg-[#09090B]">
+    <section className="py-24 sm:py-36 bg-[#09090B]">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
         <FadeUp>
-          <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="text-xs font-semibold text-green uppercase tracking-wider mb-3">The Problem</p>
-            <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-white tracking-tight mb-4">
+            <h2 className="text-[clamp(2rem,4.5vw,3.25rem)] font-extrabold text-white tracking-tight mb-5">
               Building a funnel shouldn't{' '}
               <span className="bg-gradient-to-r from-green-bright to-green bg-clip-text text-transparent">feel this hard</span>
             </h2>
-            <p className="text-white/60 text-lg leading-relaxed">
+            <p className="text-white/60 text-lg sm:text-xl leading-relaxed">
               Most entrepreneurs hit the same walls. Disconnected tools, overwhelming complexity,
               and the constant fear that they're doing it wrong.
             </p>
           </div>
         </FadeUp>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-[900px] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[960px] mx-auto">
           {problems.map((problem, i) => (
             <FadeUp key={problem.title} delay={i * 0.08}>
-              <div className="rounded-xl bg-[#111] border border-white/[0.06] p-6 h-full hover:border-white/[0.12] transition-colors">
-                <div className={`w-10 h-10 rounded-lg ${problem.iconBg} flex items-center justify-center mb-4`}>
-                  <problem.icon size={20} className={problem.iconColor} />
+              <div className="rounded-xl bg-[#111] border border-white/[0.06] p-8 h-full hover:border-white/[0.12] transition-colors">
+                <div className={`w-12 h-12 rounded-lg ${problem.iconBg} flex items-center justify-center mb-5`}>
+                  <problem.icon size={22} className={problem.iconColor} />
                 </div>
-                <h3 className="text-white font-bold text-base mb-2">{problem.title}</h3>
-                <p className="text-white/50 text-sm leading-relaxed">{problem.body}</p>
+                <h3 className="text-white font-bold text-lg mb-2">{problem.title}</h3>
+                <p className="text-white/50 text-base leading-relaxed">{problem.body}</p>
               </div>
             </FadeUp>
           ))}

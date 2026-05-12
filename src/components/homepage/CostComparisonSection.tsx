@@ -48,12 +48,12 @@ const stages = [
 
 export default function CostComparisonSection() {
   return (
-    <section className="py-20 sm:py-28 bg-[#09090B]">
+    <section className="py-24 sm:py-36 bg-[#09090B]">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
         <FadeUp>
-          <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="text-xs font-semibold text-green uppercase tracking-wider mb-3">The Journey</p>
-            <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-white tracking-tight mb-4">
+            <h2 className="text-[clamp(2rem,4.5vw,3.25rem)] font-extrabold text-white tracking-tight mb-5">
               A clear path to{' '}
               <span className="bg-gradient-to-r from-green-bright to-green bg-clip-text text-transparent">
                 real growth

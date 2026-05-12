@@ -25,21 +25,21 @@ const brandStoryFeatures = [
 
 export default function EcosystemSection() {
   return (
-    <section id="ecosystem" className="py-20 sm:py-28 relative overflow-hidden bg-[rgba(16,185,129,0.03)] border-y border-green/10">
+    <section id="ecosystem" className="py-24 sm:py-36 relative overflow-hidden bg-[rgba(16,185,129,0.03)] border-y border-green/10">
       {/* Green ambient glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-green/[0.03] rounded-full blur-[150px] pointer-events-none" />
 
       <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6">
         <FadeUp>
-          <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="text-xs font-semibold text-green uppercase tracking-wider mb-3">The Ecosystem</p>
-            <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold text-white tracking-tight mb-4">
+            <h2 className="text-[clamp(2rem,4.5vw,3.25rem)] font-extrabold text-white tracking-tight mb-5">
               Three connected engines{' '}
               <span className="bg-gradient-to-r from-green-bright to-green bg-clip-text text-transparent">
                 for business growth
               </span>
             </h2>
-            <p className="text-white/60 text-lg leading-relaxed">
+            <p className="text-white/60 text-lg sm:text-xl leading-relaxed">
               Forrestry.ai connects three purpose-built products into one shared ecosystem.
               Your strategy, your voice, and your story flow through every tool automatically.
             </p>
