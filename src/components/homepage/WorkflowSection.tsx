@@ -76,7 +76,7 @@ export default function WorkflowSection() {
                 {/* Video */}
                 <SlideIn from={isEven ? 'left' : 'right'} delay={0.2}>
                   <div className="flex-1 w-full max-w-xl">
-                    <div className="rounded-xl overflow-hidden shadow-[0_16px_48px_rgba(0,0,0,0.4)] border border-card-border bg-card-bg">
+                    <div className="rounded-xl overflow-hidden shadow-[0_16px_48px_rgba(0,0,0,0.4)] border border-[rgba(16,185,129,0.2)] border-t-2 border-t-green bg-card-bg">
                       <LazyVideo
                         src={step.videoSrc}
                         className="w-full h-auto block"
