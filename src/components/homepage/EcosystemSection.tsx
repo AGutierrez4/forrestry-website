@@ -94,7 +94,7 @@ export default function EcosystemSection() {
               <div className="w-12 h-12 rounded-xl bg-[#38bdf8]/10 flex items-center justify-center mb-5">
                 <MessageCircle size={22} className="text-[#38bdf8]" />
               </div>
-              <h3 className="text-white font-bold text-xl mb-1">Answer Your Audience</h3>
+              <div className="text-xl mb-1"><span className="font-black text-white">Answer</span> <span className="font-light text-[#38bdf8]">Your Audience</span></div>
               <span className="text-xs font-bold tracking-wider uppercase text-[#38bdf8] mb-3">
                 The Authority Engine
               </span>
@@ -121,7 +121,7 @@ export default function EcosystemSection() {
               <div className="w-12 h-12 rounded-xl bg-[#fb923c]/10 flex items-center justify-center mb-5">
                 <Globe size={22} className="text-[#fb923c]" />
               </div>
-              <h3 className="text-white font-bold text-xl mb-1">BrandStory</h3>
+              <div className="text-xl mb-1"><span className="font-black text-white">Brand</span><span className="font-light text-[#fb923c]">Story</span></div>
               <span className="text-xs font-bold tracking-wider uppercase text-[#fb923c] mb-3">
                 The Identity Engine
               </span>
